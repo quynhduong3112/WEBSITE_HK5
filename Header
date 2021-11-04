@@ -1,0 +1,118 @@
+//html
+<div id="page__header--container">
+        <ul class="page__header--text">
+            <li><a href="#">Tách Studio</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+            <li><a href="#">Cho thuê</a>
+                <ul>
+                    <li><a href="#" style="color: black;">Máy ảnh</a></li>
+                    <li><a href="#" style="color: black;">Studio</a></li>
+                    <li><a href="#" style="color: black;">Trang phục</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Album</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#"><input type="text" placeholder="        Nhập từ tìm kiếm">
+                <img src="/image/header-findicon.png" alt="" class="header--findicon"></li>
+            
+            <li><a href="#">Đăng nhập</a></li>
+        </ul>
+    </div>
+    
+//css
+body,html{
+    margin: 0;
+    padding: 0;
+}
+
+.page__header--text{
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+.page__header--text li input{
+    font-size: 16px;
+    font-weight: normal;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.header--findicon{
+    position: relative;
+    left: -210px;
+}
+
+.page__text{
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+#page__header--container{
+    width: 100vw;
+    height: 112px;
+    background: black;
+    float: left;   
+    position: fixed;
+    z-index: 3;
+    line-height: 112px;
+    text-align: center;
+}
+
+#page__header--container ul{
+    float: left; 
+    list-style: none;
+}
+
+#page__header--container ul li{
+    position: relative; 
+    float: left;
+    margin-left: 70px;
+}
+
+#page__header--container ul li a{ 
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: .3em 10px;
+}
+
+#page__header--container ul li a:hover{
+    color: black;
+    background: white;
+    height: 112px;
+}
+
+#page__header--container ul li:nth-of-type(6) a:hover{
+    color: none;
+    background: none;
+}
+
+#page__header--container ul li:nth-of-type(7) a:hover{
+    color: black;
+    background: white;
+    height: 100px;
+}
+
+#page__header--container li ul{
+    position: absolute;
+    display: none;
+    width: 10em;
+    text-align: center;
+}
+
+#page__header--container li:hover ul{
+    display: block;
+}
+
+#page__header--container ul li ul li{
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 14px;
+    width: 150px;
+    height: 70px;
+    border-top: 1px solid black;
+    background-color: white;
+    text-align: center;
+    line-height: 70px;
+}
