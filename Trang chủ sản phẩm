@@ -1,0 +1,449 @@
+//html
+    <div class="background">
+        <div class="ChuChoThue--Banner">
+            <img src="../Images/BanerChoThue.png" class="ChuChoThue--Banner" alt="Lỗi hiển thị hình ảnh">
+        </div>
+        <div class="ChuChoThue--Container">
+            <div class="ChuChoThue--Title">MÁY ẢNH</div>
+            <div class="ChuChoThue--Container__1">
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/MayAnh.png" class="ChuChoThue--Product__Image" alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Thân máy Canon</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/MayAnh.png" class="ChuChoThue--Product__Image" alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Thân máy Canon</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/MayAnh.png" class="ChuChoThue--Product__Image" alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Thân máy Canon</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/MayAnh.png" class="ChuChoThue--Product__Image" alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Thân máy Canon</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/MayAnh.png" class="ChuChoThue--Product__Image" alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Thân máy Canon</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/MayAnh.png" class="ChuChoThue--Product__Image" alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Thân máy Canon</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/MayAnh.png" class="ChuChoThue--Product__Image" alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Thân máy Canon</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/MayAnh.png" class="ChuChoThue--Product__Image" alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Thân máy Canon</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/MayAnh.png" class="ChuChoThue--Product__Image" alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Thân máy Canon</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/MayAnh.png" class="ChuChoThue--Product__Image" alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Thân máy Canon</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+            </div>
+            <div class="ChuChoThue--Product__Seemore">Xem thêm...</div>
+        </div>
+
+        <div class="ChuChoThue--Container">
+            <div class="ChuChoThue--Title">STUDIO</div>
+            <div class="ChuChoThue--Container__1">
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/Studio.png" class="ChuChoThue--Product__Image" alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Tên Studio</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/Studio.png" class="ChuChoThue--Product__Image" alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Tên Studio</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/Studio.png" class="ChuChoThue--Product__Image" alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Tên Studio</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/Studio.png" class="ChuChoThue--Product__Image" alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Tên Studio</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/Studio.png" class="ChuChoThue--Product__Image" alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Tên Studio</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/Studio.png" class="ChuChoThue--Product__Image" alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Tên Combo</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/Studio.png" class="ChuChoThue--Product__Image" alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Tên Combo</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/Studio.png" class="ChuChoThue--Product__Image" alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Tên Combo</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/Studio.png" class="ChuChoThue--Product__Image" alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Tên Combo</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/Studio.png" class="ChuChoThue--Product__Image" alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Tên Combo</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+            </div>
+            <div class="ChuChoThue--Product__Seemore">Xem thêm...</div>
+
+        </div>
+        <div class="ChuChoThue--Container">
+            <div class="ChuChoThue--Title">TRANG PHỤC</div>
+            <div class="ChuChoThue--Container__1">
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/TrangPhuc.png" class="ChuChoThue--Product__Image"
+                            alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Tên Trang Phục</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/TrangPhuc.png" class="ChuChoThue--Product__Image"
+                            alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Tên Trang Phục</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/TrangPhuc.png" class="ChuChoThue--Product__Image"
+                            alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Tên Trang Phục</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/TrangPhuc.png" class="ChuChoThue--Product__Image"
+                            alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Tên Trang Phục</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/TrangPhuc.png" class="ChuChoThue--Product__Image"
+                            alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Tên Trang Phục</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/TrangPhuc.png" class="ChuChoThue--Product__Image"
+                            alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Tên Trang Phục</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/TrangPhuc.png" class="ChuChoThue--Product__Image"
+                            alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Tên Trang Phục</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/TrangPhuc.png" class="ChuChoThue--Product__Image"
+                            alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Tên Trang Phục</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+                <div class="ChuChoThue--Product">
+                    <div class="ChuChoThue--Container__Image">
+                        <img src="../Images/TrangPhuc.png" class="ChuChoThue--Product__Image"
+                            alt="Lỗi hiển thị hình ảnh">
+                    </div>
+                    <div class="ChuChoThue--Product__Title">Tên Trang Phục</div>
+                    <div class="ChuChoThue--Product__Price">Giá thuê: 500.000VNĐ</div>
+                    <div>
+                        <input type="button" value="Đặt thuê">
+                    </div>
+                </div>
+            </div>
+            <div class="ChuChoThue--Product__Seemore">Xem thêm...</div>
+        </div>
+        </div>
+        
+        //css
+        html, body{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap');
+.background{
+    background-color: black;
+}
+.ChuChoThue--Banner{
+    width: 100%;
+}
+.ChuChoThue--Container{
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 50px;
+    background-color: black;
+}
+.ChuChoThue--Title{
+    font-family: Montserrat;
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+.ChuChoThue--Container__1{
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ChuChoThue--Product{
+    margin: 24px;
+    flex: 20%;
+    max-width: 20%;
+    border-radius: 5;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.ChuChoThue--Container__Image{
+    margin: 16px;
+    flex: 100%;
+    max-width: 100%;
+}
+.ChuChoThue--Product__Image{
+    border-radius: 5;
+    object-fit: contain;
+    max-width: 100%;
+}
+.ChuChoThue--Product__Title{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 24;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+.ChuChoThue--Product__Price{
+    font-family: Roboto;
+    font-size: 20;
+    margin-bottom: 24px;
+}
+input[type=button]{
+    color: white;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 24;
+    background-color: #F2C806;
+    width: 140px;
+    height: 44px;
+    margin-bottom: 24px;
+    border-radius: 5;
+    border: 0px;
+}
+.ChuChoThue--Product__Seemore{
+    font-family: Roboto;
+    font-size: 20;
+    margin-top: 26px;
+    text-align: center;
+    color: white;
+}
+@media (max-width: 1025px){
+    .ChuChoThue--Product{
+        justify-content: space-around;
+        flex: 25%;
+        max-width: 25%;
+        border-radius: 5;
+        text-align: center;
+        background-color: white;
+    }
+}
+@media (max-width: 800px){
+    .ChuChoThue--Product{
+        justify-content: space-around;
+        flex: 33%;
+        max-width: 33%;
+        border-radius: 5;
+        text-align: center;
+        background-color: white;
+    }
+}
+@media (max-width: 600px){
+    .ChuChoThue--Product{
+        justify-content: space-around;
+        flex: 50%;
+        max-width: 50%;
+        border-radius: 5;
+        text-align: center;
+        background-color: white;
+    }
+}
+@media (max-width: 480px){
+    .ChuChoThue--Product{
+        justify-content: space-around;
+        flex: 100%;
+        max-width: 100%;
+        border-radius: 5;
+        text-align: center;
+        background-color: white;
+    }
+}
