@@ -1,0 +1,10 @@
+//bỏ vào external css:
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* muốn gọi font thì: font-family: 'Roboto', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+/* muốn gọi font thì: font-family: 'Montserrat', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap');
+/* muốn gọi font thì: font-family: 'Racing Sans One', cursive; */
