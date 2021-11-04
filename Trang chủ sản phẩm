@@ -355,6 +355,7 @@
     margin-top: 24px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .ChuChoThue--Product{
     margin: 24px;
