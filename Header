@@ -12,9 +12,12 @@
             </li>
             <li><a href="#">Album</a></li>
             <li><a href="#">Blog</a></li>
-            <li><a href="#"><input type="text" placeholder="        Nhập từ tìm kiếm">
-                <img src="/image/header-findicon.png" alt="" class="header--findicon"></li>
+
+            <li><a href="#"> <span class="glyphicon glyphicon-search icon"></span> <input type="text" placeholder="Nhập từ tìm kiếm" >
             
+            <!-- <img src="/image/header-findicon.png" alt="" class="header--findicon"> -->
+            </li>
+
             <li><a href="#">Đăng nhập</a></li>
         </ul>
     </div>
@@ -35,12 +38,14 @@ body,html{
     font-weight: normal;
     height: 40px;
     border-radius: 10px;
+    padding-left: 40px;
+    color: black;
 }
 
-.header--findicon{
+/* .header--findicon{
     position: relative;
     left: -210px;
-}
+} */
 
 .page__text{
     font-family: Roboto;
@@ -50,8 +55,9 @@ body,html{
 #page__header--container{
     width: 100vw;
     height: 112px;
+    /* height: 10%; */
     background: black;
-    float: left;   
+    /* float: left;    */
     position: fixed;
     z-index: 3;
     line-height: 112px;
@@ -59,14 +65,14 @@ body,html{
 }
 
 #page__header--container ul{
-    float: left; 
+    /* float: left; */
     list-style: none;
 }
 
 #page__header--container ul li{
-    position: relative; 
+    position: relative;
     float: left;
-    margin-left: 70px;
+    margin-left: 85px;
 }
 
 #page__header--container ul li a{ 
@@ -74,9 +80,10 @@ body,html{
     color: white;
     font-weight: bold;
     text-decoration: none;
-    padding: .3em 10px;
+    /* padding: .3em 10px; */
+    /* position: absolute;
+    margin-right: 500px; */
 }
-
 #page__header--container ul li a:hover{
     color: black;
     background: white;
@@ -88,11 +95,11 @@ body,html{
     background: none;
 }
 
-#page__header--container ul li:nth-of-type(7) a:hover{
+/* #page__header--container ul li:nth-of-type(7) a:hover{
     color: black;
     background: white;
     height: 100px;
-}
+} */
 
 #page__header--container li ul{
     position: absolute;
@@ -115,4 +122,12 @@ body,html{
     background-color: white;
     text-align: center;
     line-height: 70px;
+    position: relative;
+    left: -75px;
+}
+
+.icon{
+    left: 35px;
+    top: 5px;
+    color: black;
 }
