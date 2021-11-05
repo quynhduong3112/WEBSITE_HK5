@@ -595,18 +595,17 @@ h1{
     }
 }
 
-
 @media screen and (max-width: 1280px){
     .page__header--text{
-        font-size: 14px;
+        font-size: 16px;
     }
     
     .page__header--text li:nth-of-type(1){
-        font-size: 15px;
+        font-size: 18px;
     }
 
     #page__header--container ul li{
-        margin-left: 30px;
+        margin-left: 72px;
     }
 
     .page__header--text li input{
@@ -621,7 +620,7 @@ h1{
         width: 80px;
         height: 50px;
         line-height: 50px;
-        left: -37px;
+        left: -80px;
     }
     
     .header__icon{
@@ -676,38 +675,137 @@ h1{
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1110px){
     .page__header--text{
-        font-size: 10px;
+        font-size: 16px;
     }
     
     .page__header--text li:nth-of-type(1){
-        font-size: 15px;
+        font-size: 18px;
     }
 
     #page__header--container ul li{
-        margin-left: 7px;
+        margin-left: 55px;
     }
 
     .page__header--text li input{
-        font-size: 8px;
-        height: 20px;
-        width: 100px;
-        padding-left: 18px;
+        font-size: 12px;
+        height: 30px;
+        width: 150px;
+        padding-left: 30px;
     }
 
     #page__header--container ul li ul li{
-        font-size: 8px;
-        width: 60px;
-        height: 30px;
-        line-height: 30px;
-        left: -25px;
+        font-size: 12px;
+        width: 80px;
+        height: 50px;
+        line-height: 50px;
+        left: -63px;
     }
     
     .header__icon{
-        left: 20px;
+        left: 28px;
+    }
+}
+
+@media screen and (max-width: 980px){
+    .page__header--text{
+        font-size: 16px;
     }
     
+    .page__header--text li:nth-of-type(1){
+        font-size: 18px;
+    }
+
+    #page__header--container ul li{
+        margin-left: 40px;
+    }
+
+    .page__header--text li input{
+        font-size: 12px;
+        height: 30px;
+        width: 150px;
+        padding-left: 30px;
+    }
+
+    #page__header--container ul li ul li{
+        font-size: 12px;
+        width: 80px;
+        height: 50px;
+        line-height: 50px;
+        left: -45px;
+    }
+    
+    .header__icon{
+        left: 28px;
+    }
+}
+
+@media screen and (max-width: 870px){
+    .page__header--text{
+        font-size: 15px;
+    }
+    
+    .page__header--text li:nth-of-type(1){
+        font-size: 17px;
+    }
+
+    #page__header--container ul li{
+        margin-left: 30px;
+    }
+
+    .page__header--text li input{
+        font-size: 12px;
+        height: 30px;
+        width: 150px;
+        padding-left: 30px;
+    }
+
+    #page__header--container ul li ul li{
+        font-size: 12px;
+        width: 80px;
+        height: 50px;
+        line-height: 50px;
+        left: -35px;
+    }
+    
+    .header__icon{
+        left: 28px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page__header--text{
+        font-size: 15px;
+    }
+    
+    .page__header--text li:nth-of-type(1){
+        font-size: 17px;
+    }
+
+    #page__header--container ul li{
+        margin-left: 20px;
+    }
+
+    .page__header--text li input{
+        font-size: 12px;
+        height: 30px;
+        width: 150px;
+        padding-left: 30px;
+    }
+
+    #page__header--container ul li ul li{
+        font-size: 12px;
+        width: 80px;
+        height: 50px;
+        line-height: 50px;
+        left: -27px;
+    }
+    
+    .header__icon{
+        left: 28px;
+    }
+
     .header__introduction{
         flex-wrap: wrap;
     }
@@ -765,5 +863,137 @@ h1{
 
     .footer--right p img{
         height: 15px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .page__header--text{
+        font-size: 15px;
+    }
+    
+    .page__header--text li:nth-of-type(1){
+        font-size: 17px;
+    }
+
+    #page__header--container ul li{
+        margin-left: 15px;
+    }
+
+    .page__header--text li input{
+        font-size: 12px;
+        height: 30px;
+        width: 150px;
+        padding-left: 30px;
+    }
+
+    #page__header--container ul li ul li{
+        font-size: 12px;
+        width: 80px;
+        height: 50px;
+        line-height: 50px;
+        left: -22px;
+    }
+    
+    .header__icon{
+        left: 28px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .page__header--text{
+        font-size: 12px;
+    }
+    
+    .page__header--text li:nth-of-type(1){
+        font-size: 15px;
+    }
+    
+    #page__header--container ul li{
+        margin-left: 13px;
+    }
+    
+    .page__header--text li input{
+        font-size: 8px;
+        height: 25px;
+        width: 100px;
+        padding-left: 18px;
+    }
+    
+    #page__header--container ul li ul li{
+        font-size: 8px;
+        width: 60px;
+        height: 30px;
+        line-height: 30px;
+        left: -25px;
+    }
+    
+    .header__icon{
+        left: 20px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .page__header--text{
+        font-size: 12px;
+    }
+    
+    .page__header--text li:nth-of-type(1){
+        font-size: 15px;
+    }
+    
+    #page__header--container ul li{
+        margin-left: 8px;
+    }
+    
+    .page__header--text li input{
+        font-size: 8px;
+        height: 23px;
+        width: 100px;
+        padding-left: 18px;
+    }
+    
+    #page__header--container ul li ul li{
+        font-size: 8px;
+        width: 60px;
+        height: 30px;
+        line-height: 30px;
+        left: -25px;
+    }
+    
+    .header__icon{
+        left: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .page__header--text{
+        font-size: 10px;
+    }
+    
+    .page__header--text li:nth-of-type(1){
+        font-size: 15px;
+    }
+    
+    #page__header--container ul li{
+        margin-left: 7px;
+    }
+    
+    .page__header--text li input{
+        font-size: 8px;
+        height: 20px;
+        width: 100px;
+        padding-left: 18px;
+    }
+    
+    #page__header--container ul li ul li{
+        font-size: 8px;
+        width: 60px;
+        height: 30px;
+        line-height: 30px;
+        left: -25px;
+    }
+    
+    .header__icon{
+        left: 20px;
     }
 }
