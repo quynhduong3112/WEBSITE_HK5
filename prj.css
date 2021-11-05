@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* muốn gọi font thì: font-family: 'Roboto', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+/* muốn gọi font thì: font-family: 'Montserrat', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap');
+/* muốn gọi font thì: font-family: 'Racing Sans One', cursive; */
+body{
+    background-color: black;
+    color: white;
+    margin: 0px;
+}
+h2{
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+.bold{
+    font-weight: bold;
+}
+.color--red{
+    color: red;
+}
+.color--green{
+    color: green;
+}
+
+.center{
+    text-align: center;
+}
+.container--order{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    flex-grow: 3;
+    margin-right: 25px;
+}
+.block{
+    display: block;
+    background-color: inherit;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.tab--item{
+    display: inline-block;
+    flex: 1 1 auto;
+    width: fit-content;
+    text-align: center;
+}
+.flex--container--tab{
+    display: flex;
+    justify-content: flex-around;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.flex--container{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.flex--container--user{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.order--date{
+    flex: 1 1 25%;
+}
+.order--name{
+    flex: 1 1 40%;
+}
+.order--status{
+    flex: 1 1 30%;
+}
+.block__item--content{
+    padding-left: 58px;
+    border-bottom: 2px solid #c4c4c4;
+    
+}
+.block__item--title{
+    padding-left: 58px;
+    border-bottom: 3px solid #c4c4c4;
+}
+.block__item--tab{
+    border-bottom: 4px solid #c4c4c4;
+}
+.block--more{
+    text-align: center;
+}
+.container--body{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Roboto';
+    align-items: flex-start;
+
+}
+.container--user{
+    background-color: white;
+    color: black;
+    flex-grow: 1;
+    margin-left: 2em;
+    margin-right: 1em;
+    flex-basis: 5em;
+    padding-left: 1em;
+    height: 400px;
+}
+.flex--container--left{
+    vertical-align: middle;
+    width: 3.2em;
+    padding-right: 15px;
+
+}
+#profile{
+    width: 3.5em;
+    border-radius: 50%;
+}
+#edit{
+    width: 18px;
+    height: auto;
+}
+#username{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    position: relative;
+    top: 13px;
+}
+.flex--container--col{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+.block--user--r1{
+    border-bottom: 2px solid #c4c4c4;
+}
+.icon{
+    height: 18px;
+    margin-right: 10px;
+}
+.flex--menu{
+    display: flex;
+}
+.block--user{
+    display: block;
+    padding: 8px;
+}
+
+
+/* CSS header */
+
+.header{
+    height: 112px;
+    background-color: rgba(36, 36, 38, 1);
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .header__img{
+    width: 45px;
+    height: 45px;
+    border-radius: 300px;
+    margin-right: 110px;
+    
+    }
+    .header__navbar--item--font{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    }
+    /* Bỏ dấu chấm đầu link */
+    .header__navbar--list{
+    list-style: none;
+    
+    display: flex;
+    justify-content: space-between;
+    }
+    .header__navbar--item{
+    
+    margin-top: 33px;}
+    /* display: flex;
+    justify-content: space-between; /
+    }
+    / .header__navbar--item--1{
+    font-size: 35px;
+    padding-left: 10px;
+    margin-right: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    } */
+    .search{
+    position: relative;
+    }
+    .input{
+    padding-left: 45px;
+    }
+    .header__navbar--icons.fa-search{
+    position: absolute;
+    left: 15px;
+    top:15px;
+    color: black;
+    }
+    .input{
+    border-radius: 10px;
+    height: 37px;
+    width: 280px;
+    }
+    .header__navbar--item,
+    .header__navbar--item--link,
+    .header__navbar--icons--link{
+    height: 37px;
+    }
+    .header__navbar--item,.header__navbar--item--link{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 37px;
+    }
+    .header__navbar--item--link:hover,
+    .header__navbar--icons--link:hover
+    {
+    cursor: pointer;
+    color: blue;
+    }
+    .header__navbar--item--nocursor:hover{
+    cursor: none;
+    
+    }
+    .header__navbar--icons--link{
+    color: white;
+    }
+    .header__navbar--icons{
+    text-align: center;
+    
+    }
+    .name-studio{
+    font-family: Racing Sans One;
+    font-style:italic;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 44px;
+    }
+
+    /* CSS footer */
+    .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 40px 0px 0px 0px;
+        background-color: #242426;
+        padding-left: 46px;
+        padding-right: 46px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        font-family: 'Roboto';
+    }
+    .title{
+        font-family: 'Montserrat';
+        font-weight: bold;
+
+    }
+    .block__item--content:hover{
+        background-color: rgb(194, 194, 194);
+    }
+    .header__navbar--list{
+        margin-bottom: 50px;
+        margin-top: 0;
+        background-color: #242424;
+    }
