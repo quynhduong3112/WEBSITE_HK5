@@ -747,3 +747,419 @@ body,html{
         margin-left: 5px;
     }
 }
+
+
+
+
+//html Giới thiệu Tách
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu</title>
+    <link rel="stylesheet" href="./assets/css/GTTach.css">
+</head>
+<body>
+    <div class="gttach__header">
+        <p> GIỚI THIỆU</p>
+        <div class="gttach--images" ><img src="./assets/img/GTTach.png" alt="Hình ảnh"></div>
+    </div>
+    <div class="gttach__mainpage">
+        <p class="gttach__mainpage--text">Tách là một Studio chuyên nghiệp cung cấp các dịch vụ chụp ảnh, cho thuê máy ảnh, trang phục và các loại phụ kiện khác đi kèm. Được thành lập từ năm 2018, trải qua một thời gian hoạt động  Tách luôn tự hào với đội ngũ phorographer, editor chuyên nghiệp, có tay nghề cao, chụp được đa dạng các thể loại phong cách, background và cho mọi lứa tuối. Đến với Tách, khách hàng sẽ được đảm bảo có những trải nghiệm tuyệt và cùng với Studio mang lại những bức ảnh đẹp.</p> 
+        <p class="gttach__mainpage--text">
+            Độc đáo với Ekip chuyên nghiệp và có tinh thần sáng tạo cao, chắc chắn Tách Studio sẽ mang tới cho các bạn nhiều concept chụp ảnh “Độc – Lạ”. Bởi vậy, tấm ảnh của bạn chắc chắn sẽ nổi bật, đáng nhớ và thu hút giữa một “rừng” kiểu ảnh hiện nay.
+        </p>
+        <p class="gttach__mainpage--text"> 
+           Sản phẩm Đẹp hệ thống máy móc, trang thiết bị hiện đại và đồng bộ, những tấm ảnh của bạn không chỉ độc về concept ảnh mà còn đẹp về chất lượng ảnh, màu sắc và ánh sáng. Là Studio uy tín tại TP.Hồ Chí Minh, Tách cam kết sẽ mang đến những tấm hình chụp ảnh chất nhất, độc lạ và đẹp nhất, cùng đó còn một ekip chụp hình cực kì chuyên nghiệp, sáng tạo & rất vui tính, giúp bạn lưu lại những khoảnh khắc ý nghĩa cùng gia đình, vui vẻ bên bạn bè trong những shoot hình hoàn hảo nhất!
+        </p> 
+        <p class="gttach__mainpage--text">  
+           Rẻ - trọn gói tại Tách Studio cam kết giá hợp lý nhất toàn Miền Nam. Do vậy, các bạn học sinh, sinh viên hoàn toàn có thể yên tâm tin tưởng ở chúng tôi và cùng đồng hành để tạo thành một album ảnh tuyệt vời. Tách luôn nỗ lực xây dựng những buổi chụp ảnh kỷ yếu nhiều tương tác giữa các thành viên bằng các trò chơi tập thể vui nhộn. Bên cạnh đó, sự dí dỏm, nhanh chí của các Photographer cũng giúp buổi chụp ảnh giảm bớt căng thẳng, gượng gạo. Từ đó, các bạn sẽ tự tin hơn khi đứng trước ống kính máy ảnh, tự do và thoải mái tạo hình.</p>
+           <div class="gttach__footer--heading"><p>Thông tin liên hệ</p></div>
+        
+        <div class="gttach__footer">
+            <div class="gttach__footer--col1">
+                <img src="./assets/img/BandoUEL1 (1).jpg" alt="">
+            </div>
+            <div class="gttach__footer--col2">
+               <span class="gttach__footer--col2heading">Địa chỉ:</span> 669 Quốc lộ 1, Khu phố 3, Phường Linh Xuân, Quận Thủ Đức, thành phố Hồ Chí Minh<br>
+              <span class="gttach__footer--col2heading">Số điện thoại:</span> 0321668138<br>
+               <span class="gttach__footer--col2heading"> Email:</span>tachstudio@gmail.com     
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+//css Giới thiệu Tách
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap');
+
+.gttach__header{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: bold
+}
+.gttach--images{
+    margin-top: 24px;
+    max-width: 100%;
+    height: auto;
+}
+   
+.gttach__mainpage{
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.gttach__footer--heading{
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: bold;
+
+}
+.gttach__footer{
+    display: flex;
+
+}
+.gttach__footer--col1{
+    width: 50%;
+    text-align: right;
+    margin-right: 10px;
+    max-width: 100%;
+    height: auto;
+}
+.gttach__footer--col2{
+    width: 50%;
+    text-align: left;
+    margin-left: 50px;
+    padding-top: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+.gttach__footer--col2heading{
+    font-weight: bold;
+}
+.gttach__mainpage--text{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 1280px){
+    .gttach__header{
+        font-size: 24px;
+    }
+    .gttach__footer--heading{
+        font-size: 24px;
+    }
+    .gttach__footer--col2{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 1110px){
+    .gttach__header{
+        font-size: 24px;
+    }
+    .gttach__footer--heading{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 980px){
+    .gttach__header{
+        font-size: 20px;
+    }
+    .gttach__mainpage--text{
+        font-size: 18px;
+    }
+    .gttach__mainpage{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .gttach__footer--heading{
+        font-size: 20px;
+    }
+    .gttach__footer--col2{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 870px){
+    .gttach__header{
+        font-size: 18px;
+    }
+    .gttach__mainpage--text{
+        font-size: 18px;
+    }
+    .gttach__mainpage{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .gttach__footer--heading{
+        font-size: 18px;
+    }
+    .gttach__footer--col2{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 768px){
+    .gttach__header{
+        font-size: 16px;
+    }
+    .gttach__mainpage--text{
+        font-size: 16px;
+    }
+    .gttach__mainpage{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .gttach__footer--heading{
+        font-size: 16px;
+    }
+    .gttach__footer--col2{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 700px){
+    .gttach__header{
+        font-size: 14px;
+    }
+    .gttach__mainpage--text{
+        font-size: 14px;
+    }
+    .gttach__mainpage{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .gttach__footer--heading{
+        font-size: 14px;
+    }
+    .gttach__footer--col2{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 660px){
+    .gttach__header{
+        font-size: 14px;
+    }
+    .gttach__mainpage--text{
+        font-size: 14px;
+    }
+    .gttach__mainpage{
+        padding-left: 20px;
+        padding-right: 20px;
+    } 
+    .gttach__footer--heading{
+        font-size: 14px;
+    }
+    .gttach__footer--col2{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 540px){
+    .gttach__header{
+        font-size: 12px;
+    }
+    .gttach__mainpage--text{
+        font-size: 12px;
+    }
+    .gttach__mainpage{
+        padding-left: 10px;
+        padding-right: 10px;
+    } 
+    .gttach__footer--heading{
+        font-size: 12px;
+    }
+    .gttach__footer--col2{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 500px){
+    .gttach__header{
+        font-size: 10px;
+    }
+    .gttach__mainpage--text{
+        font-size: 10px;
+    }
+    .gttach__mainpage{
+        padding-left: 0px;
+        padding-right: 0px;
+    } 
+    .gttach__footer--heading{
+        font-size: 10px;
+    }
+    .gttach__footer--col2{
+        font-size: 10px;
+    }
+}
+
+
+
+// html chụp ảnh bé
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHỤP BÉ THEO TỪNG ĐỘ TUỔI</title>
+    <link rel="stylesheet" href="./assets/css/Chupanhbe.css">
+</head>
+<body>
+    <div class="chupanhbe__header">
+    <p> CHỤP BÉ THEO TỪNG ĐỘ TUỔI</p>
+    </div>
+    <div class="chupanhbe__mainpage">
+        <p class="chupanhbe__mainpage--heading"> 1. GIAI ĐOẠN SƠ SINH</p>
+            <p class="chupanhbe__mainpage--text">Bạn nên chụp ảnh càng sớm càng tốt! Khung thời gian tốt nhất là trong vòng 7-10 ngày đầu tiên. Bạn sẽ không tin rằng có bao nhiêu đứa trẻ thay đổi chỉ trong một tháng và những khoảnh khắc khi bé mới sinh này được ghi lại hoàn toàn xứng đáng với thời gian và công sức!</p>
+            <div class="chupanhbe__mainpage--images">
+            <img src="./assets/img/anhbe1.jpg" alt="">
+            </div>
+            <p class="chupanhbe__mainpage--text">Trước tiên, bạn sẽ muốn có được tất cả các chi tiết bé nhỏ của em bé sơ sinh. Để làm điều này, hãy chụp cận cảnh mặt, tai, mũi, miệng, má, cũng như bàn tay của bé, lưng và bàn chân.</p>
+            <div class="chupanhbe__mainpage--images">
+            <img src="./assets/img/anhbe2.1.jpg" alt=""></div>
+            <p class="chupanhbe__mainpage--text">Thứ hai, tập trung vào những khoảnh khắc hàng ngày. Mặc dù những khoảnh khắc này có vẻ tẻ nhạt và nhàm chán bây giờ nhưng bạn sẽ thích thú khi có thể nhìn lại chúng sau này!</p>
+            <p class="chupanhbe__mainpage--text">Cuối cùng, hãy kiên nhẫn và dành thời gian 1-2 giờ của lần chụp để giúp em bé thoải mái, yên tĩnh hoặc ngủ ngoan.</p>
+            <p class="chupanhbe__mainpage--heading" >2. CHỤP ẢNH Ở MỐC THỜI GIAN 6 THÁNG</p>
+            <p class="chupanhbe__mainpage--text">Tại thời điểm này bé đã ngồi dậy, cười, mỉm cười và thể hiện nhiều cảm xúc và đặc điểm cá tính khác! Tập trung vào chính xác điều đó! Bạn đã phải chờ đợi một chút trong 6 tháng qua, những đó là thời gian lý tưởng để có được hình ảnh khi bé có thể tự ngồi dậy.</p>
+            <div class="chupanhbe__mainpage--images">
+            <img src="./assets/img/anhbe3.jpg" alt=""></div>
+            <p class="chupanhbe__mainpage--text">Bạn có thể sử dụng một số đồ chơi để gây sự chú ý từ em bé và sự tương tác có cảm xúc hơn. Nắm bắt những khoảnh khắc đặc biệt khi em bé khám phá ra đồ chơi mới.</p>
+            <p class="chupanhbe__mainpage--text"> Hoặc đơn giản hơn bạn có thể tự làm “mặt xấu” hoặc hát những bài hát ngộ nghĩnh để tương tác cùng em bé.</p>
+           <p class="chupanhbe__mainpage--heading"> 3. MỐC 1 NĂM TUỔI</p>
+            <p class="chupanhbe__mainpage--text">Yay! Em bé của bạn được một tuổi. Tại thời điểm này, bé đang bò, đứng, và có thể đi bộ! “Anh ấy hay “cô ấy” thể hiện rất nhiều cá tính riêng và bạn sẽ muốn nắm bắt mốc quan trọng này!
+            </p>
+            <p class="chupanhbe__mainpage--text">Bạn có thể làm gì đó vui vẻ, tưng bừng,… phụ thuộc vào sở thích của bạn. Một số ý tưởng là: bóng bay, thú nhồi bông, đồ chơi yêu thích của bé, địa điểm yêu thích như công viên, phòng sinh hoạt chung,..
+            </p>
+            <div class="chupanhbe__mainpage--images">
+            <img src="./assets/img/anhbe4.jpg" alt=""></div>
+            <p class="chupanhbe__mainpage--text">Làm một điều gì đó quen thuộc và an ủi nếu bé không cảm thấy thoải mái. Hát những bài hát hoặc chơi một trò chơi sẽ giúp bạn có những phản ứng tuyệt vời từ bé trong các bức ảnh.</p>
+            <p class="chupanhbe__mainpage--heading"> 4. EM BÉ TỪ 18 THÁNG TUỔI TRỞ LÊN</p>
+            <p class="chupanhbe__mainpage--text">Sau sinh nhật đầu tiên của bé, bạn có thể tiếp tục các mốc quan trọng khác cách nhau khoảng 6 tháng cho đến khi bé tròn 3 tuổi. Cố gắng thay đổi góc chụp và hãy sáng tạo!
+            </p>
+            <p class="chupanhbe__mainpage--text">Đôi khi, một bé khác chào đời trong khoảng thời gian này. Khi đó bạn có thể bắt đầu lại toàn bộ một cuộc hành trình đẹp và tuyệt vời trong đó có nhân vật chính là bé và em.
+            </p>
+            <div class="chupanhbe__mainpage--images">
+            <img src="./assets/img/anhbe5.jpg" alt=""></div>
+            <p class="chupanhbe__mainpage--text">Để làm như vậy, chỉ cần lặp lại các bước trên và thêm ảnh anh chị em vào từng bước.</p>
+    </div>
+</body>
+</html>
+
+//css Chụp ảnh bé
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap');
+.chupanhbe__header{
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.chupanhbe__mainpage{
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.chupanhbe__mainpage--images{
+    text-align: center;
+}
+.chupanhbe__mainpage--text{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.chupanhbe__mainpage--heading{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+@media screen and (max-width: 1280px){
+    .chupanhbe__header{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 1110px){
+    .chupanhbe__header{
+        font-size: 24px;
+    }
+    .chupanhbe__mainpage{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+@media screen and (max-width: 980px){
+    .chupanhbe__header{
+        font-size: 20px;
+    }
+    .chupanhbe__mainpage{
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 870px){
+    .chupanhbe__header{
+        font-size: 18px;
+    }
+    .chupanhbe__mainpage{
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 768px){
+    .chupanhbe__header{
+        font-size: 16px;
+    } 
+    .chupanhbe__mainpage{
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 700px){
+    .chupanhbe__header{
+        font-size: 14px;
+    } 
+    .chupanhbe__mainpage{
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 660px){
+    .chupanhbe__header{
+        font-size: 14px;
+    } 
+    .chupanhbe__mainpage{
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 540px){
+    .chupanhbe__header{
+        font-size: 12px;
+    } 
+    .chupanhbe__mainpage{
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 500px){
+    .chupanhbe__header{
+        font-size: 10px;
+    } 
+    .chupanhbe__mainpage{
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 10px;
+    }
+}
