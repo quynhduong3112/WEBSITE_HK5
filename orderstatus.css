@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* muốn gọi font thì: font-family: 'Roboto', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+/* muốn gọi font thì: font-family: 'Montserrat', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap');
+/* muốn gọi font thì: font-family: 'Racing Sans One', cursive; */
+body,html{
+    margin: 0;
+    padding: 0;
+}
+.website{
+    background-color: black;
+}
+svg{
+    margin-top: 13px;
+}
+.font__size{
+
+    font-weight:normal;
+    font-size: 18px;
+    }
+
+
+
+/* CSS body */
+.container{
+    background-color:black;
+    margin: 0;
+}
+.align{
+    height: 5em;
+}
+.datthue__flex{
+    display: flex;
+    margin-top: 3%;
+    justify-content: center;
+    margin-bottom: 8%;
+}
+.datthue__profile{
+    display: flex;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+.datthue--left{
+    margin-left: 0%;
+    width: 35%;
+    border: rgba(167, 167, 167, 1) solid 1px;
+    border-radius: 5px;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.datthue--name{
+    margin-left: 4%;
+}
+.img{
+    border-radius: 50%;
+    width: 80px;
+    height: 79.84px;
+}
+.name{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+}
+.font__size{
+
+font-weight:normal;
+font-size: 18px;
+}
+.datthue__bottom{
+    margin-top: 5%;
+    margin-left: 18%;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+.datthue--item{
+    margin-bottom: 10px;
+}
+h2{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: white;
+}
+.bold{
+    font-weight: bold;
+}
+.color--red{
+    color: red;
+}
+.color--green{
+    color: green;
+}
+
+.center{
+    text-align: center;
+    color: white;
+}
+.datthue--right{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-left: 3%;
+    width: 100%;
+    margin-right: 0%;
+    font-size: 18px;
+    color: rgba(36, 36, 38, 1);
+
+}
+
+.block{
+    display: block;
+    background-color: inherit;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 5px 5px 0px 0px;
+}
+.block--user--r1{
+    display: block;
+    background-color: inherit;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    border-radius: 5px 5px 0 0;
+}
+.tab--item{
+    display: inline-block;
+    flex: 1 1 auto;
+    width: fit-content;
+    text-align: center;
+}
+.flex--container--tab{
+    display: flex;
+    justify-content: flex-around;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.flex--container{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.order--date{
+    flex: 1 1 25%;
+}
+.order--name{
+    flex: 1 1 40%;
+}
+.order--status{
+    flex: 1 1 30%;
+}
+.block__item--content{
+    padding-left: 3em;
+    border-bottom: 1px solid #c4c4c4;
+    border-radius: 0;
+    
+}
+.block__item--title{
+    padding-left: 3em;
+    border-bottom: 2px solid #c4c4c4;
+    border-radius: 0px;
+}
+.block__item--tab{
+    border-bottom: 3px solid #c4c4c4;
+}
+.block--more{
+    text-align: center;
+}
+
+.flex--container--col{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+.icon{
+    height: 0.8em;
+    margin-right: 0.3em;
+}
+.flex--menu{
+    display: flex;
+}
+.block__item--content:hover, .datthue--item:hover{
+    background-color: gainsboro;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) 
+{
+    
+    .datthue--right{
+        font-family: 'Roboto', sans-serif;
+        font-size: 10px;        
+    }
+    svg{
+        margin-top: 13px;
+        width: 120px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 7px;
+    }
+    .datthue__profile{
+        flex-direction: column;
+        margin-bottom: -15px;
+    }
+    .img{
+        border-radius: 300px;
+        width: 60px;
+        height: 60px;
+        margin-left: 20%;
+    }      
+   .name{
+       font-size: 15px;
+       margin-left: 25%;
+       margin-bottom: 5px;
+   }
+   .font__size{
+       font-size: 10px;
+       margin-left: 7%;
+   }
+   .datthue__bottom{
+       margin-top: -5px;
+   }
+   .datthue--item{
+       font-size: 10px;
+       margin-left: -5%;
+   }
+   .title{
+       font-size: 15px;
+   }
+   .align{
+    height: 2em;
+}
+    .center{
+        font-size: 20px;
+    }
+   
+}
+@media only screen and (min-width: 600px) {
+    
+    .datthue--right{
+        font-size: 15px;        
+    }
+    svg{
+        justify-content: center;
+        margin-top: 13px;
+        width: 160px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 7px;
+    }
+    .datthue__profile{
+        flex-direction: column;
+        margin-bottom: -15px;
+    }
+    .img{
+        border-radius: 300px;
+        width: 60px;
+        height: 60px;
+        margin-left: 30%;
+    }      
+   .name{
+       font-size: 15px;
+       margin-left: 32%;
+       margin-bottom: 5px;
+   }
+   .font__size{
+       font-size: 13px;
+       margin-left: 13%;
+   }
+   .datthue__bottom{
+       margin-top: -5px;
+   }
+   .datthue--item{
+       font-size: 13px;
+       margin-left: 0%;
+   }
+   .title{
+       font-size: 15px;
+   }
+}
+@media only screen and (min-width: 768px) {
+   
+    .datthue--right{
+        font-size: 15px;        
+    }
+    svg{
+        margin-top: 13px;
+        width: 210px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 7px;
+    }
+
+    .datthue__profile{
+        flex-direction: column;
+        margin-bottom: -15px;
+    }
+    .img{
+        border-radius: 300px;
+        width: 50px;
+        height: 50px;
+        margin-left: 35%;
+    }      
+   .name{
+       font-size: 17px;
+       margin-left: 32%;
+       margin-bottom: 5px;
+   }
+   .font__size{
+       font-size: 15px;
+       margin-left: 10%;
+   }
+   .datthue--item{
+       font-size: 15px;
+   }
+   .title{
+       font-size: 15px;
+   }
+   
+
+}
+@media screen and (min-width: 992px){
+    .datthue--right{
+        font-size: 15px;        
+    }
+
+    svg{
+        margin-top: 13px;
+        width: 285px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 7px;
+    }
+
+    .datthue__profile{
+        flex-direction: column;
+        margin-bottom: -15px;
+    }
+    .img{
+        border-radius: 300px;
+        width: 60px;
+        height: 60px;
+        margin-left: 35%;
+    }      
+   .name{
+       font-size: 17px;
+       margin-left: 35%;
+       margin-bottom: 5px;
+   }
+   .font__size{
+       font-size: 15px;
+       margin-left: 17%;
+   }
+   .datthue__bottom{
+       margin-top: -5px;
+   }
+   .datthue--item{
+       font-size: 15px;
+       margin-left: 7%;
+   }
+   .title{
+       font-size: 15px;
+   }
+   
+    
+}
+
+@media screen and (min-width: 1200px){
+    
+    .datthue--right{
+        font-size: 20px;
+    }
+
+    svg{
+        margin-top: 13px;
+        width: 340px;
+        height: 6px ;
+    }
+
+    .icon{
+        padding-top: 15px;
+    }
+
+    .datthue__profile{
+        flex-direction: row;
+        margin-bottom: 5px;
+        margin-left: 4%;
+    }
+    .img{
+        border-radius: 300px;
+        width: 80px;
+        height: 79.84px;
+        margin-left: 0%;
+    }      
+   .name{
+       font-size: 22px;
+       margin-left: 0%;
+       margin-bottom: 5px;
+   }
+   .font__size{
+       font-size: 20px;
+       margin-left: 0%;
+   }
+   .datthue--name{
+       margin-top: 10px;
+   }
+   .datthue--item{
+       font-size: 20px;
+       margin-left: 3%;
+   }
+  
+   .title{
+       font-size: 20px;
+   }
+}

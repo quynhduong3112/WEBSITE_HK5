@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đơn hàng</title>
     <style>
-        @import url(./CSS/prj.css);
+        @import url(./CSS/orderstatus.css);
     </style>
+    <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="../IMAGES/ICONS/fontawesome-free-5.15.4-web/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
@@ -18,24 +19,30 @@
 
 
         <!-- header -->
-        <div id="page__header--container">
-            <ul class="page__header--text">
-                <li><a href="#">Tách Studio</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
-                <li><a href="#">Cho thuê</a>
-                    <ul>
-                        <li><a href="#" style="color: black;">Máy ảnh</a></li>
-                        <li><a href="#" style="color: black;">Studio</a></li>
-                        <li><a href="#" style="color: black;">Trang phục</a></li>
-                    </ul>
-                </li>
-                <li><a href="#album">Album</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#"> <span class="glyphicon glyphicon-search header__icon"></span> <input type="text"
-                            placeholder="Nhập từ tìm kiếm">
-                    </a></li>
-                <li><a href="#"><img src="../IMAGES/profile 2.png" alt="" class="header__img"></a></li>
-            </ul>
+        <div class="Page__Header--Container">
+            <div class="Page__Header--Tach">Tách studio</div>
+    
+            <div class="Page__Header--Title"><i class="glyphicon glyphicon-home"></i></div>
+    
+            <div class="Page__Header--Title Page__Header--Dropdown">
+                Cho thuê
+                <div class="dropdown-content">
+                    <a href="#">Máy ảnh</a>
+                    <a href="#">Studio</a>
+                    <a href="#">Trang phục</a>
+                </div>
+            </div>
+    
+            <div class="Page__Header--Title" id="color"><a href="#album">Album</a></div>
+    
+            <div class="Page__Header--Title">Blog</div>
+    
+            <div class="Page__Header--Icon">
+                <span class="glyphicon glyphicon-search Page__Header--Icon2"></span>
+                <input class="Page__Header--Search" type="text" placeholder="Nhập từ tìm kiếm">
+            </div>
+    
+            <div class="Page__Header--Ava"><img src="../IMAGES/profile.png" alt=""></div>
         </div>
         <div class="container">
             <div class="align"></div>
@@ -174,7 +181,7 @@
                 </p>
                 <p>Copyright @2021 Tách Creative Studio</p>
             </div>
-
+    
             <div class="footer--right">
                 <p class="footer__header">LIÊN HỆ VỚI CHÚNG TÔI</p>
                 <p> <img src="../IMAGES/footer-fb.png" alt=""> Tách studio</p>
