@@ -6,14 +6,188 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap');
 /* muốn gọi font thì: font-family: 'Racing Sans One', cursive; */
-body{
+body,html{
+    margin: 0;
+    padding: 0;
+}
+.website{
     background-color: black;
+}
+svg{
+    margin-top: 13px;
+}
+.font__size{
+
+    font-weight:normal;
+    font-size: 18px;
+    }
+/* CSS header */
+.page__header--text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.page__header--text li:nth-of-type(1){
+    font-family: 'Racing Sans One', cursive;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.page__header--text li input{
+    font-size: 16px;
+    font-weight: normal;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 40px;
+    color: black;
+    width: 100vw;
+}
+
+.page__text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+#page__header--container{
+    width: 100vw;
+    height: 112px;
+    background: #242426;
+    float: left;   
+    position: fixed;
+    z-index: 3;
+    line-height: 112px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10%;
+}
+
+#page__header--container ul{
+    float: left;
+    list-style: none;
+    width: 100%;
+}
+
+#page__header--container ul li{
+    position: relative;
+    float: left;
+    margin-left: 6%;
+}
+
+#page__header--container ul li a{ 
+    display: block;
     color: white;
-    margin: 0px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#page__header--container ul li a:hover{
+    color: black;
+    background: white;
+    font-weight: bold;
+}
+
+#page__header--container ul li:nth-of-type(6) a:hover{
+    color: none;
+    background: none;
+    cursor: default;
+}
+
+#page__header--container li ul{
+    position: absolute;
+    display: none;
+    width: 10em;
+}
+
+#page__header--container li:hover ul{
+    display: block;
+}
+#page__header--container ul li ul li{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    width: 150px;
+    height: 70px;
+    border-top: 1px solid black;
+    background-color: white;
+    text-align: center;
+    line-height: 70px;
+    position: relative;
+    left: -5px;
+}
+.header__icon{
+    left: 37px;
+    color: black;
+}
+.header__img{
+    width: 50px;
+    height: 50px;
+    border-radius: 300px;
+    margin-right: 110px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+
+/* CSS body */
+.container{
+    background-color:black;
+    margin: 0;
+}
+.align{
+    height: 150px;
+}
+.datthue__flex{
+    display: flex;
+    margin-top: 3%;
+    justify-content: center;
+    margin-bottom: 8%;
+}
+.datthue__profile{
+    display: flex;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+.datthue--left{
+    margin-left: 0%;
+    width: 35%;
+    border: rgba(167, 167, 167, 1) solid 1px;
+    border-radius: 5px;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.datthue--name{
+    margin-left: 4%;
+}
+.img{
+    border-radius: 50%;
+    width: 80px;
+    height: 79.84px;
+}
+.name{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+}
+.font__size{
+
+font-weight:normal;
+font-size: 18px;
+}
+.datthue__bottom{
+    margin-top: 5%;
+    margin-left: 18%;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+.datthue--item{
+    margin-bottom: 10px;
 }
 h2{
     font-family: 'Montserrat';
     font-weight: bold;
+    color: white;
 }
 .bold{
     font-weight: bold;
@@ -27,20 +201,34 @@ h2{
 
 .center{
     text-align: center;
+    color: white;
 }
-.container--order{
+.datthue--right{
     display: flex;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
-    color: black;
-    flex-grow: 3;
-    margin-right: 25px;
+    border-radius: 5px;
+    margin-left: 3%;
+    width: 100%;
+    margin-right: 0%;
+    font-size: 18px;
+    color: rgba(36, 36, 38, 1);
+
 }
+
 .block{
     display: block;
     background-color: inherit;
     padding-top: 16px;
     padding-bottom: 16px;
+    border-radius: 5px;
+}
+.block--user--r1{
+    display: block;
+    background-color: inherit;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    border-radius: 5px 5px 0 0;
 }
 .tab--item{
     display: inline-block;
@@ -61,13 +249,7 @@ a{
     justify-content: flex-start;
     
 }
-.flex--container--user{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    
-}
+
 .order--date{
     flex: 1 1 25%;
 }
@@ -78,197 +260,642 @@ a{
     flex: 1 1 30%;
 }
 .block__item--content{
-    padding-left: 58px;
-    border-bottom: 2px solid #c4c4c4;
+    padding-left: 3em;
+    border-bottom: 1px solid #c4c4c4;
     
 }
 .block__item--title{
-    padding-left: 58px;
-    border-bottom: 3px solid #c4c4c4;
+    padding-left: 3em;
+    border-bottom: 2px solid #c4c4c4;
 }
 .block__item--tab{
-    border-bottom: 4px solid #c4c4c4;
+    border-bottom: 3px solid #c4c4c4;
 }
 .block--more{
     text-align: center;
 }
-.container--body{
-    display: flex;
-    justify-content: space-around;
-    font-family: 'Roboto';
-    align-items: flex-start;
 
-}
-.container--user{
-    background-color: white;
-    color: black;
-    flex-grow: 1;
-    margin-left: 2em;
-    margin-right: 1em;
-    flex-basis: 5em;
-    padding-left: 1em;
-    height: 400px;
-}
-.flex--container--left{
-    vertical-align: middle;
-    width: 3.2em;
-    padding-right: 15px;
-
-}
-#profile{
-    width: 3.5em;
-    border-radius: 50%;
-}
-#edit{
-    width: 18px;
-    height: auto;
-}
-#username{
-    font-family: 'Montserrat';
-    font-weight: bold;
-    position: relative;
-    top: 13px;
-}
 .flex--container--col{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     
 }
-.block--user--r1{
-    border-bottom: 2px solid #c4c4c4;
-}
 .icon{
-    height: 18px;
-    margin-right: 10px;
+    height: 0.8em;
+    margin-right: 0.3em;
 }
 .flex--menu{
     display: flex;
 }
-.block--user{
-    display: block;
-    padding: 8px;
+.block__item--content:hover{
+    background-color: gainsboro;
+}
+
+/* CSS footer */
+.page__footer--container {
+    display: flex;
+    background-color: #242426;
+    color: white;
+    height: 250px;
+    width: 100vw;
+    padding-top: 50px;
+}
+.footer__text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+.footer__header{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+.footer--left {
+    flex: 20%;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.footer--right {
+    flex: -5%;
+    text-align: left;
+    margin-right: 50px;
+}
+
+.footer--right p img{
+    height: 25px;
+    margin-right: 5px;
 }
 
 
-/* CSS header */
-
-.header{
-    height: 112px;
-    background-color: rgba(36, 36, 38, 1);
-    width: 100%;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+@media only screen and (max-width: 600px) 
+{
+    .page__header--text{
+        font-size: 10px;
+    }
+    
+    .page__header--text li:nth-of-type(1){
+        font-size: 15px;
+    }
+    
+    #page__header--container ul li{
+        margin-left: 2%;
+    }
+    
+    .page__header--text li input{
+        font-size: 8px;
+        height: 20px;
+        width: 100px;
+        padding-left: 18px;
+    }
+    
+    #page__header--container ul li ul li{
+        font-size: 8px;
+        width: 60px;
+        height: 30px;
+        line-height: 30px;
+        left: -25px;
+    }
+    
+    .header__icon{
+        left: 20px;
     }
     .header__img{
-    width: 45px;
-    height: 45px;
-    border-radius: 300px;
-    margin-right: 110px;
-    
-    }
-    .header__navbar--item--font{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-    }
-    /* Bỏ dấu chấm đầu link */
-    .header__navbar--list{
-    list-style: none;
-    
-    display: flex;
-    justify-content: space-between;
-    }
-    .header__navbar--item{
-    
-    margin-top: 33px;}
-    /* display: flex;
-    justify-content: space-between; /
-    }
-    / .header__navbar--item--1{
-    font-size: 35px;
-    padding-left: 10px;
-    margin-right: 5px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-    } */
-    .search{
-    position: relative;
-    }
-    .input{
-    padding-left: 45px;
-    }
-    .header__navbar--icons.fa-search{
-    position: absolute;
-    left: 15px;
-    top:15px;
-    color: black;
-    }
-    .input{
-    border-radius: 10px;
-    height: 37px;
-    width: 280px;
-    }
-    .header__navbar--item,
-    .header__navbar--item--link,
-    .header__navbar--icons--link{
-    height: 37px;
-    }
-    .header__navbar--item,.header__navbar--item--link{
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 37px;
-    }
-    .header__navbar--item--link:hover,
-    .header__navbar--icons--link:hover
-    {
-    cursor: pointer;
-    color: blue;
-    }
-    .header__navbar--item--nocursor:hover{
-    cursor: none;
-    
-    }
-    .header__navbar--icons--link{
-    color: white;
-    }
-    .header__navbar--icons{
-    text-align: center;
-    
-    }
-    .name-studio{
-    font-family: Racing Sans One;
-    font-style:italic;
-    font-weight: normal;
-    font-size: 35px;
-    line-height: 44px;
-    }
-
-    /* CSS footer */
-    .contact {
-        display: flex;
+        flex-wrap: nowrap;
         flex-direction: row;
-        justify-content: space-between;
-        margin: 40px 0px 0px 0px;
-        background-color: #242426;
-        padding-left: 46px;
-        padding-right: 46px;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        font-family: 'Roboto';
-    }
-    .title{
-        font-family: 'Montserrat';
-        font-weight: bold;
+        margin-right: 5px;
+        width: 40px;
+        height: 40px;
+        border-radius: 300px;
 
     }
-    .block__item--content:hover{
-        background-color: rgb(194, 194, 194);
+    .datthue--right{
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;        
     }
-    .header__navbar--list{
-        margin-bottom: 50px;
-        margin-top: 0;
-        background-color: #242424;
+    svg{
+        margin-top: 13px;
+        width: 120px;
+        height: 6px ;
     }
+    .icon{
+        padding-top: 7px;
+    }
+    .datthue__profile{
+        flex-direction: column;
+        margin-bottom: -15px;
+    }
+    .img{
+        border-radius: 300px;
+        width: 60px;
+        height: 60px;
+        margin-left: 20%;
+    }      
+   .name{
+       font-size: 15px;
+       margin-left: 25%;
+       margin-bottom: 5px;
+   }
+   .font__size{
+       font-size: 10px;
+       margin-left: 7%;
+   }
+   .datthue__bottom{
+       margin-top: -5px;
+   }
+   .datthue--item{
+       font-size: 10px;
+       margin-left: -5%;
+   }
+   .title{
+       font-size: 15px;
+   }
+   .footer__header{
+    font-size: 14px;
+    }
+
+    .footer__text{
+        font-size: 10px;
+    }
+
+    .footer--right p img{
+        height: 15px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .page__header--text{
+        font-size: 12px;
+    }
+    
+    .page__header--text li:nth-of-type(1){
+        font-size: 15px;
+    }
+    
+    #page__header--container ul li{
+        margin-left: 3.5%;
+    }
+    
+    .page__header--text li input{
+        font-size: 8px;
+        height: 25px;
+        width: 100px;
+        padding-left: 18px;
+    }
+    
+    #page__header--container ul li ul li{
+        font-size: 8px;
+        width: 60px;
+        height: 30px;
+        line-height: 30px;
+        left: -25px;
+    }
+    
+    .header__icon{
+        left: 20px;
+    }
+    .footer__header{
+        font-size: 14px;
+    }
+
+    .footer__text{
+        font-size: 10px;
+    }
+
+    .footer--right p img{
+        height: 15px;
+    }
+    
+    .header__img{
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin-right: 5px;
+        width: 40px;
+        height: 40px;
+        border-radius: 300px;
+
+    }
+    .datthue--right{
+        font-size: 15px;        
+    }
+    svg{
+        justify-content: center;
+        margin-top: 13px;
+        width: 160px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 7px;
+    }
+    .datthue__profile{
+        flex-direction: column;
+        margin-bottom: -15px;
+    }
+    .img{
+        border-radius: 300px;
+        width: 60px;
+        height: 60px;
+        margin-left: 30%;
+    }      
+   .name{
+       font-size: 15px;
+       margin-left: 32%;
+       margin-bottom: 5px;
+   }
+   .font__size{
+       font-size: 13px;
+       margin-left: 13%;
+   }
+   .datthue__bottom{
+       margin-top: -5px;
+   }
+   .datthue--item{
+       font-size: 13px;
+       margin-left: 0%;
+   }
+   .title{
+       font-size: 15px;
+   }
+}
+@media only screen and (min-width: 768px) {
+    .page__header--text{
+        font-size: 15px;
+    }
+    
+    .page__header--text li:nth-of-type(1){
+        font-size: 17px;
+    }
+
+    #page__header--container ul li{
+        margin-left: 3.5%;
+    }
+
+    .page__header--text li input{
+        font-size: 12px;
+        height: 30px;
+        width: 150px;
+        padding-left: 30px;
+    }
+
+    #page__header--container ul li ul li{
+        font-size: 12px;
+        width: 80px;
+        height: 50px;
+        line-height: 50px;
+        left: -27px;
+    }
+    
+    .header__icon{
+        left: 28px;
+    }
+    .footer__header{
+        font-size: 14px;
+    }
+
+    .footer__text{
+        font-size: 10px;
+    }
+
+    .footer--right p img{
+        height: 15px;
+    }
+   .header__img{
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin-right: 5px;
+        width: 40px;
+        height: 40px;
+        border-radius: 300px;
+
+    }
+    .datthue--top{
+        margin-top: 150px;
+    }
+    .datthue__top--item--1{
+        font-size: 25px;
+    }
+    .datthue__input{
+        height: 25px;
+        width: 65%;
+        margin-bottom: 14px;
+        border-radius: 5px;
+        border: rgba(167, 167, 167, 1) solid 1px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 5%;
+    }
+    .datthue__input--GG{
+        margin-bottom: 10px;
+
+    }
+    .datthue__input--GG1{
+        width: 50%;
+        font-size: 16px;
+        margin-left: 12%;
+    }
+    .datthue__input--button2{
+        width: 50%;
+        font-size: 16px;
+        margin-left: -25%;
+    }
+    .datthue--right{
+        font-size: 15px;        
+    }
+    .datthue__select{
+        font-size: 12px;
+        height: 25px;
+        margin-left: 2%;
+        width: 35%;
+        margin-bottom: 10px;
+        padding-left: 5px;
+        padding-top: 3px;
+    }
+    
+    .datthue__label--2{
+        font-size: 15px;
+        width: 100%;
+    }
+    .datthue__label--1, .datthue__label--3, .datthue__label--4, .datthue__label--5, .datthue__label--6, .datthue__label--7, .datthue__label--8, .datthue__label--9, .datthue__label--10, .datthue__label--11, .datthue__label--12, .datthue__label--13{
+        width: 65%;
+    } 
+    
+    .nhapthongtin{
+        margin-left: 20%;
+    }
+    .datthue__right--item1, .datthue__right--item2, .datthue__right--item3, .datthue__right--item4, .datthue__right--item5, .datthue__right--item6, .datthue__right--item7, .datthue__right--item8, .datthue__right--item9, .datthue__right--item10, .datthue__right--item11, .datthue__right--item12{
+        flex-direction: column;
+    }
+    .bottom{
+        font-size: 12px;
+    }
+    .datthue--top{
+        font-size: 18px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    svg{
+        margin-top: 13px;
+        width: 210px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 7px;
+    }
+    .datthue__top--circle{
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+   
+    .datthue__top--circle--2{
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+    }
+    .datthue__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 13px;
+        line-height: 27px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-left: -10%;
+        margin-top: 0px;
+    }
+    .datthue__top--item--1{
+        font-size: 20px;
+    }
+    .datthue__profile{
+        flex-direction: column;
+        margin-bottom: -15px;
+    }
+    .img{
+        border-radius: 300px;
+        width: 50px;
+        height: 50px;
+        margin-left: 35%;
+    }      
+   .name{
+       font-size: 17px;
+       margin-left: 32%;
+       margin-bottom: 5px;
+   }
+   .font__size{
+       font-size: 15px;
+       margin-left: 10%;
+   }
+   .datthue__bottom{
+       margin-top: -5px;
+   }
+   .datthue--item{
+       font-size: 15px;
+   }
+   .title{
+       font-size: 15px;
+   }
+   
+
+}
+@media screen and (min-width: 992px){
+    .page__header--text{
+        font-size: 15px;
+    }
+    
+    .page__header--text li:nth-of-type(1){
+        font-size: 17px;
+    }
+
+    #page__header--container ul li{
+        margin-left: 6%;
+    }
+
+    .page__header--text li input{
+        font-size: 12px;
+        height: 30px;
+        width: 150px;
+        padding-left: 30px;
+    }
+
+    #page__header--container ul li ul li{
+        font-size: 12px;
+        width: 80px;
+        height: 50px;
+        line-height: 50px;
+        left: -27px;
+    }
+    
+    .header__icon{
+        left: 28px;
+    }
+    .footer__header{
+        font-size: 20px;
+    }
+
+    .footer__text{
+        font-size: 14px;
+    }
+
+    .footer--right p img{
+        height: 15px;
+    }
+   .header__img{
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin-right: 5px;
+        width: 40px;
+        height: 40px;
+        border-radius: 300px;
+
+    }
+    .datthue--right{
+        font-size: 15px;        
+    }
+
+    svg{
+        margin-top: 13px;
+        width: 285px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 7px;
+    }
+
+    .datthue__profile{
+        flex-direction: column;
+        margin-bottom: -15px;
+    }
+    .img{
+        border-radius: 300px;
+        width: 60px;
+        height: 60px;
+        margin-left: 35%;
+    }      
+   .name{
+       font-size: 17px;
+       margin-left: 35%;
+       margin-bottom: 5px;
+   }
+   .font__size{
+       font-size: 15px;
+       margin-left: 17%;
+   }
+   .datthue__bottom{
+       margin-top: -5px;
+   }
+   .datthue--item{
+       font-size: 15px;
+       margin-left: 7%;
+   }
+   .title{
+       font-size: 15px;
+   }
+   
+    
+}
+
+@media screen and (min-width: 1200px){
+        .page__header--text{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    
+    .page__header--text li:nth-of-type(1){
+        font-size: 18px;
+    }
+
+    #page__header--container ul li{
+        margin-left: 6.5%;
+    }
+
+    .page__header--text li input{
+        font-size: 12px;
+        height: 44px;
+        width: 160px;
+        padding-left: 30px;
+        border-radius: 10px;
+    }
+
+    #page__header--container ul li ul li{
+        font-size: 12px;
+        width: 80px;
+        height: 50px;
+        line-height: 50px;
+        left: -25px;
+    }
+    
+    .header__icon{
+        left: 35px;
+        top: 5px;
+    }
+    
+    .footer__text{
+        font-size: 14px;
+    }
+    
+    .footer__header{
+        font-size: 24px;
+    }
+    
+    .footer--right p img{
+        height: 25px;
+    }
+    .header__img{
+        width: 50px;
+        height: 50px;
+        border-radius: 300px;
+        margin-right: 0px;
+
+    } 
+    .datthue--right{
+        font-size: 20px;
+    }
+
+    svg{
+        margin-top: 13px;
+        width: 340px;
+        height: 6px ;
+    }
+
+    .icon{
+        padding-top: 15px;
+    }
+
+    .datthue__profile{
+        flex-direction: row;
+        margin-bottom: 5px;
+        margin-left: 4%;
+    }
+    .img{
+        border-radius: 300px;
+        width: 80px;
+        height: 79.84px;
+        margin-left: 0%;
+    }      
+   .name{
+       font-size: 22px;
+       margin-left: 0%;
+       margin-bottom: 5px;
+   }
+   .font__size{
+       font-size: 20px;
+       margin-left: 0%;
+   }
+   .datthue__bottom{
+       margin-top: -5px;
+   }
+   .datthue--name{
+       margin-top: 10px;
+   }
+   .datthue--item{
+       font-size: 20px;
+       margin-left: 3%;
+   }
+  
+   .title{
+       font-size: 20px;
+   }
+}
