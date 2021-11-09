@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap');
+
+.gttach__header{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: bold
+}
+.gttach--images{
+    margin-top: 24px;
+    max-width: 100%;
+    height: auto;
+}
+   
+.gttach__mainpage{
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.gttach__footer--heading{
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: bold;
+
+}
+.gttach__footer{
+    display: flex;
+
+}
+.gttach__footer--col1{
+    width: 50%;
+    text-align: right;
+    margin-right: 10px;
+    max-width: 100%;
+    height: auto;
+}
+.gttach__footer--col2{
+    width: 50%;
+    text-align: left;
+    margin-left: 50px;
+    padding-top: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+.gttach__footer--col2heading{
+    font-weight: bold;
+}
+.gttach__mainpage--text{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 1280px){
+    .gttach__header{
+        font-size: 24px;
+    }
+    .gttach__footer--heading{
+        font-size: 24px;
+    }
+    .gttach__footer--col2{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 1110px){
+    .gttach__header{
+        font-size: 24px;
+    }
+    .gttach__footer--heading{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 980px){
+    .gttach__header{
+        font-size: 20px;
+    }
+    .gttach__mainpage--text{
+        font-size: 18px;
+    }
+    .gttach__mainpage{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .gttach__footer--heading{
+        font-size: 20px;
+    }
+    .gttach__footer--col2{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 870px){
+    .gttach__header{
+        font-size: 18px;
+    }
+    .gttach__mainpage--text{
+        font-size: 18px;
+    }
+    .gttach__mainpage{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .gttach__footer--heading{
+        font-size: 18px;
+    }
+    .gttach__footer--col2{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 768px){
+    .gttach__header{
+        font-size: 16px;
+    }
+    .gttach__mainpage--text{
+        font-size: 16px;
+    }
+    .gttach__mainpage{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .gttach__footer--heading{
+        font-size: 16px;
+    }
+    .gttach__footer--col2{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 700px){
+    .gttach__header{
+        font-size: 14px;
+    }
+    .gttach__mainpage--text{
+        font-size: 14px;
+    }
+    .gttach__mainpage{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .gttach__footer--heading{
+        font-size: 14px;
+    }
+    .gttach__footer--col2{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 660px){
+    .gttach__header{
+        font-size: 14px;
+    }
+    .gttach__mainpage--text{
+        font-size: 14px;
+    }
+    .gttach__mainpage{
+        padding-left: 20px;
+        padding-right: 20px;
+    } 
+    .gttach__footer--heading{
+        font-size: 14px;
+    }
+    .gttach__footer--col2{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 540px){
+    .gttach__header{
+        font-size: 12px;
+    }
+    .gttach__mainpage--text{
+        font-size: 12px;
+    }
+    .gttach__mainpage{
+        padding-left: 10px;
+        padding-right: 10px;
+    } 
+    .gttach__footer--heading{
+        font-size: 12px;
+    }
+    .gttach__footer--col2{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 500px){
+    .gttach__header{
+        font-size: 10px;
+    }
+    .gttach__mainpage--text{
+        font-size: 10px;
+    }
+    .gttach__mainpage{
+        padding-left: 0px;
+        padding-right: 0px;
+    } 
+    .gttach__footer--heading{
+        font-size: 10px;
+    }
+    .gttach__footer--col2{
+        font-size: 10px;
+    }
+}
