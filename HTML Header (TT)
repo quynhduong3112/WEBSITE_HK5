@@ -1,0 +1,22 @@
+<div class="Page__Header--Container" id="myHeader">
+            <a href="" class="Page__Header--Tach">Tách studio</a>
+            <a href="" class="Page__Header--Title"><i class="glyphicon glyphicon-home"></i></a>
+                <div class="Page__Header--Title Page__Header--Dropdown">
+                    <button class="dropdown__button">Cho Thuê 
+                      <i class="glyphicon glyphicon-triangle-bottom"></i>
+                    </button>
+                    <div class="dropdown__content">
+                      <a href="">Máy ảnh</a>
+                      <a href="">Studio</a>
+                      <a href="">Trang phục</a>
+                    </div>
+                </div>
+            <a href="#album" class="Page__Header--Title">Album</a>
+            <a href="" class="Page__Header--Title">Blog</a>
+                <a href="" class="Page__Header--Icon">
+                    <span class="glyphicon glyphicon-search Page__Header--Icon2"></span>
+                    <input class="Page__Header--Search" type="text" placeholder="Nhập từ tìm kiếm">
+                </a>
+            <a href="" class="Page__Header--Title">Đăng nhập</a>
+            <a href="javascript:void(0);" class="header__button" onclick="myFunction()"><i class="glyphicon glyphicon-menu-hamburger"></i></a>
+        </div>
