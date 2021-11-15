@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="myHeader2" class="header__vertical">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div class="header__search">
+            <span class="glyphicon glyphicon-search Page__Header--Icon2"></span>
+            <input class="Page__Header--Search" type="text" placeholder="Nhập từ tìm kiếm">
+        </div>
+        <a href="" class="Page__Header--Title"><i class="glyphicon glyphicon-home"></i></a>
+        <button class="dropdown-btn">Cho Thuê</button>
+        <div class="dropdown-container">
+            <a href="">Máy ảnh</a>
+            <a href="">Studio</a>
+            <a href="">Trang phục</a>
+        </div>
+        <a href="">Album</a>
+        <a href="">Blog</a>
+    </div>
+    <div class="Page__Header--Container" id="myHeader">
+        <a href="javascript:void(0);" class="header__button" onclick="openNav()"><i
+                class="glyphicon glyphicon-menu-hamburger"></i></a>
+        <a href="" class="Page__Header--Tach">Tách studio</a>
+        <a href="" class="Page__Header--Title"><i class="glyphicon glyphicon-home"></i></a>
+        <div class="Page__Header--Title Page__Header--Dropdown">
+            <button class="dropdown__button">Cho Thuê</button>
+            <div class="dropdown__content">
+                <a href="">Máy ảnh</a>
+                <a href="">Studio</a>
+                <a href="">Trang phục</a>
+            </div>
+        </div>
+        <a href="" class="Page__Header--Title">Album</a>
+        <a href="" class="Page__Header--Title">Blog</a>
+        <div class="Page__Header--Icon">
+            <span class="glyphicon glyphicon-search Page__Header--Icon2"></span>
+            <input class="Page__Header--Search" type="text" placeholder="Nhập từ tìm kiếm">
+        </div>
+        <a href="" class="Page__Header--Login2"><img src="../Images/Avatar.png" alt=""></a>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("myHeader2").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("myHeader2").style.width = "0";
+        }
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

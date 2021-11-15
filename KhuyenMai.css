@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap');
+html, body{
+    margin: 0;
+    padding: 0;
+}
+.khuyenmai__container{
+    display: flex;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.khuyenmai__container--1{
+    border: 1px solid #a7a7a7;
+    margin-right: 16px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    flex: 15%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    max-height: 580px;
+}
+.khuyenmai__container--2{
+    display: flex;
+    flex-direction: column;
+    flex: 75%;
+}
+.khuyenmai__avatar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.khuyenmai__user--icon{
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    border-radius: 5px;
+}
+.khuyenmai__user--icon:hover{
+    background-color: black;
+    color: white;
+}
+.khuyenmai__title{
+    background-color: black;
+    color: white;
+    padding: 12px;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+.khuyenmai__title--left{
+    float: left;
+}
+.khuyenmai__title--right{
+    float: right;
+}
+.khuyenmai__card{
+    border: 1px solid #a7a7a7;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+}
+.khuyenmai__header--2{
+    display: flex;
+    flex-direction: row;
+    padding: 1px;
+}
+.khuyenmai__header2--title{
+    padding: 8px;
+}
+.khuyenmai__header2--title:hover{
+    border-bottom: 2px solid black;
+}
+.khuyenmai__dexuat--title{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.khuyenmai__dexuat--2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 4px;
+}
+.khuyenmai__dexuat--3{
+    flex:50%;
+    max-width: 50%;
+}
+.khuyenmai__tag{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #a7a7a7;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+.khuyenmai__tag--type{
+    flex:30%;
+    background-color: #3BB8C3;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+.khuyenmai__tag--type2{
+    flex:30%;
+    background-color: #FFC530;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+.khuyenmai__tag--content{
+    display: flex;
+    flex-direction: column;
+    flex: 70%;
+    padding: 8px;
+}
+.khuyenmai__tag--doidiem{
+    text-align: right;
+    color: red;
+}
+.khuyenmai__tag--diem{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    align-items: center;
+}
+.khuyenmai__tag--giam{
+    color: red;
+    border: 1px solid red;
+    border-radius: 4px;
+    padding: 3px;
+    margin-right: 10px;
+}
+.khuyenmai__tag--hsd{
+    color: gray;
+}
+.khuyenmai__tag--dk{
+    color: blue;
+    text-align: right;
+}
+@media only screen and (max-width: 600px){
+.khuyenmai__container--1{
+    display: none;
+}
+.khuyenmai__container--2{
+    flex: 100%;
+}
+.khuyenmai__dexuat--3{
+    flex: 100%;
+    max-width: 100%;
+}
+.khuyenmai__card{
+    border: none;
+    box-shadow: none;
+}
+.khuyenmai__title{
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.khuyenmai__header--2{
+    font-size: 14px;
+}
+.khuyenmai__dexuat--title{
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+.khuyenmai__tag{
+    font-size: 14px;
+}
+.khuyenmai__tag--type2{
+    padding-top: 12%;
+    padding-bottom: 12%;
+}
+.khuyenmai__tag--type{
+    padding-top: 12%;
+    padding-bottom: 12%;
+}
+}
+@media only screen and (min-width: 600px){
+.khuyenmai__container--1{
+    display: none;
+}
+.khuyenmai__container--2{
+    flex: 100%;
+}
+.khuyenmai__dexuat--3{
+    flex: 50%;
+    max-width: 50%;
+}
+.khuyenmai__card{
+    border: none;
+    box-shadow: none;
+}
+.khuyenmai__title{
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.khuyenmai__header--2{
+    font-size: 13px;
+}
+.khuyenmai__dexuat--title{
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+.khuyenmai__tag{
+    font-size: 12px;
+}
+.khuyenmai__tag--type2{
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+.khuyenmai__tag--type{
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+}
+@media only screen and (min-width: 768px){
+.khuyenmai__dexuat--3{
+    flex: 50%;
+    max-width: 50%;
+}
+.khuyenmai__title{
+    font-size: 15px;
+}
+.khuyenmai__header--2{
+    font-size: 14px;
+}
+.khuyenmai__dexuat--title{
+    font-size: 15px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+.khuyenmai__tag{
+    font-size: 13px;
+}
+.khuyenmai__tag--type2{
+    padding-top: 14.5%;
+    padding-bottom: 14.5%;
+}
+.khuyenmai__tag--type{
+    padding-top: 14.5%;
+    padding-bottom: 14.5%;
+}
+}
+@media only screen and (min-width: 992px){
+.khuyenmai__container--1{
+    display: flex;
+}
+.khuyenmai__container--2{
+    flex: 70%;
+}
+.khuyenmai__dexuat--3{
+    flex: 50%;
+    max-width: 50%;
+}
+.khuyenmai__card{
+    border: 1px solid #a7a7a7;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.khuyenmai__title{
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+.khuyenmai__header--2{
+    font-size: 16px;
+}
+.khuyenmai__dexuat--title{
+    font-size: 18px;
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+.khuyenmai__tag{
+    font-size: 15px;
+}
+.khuyenmai__tag--type2{
+    padding-top: 19%;
+    padding-bottom: 19%;
+}
+.khuyenmai__tag--type{
+    padding-top: 19%;
+    padding-bottom: 19%;
+}
+}
+@media only screen and (min-width: 1200px){
+    .khuyenmai__tag--type2{
+        padding-top: 14%;
+        padding-bottom: 14%;
+    }
+    .khuyenmai__tag--type{
+        padding-top: 14%;
+        padding-bottom: 14%;
+    }
+}
