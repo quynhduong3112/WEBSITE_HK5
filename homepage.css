@@ -1,316 +1,412 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap');
-
-body,html{
-    margin: 0;
-    padding: 0;
+body,
+html {
+  margin: 0;
+  padding: 0;
 }
 
-.home__header--banner{
-    position: relative;
-    height: auto;
-    width: 100vw;
+/* banner */
+
+.home__header--banner {
+  position: relative;
+  width: 100%;
 }
 
-.home__header--banner>img{
-    width: 100%;
-    height: auto;
+.home__header--banner img {
+  width: 100%;
+  height: auto;
 }
 
-.home__header--introduction{
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-evenly;
+/* introduction */
+
+.home__header--introduction {
+  margin-top: 100px;
+  display: flex;
 }
 
-.introduction--1{
-    border: 1px solid white;
-    padding: 30px;
+.introduction--1 {
+  border: 1px solid white;
+  padding: 30px;
 }
 
-.introduction--2 > img{
-    height: auto;
-    width: 100%;
+.introduction--2 img {
+  height: auto;
+  width: 100%;
 }
 
-.introduction--header{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    margin-bottom: 24px;
+.introduction--header {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-bottom: 24px;
 }
 
-.introduction--para{
-    font-family: 'Roboto', sans-serif;
+.introduction--para {
+  font-family: "Roboto", sans-serif;
 }
 
-.home__body--service, .home__body--album{
-    margin-top: 50px;
+/* service - album - space */
+
+.home__body--service,
+.home__body--album {
+  margin-top: 50px;
 }
 
-.body__header--1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    margin-bottom: 50px;
-    font-weight: bold;
-    text-align: center; 
+.home__body--space {
+  border: 1px solid white;
+  margin: 50px 5px;
+  padding: 20px 0px;
 }
 
-.body__service, .body__album, .body__space{
-    display: flex;
-    justify-content: space-evenly;
+.body__header--1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
-.body__album{
-    margin-top: 24px;
+.body__service,
+.body__album,
+.body__space {
+  display: flex;
 }
 
-.service__item, .space__item, .album__item{
-    position: relative;
-    text-align: center;
+.service__item,
+.space__item,
+.album__item {
+  position: relative;
+  text-align: center;
 }
 
-.service__item>img, .album__item>img{
-    opacity: 80%;
-    height: auto;
+.service__item img,
+.album__item img,
+.space__item img {
+  opacity: 80%;
+  height: auto;
 }
 
-.space__item>img{
-    border-radius: 20px;
-    opacity: 70%;
+.space__item img {
+  border-radius: 20px;
 }
 
-.album__item>div, .space__item>div, .service__item>div, .service__item>input{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+.album__item div,
+.space__item div,
+.service__item div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 
-.service__item>div{
-    top: 45%;
-    left: 50%;
+.service__item input {
+  border-radius: 5px;
+  color: white;
+  background-color: #f2c806;
+  border: none;
+  text-align: center;
+  cursor: pointer;
 }
 
-.service__item>input{
-    border-radius: 5px;
-    color: white;
-    background-color: #F2C806;
-    border: none;
-    text-align: center;
-    cursor: pointer;
+.body__space--more {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin-top: 30px;
 }
 
-.home__body--space{
-    border: 1px solid white;
-    margin: 50px 5px;
-    padding: 20px 0px;
+.body__space--more a:visited {
+  color: white;
 }
 
-.body__space--more{
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    margin-top: 30px;
+.body__color {
+  background-color: black;
+  color: white;
 }
 
-.body__space--more a:visited{
-    color: white;
+@media only screen and (max-width: 600px) {
+  .home__header--banner {
+    top: 25px;
+  }
+
+  .introduction--header {
+    font-size: 18px;
+  }
+
+  .introduction--1 {
+    margin: 0px 20px;
+  }
+
+  .introduction--2 {
+    display: none;
+  }
+
+  .album__item,
+  .service__item,
+  .space__item {
+    margin-bottom: 16px;
+  }
+
+  .album__item div,
+  .space__item div,
+  .service__item div {
+    font-size: 18px;
+  }
+
+  .service__item input {
+    width: 140px;
+    height: 24px;
+    line-height: 24px;
+  }
+
+  .body__service,
+  .body__space,
+  .body__album {
+    overflow: scroll;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+  }
+
+  .service__item img,
+  .album__item img,
+  .space__item img {
+    width: 400px;
+    margin: 0px 20px;
+  }
+
+  .scrollbar {
+    overflow-x: scroll;
+  }
+
+  #scrollbar--style::-webkit-scrollbar {
+    width: 20px;
+    height: 10px;
+  }
+
+  #scrollbar--style::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+  }
 }
 
-.body__color{
-    background-color: black;
-    color: white;
-}
-
-@media only screen and (max-width: 600px) { 
-    .home__header--banner{
-        top: 20px;
-    }
-
-    .home__header--introduction, .body__album, .body__service, .body__space{
-        flex-wrap: wrap;
-    }
-
-    .introduction--1, .introduction--2{
-        margin-right: 80px;
-        margin-left: 80px;
-        width: 90%;
-    }
-
-    .introduction--2{
-        margin-top: 24px;
-    }
-
-    .introduction--header{
-        font-size: 16px;
-    }
-
-    .introduction--para{
-        font-size: 12px;
-    }
-
-    h1{
-        font-size: 18px;
-    }
-
-    .album__item, .service__item, .space__item{
-        margin-bottom: 24px;
-    }
-
-    .album__item>img, .service__item>img, .space__item>img{
-        width: 70%;
-    }
-
-    .album__item>div, .space__item>div, .service__item>div, .service__item>input{
-        font-size: 15px;
-    }
-
-    .service__item>input{
-        top: 60%;
-        left: 50%;
-        width: 140px;
-        height: 24px;
-    }
-}
-  
 @media only screen and (min-width: 600px) {
-    .home__header--banner{
-        top: 30px;
-    }
+  .home__header--banner {
+    top: 30px;
+  }
 
-    .home__header--introduction, .body__album, .body__service, .body__space{
-        flex-wrap: wrap;
-    }
-    
-    .introduction--1, .introduction--2{
-        margin-right: 80px;
-        margin-left: 80px;
-        width: 90%;
-    }
+  .introduction--header {
+    font-size: 18px;
+  }
 
-    .introduction--2{
-        margin-top: 24px;
-    }
+  .home__header--introduction,
+  .body__album,
+  .body__service,
+  .body__space {
+    flex-wrap: wrap;
+  }
 
-    .album__item, .service__item, .space__item{
-        margin-bottom: 0px;
-    }
+  .introduction--1 {
+    margin: 0px 40px;
+  }
 
-    .album__item>img, .service__item>img, .space__item>img{
-        height: auto;
-        width: 170px;
-    }
+  .introduction--2 {
+    display: none;
+  }
 
-    .album__item>div, .space__item>div, .service__item>div, .service__item>input{
-        font-size: 11.5px;
-    }
+  .body__service,
+  .body__album,
+  .body__space {
+    overflow: hidden;
+    justify-content: space-evenly;
+  }
 
-    .service__item>input{
-        top: 70%;
-        left: 50%;
-        width: 100px;
-        height: 20px;
-    }
+  .album__item img,
+  .service__item img,
+  .space__item img {
+    width: 150px;
+  }
+
+  .album__item div,
+  .space__item div,
+  .service__item div {
+    font-size: 7px;
+  }
+
+  .service__item input {
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+  }
+
+  .album__item {
+    margin: 0px 20px 20px 20px;
+  }
 }
-  
+
 @media only screen and (min-width: 768px) {
-    .home__header--banner{
-        top: 35px;
-    }
+  .home__header--banner {
+    top: 40px;
+  }
 
-    .home__header--introduction, .body__album, .body__service, .body__space{
-        flex-wrap: wrap;
-    }
-    
-    .introduction--1, .introduction--2{
-        margin-right: 80px;
-        margin-left: 80px;
-        width: 90%;
-    }
+  .introduction--header {
+    font-size: 18px;
+  }
 
-    .introduction--2{
-        margin-top: 24px;
-    }
+  .home__header--introduction,
+  .body__album,
+  .body__service,
+  .body__space {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 
-    .album__item>img, .service__item>img, .space__item>img{
-        height: auto;
-        width: 220px;
-    }
-} 
+  .introduction--1 {
+    margin: 0px 50px;
+  }
+
+  .introduction--2 {
+    display: none;
+  }
+
+  .album__item img,
+  .service__item img,
+  .space__item img {
+    width: 220px;
+  }
+
+  .album__item {
+    margin: 15px;
+  }
+
+  .service__item input {
+    width: 90px;
+    height: 20px;
+    line-height: 20px;
+  }
+
+  .album__item div,
+  .space__item div,
+  .service__item div {
+    font-size: 10px;
+  }
+}
 
 @media only screen and (min-width: 992px) {
-    .home__header--banner{
-        top: 40px;
-    }
+  .home__header--banner {
+    top: 45px;
+  }
 
-    .album__item>img, .service__item>img, .space__item>img{
-        height: auto;
-        width: 270px;
-    } 
+  .introduction--1 {
+    margin: 0px 5px 0px 10px;
+  }
 
-    .introduction--2{
-        margin-top: 24px;
-    }
+  .introduction--2 {
+    display: block;
+    margin: 0px 10px 0px 5px;
+  }
 
-    .album__item>div, .space__item>div, .service__item>div, .service__item>input{
-        font-size: 12px;
-    }
+  .introduction--1,
+  .introduction--2 {
+    width: 45%;
+  }
 
-    .service__item>input{
-        top: 60%;
-        left: 50%;
-        width: 140px;
-        height: 24px;
-    }
-} 
-  
+  .introduction--header {
+    font-size: 14px;
+  }
+
+  .introduction--para {
+    font-size: 12px;
+  }
+
+  .album__item img,
+  .service__item img,
+  .space__item img {
+    width: 270px;
+  }
+
+  .album__item div,
+  .space__item div,
+  .service__item div {
+    font-size: 12px;
+  }
+
+  .service__item input {
+    width: 120px;
+    height: 22px;
+    line-height: 22px;
+  }
+
+  .body__service,
+  .body__album,
+  .body__space {
+    justify-content: space-evenly;
+  }
+
+  .album__item {
+    margin: 16px;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
-    .home__header--banner{
-        top: 50px;
-    }
+  .home__header--banner {
+    top: 50px;
+  }
 
-    .home__header--introduction{
-        flex-wrap: nowrap;
-    }
-    
-    .introduction--1, .introduction--2{
-        flex: 15%;
-    }
-    
-    .introduction--2 > img{
-        height: auto;
-        width: 100%;
-    }
+  .home__header--introduction {
+    flex-wrap: nowrap;
+  }
 
-    .introduction--header{
-        font-size: 18px;
-    }
+  .introduction--1 {
+    margin: 0px 25px 0px 50px;
+  }
 
-    .introduction--para{
-        font-size: 13px;
-    }
+  .introduction--2 {
+    display: block;
+    margin: 0px 50px 0px 25px;
+  }
 
-    .introduction--2{
-        margin-top: 0px;
-    }
+  .introduction--1,
+  .introduction--2 {
+    width: 90%;
+  }
 
-    .service__item>img, .album__item>img, .space__item>img{
-        width: 320px;
-    }
+  .introduction--header {
+    font-size: 20px;
+  }
 
-    .album__item>div, .space__item>div, .service__item>div, .service__item>input{
-        font-size: 15px;
-    }
+  .introduction--para {
+    font-size: 14px;
+  }
 
-    .service__item>input{
-        top: 60%;
-        left: 50%;
-        width: 140px;
-        height: 24px;
-    }
+  .service__item img,
+  .album__item img,
+  .space__item img {
+    width: 350px;
+  }
+
+  .album__item div,
+  .space__item div,
+  .service__item div {
+    font-size: 15px;
+  }
+
+  .service__item input {
+    width: 124px;
+    height: 24px;
+    line-height: 24px;
+  }
+
+  .body__service,
+  .body__album,
+  .body__space {
+    justify-content: space-evenly;
+  }
+
+  .album__item {
+    margin: 10px;
+  }
 }

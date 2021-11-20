@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap");
+
+.container {
+  max-width: 555px;
+  margin: auto;
+  padding-bottom: 24px;
+  border: 1px solid black;
+}
+
+.header {
+  height: 93px;
+  width: 100%;
+  background: black;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+.header__container {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  display: flex;
+  height: 141px;
+  width: 90%;
+}
+
+.header__item--1 {
+  position: relative;
+  width: 30%;
+}
+
+.header__item--1 p {
+  font-weight: bold;
+  position: absolute;
+  top: 37%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.header__item--2 {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: white;
+  width: 70%;
+  height: 100%;
+  position: relative;
+  left: 4px;
+  box-shadow: 2.5px 2px rgba(173, 173, 173, 0.2);
+}
+
+.item__container {
+  margin: 10px;
+  width: 100%;
+}
+
+.item__container > div p:first-child {
+  color: #ff0000;
+  border: 1px solid #ff0000;
+  padding: 4px 15px;
+  border-radius: 5px;
+  margin-right: 18px;
+}
+
+.item__container > div p:last-child {
+  margin-top: 24px;
+}
+
+.item--maxprice {
+  display: flex;
+  justify-content: center;
+}
+
+.item--hsd {
+  color: #a7a7a7;
+}
+
+.body__container {
+  margin: 100px 24px 20px 24px;
+}
+
+.body__container h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.body__container p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+.footer__button {
+  text-align: center;
+}
+
+.footer__button button {
+  width: 91%;
+  height: 35px;
+  background: black;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.body--point {
+  width: 271px;
+  height: 80px;
+  background: #3bb8c3;
+  color: white;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 80px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .item__container {
+    font-size: 17px;
+    margin-top: 18px;
+  }
+
+  .body__container h2,
+  .footer__button button {
+    font-size: 18px;
+  }
+
+  .body__container p {
+    font-size: 16px;
+  }
+}

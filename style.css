@@ -1,360 +1,363 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap");
 
-html, body{
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.Page__Header--Container{
-    background-color: #242426;
-    width: 100%;
-    max-height: 112px;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    position: fixed;
-    z-index: 1;
+.Page__Header--Container {
+  background-color: #242426;
+  width: 100%;
+  max-height: 112px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  position: fixed;
+  z-index: 1;
 }
 
-.Page__Header--Tach{ 
-    flex: 14.3%;
-    font-family: 'Racing Sans One', cursive;
-    font-weight: bold;
-    color: white;
+.Page__Header--Tach {
+  flex: 14.3%;
+  font-family: "Racing Sans One", cursive;
+  font-weight: bold;
+  color: white;
 }
 
-.Page__Header--Title{
-    flex: 14.3%;
-    color: white;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
+.Page__Header--Title {
+  flex: 14.3%;
+  color: white;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
 }
 
-.Page__Header--Title a:hover{
-    text-decoration: none;
+.Page__Header--Title a:hover {
+  text-decoration: none;
 }
 
-.Page__Header--Title:nth-of-type(4) a{
-    color: white;
+.Page__Header--Title:nth-of-type(4) a {
+  color: white;
 }
 
-.Page__Header--Container div:nth-of-type(4):hover a{
-    color: black;
-    background-color: white;
+.Page__Header--Container div:nth-of-type(4):hover a {
+  color: black;
+  background-color: white;
 }
 
-.Page__Header--Search{
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 80%;
+.Page__Header--Search {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 80%;
 }
 
-.Page__Header--Icon, .Page__Header--Ava{
-    flex: 14.3%;
+.Page__Header--Icon,
+.Page__Header--Ava {
+  flex: 14.3%;
 }
 
-.Page__Header--Icon2{
-    color: black;
+.Page__Header--Icon2 {
+  color: black;
 }
 
 .Page__Header--Dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
-  
+
 .dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    background-color: white;
-    z-index: 1;
-    width: 100%;
-    right: 0;
-    font-family: 'Roboto', sans-serif;
-    font-weight: normal;
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: white;
+  z-index: 1;
+  width: 100%;
+  right: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
 }
-  
+
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    border-top: 1px solid black;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-top: 1px solid black;
 }
-  
+
 .dropdown-content a:hover {
-    background-color: rgb(212, 212, 212);
-    color: black;
-    text-decoration: none;
+  background-color: rgb(212, 212, 212);
+  color: black;
+  text-decoration: none;
 }
-  
+
 .Page__Header--Dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
-.Page__Header--Container div:hover{
-    color: black;
-    background-color: white;
+.Page__Header--Container div:hover {
+  color: black;
+  background-color: white;
 }
 
-.Page__Header--Container div:hover:nth-of-type(6), div.Page__Header--Ava:hover{
-    background: none;
+.Page__Header--Container div:hover:nth-of-type(6),
+div.Page__Header--Ava:hover {
+  background: none;
 }
 
-.Page__Header--Ava > img{
-    cursor: pointer;
+.Page__Header--Ava > img {
+  cursor: pointer;
 }
 
 .page__footer--container {
-    display: flex;
-    background-color: #242426;
-    color: white;
-    max-height: 225px;
-    width: 100vw;
-    padding: 25px 0px;
-    position: relative;
-    bottom: 0px;
+  display: flex;
+  background-color: #242426;
+  color: white;
+  max-height: 225px;
+  width: 100%;
+  padding: 25px 0px;
+  position: relative;
+  bottom: 0px;
 }
 
-.footer__text{
-    font-family: 'Roboto', sans-serif;
+.footer__text {
+  font-family: "Roboto", sans-serif;
 }
 
-.footer__header{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+.footer__header {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 
 .footer--left {
-    flex: 20%;
-    margin-left: 50px;
+  flex: 20%;
+  margin-left: 50px;
 }
 
 .footer--right {
-    flex: -5%;
-    margin-right: 50px;
+  flex: -5%;
+  margin-right: 50px;
 }
 
-.footer--right img{
-    position: relative;
-    margin-right: 7px;
+.footer--right img {
+  position: relative;
+  margin-right: 7px;
 }
 
-.bg-color{
-    background-color: black;
+.bg-color {
+  background-color: black;
 }
 
 @media only screen and (max-width: 600px) {
-    .Page__Header--Tach{
-        font-size: 8px;
-        padding: 8px;
-    }
+  .Page__Header--Tach {
+    font-size: 8px;
+    padding: 8px;
+  }
 
-    .Page__Header--Title{
-        font-size: 8px;
-        padding: 8px;
-    }
+  .Page__Header--Title {
+    font-size: 8px;
+    padding: 8px;
+  }
 
-    .dropdown-content{
-        font-size: 6px;
-    }
+  .dropdown-content {
+    font-size: 6px;
+  }
 
-    .Page__Header--Search{
-        padding: 4px 4px 4px 12px;
-        font-size: 5px;
-    }
+  .Page__Header--Search {
+    padding: 4px 4px 4px 12px;
+    font-size: 5px;
+  }
 
-    .Page__Header--Icon2{
-        font-size: 7px;
-        margin-right: -15px;
-    }
+  .Page__Header--Icon2 {
+    font-size: 7px;
+    margin-right: -15px;
+  }
 
-    .Page__Header--Ava > img{
-        width: 20px;
-    }
+  .Page__Header--Ava > img {
+    width: 20px;
+  }
 
-    .footer__text{
-        font-size: 6px;
-    }
-    
-    .footer__header{
-        font-size: 8px;
-    }
-    
-    .footer--right img{
-        height: 15px;
-    }
+  .footer__text {
+    font-size: 6px;
+  }
+
+  .footer__header {
+    font-size: 8px;
+  }
+
+  .footer--right img {
+    height: 15px;
+  }
 }
 
 @media only screen and (min-width: 600px) {
-    .Page__Header--Tach{
-        font-size: 10px;
-        padding: 8px;
-    }
+  .Page__Header--Tach {
+    font-size: 10px;
+    padding: 8px;
+  }
 
-    .Page__Header--Title{
-        font-size: 10px;
-        padding: 8px;
-    }
+  .Page__Header--Title {
+    font-size: 10px;
+    padding: 8px;
+  }
 
-    .dropdown-content{
-        font-size: 10px;
-    }
+  .dropdown-content {
+    font-size: 10px;
+  }
 
-    .Page__Header--Search{
-        padding: 4px 4px 4px 18px;
-        font-size: 5.5px;
-    }
+  .Page__Header--Search {
+    padding: 4px 4px 4px 18px;
+    font-size: 5.5px;
+  }
 
-    .Page__Header--Icon2{
-        font-size: 9px;
-        margin-right: -18px;
-    }
+  .Page__Header--Icon2 {
+    font-size: 9px;
+    margin-right: -18px;
+  }
 
-    .Page__Header--Ava > img{
-        width: 25px;
-    }
+  .Page__Header--Ava > img {
+    width: 25px;
+  }
 
-    .footer__text{
-        font-size: 10px;
-    }
-    
-    .footer__header{
-        font-size: 12px;
-    }
-    
-    .footer--right img{
-        height: 18px;
-    }
+  .footer__text {
+    font-size: 10px;
+  }
+
+  .footer__header {
+    font-size: 12px;
+  }
+
+  .footer--right img {
+    height: 18px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    .Page__Header--Tach{
-        font-size: 16px;
-        padding: 8px;
-    }
+  .Page__Header--Tach {
+    font-size: 16px;
+    padding: 8px;
+  }
 
-    .Page__Header--Title{
-        font-size: 16px;
-        padding: 8px;
-    }
+  .Page__Header--Title {
+    font-size: 16px;
+    padding: 8px;
+  }
 
-    .dropdown-content{
-        font-size: 12px;
-    }
+  .dropdown-content {
+    font-size: 12px;
+  }
 
-    .Page__Header--Search{
-        padding: 6px 6px 6px 20px;
-        font-size: 7.5px;
-    }
+  .Page__Header--Search {
+    padding: 6px 6px 6px 20px;
+    font-size: 7.5px;
+  }
 
-    .Page__Header--Icon2{
-        font-size: 12px;
-        margin-right: -20px;
-    }
+  .Page__Header--Icon2 {
+    font-size: 12px;
+    margin-right: -20px;
+  }
 
-    .Page__Header--Ava > img{
-        width: 30px;
-    }
+  .Page__Header--Ava > img {
+    width: 30px;
+  }
 
-    .footer__text{
-        font-size: 12px;
-    }
-    
-    .footer__header{
-        font-size: 16px;
-    }
-    
-    .footer--right img{
-        height: 20px;
-    }
+  .footer__text {
+    font-size: 12px;
+  }
+
+  .footer__header {
+    font-size: 16px;
+  }
+
+  .footer--right img {
+    height: 20px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
-    .Page__Header--Tach{
-        font-size: 18px;
-        padding: 16px;
-    }
+  .Page__Header--Tach {
+    font-size: 18px;
+    padding: 16px;
+  }
 
-    .Page__Header--Title{
-        font-size: 18px;
-        padding: 16px;
-    }
+  .Page__Header--Title {
+    font-size: 18px;
+    padding: 16px;
+  }
 
-    .dropdown-content{
-        font-size: 14px;
-    }
+  .dropdown-content {
+    font-size: 14px;
+  }
 
-    .Page__Header--Search{
-        padding: 6px 6px 6px 26px;
-        font-size: 10px;
-    }
+  .Page__Header--Search {
+    padding: 6px 6px 6px 26px;
+    font-size: 10px;
+  }
 
-    .Page__Header--Icon2{
-        font-size: 13px;
-        margin-right: -24px;
-    }
+  .Page__Header--Icon2 {
+    font-size: 13px;
+    margin-right: -24px;
+  }
 
-    .Page__Header--Ava > img{
-        width: 35px;
-    }
+  .Page__Header--Ava > img {
+    width: 35px;
+  }
 
-    .footer__text{
-        font-size: 14px;
-    }
-    
-    .footer__header{
-        font-size: 18px;
-    }
-    
-    .footer--right img{
-        height: 25px;
-    }
+  .footer__text {
+    font-size: 14px;
+  }
+
+  .footer__header {
+    font-size: 18px;
+  }
+
+  .footer--right img {
+    height: 25px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-    .Page__Header--Tach{
-        font-size: 18px;
-        padding: 18px;
-    }
+  .Page__Header--Tach {
+    font-size: 18px;
+    padding: 18px;
+  }
 
-    .Page__Header--Title{
-        font-size: 18px;
-        padding: 18px;
-    }
+  .Page__Header--Title {
+    font-size: 18px;
+    padding: 18px;
+  }
 
-    .dropdown-content{
-        font-size: 16px;
-    }
+  .dropdown-content {
+    font-size: 16px;
+  }
 
-    .Page__Header--Search{
-        padding: 8px 8px 8px 28px;
-        font-size: 13px;
-    }
+  .Page__Header--Search {
+    padding: 8px 8px 8px 28px;
+    font-size: 13px;
+  }
 
-    .Page__Header--Icon2{
-        font-size: 16px;
-        margin-right: -26px;
-    }
+  .Page__Header--Icon2 {
+    font-size: 16px;
+    margin-right: -26px;
+  }
 
-    .Page__Header--Ava > img{
-        width: 40px;
-    }
+  .Page__Header--Ava > img {
+    width: 40px;
+  }
 
-    .footer__text{
-        font-size: 14px;
-    }
-    
-    .footer__header{
-        font-size: 18px;
-    }
-    
-    .footer--right img{
-        height: 25px;
-    }
+  .footer__text {
+    font-size: 14px;
+  }
+
+  .footer__header {
+    font-size: 18px;
+  }
+
+  .footer--right img {
+    height: 25px;
+  }
 }
