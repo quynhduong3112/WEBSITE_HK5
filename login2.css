@@ -1,0 +1,242 @@
+@import url(https://weloveiconfonts.com/api/?family=fontawesome);
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap');
+*
+{
+  margin:auto;
+  padding:auto;
+}
+
+body, html {
+    background-size: cover;
+    background-position: 100%;
+    height: 100%;
+    text-rendering: optimizeLegibility;
+}
+.form__container--subcribe{
+    width: 59.688%;
+    height: auto;
+    background-color: white;
+    border: 1px solid gray;
+    font-family: 'Roboto';
+}
+.form__container{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+.bold{
+    font-weight: bold;
+}
+.center{
+    text-align: center;
+}
+.img-banner{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    opacity: 0.7;
+}
+.right{
+    width: 56.632%;
+    margin: 0;
+    padding: 12%;
+}
+.right--content{
+    height: 100%;
+    width: 100%;
+}
+.left{
+    width: 43.368%;
+    height: auto;
+    margin: 0;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 1.97% 0;
+    display: inline-block;
+    border: 1px solid #A7A7A7;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+.d-block
+{display:block!important}
+
+h2{
+    margin-bottom: 4.423%;
+}
+.form--label{
+    margin-bottom: 1.97%;
+    font-size: 20px;
+}
+input::placeholder{
+    font-size: 18px;
+}
+.form-group a{
+    text-decoration: none;
+    color: black;
+}
+
+/*CSS social button*/
+#button--login {
+    background-color: black;
+    color: white;
+    margin: 2.95% auto;
+  }
+#button--login:hover {
+    opacity: 0.8;
+}
+.button{
+    font-size: 20px;
+    margin: 2.95% 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    height: 50px;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+.social-button {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;   
+    line-height: 50px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 2.95% auto;
+    outline: rgb(255, 255, 255) none 0px;
+    padding-left: 20%;
+    transition: all 0.2s cubic-bezier(0.72, 0.01, 0.56, 1) 0s;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+#facebook-connect {
+    background: rgb(255, 255, 255) url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/facebook.svg?sanitize=true') no-repeat scroll 5px 0px / 30px 50px padding-box border-box;
+    border: 1px solid rgb(60, 90, 154);
+}
+
+#facebook-connect:hover {
+    border-color: rgb(60, 90, 154);
+    background: rgb(60, 90, 154) url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/facebook-white.svg?sanitize=true') no-repeat scroll 5px 0px / 30px 50px padding-box border-box;
+}
+
+#facebook-connect span {
+    box-sizing: border-box;
+    color: rgb(60, 90, 154);
+    text-align: center;
+    border: 0px none rgb(255, 255, 255);
+    outline: rgb(255, 255, 255) none 0px;
+    padding-left: 2%; 
+}
+
+#facebook-connect:hover span {
+    color: #FFF;
+}
+
+#google-connect {
+    background: rgb(255, 255, 255) url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/google-plus.png') no-repeat scroll 5px 0px / 50px 50px padding-box border-box;
+    border: 1px solid rgb(220, 74, 61);
+}
+
+#google-connect:hover {
+    border-color: rgb(220, 74, 61);
+    background: rgb(220, 74, 61) url('https://raw.githubusercontent.com/eswarasai/social-login/master/img/google-plus-white.png') no-repeat scroll 5px 0px / 50px 50px padding-box border-box;
+}
+
+#google-connect span {
+    box-sizing: border-box;
+    color: rgb(220, 74, 61);
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    border: 0px none rgb(220, 74, 61);
+    outline: rgb(255, 255, 255) none 0px;
+    padding-left: 2%;
+}
+
+#google-connect:hover span {
+    color: #FFF;
+}
+/* CSS responsive */
+@media only screen and (max-width: 992px) {
+    /* For mobile phones: */
+    .left{
+        display: none;
+    }
+    .right{
+        width: 100%;
+    }
+    .form__container--subcribe{
+        width: 100%;
+        height: auto;
+        background-color: white;
+        border: 1px solid gray;
+        font-family: 'Roboto';
+    }
+    .form__container{
+        display: flex;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+    }
+
+  }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .left{
+        display: none;
+    }
+    .right{
+        width: 100%;
+    }
+    .form__container--subcribe{
+        width: 80%;
+        height: auto;
+        background-color: white;
+        border: 1px solid gray;
+        font-family: 'Roboto';
+    }
+    .form__container{
+        display: flex;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+    }
+
+  }
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1440px) {
+    .right{
+        width: 56.632%;
+    }
+    .left{
+        width: 43.368%;
+        height: auto;
+        display: block;
+        background-image: url('../Images/bannerlogin.jpg.png');
+    }
+    .form__container--subcribe{
+        width: 80%;
+        height: auto;
+        background-color: white;
+        border: 1px solid gray;
+        font-family: 'Roboto';
+    }
+    .form__container{
+        display: flex;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+    }
+}
