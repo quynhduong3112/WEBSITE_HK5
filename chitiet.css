@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap');
+html{
+    margin: 0;
+    padding: 0;
+}
+/* css mainpage */
+.chitiet__product{
+    display: flex;
+    margin: 0px 125px;
+    padding-top: 100px;
+    position: relative;
+}
+.chitiet__product--col1{
+    display: flex;
+}
+.chitiet__product--col2{
+   
+    padding-left: 30px;
+}
+
+.chitiet--image{
+    padding-bottom: 13px;
+    padding-right: 10px;
+}
+.chitiet__product--title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+.chitiet__product--price{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+.chitiet__product--number{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+input[type=button]{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #F2C806;
+    width: 140px;
+    height: 44px;
+    margin-bottom: 24px;
+    border-radius: 5px;
+    border: 0px;
+}
+.chitiet--pricecolor{
+    color: red;
+    font-weight: bold;
+}
+.chitiet__infor--tittle{
+    margin: 40px 125px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.chitiet__infor{
+    display: flex;
+    margin: 0px 125px;
+}
+.chitiet__infor--col1{
+    flex: 1;
+    background-color: lightgray;
+}
+.chitiet__infor--col2{
+    flex: 3;
+    padding-left: 30px;
+}
+.chitiet__infor--dientich{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    padding-left: 15px;
+}
+.chitiet__infor--sodo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-bottom: 16px;
+    padding-left: 15px;
+}
+.chitiet__infor--phongmau{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-bottom: 16px;
+    padding-left: 15px;
+}
+.chitiet__infor--col2tittle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.chitiet__infor--col2text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+.chitiet__sameproduct--heading{
+    margin: 40px 125px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.chitiet__sameproduct{
+    display: flex;
+    margin: 0 125px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.chitiet__sameproduct--item{
+    text-align: center;
+    margin: 3px;
+    border: 1px solid #a7a7a7;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0,0, 0.1);
+}
+.chitiet__sameproduct--tittle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 16px;
+}
+.chitiet__sameproduct--price{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    font-size: 16px;
+}
+.chitiet--button{
+    width: 25px;
+}
+.chitiet__sameproduct--image{
+    padding: 8px;
+}
+
+
+
+/* responsive */
+@media only screen and (max-width: 600px) {
+    .chitiet__product--col1 img{
+        width: 100%;
+    }
+    .chitiet__sameproduct--item{
+        flex-direction: column;
+    }
+    .chitiet__product{
+        flex-wrap: wrap;
+    }
+    .chitiet__infor{
+        margin: 0 10px;
+    }
+    .chitiet__product--col1right{
+        text-align: center;
+    }
+    .chitiet__infor--tittle{
+        text-align: center;
+    }
+    .chitiet__sameproduct--heading{
+        text-align: center;
+    }
+    .chitiet__infor{
+        flex-direction: column;
+    }
+    .chitiet__infor--col1{
+        margin-left: 30px;
+        margin-bottom: 16px;
+    }
+    .chitiet__sameproduct{
+        margin: 0 25px;
+    }
+    .chitiet__product{
+        margin: 0 30px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .chitiet__product--col1 img{
+        width: 100%;
+    }
+    .chitiet__sameproduct--item{
+        flex-direction: column;
+    }
+    .chitiet__infor{
+        margin: 0 30px;
+    }
+    .chitiet__sameproduct{
+        margin: 0 30px;
+    }
+    .chitiet__product{
+        margin: 0 30px;
+    }
+    .chitiet__product{
+        flex-direction: column;
+    }
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up */
+@media only screen and (min-width: 768px) {
+    .chitiet__product--col1 img{
+        width: 100%;
+    }
+    .chitiet__sameproduct--item{
+        flex-direction: column;
+    }
+    .chitiet__product--col2 div{
+        font-size: 16px;
+    }
+    .chitiet__product--col2 input{
+        font-size: 16px;
+        width: 100px;
+        height: 30px;
+    }
+    .chitiet__infor{
+        margin: 0 50px;
+    }
+    .chitiet__product{
+        flex-direction: column;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up */
+@media only screen and (min-width: 992px) {
+    .chitiet__product--col1 img{
+        width: 100%;
+    }
+    .chitiet__sameproduct--item{
+        flex-direction: column;
+    }
+    .chitiet__infor{
+        margin: 0 30px;
+    }
+    .chitiet__product{
+        flex-direction: column;
+    }
+    
+}
+
+/* Extra large devices (Large desktops and laptops, 1200px and up) */
+@media only screen and (min-width: 1250px) {
+    .chitiet__infor{
+        margin: 0 125px;
+    }
+    .chitiet__product{
+        margin: 0 125px;
+    }
+    .chitiet__product{
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 1400px){
+    .chitiet__product{
+        flex-direction: row;
+    }
+}
+
