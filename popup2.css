@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap');
+.popup--container{
+    width: 450px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+.popup--daunhan{
+    text-align: right;
+}
+.popup--daunhan button{
+border: none;
+background-color: white;
+}
+.popup--image{
+    text-align: center;
+}
+.popup--text{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+.popup--button input {
+    width: 140px;
+    height: 44px;
+    color: white;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    margin: 0 35px;
+}
+.popup--button{
+    text-align: center;
+    padding-top: 30px;
+}
+.popup--button1{
+    background-color: #c4c4c4;
+}
+.popup--button2{
+    background-color: #f2c806;
+}
+.popup--image2{
+    display: none;
+}
+@media only screen and (max-width: 768px){
+    .popup--container{
+        width: 300px;
+        height: 200px;
+    }
+    .popup--text{
+        font-size: 14px;
+        padding-top: 20px;
+    }
+    .popup--button input{
+        width: 70px;
+        height: 25px;
+        font-size: 16px;
+    }
+    .popup--image1{
+        display: none;
+    }
+    .popup--image2{
+        display: inline;
+    }
+    .popup--button{
+        padding-top: 20px;
+    }
+}
