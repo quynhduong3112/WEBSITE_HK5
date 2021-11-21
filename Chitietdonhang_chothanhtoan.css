@@ -1,0 +1,744 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap');
+
+body,html{
+    margin: 0;
+    padding: 0;
+}
+.website{
+    background-color: black;
+}
+.container{
+    margin-bottom: 50px;
+}
+.chothanhtoan--top{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+}
+.chothanhtoan__top--flex .icons{
+    display: flex;
+    justify-content: center;
+}
+.chothanhtoan__top{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+}
+.chothanhtoan__top--item--1{
+    margin-bottom: 25px;
+}
+.chothanhtoan__top--item{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    margin-top: 15px;
+}
+.chothanhtoan__top--circle {
+    border-radius: 50px;
+    background: #C6C6C6;
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+    background-color: rgba(18, 201, 47, 1);
+}
+.chothanhtoan__top--circle--2{
+    background-color: rgba(196, 196, 196, 1);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+}
+.icon{
+    padding-top: 10px;
+    /* justify-content: center; */
+}
+.item1{
+    margin-left: 2%;
+}
+.item2{
+    margin-left: 10%;
+}
+.item3{
+    margin-left: 10%;
+}
+svg{
+    margin-top: 13px;
+}
+.chothanhtoan__body{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+.chothanhtoan__body--left, .chothanhtoan__body--right{
+    
+    background-color: white;
+    font-size: 18px;
+    font-weight: normal;
+    padding-left: 15px;
+    padding-bottom: 20px;
+
+}
+.chothanhtoan__body--left{
+    width: 50%;
+    justify-content: center;
+    padding-top: 10px;
+}
+.label--flex{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+
+}
+.title{
+    color: black;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.title--1,.title--3{
+    font-size: 22px;
+}
+.title--2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.line{
+    margin-left: -2%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.chothanhtoan__label{
+    width: 35%;
+}
+.chothanhtoan__label--2{
+    width: 45%;
+
+}
+.chothanhtoan__label--right{
+    width: 40%;
+}
+.chothanhtoan__label--12{
+    width: 55%;
+}
+.chothanhtoan__label--20, .chothanhtoan__label--22{
+    color: red;
+    font-weight: bold;
+}
+.note{
+    font-size: 15px;
+    font-style: italic;
+    margin-right: 5px;
+}
+.chothanhtoan__body--right{
+    width: 50%;
+    margin-left: 5%;
+    padding-top: 10px;
+    justify-content: center;
+}
+.chothanhtoan__button--flex{
+    text-align: center;
+
+}
+.button{
+    width: 25%;
+    border-radius: 5px;
+    background-color: #F2C806;
+    color: white;
+    border-color: rgba(196, 196, 196, 1);
+}
+.button--2{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+@media only screen and (max-width: 600px) 
+{
+    .chothanhtoan--top{
+        font-size: 18px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 50px;
+    }
+    svg{
+        margin-top: 13px;
+        width: 120px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 7px;
+    }
+    .chothanhtoan__top--circle{
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+    .chothanhtoan__top--circle--2{
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+    }
+    .chothanhtoan__top--item{
+        display: flex;
+        justify-content:space-around;
+        font-size: 13px;
+        line-height: 27px;
+        margin-left: -10%;
+        margin-top: 0px;
+        width: 120%;
+    }
+    .chothanhtoan__top--item--1{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .chothanhtoan__body{
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .chothanhtoan__body--left, .chothanhtoan__body--right{       
+        font-size: 12px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+    
+    }
+    .chothanhtoan__body--left{
+        width: 90%;
+        justify-content: center;
+        padding-top: 10px;
+        margin-left: 5%;
+        margin-top: 20px;
+    }
+    .label--flex{
+        display: flex;
+    
+    }
+    
+    .title--1,.title--3{
+        font-size: 15px;
+    }
+    .title--2{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .line{
+        margin-left: -2%;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .chothanhtoan__label{
+        width: 35%;
+    }
+    .chothanhtoan__label--2{
+        width: 45%;
+    
+    }
+    .chothanhtoan__label--right{
+        width: 40%;
+    }
+    .chothanhtoan__label--12{
+        width: 55%;
+    }
+    .note{
+        font-size: 12px;
+        margin-right: 5px;
+    }
+    .chothanhtoan__body--right{
+        width: 90%;
+        margin-left: 5%;
+        padding-top: 10px;
+        justify-content: center;
+        margin-top: -15px;
+    }
+    .chothanhtoan__button--flex{
+        text-align: center;
+    
+    }
+    .button{
+        width: 25%;
+        margin-left: -3%;
+       
+    }
+    .button--2{
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .chothanhtoan--top{
+        font-size: 18px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 50px;
+    }
+    svg{
+        justify-content: center;
+        margin-top: 13px;
+        width: 160px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 7px;
+    }  
+    .chothanhtoan__top--circle{
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+    .chothanhtoan__top--circle--2{
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+    }
+    .chothanhtoan__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 13px;
+        line-height: 27px;
+        margin-left: -10%;
+        margin-top: 0px;
+    }
+    .chothanhtoan__top--item--1{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .chothanhtoan__body{
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .chothanhtoan__body--left, .chothanhtoan__body--right{       
+        font-size: 15px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+    
+    }
+    .chothanhtoan__body--left{
+        width: 90%;
+        justify-content: center;
+        padding-top: 10px;
+        margin-left: 5%;
+        margin-top: 20px;
+    }
+    .label--flex{
+        display: flex;
+    
+    }
+    
+    .title--1,.title--3{
+        font-size: 18px;
+    }
+    .title--2{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .line{
+        margin-left: -2%;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .chothanhtoan__label{
+        width: 35%;
+    }
+    .chothanhtoan__label--2{
+        width: 45%;
+    
+    }
+    .chothanhtoan__label--right{
+        width: 40%;
+    }
+    .chothanhtoan__label--12{
+        width: 55%;
+    }
+    .note{
+        font-size: 15px;
+        margin-right: 5px;
+    }
+    .chothanhtoan__body--right{
+        width: 90%;
+        margin-left: 5%;
+        padding-top: 10px;
+        justify-content: center;
+    }
+    .chothanhtoan__button--flex{
+        text-align: center;
+    
+    }
+    .button{
+        width: 25%;
+        margin-left: -3%;
+        font-size: 18px;
+       
+    }
+    .button--2{
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .chothanhtoan--top{
+        font-size: 18px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 70px;
+    }
+    svg{
+        margin-top: 13px;
+        width: 210px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 7px;
+    }
+    .chothanhtoan__top--circle{
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+   
+    .chothanhtoan__top--circle--2{
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+    }
+    .chothanhtoan__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 13px;
+        line-height: 27px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-left: -10%;
+        margin-top: 0px;
+    }
+    .chothanhtoan__top--item--1{
+        font-size: 20px;
+    }
+    .chothanhtoan__body{
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .chothanhtoan__body--left, .chothanhtoan__body--right{       
+        font-size: 17px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+    
+    }
+    .chothanhtoan__body--left{
+        width: 90%;
+        justify-content: center;
+        padding-top: 10px;
+        margin-left: 5%;
+        margin-top: 30px;
+    }
+    .label--flex{
+        display: flex;
+    
+    }
+    
+    .title--1,.title--3{
+        font-size: 20px;
+    }
+    .title--2{
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .line{
+        margin-left: -2%;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .chothanhtoan__label{
+        width: 35%;
+    }
+    .chothanhtoan__label--2{
+        width: 45%;
+    
+    }
+    .chothanhtoan__label--right{
+        width: 40%;
+    }
+    .chothanhtoan__label--12{
+        width: 55%;
+    }
+    .note{
+        font-size: 17px;
+        margin-right: 5px;
+    }
+    .chothanhtoan__body--right{
+        width: 90%;
+        margin-left: 5%;
+        padding-top: 10px;
+        justify-content: center;
+    }
+    .chothanhtoan__button--flex{
+        text-align: center;
+    
+    }
+    .button{
+        width: 25%;
+        margin-left: -3%;
+        font-size: 20px;
+       
+    }
+    .button--2{
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+}
+@media screen and (min-width: 992px){
+    .chothanhtoan--top{
+        font-size: 22px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 100px;
+    }
+    svg{
+        margin-top: 13px;
+        width: 265px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 12px;
+    }
+    .chothanhtoan__top--circle{
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+   
+    .chothanhtoan__top--circle--2{
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+    }
+    .chothanhtoan__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 20px;
+        line-height: 27px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-left: -10%;
+        margin-top: 10px;
+    }  
+    .chothanhtoan__top--item--1{
+        font-size: 23px;
+        margin-bottom: 30px;
+    }
+    .chothanhtoan__body{
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .chothanhtoan__body--left, .chothanhtoan__body--right{       
+        font-size: 16px;
+        padding-left: 15px;
+        padding-bottom: 20px;    
+    }
+    .chothanhtoan__body--left{
+        width: 50%;
+        justify-content: center;
+        padding-top: 10px;
+        margin-top: 0%;
+        margin-left: 0%;
+    }
+    .label--flex{
+        display: flex;
+    
+    }   
+    .title--1,.title--3{
+        font-size: 20px;
+    }
+    .title--2{
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .line{
+        margin-left: -2%;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .chothanhtoan__label{
+        width: 35%;
+    }
+    .chothanhtoan__label--2{
+        width: 45%;
+    
+    }
+    .chothanhtoan__label--right{
+        width: 40%;
+    }
+    .chothanhtoan__label--12{
+        width: 60%;
+    }
+    .note{
+        font-size: 15px;
+        margin-right: 5px;
+    }
+    .chothanhtoan__body--right{
+        width: 50%;
+        margin-left: 3%;
+        padding-top: 10px;
+        justify-content: center;
+    }
+    .chothanhtoan__button--flex{
+        text-align: center;
+    
+    }
+    .button{
+        width: 30%;      
+    }
+    .button--2{
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .chothanhtoan--top{
+        font-size: 22px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 100px;
+    }
+    svg{
+        margin-top: 13px;
+        width: 340px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 12px;
+    }
+    .chothanhtoan__top--circle{
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+   
+    .chothanhtoan__top--circle--2{
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+    }
+    .chothanhtoan__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 20px;
+        line-height: 27px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-left: -10%;
+        margin-top: 10px;
+    }  
+    .chothanhtoan__top--item--1{
+        font-size: 23px;
+        margin-bottom: 30px;
+    }
+    .chothanhtoan__body{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .chothanhtoan__body--left, .chothanhtoan__body--right{       
+        font-size: 18px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+    
+    }
+    .chothanhtoan__body--left{
+        width: 50%;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    .label--flex{
+        display: flex;
+    
+    }
+    .title--1,.title--3{
+        font-size: 22px;
+    }
+    .title--2{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .line{
+        margin-left: -2%;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .chothanhtoan__label{
+        width: 35%;
+    }
+    .chothanhtoan__label--2{
+        width: 45%;
+    
+    }
+    .chothanhtoan__label--right{
+        width: 40%;
+    }
+    .chothanhtoan__label--12{
+        width: 55%;
+    }
+    .note{
+        font-size: 17px;
+        margin-right: 5px;
+    }
+    .chothanhtoan__body--right{
+        width: 50%;
+        margin-left: 5%;
+        padding-top: 10px;
+        justify-content: center;
+    }
+    .chothanhtoan__button--flex{
+        text-align: center;
+    
+    }
+    .button{
+        width: 30%;
+        font-size: 22px;
+       
+    }
+    .button--2{
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+}

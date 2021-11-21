@@ -1,0 +1,728 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap');
+
+body,html{
+    margin: 0;
+    padding: 0;
+}
+.website{
+    background-color: black;
+}
+.container{
+    margin-bottom: 50px;
+}
+.thanhtoan--top{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+}
+.thanhtoan__top--flex .icons{
+    display: flex;
+    justify-content: center;
+}
+.thanhtoan__top{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+}
+.thanhtoan__top--item--1{
+    margin-bottom: 25px;
+}
+.thanhtoan__top--item{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    margin-top: 15px;
+}
+.thanhtoan__top--circle {
+    border-radius: 50px;
+    background: #C6C6C6;
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+    background-color: rgba(18, 201, 47, 1);
+}
+.thanhtoan__top--circle--2{
+    background-color: rgba(196, 196, 196, 1);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+}
+.icon{
+    padding-top: 10px;
+    /* justify-content: center; */
+}
+.item1{
+    margin-left: 2%;
+}
+.item2{
+    margin-left: 10%;
+}
+.item3{
+    margin-left: 10%;
+}
+svg{
+    margin-top: 13px;
+}
+.thanhtoan__body{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.thanhtoan__body--left, .thanhtoan__body--right{
+    
+    background-color: white;
+    font-size: 18px;
+    font-weight: normal;
+
+}
+.thanhtoan__body--left{
+    width: 50%;
+    justify-content: center;
+    padding-top: 10px;
+}
+.icon-edit{
+    color:#C4C4C4;
+    top:100px;
+    margin-left: 93%;
+    margin-bottom: 10px;
+}
+.label--flex{
+    display: flex;
+    margin-left: 5%;
+}
+.thanhtoan__label{
+    width: 35%;
+}
+.thanhtoan__label--2, .thanhtoan__label--8{
+    width: 55%;
+}
+
+.thanhtoan__label--4, .thanhtoan__label--16, .thanhtoan__label--22, .thanhtoan__label--24{
+    color: red;
+}
+.font-size {
+    font-size: 12px;
+    border-radius: 5px;
+}
+.note--1{
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+}
+.thanhtoan__button{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: white;
+   
+}
+.button{
+    background: #F2C806;
+    border-radius: 5px;
+    height: 40px;
+    width: 25%;
+    font-size: 20px;
+
+}
+.thanhtoan__body--right{
+    width: 50%;
+    margin-left: 5%;
+    padding-top: 40px;
+    justify-content: center;
+    padding-left: 3%;
+}
+.title{
+    font-size: 22px;
+    color: red;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/* .font{
+    font-weight: "Racings San one", san-serif;
+} */
+.font__style{
+    font-weight: bold;
+}
+.line{
+    margin-left: -6%;
+}
+.note--2{
+    color: red;
+    font-style: italic;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 600px) 
+{
+    .thanhtoan--top{
+        font-size: 18px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 50px;
+    }
+    svg{
+        margin-top: 13px;
+        width: 120px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 7px;
+    }
+    .thanhtoan__top--circle{
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+    .thanhtoan__top--circle--2{
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+    }
+    .thanhtoan__top--item{
+        display: flex;
+        justify-content:space-around;
+        font-size: 13px;
+        line-height: 27px;
+        margin-left: -10%;
+        margin-top: 0px;
+        width: 120%;
+    }
+    .thanhtoan__top--item--1{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .thanhtoan__body{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 10%;   
+    }
+    .thanhtoan__body--left, .thanhtoan__body--right{        
+        font-size: 12px; 
+    }
+    .thanhtoan__body--left{
+        width: 90%;
+    }
+    .thanhtoan__label{
+        width: 35%;
+    }
+    .thanhtoan__label--2, .thanhtoan__label--8{
+        width: 55%;
+    }
+    .font-size {
+        font-size: 9px;
+        border-radius: 5px;
+    }
+    .note--1{
+        font-size: 10px;
+    }
+    .thanhtoan__button{
+        margin-top: 10px;
+        margin-bottom: 10px;      
+    }
+    .button{
+        border-color: rgba(196, 196, 196, 1);
+        border-radius: 5px;
+        height: 30px;
+        width: 25%;
+        font-size: 15px;   
+    }
+    .thanhtoan__body--right{
+        width: 90%;
+        margin-top: 20px;
+        padding-top: 10px;
+        padding-left: 5%;
+        padding-bottom: 10px;
+        margin-left: 0%;
+    }
+    .title{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .line{
+        margin-left: -3%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .note--2{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .thanhtoan--top{
+        font-size: 18px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 50px;
+    }
+    svg{
+        justify-content: center;
+        margin-top: 13px;
+        width: 160px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 7px;
+    }  
+    .thanhtoan__top--circle{
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+    .thanhtoan__top--circle--2{
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+    }
+    .thanhtoan__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 13px;
+        line-height: 27px;
+        margin-left: -10%;
+        margin-top: 0px;
+    }
+    .thanhtoan__top--item--1{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .thanhtoan__body{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 10%;   
+    }
+    .thanhtoan__body--left, .thanhtoan__body--right{        
+        font-size: 15px; 
+    }
+    .thanhtoan__body--left{
+        width: 90%;
+    }
+    /* .icon-edit{
+        margin-left: 93%;
+        margin-bottom: 10px;
+    } */
+    .thanhtoan__label{
+        width: 35%;
+    }
+    .thanhtoan__label--2, .thanhtoan__label--8{
+        width: 55%;
+    }
+    .font-size {
+        font-size: 12px;
+        border-radius: 5px;
+    }
+    .note--1{
+        font-size: 12px;
+    }
+    .thanhtoan__button{
+        margin-top: 10px;
+        margin-bottom: 10px;      
+    }
+    .button{
+        border-color: rgba(196, 196, 196, 1);
+        border-radius: 5px;
+        height: 30px;
+        width: 25%;
+        font-size: 15px;   
+    }
+    .thanhtoan__body--right{
+        width: 90%;
+        margin-top: 20px;
+        padding-top: 10px;
+        padding-left: 5%;
+        padding-bottom: 10px;
+        margin-left: 0%;
+    }
+    .title{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .line{
+        margin-left: -3%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .note--2{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .thanhtoan--top{
+        font-size: 18px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 70px;
+    }
+    svg{
+        margin-top: 13px;
+        width: 210px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 7px;
+    }
+    .thanhtoan__top--circle{
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+   
+    .thanhtoan__top--circle--2{
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+    }
+    .thanhtoan__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 13px;
+        line-height: 27px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-left: -10%;
+        margin-top: 0px;
+    }
+    .thanhtoan__top--item--1{
+        font-size: 20px;
+    }
+    .thanhtoan__body{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 5%;   
+    }
+    .thanhtoan__body--left, .thanhtoan__body--right{        
+        font-size: 18px; 
+    }
+    .thanhtoan__body--left{
+        width: 95%;
+        padding-left: 5%;
+    }
+    /* .icon-edit{
+        margin-left: 93%;
+        margin-bottom: 10px;
+    } */
+    .thanhtoan__label{
+        width: 35%;
+    }
+    .thanhtoan__label--2, .thanhtoan__label--8{
+        width: 55%;
+    }
+    .font-size {
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    .note--1{
+        font-size: 15px;
+        margin-left: -5%;
+        margin-bottom: 20px;
+    }
+    .thanhtoan__button{
+        margin-top: 10px;
+        margin-bottom: 10px;      
+    }
+    .button{
+        border-color: rgba(196, 196, 196, 1);
+        border-radius: 5px;
+        height: 40px;
+        width: 25%;
+        font-size: 20px;  
+        margin-left: -5%; 
+    }
+    .thanhtoan__body--right{
+        width: 95%;
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-left: 10%;
+        padding-bottom: 20px;
+        margin-left: 0%;
+    }
+    .title{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .line{
+        margin-left: -11%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .note--2{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width: 992px){
+    .thanhtoan--top{
+        font-size: 22px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 100px;
+    }
+    svg{
+        margin-top: 13px;
+        width: 265px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 12px;
+    }
+    .thanhtoan__top--circle{
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+   
+    .thanhtoan__top--circle--2{
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+    }
+    .thanhtoan__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 20px;
+        line-height: 27px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-left: -10%;
+        margin-top: 10px;
+    }  
+    .thanhtoan__top--item--1{
+        font-size: 23px;
+        margin-bottom: 30px;
+    }
+    .thanhtoan__body{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 5%;   
+    }
+    .thanhtoan__body--left, .thanhtoan__body--right{        
+        font-size: 20px; 
+    }
+    .thanhtoan__body--left{
+        width: 95%;
+        padding-left: 5%;
+    }
+    .icon-edit{
+        margin-left: 95%;
+        margin-bottom: 10px;
+    }
+    .thanhtoan__label{
+        width: 35%;
+    }
+    .thanhtoan__label--2, .thanhtoan__label--8{
+        width: 55%;
+    }
+    .font-size {
+        height: 35px;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+    .note--1{
+        font-size: 17px;
+        margin-left: -5%;
+        margin-bottom: 20px;
+    }
+    .thanhtoan__button{
+        margin-top: 10px;
+        margin-bottom: 10px;      
+    }
+    .button{
+        border-color: rgba(196, 196, 196, 1);
+        border-radius: 5px;
+        height: 40px;
+        width: 25%;
+        font-size: 20px;  
+        margin-left: -5%; 
+    }
+    .thanhtoan__body--right{
+        width: 95%;
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-left: 10%;
+        padding-bottom: 20px;
+        margin-left: 0%;
+    }
+    .title{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .line{
+        margin-left: -11%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .note--2{
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .thanhtoan--top{
+        font-size: 22px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 100px;
+    }
+    svg{
+        margin-top: 13px;
+        width: 340px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 12px;
+    }
+    .thanhtoan__top--circle{
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+   
+    .thanhtoan__top--circle--2{
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+    }
+    .thanhtoan__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 20px;
+        line-height: 27px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-left: -10%;
+        margin-top: 10px;
+    }  
+    .thanhtoan__top--item--1{
+        font-size: 23px;
+        margin-bottom: 30px;
+    }
+    .thanhtoan__body{
+        flex-direction: row;
+    }
+    .thanhtoan__body{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .thanhtoan__body--left, .thanhtoan__body--right{        
+        font-size: 18px; 
+    }
+    .thanhtoan__body--left{
+        width: 50%;
+        justify-content: center;
+        padding-top:10px;
+        margin-left: -5%;
+        padding-left: 0%;
+    }
+    .icon-edit{
+        margin-left: 93%;
+        margin-bottom: 10px;
+    }
+    .label--flex{
+        display: flex;
+        margin-left: 5%;
+    }
+    .thanhtoan__label{
+        width: 35%;
+    }
+    .thanhtoan__label--2, .thanhtoan__label--8{
+        width: 55%;
+    }
+    .font-size {
+        height: 35px;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+    .note--1{
+        font-size: 15px;
+        margin-left: 0%;
+    }
+    .thanhtoan__button{
+        margin-top: 20px;
+        margin-bottom: 10px; 
+        margin-left: 0%;     
+    }
+    .button{
+        border-color: rgba(196, 196, 196, 1);
+        border-radius: 5px;
+        height: 40px;
+        width: 25%;
+        font-size: 20px;  
+        
+    }
+    .thanhtoan__body--right{
+        width: 50%;
+        padding-top: 30px;
+        padding-left: 3%;
+        padding-bottom: 20px;
+        margin-left: 5%;
+        margin-top: 0%;
+    }
+    .title{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .line{
+        margin-left: -6%;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    .note--2{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    
+     
+}
+
+
+
+
