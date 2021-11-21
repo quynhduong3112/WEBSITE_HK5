@@ -18,7 +18,7 @@ body, html {
 }
 .form__container--subcribe{
     width: 59.688%;
-    height: auto;
+    height: fit-content;
     background-color: white;
     border: 1px solid gray;
     font-family: 'Roboto';
@@ -44,7 +44,7 @@ body, html {
 .right{
     width: 56.632%;
     margin: 0;
-    padding: 12%;
+    padding: 8%;
 }
 .right--content{
     height: 100%;
@@ -70,10 +70,15 @@ input[type=text], input[type=password] {
 
 h2{
     margin-bottom: 4.423%;
+    font-family: 'Montserrat';
+    font-weight: 1000;
 }
 .form--label{
     margin-bottom: 1.97%;
     font-size: 20px;
+}
+.form--label span{
+    color: red;
 }
 input::placeholder{
     font-size: 18px;
