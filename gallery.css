@@ -1,0 +1,77 @@
+@import url(https://weloveiconfonts.com/api/?family=fontawesome);
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap');
+
+h2 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+}
+
+.project-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-initialized .slick-slide {
+  margin: 0 5px;
+}
+
+.slick-prev {
+  left: 0;
+  padding: 0;
+  width: 80px;
+  height: 80px
+}
+
+.slick-next {
+  right: 0;
+  padding: 0;
+  width: 80px;
+  height: 80px;
+}
+
+.project,
+.slick-slide,
+.slick-current,
+.slick-active {
+  width: 100%;
+  background-color: #363636;
+  height: 600px;
+}
+
+.project img {
+  text-align: center;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: none;
+  border: none;
+  z-index: 2;
+  border-radius: 50%;
+  padding: 0;
+  width: 80px;
+  height: 80px;
+  background-color: #363636;
+}
+
+.slick-arrow:hover {
+  background-color: white;
+  cursor: pointer;
+}
