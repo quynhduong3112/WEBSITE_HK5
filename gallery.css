@@ -19,12 +19,11 @@ h2 {
 
 .project-screen {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-bottom: 18px;
 }
 
 .slick-initialized .slick-slide {
-  margin: 0 5px;
+  margin: 0;
 }
 
 .slick-prev {
@@ -40,23 +39,6 @@ h2 {
   width: 80px;
   height: 80px;
 }
-
-.project,
-.slick-slide,
-.slick-current,
-.slick-active {
-  width: 100%;
-  background-color: #363636;
-  height: 600px;
-}
-
-.project img {
-  text-align: center;
-  margin: 0 auto;
-  height: 100%;
-  width: auto;
-}
-
 .slick-arrow {
   position: absolute;
   top: 50%;
@@ -70,8 +52,91 @@ h2 {
   height: 80px;
   background-color: #363636;
 }
-
+.project{
+  width: 100%;
+  background-color: #363636;
+  height: 550px;
+}
+.project img {
+  text-align: center;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
 .slick-arrow:hover {
   background-color: white;
   cursor: pointer;
 }
+.nav-project-screen img{
+  width: 95%;
+  height: auto;
+  margin: 10px;
+}
+.slick-current img{
+  box-shadow: 0px 2px 7px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (max-width: 600px) {
+.nav-project-screen{
+  display: none;
+}
+.project-screen{
+  margin-bottom: 0;
+}
+.project{
+  height: 30%;
+}
+.project img {
+  text-align: center;
+  margin: 0 auto;
+  height: auto;
+  width: 90%;
+}
+}
+@media only screen and (max-width: 768px) {
+  .project{
+    height: 30%;
+  }
+  .project img {
+    text-align: center;
+    margin: 0 auto;
+    height: auto;
+    width: 90%;
+  }
+  .nav-project-screen img{
+    width: 95%;
+    height: auto;
+    margin: 10px;
+  }
+  .slick-arrow {
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+  }
+  i.fas{
+    font-size: 30px;
+  }
+  h2{
+    font-size: 20px;
+  }
+  }
+  @media only screen and (max-width: 1110px) {
+    .slick-arrow {
+      width: 50px;
+      height: 50px;
+      margin: 2px;
+    }
+    i.fas{
+      font-size: 50px;
+    }
+    h2{
+      font-size: 20px;
+    }
+    .project{
+      height: 50%;
+    }
+    .project img {
+      height: auto;
+      width: 80%;
+    }
+    }
