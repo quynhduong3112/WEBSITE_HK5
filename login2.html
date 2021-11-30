@@ -7,6 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="CSS/login2.css">
+    <script type="text/javascript">
+           function Redirect() {
+              window.location="http://127.0.0.1:5500/211MI2601_02/HTML/homepage.html";
+           }
+
+           
+     </script>
 </head>
 
 <body>
@@ -17,11 +24,10 @@
             <div class="right">
                 <div class="right--content">
                     <h2 class="center">ĐĂNG NHẬP</h2>
-                    <form class="login-form">
+                    <form id="form-login" class="login-form" action="action_page.html" onsubmit="return validateForm()" method="post">
                         <div class="form-group">
-                            <label for="input--email" class="bold form--label">Username: </label>
-                            <input type="text" class="form__input" placeholder="Tên đăng nhập" id="input--email"
-                                required>
+                            <label for="input--username" class="bold form--label">Username: </label>
+                            <input type="text" class="form__input" placeholder="Tên đăng nhập" id="input--username"  required>
 
                             <label for="input--pwd" class="bold form--label">Password: </label>
                             <input type="password" class="form__input" placeholder="********" id="input--pwd" required>
@@ -44,6 +50,7 @@
             </div>
         </div>
     </div>
+    <script src="./Javascript/login.js"></script>
 </body>
 
 </html>
