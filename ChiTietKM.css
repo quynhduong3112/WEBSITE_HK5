@@ -8,7 +8,6 @@
   padding-bottom: 24px;
   border: 1px solid black;
 }
-
 .header {
   height: 93px;
   width: 100%;
@@ -17,7 +16,6 @@
   font-family: "Roboto", sans-serif;
   font-size: 20px;
 }
-
 .header__container {
   position: absolute;
   top: 24px;
@@ -26,12 +24,10 @@
   height: 141px;
   width: 90%;
 }
-
 .header__item--1 {
   position: relative;
   width: 30%;
 }
-
 .header__item--1 p {
   font-weight: bold;
   position: absolute;
@@ -41,7 +37,6 @@
   text-align: center;
   color: white;
 }
-
 .header__item--2 {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -52,12 +47,10 @@
   left: 4px;
   box-shadow: 2.5px 2px rgba(173, 173, 173, 0.2);
 }
-
 .item__container {
   margin: 10px;
   width: 100%;
 }
-
 .item__container > div p:first-child {
   color: #ff0000;
   border: 1px solid #ff0000;
@@ -65,51 +58,39 @@
   border-radius: 5px;
   margin-right: 18px;
 }
-
 .item__container > div p:last-child {
-  margin-top: 24px;
+  margin-top: 22px;
 }
-
 .item--maxprice {
   display: flex;
   justify-content: center;
 }
-
 .item--hsd {
   color: #a7a7a7;
 }
-
 .body__container {
   margin: 100px 24px 20px 24px;
 }
-
 .body__container h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
   font-weight: bold;
 }
-
 .body__container p {
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
 }
-
 .footer__button {
   text-align: center;
 }
-
 .footer__button button {
   width: 91%;
   height: 35px;
   background: black;
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
   font-weight: bold;
   cursor: pointer;
   border: none;
 }
-
 .body--point {
   width: 271px;
   height: 80px;
@@ -123,19 +104,66 @@
   line-height: 80px;
   margin: auto;
 }
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .item__container {
     font-size: 17px;
     margin-top: 18px;
   }
-
   .body__container h2,
   .footer__button button {
     font-size: 18px;
   }
-
   .body__container p {
     font-size: 16px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .item__container {
+    font-size: 17px;
+    margin-top: 18px;
+  }
+  .body__container h2,
+  .footer__button button {
+    font-size: 18px;
+  }
+  .body__container p {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .item__container {
+    font-size: 17px;
+    margin-top: 18px;
+  }
+  .body__container h2,
+  .footer__button button {
+    font-size: 18px;
+  }
+  .body__container p {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .item__container {
+    font-size: 17.5px;
+  }
+  .body__container h2,
+  .footer__button button {
+    font-size: 20px;
+  }
+  .body__container p {
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .item__container {
+    font-size: 17.5px;
+  }
+  .body__container h2,
+  .footer__button button {
+    font-size: 20px;
+  }
+  .body__container p {
+    font-size: 17px;
   }
 }
