@@ -14,7 +14,7 @@ body,html{
 .container{
     margin-bottom: 50px;
 }
-.chothanhtoan--top{
+.hoantat--top{
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
@@ -22,21 +22,21 @@ body,html{
     position: relative;
     margin-top: 100px;
 }
-.chothanhtoan__top--flex .icons{
+.hoantat__top--flex .icons{
     display: flex;
     justify-content: center;
 }
-.chothanhtoan__top{
+.hoantat__top{
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 30px;
     line-height: 37px;
 }
-.chothanhtoan__top--item--1{
+.hoantat__top--item--1{
     margin-bottom: 25px;
 }
-.chothanhtoan__top--item{
+.hoantat__top--item{
     display: flex;
     justify-content:space-around;
     width: 100%;
@@ -47,7 +47,7 @@ body,html{
     line-height: 27px;
     margin-top: 15px;
 }
-.chothanhtoan__top--circle {
+.hoantat__top--circle {
     border-radius: 50px;
     background: #C6C6C6;
     width: 50px;
@@ -55,7 +55,7 @@ body,html{
     margin-top: -10px;
     background-color: rgba(18, 201, 47, 1);
 }
-.chothanhtoan__top--circle--2{
+.hoantat__top--circle--2{
     background-color:  rgba(18, 201, 47, 1);
     border-radius: 50px;
     width: 50px;
@@ -78,13 +78,13 @@ body,html{
 svg{
     margin-top: 13px;
 }
-.chothanhtoan__body{
+.hoantat__body{
     display: flex;
     justify-content: center;
     margin-top: 30px;
     font-family: 'Roboto', sans-serif;
 }
-.chothanhtoan__body--left, .chothanhtoan__body--right{
+.hoantat__body--left, .hoantat__body--right{
     
     background-color: white;
     font-size: 18px;
@@ -93,7 +93,7 @@ svg{
     padding-bottom: 20px;
 
 }
-.chothanhtoan__body--left{
+.hoantat__body--left{
     width: 50%;
     justify-content: center;
     padding-top: 10px;
@@ -122,20 +122,24 @@ svg{
     margin-top: 7px;
     margin-bottom: 7px;
 }
-.chothanhtoan__label{
+.hoantat__label{
     width: 35%;
+    font-weight: normal;
 }
-.chothanhtoan__label--2{
-    width: 45%;
+.hoantat__label--2{
+    width: 55%;
 
 }
-.chothanhtoan__label--right{
+.hoantat__label--right{
     width: 40%;
 }
-.chothanhtoan__label--12{
+.hoantat__label--12{
     width: 55%;
 }
-.chothanhtoan__label--20{
+.hoantat__label--10, .hoantat__label--26{
+    font-weight: bold;
+}
+.hoantat__label--20{
     color:rgba(18, 201, 47, 1);
     font-weight: bold;
 }
@@ -144,13 +148,13 @@ svg{
     font-style: italic;
     margin-right: 5px;
 }
-.chothanhtoan__body--right{
+.hoantat__body--right{
     width: 50%;
     margin-left: 5%;
     padding-top: 10px;
     justify-content: center;
 }
-.chothanhtoan__button--flex{
+.hoantat__button--flex{
     text-align: center;
 
 }
@@ -163,15 +167,17 @@ svg{
 }
 .button--1{
     background-color: #C4C4C4;
+    border: none;
 
 }
 .button--2{
     margin-left: 15px;
     margin-top: 10px;
+    border: none;
 }
 @media only screen and (max-width: 600px) 
 {
-    .chothanhtoan--top{
+    .hoantat--top{
         font-size: 18px;
         margin-left: 10%;
         margin-right: 10%;
@@ -185,21 +191,21 @@ svg{
     .icon{
         padding-top: 7px;
     }
-    .chothanhtoan__top--circle{
+    .hoantat__top--circle{
         border-radius: 40px;
         width: 35px;
         height: 35px;
         margin-top: 0px;
         background-color: rgba(18, 201, 47, 1);
     }
-    .chothanhtoan__top--circle--2{
+    .hoantat__top--circle--2{
         background-color:  rgba(18, 201, 47, 1);
         border-radius: 40px;
         width: 35px;
         height: 35px;
         margin-top: 0px;
     }
-    .chothanhtoan__top--item{
+    .hoantat__top--item{
         display: flex;
         justify-content:space-around;
         font-size: 13px;
@@ -208,22 +214,22 @@ svg{
         margin-top: 0px;
         width: 120%;
     }
-    .chothanhtoan__top--item--1{
+    .hoantat__top--item--1{
         font-size: 15px;
         margin-bottom: 10px;
     }
-    .chothanhtoan__body{
+    .hoantat__body{
         flex-direction: column-reverse;
         justify-content: center;
         margin-top: 30px;
     }
-    .chothanhtoan__body--left, .chothanhtoan__body--right{       
+    .hoantat__body--left, .hoantat__body--right{       
         font-size: 12px;
         padding-left: 15px;
         padding-bottom: 20px;
     
     }
-    .chothanhtoan__body--left{
+    .hoantat__body--left{
         width: 90%;
         justify-content: center;
         padding-top: 10px;
@@ -247,31 +253,37 @@ svg{
         margin-top: 7px;
         margin-bottom: 7px;
     }
-    .chothanhtoan__label{
+    .hoantat__label{
         width: 35%;
     }
-    .chothanhtoan__label--2{
+    .hoantat__label--2{
         width: 45%;
     
     }
-    .chothanhtoan__label--right{
+    .hoantat__label--right{
         width: 40%;
     }
-    .chothanhtoan__label--12{
+    .hoantat__label--12{
         width: 55%;
+    }
+    .hoantat__label--10, .hoantat__label--26{
+        font-weight: bold;
+    }
+    .hoantat__label--20{
+        font-weight: bold;
     }
     .note{
         font-size: 12px;
         margin-right: 5px;
     }
-    .chothanhtoan__body--right{
+    .hoantat__body--right{
         width: 90%;
         margin-top: 15px;
         margin-left: 5%;
         padding-top: 10px;
         justify-content: center;
     }
-    .chothanhtoan__button--flex{
+    .hoantat__button--flex{
         text-align: center;
     
     }
@@ -286,7 +298,7 @@ svg{
     }
 }
 @media only screen and (min-width: 600px) {
-    .chothanhtoan--top{
+    .hoantat--top{
         font-size: 18px;
         margin-left: 10%;
         margin-right: 10%;
@@ -301,21 +313,21 @@ svg{
     .icon{
         padding-top: 7px;
     }  
-    .chothanhtoan__top--circle{
+    .hoantat__top--circle{
         border-radius: 40px;
         width: 35px;
         height: 35px;
         margin-top: 0px;
         background-color: rgba(18, 201, 47, 1);
     }
-    .chothanhtoan__top--circle--2{
+    .hoantat__top--circle--2{
         background-color:  rgba(18, 201, 47, 1);
         border-radius: 40px;
         width: 35px;
         height: 35px;
         margin-top: 0px;
     }
-    .chothanhtoan__top--item{
+    .hoantat__top--item{
         display: flex;
         justify-content:space-around;
         width: 120%;
@@ -324,22 +336,22 @@ svg{
         margin-left: -10%;
         margin-top: 0px;
     }
-    .chothanhtoan__top--item--1{
+    .hoantat__top--item--1{
         font-size: 15px;
         margin-bottom: 10px;
     }
-    .chothanhtoan__body{
+    .hoantat__body{
         flex-direction: column-reverse;
         justify-content: center;
         margin-top: 30px;
     }
-    .chothanhtoan__body--left, .chothanhtoan__body--right{       
+    .hoantat__body--left, .hoantat__body--right{       
         font-size: 15px;
         padding-left: 15px;
         padding-bottom: 20px;
     
     }
-    .chothanhtoan__body--left{
+    .hoantat__body--left{
         width: 90%;
         justify-content: center;
         padding-top: 10px;
@@ -363,30 +375,33 @@ svg{
         margin-top: 7px;
         margin-bottom: 7px;
     }
-    .chothanhtoan__label{
+    .hoantat__label{
         width: 35%;
     }
     .chothanhtoan__label--2{
         width: 45%;
     
     }
-    .chothanhtoan__label--right{
+    .hoantat__label--right{
         width: 40%;
     }
-    .chothanhtoan__label--12{
+    .hoantat__label--12{
         width: 55%;
+    }
+    .hoantat__label--10, .hoantat__label--26{
+        font-weight: bold;
     }
     .note{
         font-size: 15px;
         margin-right: 5px;
     }
-    .chothanhtoan__body--right{
+    .hoantat__body--right{
         width: 90%;
         margin-left: 5%;
         padding-top: 10px;
         justify-content: center;
     }
-    .chothanhtoan__button--flex{
+    .hoantat__button--flex{
         text-align: center;
     
     }
@@ -402,7 +417,7 @@ svg{
     }
 }
 @media only screen and (min-width: 768px) {
-    .chothanhtoan--top{
+    .hoantat--top{
         font-size: 18px;
         margin-left: 10%;
         margin-right: 10%;
@@ -416,7 +431,7 @@ svg{
     .icon{
         padding-top: 7px;
     }
-    .chothanhtoan__top--circle{
+    .hoantat__top--circle{
         border-radius: 40px;
         width: 35px;
         height: 35px;
@@ -424,14 +439,14 @@ svg{
         background-color: rgba(18, 201, 47, 1);
     }
    
-    .chothanhtoan__top--circle--2{
+    .hoantat__top--circle--2{
         background-color:  rgba(18, 201, 47, 1);
         border-radius: 40px;
         width: 35px;
         height: 35px;
         margin-top: 0px;
     }
-    .chothanhtoan__top--item{
+    .hoantat__top--item{
         display: flex;
         justify-content:space-around;
         width: 120%;
@@ -442,21 +457,21 @@ svg{
         margin-left: -10%;
         margin-top: 0px;
     }
-    .chothanhtoan__top--item--1{
+    .hoantat__top--item--1{
         font-size: 20px;
     }
-    .chothanhtoan__body{
+    .hoantat__body{
         flex-direction: column-reverse;
         justify-content: center;
         margin-top: 30px;
     }
-    .chothanhtoan__body--left, .chothanhtoan__body--right{       
+    .hoantat__body--left, .hoantat__body--right{       
         font-size: 17px;
         padding-left: 15px;
         padding-bottom: 20px;
     
     }
-    .chothanhtoan__body--left{
+    .hoantat__body--left{
         width: 90%;
         justify-content: center;
         padding-top: 10px;
@@ -480,30 +495,33 @@ svg{
         margin-top: 7px;
         margin-bottom: 7px;
     }
-    .chothanhtoan__label{
+    .hoantat__label{
         width: 35%;
     }
-    .chothanhtoan__label--2{
+    .hoantat__label--2{
         width: 45%;
     
     }
-    .chothanhtoan__label--right{
+    .hoantat__label--right{
         width: 40%;
     }
-    .chothanhtoan__label--12{
+    .hoantat__label--12{
         width: 55%;
+    }
+    .hoantat__label--10, .hoantat__label--26{
+        font-weight: bold;
     }
     .note{
         font-size: 17px;
         margin-right: 5px;
     }
-    .chothanhtoan__body--right{
+    .hoantat__body--right{
         width: 90%;
         margin-left: 5%;
         padding-top: 10px;
         justify-content: center;
     }
-    .chothanhtoan__button--flex{
+    .hoantat__button--flex{
         text-align: center;
     
     }
@@ -519,7 +537,7 @@ svg{
     }
 }
 @media screen and (min-width: 992px){
-    .chothanhtoan--top{
+    .hoantat--top{
         font-size: 22px;
         margin-left: 10%;
         margin-right: 10%;
@@ -533,7 +551,7 @@ svg{
     .icon{
         padding-top: 12px;
     }
-    .chothanhtoan__top--circle{
+    .hoantat__top--circle{
         border-radius: 50px;
         width: 50px;
         height: 50px;
@@ -541,14 +559,14 @@ svg{
         background-color: rgba(18, 201, 47, 1);
     }
    
-    .chothanhtoan__top--circle--2{
+    .hoantat__top--circle--2{
         background-color:  rgba(18, 201, 47, 1);
         border-radius: 50px;
         width: 50px;
         height: 50px;
         margin-top: -10px;
     }
-    .chothanhtoan__top--item{
+    .hoantat__top--item{
         display: flex;
         justify-content:space-around;
         width: 120%;
@@ -559,22 +577,22 @@ svg{
         margin-left: -10%;
         margin-top: 10px;
     }  
-    .chothanhtoan__top--item--1{
+    .hoantat__top--item--1{
         font-size: 23px;
         margin-bottom: 30px;
     }
-    .chothanhtoan__body{
+    .hoantat__body{
         flex-direction: row;
         display: flex;
         justify-content: center;
         margin-top: 30px;
     }
-    .chothanhtoan__body--left, .chothanhtoan__body--right{       
+    .hoantat__body--left, .hoantat__body--right{       
         font-size: 16px;
         padding-left: 15px;
         padding-bottom: 20px;    
     }
-    .chothanhtoan__body--left{
+    .hoantat__body--left{
         width: 50%;
         justify-content: center;
         padding-top: 10px;
@@ -597,30 +615,33 @@ svg{
         margin-top: 7px;
         margin-bottom: 7px;
     }
-    .chothanhtoan__label{
+    .hoantat__label{
         width: 35%;
     }
-    .chothanhtoan__label--2{
+    .hoantat__label--2{
         width: 45%;
     
     }
-    .chothanhtoan__label--right{
+    .hoantat_label--right{
         width: 40%;
     }
-    .chothanhtoan__label--12{
+    .hoantat__label--12{
         width: 60%;
+    }
+    .hoantat__label--10, .hoantat__label--26{
+        font-weight: bold;
     }
     .note{
         font-size: 15px;
         margin-right: 5px;
     }
-    .chothanhtoan__body--right{
+    .hoantat__body--right{
         width: 50%;
         margin-left: 3%;
         padding-top: 10px;
         justify-content: center;
     }
-    .chothanhtoan__button--flex{
+    .hoantat__button--flex{
         text-align: center;
     
     }
@@ -633,7 +654,7 @@ svg{
     }
 }
 @media screen and (min-width: 1200px){
-    .chothanhtoan--top{
+    .hoantat--top{
         font-size: 22px;
         margin-left: 10%;
         margin-right: 10%;
@@ -647,7 +668,7 @@ svg{
     .icon{
         padding-top: 12px;
     }
-    .chothanhtoan__top--circle{
+    .hoantat__top--circle{
         border-radius: 50px;
         width: 50px;
         height: 50px;
@@ -655,14 +676,14 @@ svg{
         background-color: rgba(18, 201, 47, 1);
     }
    
-    .chothanhtoan__top--circle--2{
+    .hoantat__top--circle--2{
         background-color:  rgba(18, 201, 47, 1);
         border-radius: 50px;
         width: 50px;
         height: 50px;
         margin-top: -10px;
     }
-    .chothanhtoan__top--item{
+    .hoantat__top--item{
         display: flex;
         justify-content:space-around;
         width: 120%;
@@ -673,22 +694,22 @@ svg{
         margin-left: -10%;
         margin-top: 10px;
     }  
-    .chothanhtoan__top--item--1{
+    .hoantat__top--item--1{
         font-size: 23px;
         margin-bottom: 30px;
     }
-    .chothanhtoan__body{
+    .hoantat__body{
         display: flex;
         justify-content: center;
         margin-top: 30px;
     }
-    .chothanhtoan__body--left, .chothanhtoan__body--right{       
+    .hoantat__body--left, .hoantat__body--right{       
         font-size: 18px;
         padding-left: 15px;
         padding-bottom: 20px;
     
     }
-    .chothanhtoan__body--left{
+    .hoantat__body--left{
         width: 50%;
         justify-content: center;
         padding-top: 10px;
@@ -709,32 +730,35 @@ svg{
         margin-top: 7px;
         margin-bottom: 7px;
     }
-    .chothanhtoan__label{
+    .hoantat__label{
         width: 35%;
+        font-weight: normal;
     }
-    .chothanhtoan__label--2{
+    .hoantat__label--2{
         width: 45%;
-    
     }
-    .chothanhtoan__label--right{
+ 
+    .hoantat__label--right{
         width: 40%;
     }
-    .chothanhtoan__label--12{
+    .hoantat__label--12{
         width: 55%;
+    }
+    .hoantat__label--10, .hoantat__label--26, .hoantat__label--20{
+        font-weight: bold;
     }
     .note{
         font-size: 17px;
         margin-right: 5px;
     }
-    .chothanhtoan__body--right{
+    .hoantat__body--right{
         width: 50%;
         margin-left: 5%;
         padding-top: 10px;
         justify-content: center;
     }
-    .chothanhtoan__button--flex{
-        text-align: center;
-    
+    .hoantat__button--flex{
+        text-align: center;    
     }
     .button{
         width: 30%;

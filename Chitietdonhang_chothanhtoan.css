@@ -89,6 +89,7 @@ svg{
     background-color: white;
     font-size: 18px;
     font-weight: normal;
+    font-family: 'Roboto', sans-serif;
     padding-left: 15px;
     padding-bottom: 20px;
 
@@ -97,18 +98,24 @@ svg{
     width: 50%;
     justify-content: center;
     padding-top: 10px;
+    font-weight: bold;
+
 }
 .label--flex{
     display: flex;
-    font-family: 'Roboto', sans-serif;
-    font-weight: normal;
 
+
+}
+.chothanhtoan__label{
+    font-weight: normal;
+}
+.chothanhtoan__label--10, .chothanhtoan__label--26{
+    font-weight: bold;
 }
 .title{
     color: black;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
-
 }
 .title--1,.title--3{
     font-size: 22px;
@@ -160,6 +167,7 @@ svg{
     background-color: #F2C806;
     color: white;
     border-color: rgba(196, 196, 196, 1);
+    border: none;
 }
 .button--2{
     margin-left: 15px;
@@ -259,6 +267,7 @@ svg{
     .note{
         font-size: 12px;
         margin-right: 5px;
+        font-weight: normal;
     }
     .chothanhtoan__body--right{
         width: 90%;
@@ -375,6 +384,7 @@ svg{
     .note{
         font-size: 15px;
         margin-right: 5px;
+        font-weight: normal;
     }
     .chothanhtoan__body--right{
         width: 90%;
@@ -492,6 +502,7 @@ svg{
     .note{
         font-size: 17px;
         margin-right: 5px;
+        font-weight: normal;
     }
     .chothanhtoan__body--right{
         width: 90%;
@@ -609,6 +620,7 @@ svg{
     .note{
         font-size: 15px;
         margin-right: 5px;
+        font-weight: normal;
     }
     .chothanhtoan__body--right{
         width: 50%;
@@ -682,6 +694,7 @@ svg{
         font-size: 18px;
         padding-left: 15px;
         padding-bottom: 20px;
+        font-weight: normal;
     
     }
     .chothanhtoan__body--left{
@@ -691,7 +704,7 @@ svg{
     }
     .label--flex{
         display: flex;
-    
+        font-weight: normal;    
     }
     .title--1,.title--3{
         font-size: 22px;
