@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
     <link rel="stylesheet" href="CSS/login2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
 </head>
 
 <body>
@@ -17,32 +19,58 @@
             <div class="right">
                 <div class="right--content">
                     <h2 class="center">ĐĂNG KÝ TÀI KHOẢN</h2>
-                    <form class="login-form">
+                    <form action="logindata.html" mehod="get" id="signup-form" class="login-form" name="signupform">
                         <div class="form-group">
                             <label for="input--user" class="bold form--label">Tên đăng nhập <span>*</span></label>
-                            <input type="text" class="form__input" placeholder="Tên đăng nhập" id="input--user" required>
-
-                            <label for="input--pwd" class="bold form--label">Mật khẩu: <span>*</span></label>
-                            <input type="password" class="form__input" placeholder="********" id="input--pwd" required>
-
-                            <label for="input--pwd2" class="bold form--label">Nhập lại mật khẩu: <span>*</span></label>
-                            <input type="password" class="form__input" placeholder="********" id="input--pwd2" required>
-
-                            <label for="input--name" class="bold form--label">Họ và tên: <span>*</span></label>
-                            <input type="text" class="form__input" placeholder="Họ và tên" id="input--name" required>
-
-                            <label for="input--phone" class="bold form--label">Số điện thoại: <span>*</span></label>
-                            <input type="text" class="form__input" placeholder="Số điện thoại" id="input--phone" required>
-                            
-                            <button type="submit" class="button" id="button--login">ĐĂNG NHẬP</button>
+                            <input type="text" class="form__input" placeholder="Tên đăng nhập" id="input--user">
+                            <i class="error-icon fas fa-exclamation-circle"></i>
+                            <p class="error-text">Bạn cần nhập username</p>
                         </div>
 
-                    </form>
+                        <div class="form-group"><label for="input--pwd" class="bold form--label">Mật khẩu:
+                                <span>*</span></label>
+                            <input type="password" class="form__input" placeholder="********" id="input--pwd"
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                >
+                            <i class="error-icon  fas fa-exclamation-circle"></i>
+                            <p class="error-text">Bạn cần nhập mật khẩu</p>
+                        </div>
+
+                        <div class="form-group"><label for="input--pwd2" class="bold form--label">Nhập lại mật khẩu:
+                                <span>*</span></label>
+                            <input type="password" class="form__input" placeholder="********" id="input--pwd2">
+                            <i class="error-icon fas fa-exclamation-circle"></i>
+                            <p class="error-text">Bạn cần nhập lại mật khẩu</p>
+                        </div>
+                        <div class="form-group"><label for="input--name" class="bold form--label">Họ và tên:
+                                <span>*</span></label>
+                            <input type="text" class="form__input" placeholder="Họ và tên" id="input--name">
+                            <i class="error-icon fas fa-exclamation-circle"></i>
+                            <p class="error-text">Bạn cần nhập Họ và tên</p>
+                        </div>
+
+                        <div class="form-group"><label for="input--phone" class="bold form--label" name="phonenumber">Số
+                                điện thoại:
+                                <span>*</span></label>
+                            <input type="text" class="form__input" placeholder="Số điện thoại" id="input--phone">
+                            <i id="icon-phone" class="hidden error-icon fas fa-exclamation-circle"></i>                          <div id="phone_error" class="error-mess hidden">Please enter a valid phone number</div>
+                        </div>
+                        <div class=" center"> <input type="submit" class="button center" id="button--login" value="ĐĂNG KÝ"></input>
                 </div>
 
+
+                
+                </div>
+
+
+                </form>
             </div>
+
         </div>
     </div>
+    </div>
+    <script src="./Javascript/signup.js"></script>
 </body>
 
 </html>
