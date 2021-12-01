@@ -1,0 +1,151 @@
+@import url(https://weloveiconfonts.com/api/?family=fontawesome);
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap');
+
+.mySlides {
+  background-color: rgb(58, 57, 57);
+  text-align: center;
+  height: 700px;
+  width: 100%;
+}
+
+.mySlides img {
+  height: 100%;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: bolder;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto 0;
+}
+
+/* Hide the images by default */
+/* .mySlides {
+  display: none;
+} */
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@media only screen and (max-width: 1085px) {
+  #beyeu .mySlides {
+    height: 470px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #chandung .mySlides {
+    height: 450px;
+    width: 100%;
+  }
+  #wedding .mySlides {
+    height: 350px;
+  }
+
+  #beyeu .mySlides {
+    height: 300px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .dot {
+    height: 10px;
+    width: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #wedding .mySlides {
+    height: 200px;
+  }
+
+  #beyeu .mySlides{
+    height: 200px;
+  }
+}
