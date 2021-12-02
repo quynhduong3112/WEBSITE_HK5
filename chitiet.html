@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chi tiết</title>
-    <link rel="stylesheet" href="./CSS/chitiet.css">
+    <title>Chi tiết test</title>
+    <link rel="stylesheet" href="./CSS/testchitiet.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="./CSS/style.css">
     
@@ -42,7 +42,7 @@
     <div class="chitiet__product">
         <div class="chitiet__product--col1">
             <div class="chitiet__product--col1left">
-               <div> <img class="chitiet--image" src="../IMAGES/Studio_Small.png" alt=""></div>
+               <div> <img class="chitiet--image" src="../IMAGES/Studio_Small.png" alt="" id="smallImage"></div>
              <div>   <img class="chitiet--image" src="../IMAGES/Studio_Small.png" alt=""></div>
                <div> <img class="chitiet--image" src="../IMAGES/Studio_Small.png" alt=""></div>
             </div>
@@ -51,12 +51,12 @@
             </div>
         </div>
         <div class="chitiet__product--col2">
-            <div class="chitiet__product--title">Tên Studio</div>
-            <div class="chitiet__product--price">Giá thuê: <span class="chitiet--pricecolor">500.000 VNĐ</span></div>
+            <div class="chitiet__product--title" id="chitiet__product--tittle">Studio tối giản</div>
+            <div class="chitiet__product--price">Giá thuê: <span class="chitiet--pricecolor" id="chitiet__product--price">500.000 VNĐ</span></div>
             <div class="chitiet__product--number">Số lượng:
-                <button class="chitiet--button">-</button>
-                <input class="chitiet__product--input" type="number" placeholder="1" style="width:30px">
-                <button>+</button>
+                <button class="chitiet--button" onclick="truSanpham()">-</button>
+                <input class="chitiet__product--input" type="text" value="1" style="width:30px" readonly id="chitiet__product--input">
+                <button onclick="congSanpham()">+</button>
             </div>
             <input type="button" value="Đặt thuê">
         </div>
@@ -64,21 +64,21 @@
     <div class="chitiet__infor--tittle">Thông tin chi tiết</div>
     <div class="chitiet__infor">
         <div class="chitiet__infor--col1">
-            <div class="chitiet__infor--dientich">
-                Kích thước phòng : 50m2
+            <div class="chitiet__infor--dientich" id="chitiet__infor--dientich">
+                <p> Kích thước phòng :  50m <sup>2</sup></p>
             </div>
-            <div class="chitiet__infor--sodo">
-                CD: 5,5m, CR: 9m, CC: 4m
+            <div class="chitiet__infor--sodo" id="chitiet__infor--sodo">
+               <p> CD: 5,5m, CR: 9m, CC: 4m</p>
             </div>
-            <div class="chitiet__infor--phongmau">
-               Phông màu: Trắng, vàng, xám
+            <div class="chitiet__infor--phongmau" id="chitiet__infor--phongmau">
+              <p> Phông màu: Trắng, vàng, xám</p>
             </div>
         </div>
         <div class="chitiet__infor--col2">
             <div class="chitiet__infor--col2tittle">
                 Mô tả dịch vụ
             </div>
-            <div class="chitiet__infor--col2text">
+            <div class="chitiet__infor--col2text" id="chitiet__infor--col2text">
                <p> Bạn là người đam mê chụp ảnh? Có nhiều ý tưởng mới, sáng tạo trong các gói chụp ảnh của mình THẾ NHƯNG bạn lại chưa tìm được studio ưng ý để chụp cho khách hàng yêu quý. Bạn có sản phẩm ưng ý muốn quảng cáo tới khánh hàng nhưng chưa có hình ảnh đẹp. Bạn muốn có 1 MV hàng trăm ngàn lượt view gửi tới khách hàng biết đến hình ảnh thương hiệu công ty bạn nhưng chư biết nên chụp như thế nào và chụp ở đâu.</p>
              <p>  Nhằm phục vụ các cho các khách hàng  thượng đế Tách studio hiện đang có dịch vụ cho thuê phòng chụp bao gồm đầy đủ các thiết bị ánh sáng, phông màu, wifi, phụ kiện chụp…v.v. Thích hợp chụp ảnh thời trang, ảnh cưới, ảnh sản phẩm…v.v Thiết bị hiện đại và chuyên nghiệp, đáp ứng tốt nhất nhu cầu cho việc chụp hình của bạn</p> 
                <p> Tách studio cho thuê phòng chụp Indoor chuyên nghiệp, đầy đủ trang thiết bị. Địa điểm mặt phố thuận tiện đi lại, chỗ để xe rộng và an toàn. Trang thiết bị của Tách studio Quy mô phòng chụp: rộng 60m2 (5mx14m) với bàn trang điểm đạt chuẩn, hệ thống chiếu sáng, điều hòa hoạt động mạnh mẽ. Hệ thống trang thiết bị studio chuyênnghiệp: đèn Jinbei DPE 600 - 6 phông màu: Đen, ghi, trắng, vàng, xanh, hồng - Softbox bát giác khổng lồ (có lưới) 1500 - Softbox bát giác M950 - 2 Softbox chữ nhật 80x1200 - Dù bạc siêu lớn 150cm - Hắt sáng 5 trong 1 - Máy đo sáng Sekonic L308S - Gray card để cân bằng trắng - Chân đèn, boom set, chân đèn gầm, tripod, khung treo hắt sáng - Trigger Và nhiều phụ đạo cụ chụp ảnh khác như ghế bar, ghế gỗ...</p>
@@ -94,52 +94,52 @@
     <div class="chitiet__sameproduct">
         <div class="chitiet__sameproduct--item">
             <div class="chitiet__sameproduct--image">
-                <img src="../IMAGES/Studio_Small.png" alt="Hình ảnh">
+                <img src="../IMAGES/studiocodien.png" alt="Hình ảnh">
             </div>
-            <div class="chitiet__sameproduct--tittle">Tên Studio</div>
-            <div class="chitiet__sameproduct--price">Giá thuê: 500.000VNĐ</div>
+            <div class="chitiet__sameproduct--tittle">Studio cổ điển</div>
+            <div class="chitiet__sameproduct--price">Giá thuê: 1.000.000VNĐ</div>
             <div class="chitiet__sameproduct--button" >
-                <input  type="button" value="Đặt thuê">
+                <input  type="button" value="Đặt thuê" onclick="product0()" id="product0">
                 </div>
         </div>
         <div class="chitiet__sameproduct--item">
             <div class="chitiet__sameproduct--image">
-                <img src="../IMAGES/Studio_Small.png" alt="Hình ảnh">
+                <img src="../IMAGES/studiongaytet.png" alt="Hình ảnh">
             </div>
-            <div class="chitiet__sameproduct--tittle">Tên Studio</div>
-            <div class="chitiet__sameproduct--price">Giá thuê: 500.000VNĐ</div>
+            <div class="chitiet__sameproduct--tittle">Studio ngày tết</div>
+            <div class="chitiet__sameproduct--price">Giá thuê: 700.000VNĐ</div>
             <div class="chitiet__sameproduct--button" >
-                <input  type="button" value="Đặt thuê">
+                <input  type="button" value="Đặt thuê" onclick="product1()">
                 </div>
         </div>
         <div class="chitiet__sameproduct--item">
             <div class="chitiet__sameproduct--image">
-                <img src="../IMAGES/Studio_Small.png" alt="Hình ảnh">
+                <img src="../IMAGES/studiotoigian.png" alt="Hình ảnh">
             </div>
-            <div class="chitiet__sameproduct--tittle">Tên Studio</div>
+            <div class="chitiet__sameproduct--tittle">Studio tối giản</div>
             <div class="chitiet__sameproduct--price">Giá thuê: 500.000VNĐ</div>
             <div class="chitiet__sameproduct--button" >
-                <input  type="button" value="Đặt thuê">
+                <input  type="button" value="Đặt thuê" onclick="product2()">
                 </div>
         </div>
         <div class="chitiet__sameproduct--item">
             <div class="chitiet__sameproduct--image">
-                <img src="../IMAGES/Studio_Small.png" alt="Hình ảnh">
+                <img src="../IMAGES/studiogiangsinh.png" alt="Hình ảnh">
             </div>
-            <div class="chitiet__sameproduct--tittle">Tên Studio</div>
-            <div class="chitiet__sameproduct--price">Giá thuê: 500.000VNĐ</div>
+            <div class="chitiet__sameproduct--tittle">Studio giáng sinh</div>
+            <div class="chitiet__sameproduct--price">Giá thuê: 700.000VNĐ</div>
             <div class="chitiet__sameproduct--button" >
-                <input  type="button" value="Đặt thuê">
+                <input  type="button" value="Đặt thuê" onclick="product3()">
                 </div>
         </div>
         <div class="chitiet__sameproduct--item">
             <div class="chitiet__sameproduct--image">
-                <img src="../IMAGES/Studio_Small.png" alt="Hình ảnh">
+                <img src="../IMAGES/studioanhcuoi.png" alt="Hình ảnh">
             </div>
-            <div class="chitiet__sameproduct--tittle">Tên Studio</div>
+            <div class="chitiet__sameproduct--tittle">Studio ảnh cưới</div>
             <div class="chitiet__sameproduct--price">Giá thuê: 500.000VNĐ</div>
             <div class="chitiet__sameproduct--button" >
-                <input  type="button" value="Đặt thuê">
+                <input  type="button" value="Đặt thuê" onclick="product4()">
                 </div>
         </div>
     </div>
@@ -162,5 +162,84 @@
         <p> <img src="../IMAGES/footer-ytb.png" alt=""> Tách Studio Official</p>
     </div>
 </div>
+
+<script>
+    var studioName = new Array('Studio cổ điển', 'Studio ngày tết', 'Studio tối giản', 'Studio giáng sinh', 'Studio ảnh cưới');
+    var studioPrice = new Array('1.000.000', '700.000', '500.000', '700.000','500.000' )
+    var studioDientich = new Array('Kich thước phòng: 50m2', 'Kích thước phòng: 60m2', 'Kích thước phòng: 50m2', 'Kích thước phòng: 60m2', 'Kích thước phòng: 50m2')
+    var studioSodo = new Array('CD: 5,5m, CR: 9m, CC: 4m', 'CD: 5m, CR: 8m, CC: 4m', 'CD: 5,5m, CR: 8m, CC: 4m', 'CD: 5m, CR: 9m, CC: 4m', 'CD: 5,5m, CR: 9m, CC: 4m')
+    var studioPhongmau = new Array('Phông màu: Trắng, vàng, xám','Phông màu: Trắng, cam, vàng', 'Phông màu: Đỏ, vàng, xám', 'Phông màu: Trắng, xanh, xám', 'Phông màu: Xanh, vàng, xám')
+    var studioMota = new Array('Chụp ảnh cưới phong cách vintage là xu hướng mới xuất hiện gần đây. Khi con người càng trở nên hiện đại thì có xu hướng tìm kiếm về những thứ cổ, điều đó làm cho họ biết trân quý giá trị về thời gian. Ngành nhiếp ảnh cũng vậy, tấm ảnh xưa tuy không đẹp, không sặc sỡ như tấm ảnh ngày nay nhưng với cái cách mà lên màu cổ xưa dạng vintage thì lại làm cho người xem có cảm giác rất thích thú. Giống như vớ phải một món đồ cổ rất có giá trị. Đó là lý do xuất hiện style chụp ảnh theo phong cách cổ điển mà trên thị trường hiện có rất nhiều người ưa chuộng hiện nay ở Tp.HCM không có nhiều studio chụp ảnh phong cách cổ điển, đa số các studio chụp ảnh cưới theo phong cách hiện đại hàn quốc hoặc kiểu truyền thống. Tách Studio là nơi chuyên chụp ảnh cưới theo phong cách vintage cổ điển. Đặc biệt chúng tôi càng thích thú nếu khách hàng ngõ lời chụp ảnh cưới theo kiểu này.Sự pha trộn màu sắc (blend màu) cũng là đặc trưng riêng của Tách Studio, lối cổ điển nên màu sắc cần có sự củ kỹ, tạo các hạt gain cho ảnh để khi xem nó thực sự là ảnh vintage Tách studio cho thuê phòng chụp Indoor chuyên nghiệp, đầy đủ trang thiết bị. Địa điểm mặt phố thuận tiện đi lại, chỗ để xe rộng và an toàn. Trang thiết bị của Tách studio Quy mô phòng chụp: rộng 60m2 (5mx14m) với bàn trang điểm đạt chuẩn, hệ thống chiếu sáng, điều hòa hoạt động mạnh mẽ. Hệ thống trang thiết bị studio chuyênnghiệp: đèn Jinbei DPE 600 - 6 phông màu: Đen, ghi, trắng, vàng, xanh, hồng - Softbox bát giác khổng lồ (có lưới) 1500 - Softbox bát giác M950 - 2 Softbox chữ nhật 80x1200 - Dù bạc siêu lớn 150cm - Hắt sáng 5 trong 1 - Máy đo sáng Sekonic L308S - Gray card để cân bằng trắng - Chân đèn, boom set, chân đèn gầm, tripod, khung treo hắt sáng - Trigger Và nhiều phụ đạo cụ chụp ảnh khác như ghế bar, ghế gỗ...Thứ nhất là về Giá cả dao động rất lớn từ studio này sang studio kia, tuy nhiên bao gồm luôn việc tính thời gian, do đó Bạn cần phải lưu ý trước khi lựa chọn, nhất là khi mức phí thuê studio được tính đến những phần lẻ của ngày chụp. Đến với Tách studio bạn có thể hoàn toàn yên tâm về các vấn đề này, với chi phí chỉ từ 200 -600 ngàn cho một buổi chụp.Thứ hai là về không gian và kích cỡ của các studio. Bạn cần lưu ý đến không gian của studio trước khi lựa chọn. Studio càng lớn với nhiều bối cảnh sẽ khơi gợi nhiều ý tưởng sáng tạo cho bạn. Đến với Wishstar với không gian rộng lớn bao gồm các khung cảnh indoor và out door sẽ mang lại cho bạn một không gian lớn, thoáng mát, để bạn có thể thỏa sức sáng tạo hứa hẹn sẽ mang lại cho bạn những shoot ảnh đẹp với mức chi phí ưu đãi nhất. Với nhiều năm kinh nghiệm trong nghề chụp ảnh chúng tôi hiểu rằng để có một bức hình đẹp tại studio thì studio đó phải đáp ứng đầy đủ tất cả các yêu cầu từ các dịch vụ kỹ thuật đến hệ thống trang thiết bị. Với phòng chụp rộng rãi, không gian thoáng đãng rất phù hợp để chụp model, chụp thời trang, chụp các sản phẩm lớn… Hệ thống trang thiết bị ánh sáng sẽ đem đến cho khách hàng những hình ảnh chất lượng và tông màu đẹp tự nhiên. Với nhiều năm kinh nghiệm trong nghề chụp ảnh chúng tôi hiểu rằng để có một bức hình đẹp tại studio thì studio đó phải đáp ứng đầy đủ tất cả các yêu cầu từ các dịch vụ kỹ thuật đến hệ thống trang thiết bị. Với phòng chụp rộng rãi, không gian thoáng đãng rất phù hợp để chụp model, chụp thời trang, chụp các sản phẩm lớn… Hệ thống trang thiết bị ánh sáng sẽ đem đến cho khách hàng những hình ảnh chất lượng và tông màu đẹp tự nhiên.', 'Tết đến xuân về là dịp gia đình sum tụ quây quần bên nhau. Nhu cầu chụp ảnh gia đình của khách hàng rất nhiều, đặc biệt đại đa số ai cũng mong muốn có một album ảnh chụp gia đình ngày tết đẹp nhưng giá thì phải rẻ. Vừa có ảnh đẹp để làm kỷ niệm, vừa thể hiện được sự ấm cúng cho gia đình. Ở Tp.HCM, mỗi khi tết đến xuân về thì có rất nhiều hoạt cảnh được trang trí trên khắp các con phố. Đặc biệt là phố ông đồ sau lưng nhà thờ đức bà quận 1. Nơi đây được trang trí đầy đủ hoa mai, các bức tranh ngày tết, ông đồ ngồi viết thư pháp…những hoạt cảnh đó tạo nên không khí tết rất sôi động hàng năm. Dịch vụ chụp ảnh gia đình ngày tết cũng mọc ra rất nhiều. Một album chụp chừng 2 tiếng đồng hồ là bạn tha hồ có ảnh đẹp để ngắm, để đăng facebook ngày tết. Tách Studio cũng không ngoại lệ, chúng tôi cung cấp các gói dịch vụ chụp ảnh giá rẻ cho gia đình ngày tết với mỗi album giá trên dưới 1,400k. Bạn có thể ghé qua tham khảo bảng giá tại đây. Giá rẻ nhưng chất lượng không rẻ là tiêu chí của Tách Studio. Mỗi bức ảnh chúng tôi tạo ra mang một phong cách riêng biệt. Khách hàng hài lòng là tiêu chí hướng đến của Tách Studio. Tách Studio tự hào là nơi chụp hình gia đình vào ngày tết giá rẻ nhưng chất lượng tuyệt vời ở Tp.HCM. Mọi thông tin chi tiết, bạn vui lòng inbox liên hệ trao đổi qua Phone hoặc Zalo để được chúng tôi tư vấn kỹ hơn nhé. Tách studio cho thuê phòng chụp Indoor chuyên nghiệp, đầy đủ trang thiết bị. Địa điểm mặt phố thuận tiện đi lại, chỗ để xe rộng và an toàn. Trang thiết bị của Tách studio Quy mô phòng chụp: rộng 60m2 (5mx14m) với bàn trang điểm đạt chuẩn, hệ thống chiếu sáng, điều hòa hoạt động mạnh mẽ. Hệ thống trang thiết bị studio chuyênnghiệp: đèn Jinbei DPE 600 - 6 phông màu: Đen, ghi, trắng, vàng, xanh, hồng - Softbox bát giác khổng lồ (có lưới) 1500 - Softbox bát giác M950 - 2 Softbox chữ nhật 80x1200 - Dù bạc siêu lớn 150cm - Hắt sáng 5 trong 1 - Máy đo sáng Sekonic L308S - Gray card để cân bằng trắng - Chân đèn, boom set, chân đèn gầm, tripod, khung treo hắt sáng - Trigger Và nhiều phụ đạo cụ chụp ảnh khác như ghế bar, ghế gỗ...Thứ nhất là về Giá cả dao động rất lớn từ studio này sang studio kia, tuy nhiên bao gồm luôn việc tính thời gian, do đó Bạn cần phải lưu ý trước khi lựa chọn, nhất là khi mức phí thuê studio được tính đến những phần lẻ của ngày chụp. Đến với Tách studio bạn có thể hoàn toàn yên tâm về các vấn đề này, với chi phí chỉ từ 200 -600 ngàn cho một buổi chụp.Thứ hai là về không gian và kích cỡ của các studio. Bạn cần lưu ý đến không gian của studio trước khi lựa chọn. Studio càng lớn với nhiều bối cảnh sẽ khơi gợi nhiều ý tưởng sáng tạo cho bạn. Đến với Wishstar với không gian rộng lớn bao gồm các khung cảnh indoor và out door sẽ mang lại cho bạn một không gian lớn, thoáng mát, để bạn có thể thỏa sức sáng tạo hứa hẹn sẽ mang lại cho bạn những shoot ảnh đẹp với mức chi phí ưu đãi nhất. Thứ ba về: Chi phí phụ thu: Bạn cần phải thận trọng với các khoản phí ngầm, chẳng hạn như việc sử dụng các đạo cụ như giấy phông màn, đèn led... hoặc phí đậu xe, đay là các khoản chi phí ngầm mà một số studio sẽ thu tách biệt với tổng tiền thuê. Đến với Wishstar bạn có thể yên tâm về các vấn đề này. Wishstar có bãi đỗ xe rất an toàn, đạo cụ và phụ kiện đa dạng phong phú cho bạn thỏa sức sáng tạo và bạn sẽ không phải mất thêm bất kỳ một phụ phí nào cho một buổi chụp hoàn mỹ. Với nhiều năm kinh nghiệm trong nghề chụp ảnh chúng tôi hiểu rằng để có một bức hình đẹp tại studio thì studio đó phải đáp ứng đầy đủ tất cả các yêu cầu từ các dịch vụ kỹ thuật đến hệ thống trang thiết bị. Với phòng chụp rộng rãi, không gian thoáng đãng rất phù hợp để chụp model, chụp thời trang, chụp các sản phẩm lớn… Hệ thống trang thiết bị ánh sáng sẽ đem đến cho khách hàng những hình ảnh chất lượng và tông màu đẹp tự nhiên. Với nhiều năm kinh nghiệm trong nghề chụp ảnh chúng tôi hiểu rằng để có một bức hình đẹp tại studio thì studio đó phải đáp ứng đầy đủ tất cả các yêu cầu từ các dịch vụ kỹ thuật đến hệ thống trang thiết bị. Với phòng chụp rộng rãi, không gian thoáng đãng rất phù hợp để chụp model, chụp thời trang, chụp các sản phẩm lớn… Hệ thống trang thiết bị ánh sáng sẽ đem đến cho khách hàng những hình ảnh chất lượng và tông màu đẹp tự nhiên.', 'Bạn là người đam mê chụp ảnh? Có nhiều ý tưởng mới, sáng tạo trong các gói chụp ảnh của mình THẾ NHƯNG bạn lại chưa tìm được studio ưng ý để chụp cho khách hàng yêu quý. Bạn có sản phẩm ưng ý muốn quảng cáo tới khánh hàng nhưng chưa có hình ảnh đẹp. Bạn muốn có 1 MV hàng trăm ngàn lượt view gửi tới khách hàng biết đến hình ảnh thương hiệu công ty bạn nhưng chư biết nên chụp như thế nào và chụp ở đâu. Nhằm phục vụ các cho các khách hàng thượng đế Tách studio hiện đang có dịch vụ cho thuê phòng chụp bao gồm đầy đủ các thiết bị ánh sáng, phông màu, wifi, phụ kiện chụp…v.v. Thích hợp chụp ảnh thời trang, ảnh cưới, ảnh sản phẩm…v.v Thiết bị hiện đại và chuyên nghiệp, đáp ứng tốt nhất nhu cầu cho việc chụp hình của bạn Tách studio cho thuê phòng chụp Indoor chuyên nghiệp, đầy đủ trang thiết bị. Địa điểm mặt phố thuận tiện đi lại, chỗ để xe rộng và an toàn. Trang thiết bị của Tách studio Quy mô phòng chụp: rộng 60m2 (5mx14m) với bàn trang điểm đạt chuẩn, hệ thống chiếu sáng, điều hòa hoạt động mạnh mẽ. Hệ thống trang thiết bị studio chuyênnghiệp: đèn Jinbei DPE 600 - 6 phông màu: Đen, ghi, trắng, vàng, xanh, hồng - Softbox bát giác khổng lồ (có lưới) 1500 - Softbox bát giác M950 - 2 Softbox chữ nhật 80x1200 - Dù bạc siêu lớn 150cm - Hắt sáng 5 trong 1 - Máy đo sáng Sekonic L308S - Gray card để cân bằng trắng - Chân đèn, boom set, chân đèn gầm, tripod, khung treo hắt sáng - Trigger Và nhiều phụ đạo cụ chụp ảnh khác như ghế bar, ghế gỗ...Thứ nhất là về Giá cả dao động rất lớn từ studio này sang studio kia, tuy nhiên bao gồm luôn việc tính thời gian, do đó Bạn cần phải lưu ý trước khi lựa chọn, nhất là khi mức phí thuê studio được tính đến những phần lẻ của ngày chụp. Đến với Tách studio bạn có thể hoàn toàn yên tâm về các vấn đề này, với chi phí chỉ từ 200 -600 ngàn cho một buổi chụp. Thứ hai là về không gian và kích cỡ của các studio. Bạn cần lưu ý đến không gian của studio trước khi lựa chọn. Studio càng lớn với nhiều bối cảnh sẽ khơi gợi nhiều ý tưởng sáng tạo cho bạn. Đến với Wishstar với không gian rộng lớn bao gồm các khung cảnh indoor và out door sẽ mang lại cho bạn một không gian lớn, thoáng mát, để bạn có thể thỏa sức sáng tạo hứa hẹn sẽ mang lại cho bạn những shoot ảnh đẹp với mức chi phí ưu đãi nhất. Thứ ba về: Chi phí phụ thu: Bạn cần phải thận trọng với các khoản phí ngầm, chẳng hạn như việc sử dụng các đạo cụ như giấy phông màn, đèn led... hoặc phí đậu xe, đay là các khoản chi phí ngầm mà một số studio sẽ thu tách biệt với tổng tiền thuê. Đến với Wishstar bạn có thể yên tâm về các vấn đề này. Wishstar có bãi đỗ xe rất an toàn, đạo cụ và phụ kiện đa dạng phong phú cho bạn thỏa sức sáng tạo và bạn sẽ không phải mất thêm bất kỳ một phụ phí nào cho một buổi chụp hoàn mỹ.Với nhiều năm kinh nghiệm trong nghề chụp ảnh chúng tôi hiểu rằng để có một bức hình đẹp tại studio thì studio đó phải đáp ứng đầy đủ tất cả các yêu cầu từ các dịch vụ kỹ thuật đến hệ thống trang thiết bị. Với phòng chụp rộng rãi, không gian thoáng đãng rất phù hợp để chụp model, chụp thời trang, chụp các sản phẩm lớn… Hệ thống trang thiết bị ánh sáng sẽ đem đến cho khách hàng những hình ảnh chất lượng và tông màu đẹp tự nhiên. Với nhiều năm kinh nghiệm trong nghề chụp ảnh chúng tôi hiểu rằng để có một bức hình đẹp tại studio thì studio đó phải đáp ứng đầy đủ tất cả các yêu cầu từ các dịch vụ kỹ thuật đến hệ thống trang thiết bị. Với phòng chụp rộng rãi, không gian thoáng đãng rất phù hợp để chụp model, chụp thời trang, chụp các sản phẩm lớn… Hệ thống trang thiết bị ánh sáng sẽ đem đến cho khách hàng những hình ảnh chất lượng và tông màu đẹp tự nhiên.', 'Đây là concept không thể thiếu cho bộ ảnh mẹ và bé trong mùa Giáng sinh này. Tình mẫu tử thiêng liêng sẽ được lột tả qua những post ảnh gây ấn tượng mạnh. Hình ảnh những cô bé, cậu bé nằm trọn trong vòng tay của mẹ được ôm ấp, được che chở bởi bàn tay ấm áp của mẹ trong tuyết trời đông giá lạnh. Quả là một ý tưởng đẹp đúng không nào. Với concept này, mẹ trở thành một cô bé đáng yêu với chiếc băng đô cài đầu hình cây thông hoặc đôi sừng của những chú Tuần Lộc. Và cô bé ấy đang chờ đón món quà đặc biệt từ ông già tuyết. Đây là ý tưởng đặc biệt giúp mẹ và bé cùng nhau chơi đùa để cho những shoot ảnh Giáng sinh tự nhiên nhất. Thứ nhất là về Giá cả dao động rất lớn từ studio này sang studio kia, tuy nhiên bao gồm luôn việc tính thời gian, do đó Bạn cần phải lưu ý trước khi lựa chọn, nhất là khi mức phí thuê studio được tính đến những phần lẻ của ngày chụp. Đến với Tách studio bạn có thể hoàn toàn yên tâm về các vấn đề này, với chi phí chỉ từ 200 -600 ngàn cho một buổi chụp. Thứ hai là về không gian và kích cỡ của các studio. Bạn cần lưu ý đến không gian của studio trước khi lựa chọn. Studio càng lớn với nhiều bối cảnh sẽ khơi gợi nhiều ý tưởng sáng tạo cho bạn. Đến với Wishstar với không gian rộng lớn bao gồm các khung cảnh indoor và out door sẽ mang lại cho bạn một không gian lớn, thoáng mát, để bạn có thể thỏa sức sáng tạo hứa hẹn sẽ mang lại cho bạn những shoot ảnh đẹp với mức chi phí ưu đãi nhất. Thứ ba về: Chi phí phụ thu: Bạn cần phải thận trọng với các khoản phí ngầm, chẳng hạn như việc sử dụng các đạo cụ như giấy phông màn, đèn led... hoặc phí đậu xe, đay là các khoản chi phí ngầm mà một số studio sẽ thu tách biệt với tổng tiền thuê. Đến với Wishstar bạn có thể yên tâm về các vấn đề này. Wishstar có bãi đỗ xe rất an toàn, đạo cụ và phụ kiện đa dạng phong phú cho bạn thỏa sức sáng tạo và bạn sẽ không phải mất thêm bất kỳ một phụ phí nào cho một buổi chụp hoàn mỹ.Với nhiều năm kinh nghiệm trong nghề chụp ảnh chúng tôi hiểu rằng để có một bức hình đẹp tại studio thì studio đó phải đáp ứng đầy đủ tất cả các yêu cầu từ các dịch vụ kỹ thuật đến hệ thống trang thiết bị. Với phòng chụp rộng rãi, không gian thoáng đãng rất phù hợp để chụp model, chụp thời trang, chụp các sản phẩm lớn… Hệ thống trang thiết bị ánh sáng sẽ đem đến cho khách hàng những hình ảnh chất lượng và tông màu đẹp tự nhiên. Với nhiều năm kinh nghiệm trong nghề chụp ảnh chúng tôi hiểu rằng để có một bức hình đẹp tại studio thì studio đó phải đáp ứng đầy đủ tất cả các yêu cầu từ các dịch vụ kỹ thuật đến hệ thống trang thiết bị. Với phòng chụp rộng rãi, không gian thoáng đãng rất phù hợp để chụp model, chụp thời trang, chụp các sản phẩm lớn… Hệ thống trang thiết bị ánh sáng sẽ đem đến cho khách hàng những hình ảnh chất lượng và tông màu đẹp tự nhiên.', 'Có được một bộ ảnh cưới đẹp để đời không chỉ là mơ ước của một hay hai mà là của tất cả các cặp đôi yêu nhau và đang tiến đến hôn nhân. Tuy nhiên, để có một album ảnh đẹp, cô dâu chú rể cũng cần có những kinh nghiệm quý giá cho mình. Không chỉ chụp ảnh ngoại cảnh mà chụp ảnh studio cũng dễ dàng có những bức ảnh “nức lòng”. Theo đúc kết và khảo sát từ nhiều cặp đôi, chúng tôi muốn chia sẻ đến bạn đọc tất tần tật từ A đến Z kinh nghiệm chụp ảnh cưới trong studio. Chụp ảnh cưới cũng giống như đám cưới, chỉ một lần trong đời mỗi người. Vì vậy để mọi việc diễn ra suôn sẽ và không gấp gáp, mọi thứ đều cần phải được dự trù từ trước. Quan trọng nhất là kinh phí chụp ảnh và thời gian chụp. Về kinh phí, bạn cần phải lưu ý về cả trang điểm cô dâu khi chụp ảnh, thuê studio, gói chụp và vé vào cổng địa điểm chụp ảnh. Nên nhớ phải dự trù kinh phí dư ra so với từng kế hoạch vì chi phí có thể phát sinh thêm trong quá trình chụp ảnh. Thứ nhất là về Giá cả dao động rất lớn từ studio này sang studio kia, tuy nhiên bao gồm luôn việc tính thời gian, do đó Bạn cần phải lưu ý trước khi lựa chọn, nhất là khi mức phí thuê studio được tính đến những phần lẻ của ngày chụp. Đến với Tách studio bạn có thể hoàn toàn yên tâm về các vấn đề này, với chi phí chỉ từ 200 -600 ngàn cho một buổi chụp. Thứ hai là về không gian và kích cỡ của các studio. Bạn cần lưu ý đến không gian của studio trước khi lựa chọn. Studio càng lớn với nhiều bối cảnh sẽ khơi gợi nhiều ý tưởng sáng tạo cho bạn. Đến với Wishstar với không gian rộng lớn bao gồm các khung cảnh indoor và out door sẽ mang lại cho bạn một không gian lớn, thoáng mát, để bạn có thể thỏa sức sáng tạo hứa hẹn sẽ mang lại cho bạn những shoot ảnh đẹp với mức chi phí ưu đãi nhất. Thứ ba về: Chi phí phụ thu: Bạn cần phải thận trọng với các khoản phí ngầm, chẳng hạn như việc sử dụng các đạo cụ như giấy phông màn, đèn led... hoặc phí đậu xe, đay là các khoản chi phí ngầm mà một số studio sẽ thu tách biệt với tổng tiền thuê. Đến với Wishstar bạn có thể yên tâm về các vấn đề này. Wishstar có bãi đỗ xe rất an toàn, đạo cụ và phụ kiện đa dạng phong phú cho bạn thỏa sức sáng tạo và bạn sẽ không phải mất thêm bất kỳ một phụ phí nào cho một buổi chụp hoàn mỹ.Với nhiều năm kinh nghiệm trong nghề chụp ảnh chúng tôi hiểu rằng để có một bức hình đẹp tại studio thì studio đó phải đáp ứng đầy đủ tất cả các yêu cầu từ các dịch vụ kỹ thuật đến hệ thống trang thiết bị. Với phòng chụp rộng rãi, không gian thoáng đãng rất phù hợp để chụp model, chụp thời trang, chụp các sản phẩm lớn… Hệ thống trang thiết bị ánh sáng sẽ đem đến cho khách hàng những hình ảnh chất lượng và tông màu đẹp tự nhiên. Với nhiều năm kinh nghiệm trong nghề chụp ảnh chúng tôi hiểu rằng để có một bức hình đẹp tại studio thì studio đó phải đáp ứng đầy đủ tất cả các yêu cầu từ các dịch vụ kỹ thuật đến hệ thống trang thiết bị. Với phòng chụp rộng rãi, không gian thoáng đãng rất phù hợp để chụp model, chụp thời trang, chụp các sản phẩm lớn… Hệ thống trang thiết bị ánh sáng sẽ đem đến cho khách hàng những hình ảnh chất lượng và tông màu đẹp tự nhiên.')
+    function product0(){  
+        document.getElementById('chitiet__product--tittle').innerHTML = studioName[0];
+        document.getElementById('chitiet__product--price').innerHTML = studioPrice[0];
+        document.getElementById('chitiet__infor--dientich').innerHTML = studioDientich[0];
+        document.getElementById('chitiet__infor--sodo').innerHTML = studioSodo[0];
+        document.getElementById('chitiet__infor--phongmau').innerHTML = studioPhongmau[0];
+        document.getElementById('chitiet__infor--col2text').innerHTML = studioMota[0];
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        
+    }
+    function product1(){  
+        document.getElementById('chitiet__product--tittle').innerHTML = studioName[1];
+        document.getElementById('chitiet__product--price').innerHTML = studioPrice[1];
+        document.getElementById('chitiet__infor--dientich').innerHTML = studioDientich[1];
+        document.getElementById('chitiet__infor--sodo').innerHTML = studioSodo[1];
+        document.getElementById('chitiet__infor--phongmau').innerHTML = studioPhongmau[1];
+        document.getElementById('chitiet__infor--col2text').innerHTML = studioMota[1];
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    function product2(){  
+        document.getElementById('chitiet__product--tittle').innerHTML = studioName[2];
+        document.getElementById('chitiet__product--price').innerHTML = studioPrice[2];
+        document.getElementById('chitiet__infor--dientich').innerHTML = studioDientich[2];
+        document.getElementById('chitiet__infor--sodo').innerHTML = studioSodo[2];
+        document.getElementById('chitiet__infor--phongmau').innerHTML = studioPhongmau[2];
+        document.getElementById('chitiet__infor--col2text').innerHTML = studioMota[2];
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    function product3(){  
+        document.getElementById('chitiet__product--tittle').innerHTML = studioName[3];
+        document.getElementById('chitiet__product--price').innerHTML = studioPrice[3];
+        document.getElementById('chitiet__infor--dientich').innerHTML = studioDientich[3];
+        document.getElementById('chitiet__infor--sodo').innerHTML = studioSodo[3];
+        document.getElementById('chitiet__infor--phongmau').innerHTML = studioPhongmau[3];
+        document.getElementById('chitiet__infor--col2text').innerHTML = studioMota[3];
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    function product4(){  
+        document.getElementById('chitiet__product--tittle').innerHTML = studioName[4];
+        document.getElementById('chitiet__product--price').innerHTML = studioPrice[4];
+        document.getElementById('chitiet__infor--dientich').innerHTML = studioDientich[4];
+        document.getElementById('chitiet__infor--sodo').innerHTML = studioSodo[4];
+        document.getElementById('chitiet__infor--phongmau').innerHTML = studioPhongmau[4];
+        document.getElementById('chitiet__infor--col2text').innerHTML = studioMota[4];
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    function congSanpham(){
+        var a = document.getElementById('chitiet__product--input').value;
+        var cong = ++a;
+        document.getElementById('chitiet__product--input').value = cong;
+    }
+    function truSanpham(){
+        var a = document.getElementById('chitiet__product--input').value;
+        var tru = --a;
+        if(tru < 1){
+            document.getElementById('chitiet__product--input').value = 1;
+        }
+        else
+        document.getElementById('chitiet__product--input').value = tru;
+    }
+    // var hinhanh = document.getElementById('smallImage');
+    // product0.onclick = function(){
+    //     this.src = "../IMAGES/studiocodien.png";
+    // }
+    
+</script>
 </body>
 </html>

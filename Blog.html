@@ -6,34 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="./CSS/Blog.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
 
-    <div id="page__header--container">
-        <ul class="page__header--text">
-            <li><a href="#">Tách Studio</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
-            <li><a href="#">Cho thuê</a>
-                <ul>
-                    <li><a href="#" style="color: black;">Máy ảnh</a></li>
-                    <li><a href="#" style="color: black;">Studio</a></li>
-                    <li><a href="#" style="color: black;">Trang phục</a></li>
-                </ul>
-            </li>
-            <li><a href="#album">Album</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#"> <span class="glyphicon glyphicon-search header__icon"></span> <input type="text"
-                        placeholder="Nhập từ tìm kiếm">
-            </a></li>
-            <li><a href="#">Đăng nhập</a></li>
-        </ul>
+    <div class="Page__Header--Container">
+        <div class="Page__Header--Tach">Tách studio</div>
+
+        <div class="Page__Header--Title"><i class="glyphicon glyphicon-home"></i></div>
+
+        <div class="Page__Header--Title Page__Header--Dropdown">
+            Cho thuê
+            <div class="dropdown-content">
+                <a href="#">Máy ảnh</a>
+                <a href="#">Studio</a>
+                <a href="#">Trang phục</a>
+            </div>
+        </div>
+
+        <div class="Page__Header--Title"><a href="#album">Album</a></div>
+
+        <div class="Page__Header--Title">Blog</div>
+
+        <div class="Page__Header--Icon ">
+            <span class="glyphicon glyphicon-search Page__Header--Icon2"></span>
+            <input class="Page__Header--Search" type="text" placeholder="Nhập từ tìm kiếm">
+        </div>
+        
+        <div class="Page__Header--Title">Đăng nhập</div>
     </div>
 
     <div class="Blog__layout">
         <div class="Blog__item Blog__item--col1" >
             <div class="Blog__item--col1header">
-          <p>CHUYỆN CỦA TÁCH</p>
+          <p>CHUYỆN TÁCH</p>
             </div>
             <div class="Blog__item--col1main">
                 <details class="Blog__col1--heading1">
@@ -42,25 +49,25 @@
                 <details class="Blog__col1--heading1">
                     <summary>Chủ đề chụp</summary>
                     <details class="Blog__col1--heading2">
-                        <summary>Gia đình</summary>
-                        <p class="Blog__col1--heading3">Bố và con</a></p>
-                        <p class="Blog__col1--heading3">Con đã lớn khôn</p>
+                        <summary >Gia đình</summary>
+                        <p class="Blog__col1--heading3"> <a href="./Bovacon.html" target="blog" class="text--decoration"> Bố và con</a></p>
+                        <p class="Blog__col1--heading3"> <a href="./Blog_giadinh.html" target="blog" class="text--decoration">Nhà là nơi tuyệt vời nhất</a></p>
                     </details>
                     <details class="Blog__col1--heading2">
                         <summary>Kỷ yếu</summary>
-                        <p class="Blog__col1--heading3">Lưu giữ thanh xuân</p>
-                        <p class="Blog__col1--heading3">Những mùa nhớ</p>
+                        <p class="Blog__col1--heading3"> <a href="./thanhxuan.html" target="blog" class="text--decoration">Lưu giữ thanh xuân</a></p>
+                        <p class="Blog__col1--heading3"><a href="./Nhungmuanho.html" target="blog" class="text--decoration">Những mùa nhớ</a></p>
                     </details>
                 </details>
                 <details class="Blog__col1--heading1">
                     <summary>Một số địa điểm chụp hình đẹp ở Sài Gòn</summary>
-                    <p class="Blog__col1--heading2">SaiGon WarterBus</p>
-                    <p class="Blog__col1--heading2">Hẻm 144 Pastuer</p>
+                    <p class="Blog__col1--heading2"><a href="./SaiGonWaterBus.html" target="blog" class="Blog--textdecoration">SaiGon WarterBus</a></p>
+                    <p class="Blog__col1--heading2"><a href="./Hem144Pastuer.html" target="blog" class="Blog--textdecoration">Hẻm 144 Pastuer</a></p>
                 </details>
                 <details class="Blog__col1--heading1">
                     <summary>Tips cần biết khi chụp ảnh</summary>
                     <p class="Blog__col1--heading2"><a href="./Chupanhbe.html" target="blog" class="Blog--textdecoration">Chụp ảnh bé theo từng độ tuổi</a></p>
-                    <p class="Blog__col1--heading2">Tạo dáng cho người mới</p>
+                    <p class="Blog__col1--heading2"><a href="./Taodang.html" target="blog" class="Blog--textdecoration"> Tạo dáng cho người mới</a></p>
                 </details>
             </div>
         </div>
