@@ -14,7 +14,7 @@ body,html{
 .Blog__item{
     border: 1px solid black;
     position: relative;
-    margin-top: 115px;
+    margin-top: 80px;
 }
 .Blog__item--col1{
     flex: 1.5;
@@ -68,525 +68,61 @@ body,html{
      font-size: 20px;
      font-family: 'roboto';
  }
-
-
-body,html{
-    margin: 0;
-    padding: 0;
-}
-
-.page__header--text{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-}
-
-.page__header--text li:nth-of-type(1){
-    font-family: 'Racing Sans One', cursive;
-    font-size: 25px;
-    font-weight: normal;
-}
-
-.page__header--text li input{
-    font-size: 16px;
-    font-weight: normal;
-    height: 40px;
-    border-radius: 10px;
-    padding-left: 40px;
-    color: black;
-    width: 200px;
-}
-
-.page__text{
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-}
-
-#page__header--container{
-    width: 100vw;
-    height: 112px;
-    background: #242426;
-    float: left;   
-    position: fixed;
-    z-index: 3;
-    line-height: 112px;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-}
-
-#page__header--container ul{
-    float: left;
-    list-style: none;
-    width: 100%;
-}
-
-#page__header--container ul li{
-    position: relative;
-    float: left;
-    margin-left: 6%;
-}
-
-#page__header--container ul li a{ 
-    display: block;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-#page__header--container ul li a:hover{
-    color: black;
-    background: white;
-    font-weight: bold;
-}
-
-#page__header--container ul li:nth-of-type(6) a:hover{
-    color: none;
-    background: none;
-    cursor: default;
-}
-
-#page__header--container li ul{
-    position: absolute;
-    display: none;
-    width: 10em;
-}
-
-#page__header--container li:hover ul{
-    display: block;
-}
-
-#page__header--container ul li ul li{
-    font-family: 'Roboto', sans-serif;
-    font-weight: normal;
-    font-size: 14px;
-    width: 150px;
-    height: 70px;
-    border-top: 1px solid black;
-    background-color: white;
-    text-align: center;
-    line-height: 70px;
-    position: relative;
-    left: -5px;
-}
-
-.header__icon{
-    left: 37px;
+.text--decoration{
     color: black;
 }
 
-.page__footer--container {
-    margin-top: 50px;
-    display: flex;
-    background-color: #242426;
-    color: white;
-    height: 250px;
-    width: 100vw;
-    padding-top: 50px;
-}
-
-.footer__text{
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-}
-
-.footer__header{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.footer--left {
-    flex: 20%;
-    text-align: left;
-    margin-left: 50px;
-}
-
-.footer--right {
-    flex: -5%;
-    text-align: left;
-    margin-right: 50px;
-}
-
-.footer--right p img{
-    height: 25px;
-    margin-right: 5px;
-}
-
-
-/* css responsive */
-@media screen and (max-width: 1280px){
-    .page__header--text{
-        font-size: 16px;
-    }
-    
-    .page__header--text li:nth-of-type(1){
-        font-size: 18px;
-    }
-
-    #page__header--container ul li{
-        margin-left: 72px;
-    }
-
-    .page__header--text li input{
-        font-size: 12px;
-        height: 30px;
-        width: 150px;
-        padding-left: 30px;
-    }
-
-    #page__header--container ul li ul li{
-        font-size: 12px;
-        width: 80px;
+/* responsive */
+@media only screen and (max-width: 600px){
+    .Blog__item--col1header{
+        font-size: 14px;
         height: 50px;
         line-height: 50px;
-        left: -80px;
-    }
-    
-    .header__icon{
-        left: 28px;
-    }
-
-
-    /* responsive Blog */
-    .Blog__item--col1header{
-        font-size: 24px;
+        
     }
     .Blog__item--col2header{
-        font-size: 24px;
-    }
-    .Blog__layout{
-        margin: 0 100px;
-    }
-    
-}
-
-@media screen and (max-width: 1110px){
-    .page__header--text{
-        font-size: 16px;
-    }
-    
-    .page__header--text li:nth-of-type(1){
-        font-size: 18px;
-    }
-
-    #page__header--container ul li{
-        margin-left: 55px;
-    }
-
-    .page__header--text li input{
-        font-size: 12px;
-        height: 30px;
-        width: 150px;
-        padding-left: 30px;
-    }
-
-    #page__header--container ul li ul li{
-        font-size: 12px;
-        width: 80px;
+        font-size: 14px;
         height: 50px;
         line-height: 50px;
-        left: -63px;
-    }
-    
-    .header__icon{
-        left: 28px;
-    }
-
-
-    /* responsive Blog */
-    .Blog__layout{
-        margin: 0 80px;
-    }
-}
-
-@media screen and (max-width: 980px){
-    .page__header--text{
-        font-size: 16px;
-    }
-    
-    .page__header--text li:nth-of-type(1){
-        font-size: 18px;
-    }
-
-    #page__header--container ul li{
-        margin-left: 40px;
-    }
-
-    .page__header--text li input{
-        font-size: 12px;
-        height: 30px;
-        width: 150px;
-        padding-left: 30px;
-    }
-
-    #page__header--container ul li ul li{
-        font-size: 12px;
-        width: 80px;
-        height: 50px;
-        line-height: 50px;
-        left: -45px;
-    }
-    
-    .header__icon{
-        left: 28px;
-    }
-
-
-    /* responsive Blog */
-    .Blog__item--col1header{
-        font-size: 20px;
-    }
-    .Blog__item--col2header{
-        font-size: 20px;
+        margin: 0 auto;
+        
     }
     .Blog__layout{
-        margin: 0 90px;
+        margin: 0 20px;
+        flex-direction: column;
     }
     .Blog__col1--heading1{
-        font-size: 18px;
+        font-size: 12px;
+    }
+    .Blog__item--col2{
+        margin-top: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+        /* margin: 0 10px; */
+    }
+    .Blog__item--col1{
+        margin-top: 50px;
+        margin-left: 5px;
+        margin-right: 5px;
+        /* margin: 0 10px; */
+    }
+    
+    .blog__item--col1main{
+        padding-top: 5px;
+
+    }
+    .Blog__col1--heading3{
+        font-size: 12px ;
     }
 }
 
-@media screen and (max-width: 870px){
-    .page__header--text{
-        font-size: 15px;
-    }
-    
-    .page__header--text li:nth-of-type(1){
-        font-size: 17px;
-    }
-
-    #page__header--container ul li{
-        margin-left: 30px;
-    }
-
-    .page__header--text li input{
-        font-size: 12px;
-        height: 30px;
-        width: 150px;
-        padding-left: 30px;
-    }
-
-    #page__header--container ul li ul li{
-        font-size: 12px;
-        width: 80px;
-        height: 50px;
-        line-height: 50px;
-        left: -35px;
-    }
-    
-    .header__icon{
-        left: 28px;
-    }
-
-    /* responsive Blog */
-    .Blog__item--col1header{
-        font-size: 18px;
-    }
-    .Blog__item--col2header{
-        font-size: 18px;
-    }
-    .Blog__layout{
-        margin: 0 70px;
-    }
-    .Blog__col1--heading1{
-        font-size: 18px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .page__header--text{
-        font-size: 15px;
-    }
-    
-    .page__header--text li:nth-of-type(1){
-        font-size: 17px;
-    }
-
-    #page__header--container ul li{
-        margin-left: 20px;
-    }
-
-    .page__header--text li input{
-        font-size: 12px;
-        height: 30px;
-        width: 150px;
-        padding-left: 30px;
-    }
-
-    #page__header--container ul li ul li{
-        font-size: 12px;
-        width: 80px;
-        height: 50px;
-        line-height: 50px;
-        left: -27px;
-    }
-    
-    .header__icon{
-        left: 28px;
-    }
-    
-    .footer__header{
-        font-size: 14px;
-    }
-
-    .footer__text{
-        font-size: 10px;
-    }
-
-    .footer--right p img{
-        height: 15px;
-    }
-
-
-
-    /* responsive Blog */
-    .Blog__item--col1header{
-        font-size: 16px;
-    }
-    .Blog__item--col2header{
-        font-size: 16px;
-    }
-    .Blog__layout{
-        margin: 0 50px;
-    }
-    .Blog__col1--heading1{
-        font-size: 16px;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .page__header--text{
-        font-size: 15px;
-    }
-    
-    .page__header--text li:nth-of-type(1){
-        font-size: 17px;
-    }
-
-    #page__header--container ul li{
-        margin-left: 15px;
-    }
-
-    .page__header--text li input{
-        font-size: 12px;
-        height: 30px;
-        width: 150px;
-        padding-left: 30px;
-    }
-
-    #page__header--container ul li ul li{
-        font-size: 12px;
-        width: 80px;
-        height: 50px;
-        line-height: 50px;
-        left: -22px;
-    }
-    
-    .header__icon{
-        left: 28px;
-    }
-
-    /* responsive Blog */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px){
     .Blog__item--col1header{
         font-size: 14px;
     }
     .Blog__item--col2header{
         font-size: 14px;
-    }
-    .Blog__layout{
-        margin: 0 40px;
-    }
-    .Blog__col1--heading1{
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 660px) {
-    .page__header--text{
-        font-size: 12px;
-    }
-    
-    .page__header--text li:nth-of-type(1){
-        font-size: 15px;
-    }
-    
-    #page__header--container ul li{
-        margin-left: 13px;
-    }
-    
-    .page__header--text li input{
-        font-size: 8px;
-        height: 25px;
-        width: 100px;
-        padding-left: 18px;
-    }
-    
-    #page__header--container ul li ul li{
-        font-size: 8px;
-        width: 60px;
-        height: 30px;
-        line-height: 30px;
-        left: -25px;
-    }
-    
-    .header__icon{
-        left: 20px;
-    }
-
-    /* responsive Blog */
-    .Blog__item--col1header{
-        font-size: 14px;
-    }
-    .Blog__item--col2header{
-        font-size: 14px;
-    }
-    .Blog__layout{
-        margin: 0 40px;
-    }
-    .Blog__col1--heading1{
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 540px) {
-    .page__header--text{
-        font-size: 12px;
-    }
-    
-    .page__header--text li:nth-of-type(1){
-        font-size: 15px;
-    }
-    
-    #page__header--container ul li{
-        margin-left: 8px;
-    }
-    
-    .page__header--text li input{
-        font-size: 8px;
-        height: 23px;
-        width: 100px;
-        padding-left: 18px;
-    }
-    
-    #page__header--container ul li ul li{
-        font-size: 8px;
-        width: 60px;
-        height: 30px;
-        line-height: 30px;
-        left: -25px;
-    }
-    
-    .header__icon{
-        left: 20px;
-    }
-
-    /* responsive Blog */
-    .Blog__item--col1header{
-        font-size: 12px;
-    }
-    .Blog__item--col2header{
-        font-size: 12px;
     }
     .Blog__layout{
         margin: 0 20px;
@@ -597,54 +133,110 @@ body,html{
     .Blog__item--col2{
         margin-left: 10px;
     }
+    .Blog__item{
+        margin-top: 50px;
+    }
+    .Blog__col1--heading3{
+        font-size: 12px ;
+    }
 }
 
-@media screen and (max-width: 500px) {
-    .page__header--text{
-        font-size: 10px;
-    }
-    
-    .page__header--text li:nth-of-type(1){
-        font-size: 15px;
-    }
-    
-    #page__header--container ul li{
-        margin-left: 7px;
-    }
-    
-    .page__header--text li input{
-        font-size: 8px;
-        height: 20px;
-        width: 100px;
-        padding-left: 18px;
-    }
-    
-    #page__header--container ul li ul li{
-        font-size: 8px;
-        width: 60px;
-        height: 30px;
-        line-height: 30px;
-        left: -25px;
-    }
-    
-    .header__icon{
-        left: 20px;
-    } */
-
-    /* responsive Blog */
-     .Blog__item--col1header{
-        font-size: 10px;
+/* Medium devices (landscape tablets, 768px and up */
+@media only screen and (min-width: 768px){
+    .Blog__item--col1header{
+        font-size: 18px;
     }
     .Blog__item--col2header{
-        font-size: 10px;
+        font-size: 18px;
     }
     .Blog__layout{
-        margin: 0 0px;
+        margin: 0 30px;
     }
     .Blog__col1--heading1{
-        font-size: 10px;
+        font-size: 14px;
     }
     .Blog__item--col2{
-        margin-left: 5px;
+        margin-left: 10px;
+    }
+    .Blog__item{
+        margin-top: 60px;
+    }
+    .Blog__col1--heading3{
+        font-size: 14px ;
     }
 }
+
+/* Large devices (laptops/desktops, 992px and up */
+@media only screen and (min-width: 992px){
+    .Blog__item--col1header{
+        font-size: 22px;
+    }
+    .Blog__item--col2header{
+        font-size: 22px;
+    }
+    .Blog__layout{
+        margin: 0 40px;
+    }
+    .Blog__col1--heading1{
+        font-size: 16px;
+    }
+    .Blog__item--col2{
+        margin-left: 22px;
+    }
+    .Blog__item{
+        margin-top: 70px;
+    }
+    .Blog__col1--heading3{
+        font-size: 16px ;
+    }
+}
+
+/* Extra large devices (Large desktops and laptops, 1200px and up) */
+@media only screen and (min-width: 1200px){
+    .Blog__item--col1header{
+        font-size: 24px;
+    }
+    .Blog__item--col2header{
+        font-size: 22px;
+    }
+    .Blog__layout{
+        margin: 0 125px;
+    }
+    .Blog__col1--heading1{
+        font-size: 18px;
+    }
+    .Blog__item--col2{
+        margin-left: 22px;
+    }
+    .Blog__item{
+        margin-top: 80px;
+    }
+}
+@media only screen and (min-width: 1500px){
+    .Blog__item--col1header{
+        font-size: 32px;
+    }
+    .Blog__item--col2header{
+        font-size: 32px;
+    }
+    .Blog__layout{
+        margin: 0 125px;
+    }
+    .Blog__col1--heading1{
+        font-size: 20px;
+    }
+    .Blog__item--col2{
+        margin-left: 22px;
+    }
+    .Blog__item{
+        margin-top: 80px;
+    }
+}
+/* @media only screen and (max-width: 411px){
+    .Blog__item--col1header{
+        font-size: 7px;
+    }
+    .Blog__item--col2header{
+        font-size: 7px;
+    }
+} */
