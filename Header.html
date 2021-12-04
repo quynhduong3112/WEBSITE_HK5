@@ -35,9 +35,9 @@
         <div class="Page__Header--Title Page__Header--Dropdown">
             <button class="dropdown__button">Cho Thuê</button>
             <div class="dropdown__content">
-                <a href="">Máy ảnh</a>
-                <a href="">Studio</a>
-                <a href="">Trang phục</a>
+                <a href=""> Máy ảnh</a>
+                <a href=""> Studio</a>
+                <a href=""> Trang phục</a>
             </div>
         </div>
         <a href="" class="Page__Header--Title">Album</a>
@@ -48,27 +48,6 @@
         </div>
         <a href="" class="Page__Header--Login">Đăng nhập</a>
     </div>
-    <script>
-        function openNav() {
-            document.getElementById("myHeader2").style.width = "250px";
-        }
-        function closeNav() {
-            document.getElementById("myHeader2").style.width = "0";
-        }
-        var dropdown = document.getElementsByClassName("dropdown-btn");
-        var i;
-        for (i = 0; i < dropdown.length; i++) {
-            dropdown[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var dropdownContent = this.nextElementSibling;
-                if (dropdownContent.style.display === "block") {
-                    dropdownContent.style.display = "none";
-                } else {
-                    dropdownContent.style.display = "block";
-                }
-            });
-        }
-    </script>
 </body>
 
 </html>
