@@ -123,19 +123,19 @@
                     <p class="title">NHẬP THÔNG TIN CÁ NHÂN</p>
                     <div class="nhapthongtin datthue__right--item4">
                         <label for="" class="datthue__label datthue__label--5">Họ và tên:<span class="color">*</span></label>
-                        <input type="text" class="datthue__input" required value="Dương Phạm Diễm Quỳnh">
+                        <input id = "personal-full-name" type="text" class="datthue__input" required onkeyup="changeName(event.target.value)">
                     </div>
                     <div class="nhapthongtin datthue__right--item5">
                         <label for="" class="datthue__label datthue__label--6">Số điện thoại:<span class="color">*</span></label>
-                        <input type="text" class="datthue__input" required value="0819636086">
+                        <input id = "personal-phone" type="text" class="datthue__input" required onkeyup="changePhone(event.target.value)">
                     </div>
                     <div class="nhapthongtin datthue__right--item6">
                         <label for="" class="datthue__label datthue__label--7">CMND/CCCD:<span class="color">*</span></label>
-                        <input type="text" class="datthue__input" required>
+                        <input id = "personal-identify-number" type="text" class="datthue__input" required onkeyup="changeIdentifyNumber(event.target.value)">
                     </div>
                     <div class="nhapthongtin datthue__right--item7">
                         <label for="" class="datthue__label datthue__label--8">Địa chỉ email:<span class="color">*</span></label>
-                        <input type="email" class="datthue__input" required>
+                        <input id = "personal-email" type="email" class="datthue__input" required onkeyup="changeEmail(event.target.value)">
                     </div>
                     <div class="nhapthongtin datthue__right--item8">
                         <label for="" class="datthue__label datthue__label--9">Nhập mã giảm giá:</label>
@@ -144,30 +144,31 @@
                     </div>
                     <hr>
                     <p class="title">NHẬP THÔNG TIN NGƯỜI NHẬN</p>
-                    <div class="input__checkbox"><input type="checkbox" name="" id="" >  Người nhận là bạn</div>
+                    <div class="input__checkbox"><input type="checkbox" name="" id="check-box-confirm" onclick="confirmInfor()">  Người nhận là bạn</div>
                     <div class="nhapthongtin datthue__right--item9">
                         <label for="" class="datthue__label datthue__label--10">Họ và tên:<span class="color">*</span></label>
-                        <input name="" id="" class="datthue__input">
+                        <input name="" id="second-name" class="datthue__input">
                         </input>
                     </div>
                     <div class="nhapthongtin datthue__right--item10">
                         <label for="" class="datthue__label datthue__label--11">Số điện thoại:<span class="color">*</span></label>
-                        <input name="" id="mobile" type="text" checkmobile class="datthue__input">
+                        <input name="" id="second-phone" type="text" checkmobile class="datthue__input">
                         </input>
                     </div>
                     <div class="nhapthongtin datthue__right--item11">
                         <label for="" class="datthue__label datthue__label--12">CMND/CCCD:<span class="color">*</span></label>
-                        <input name="" id="" class="datthue__input">
+                        <input name="" id="second-identify-number" class="datthue__input">
                         </input>
                     </div>
                     <div class="nhapthongtin datthue__right--item12">
                         <label for="" class="datthue__label datthue__label--13">Địa chỉ email:<span class="color">*</span></label>
-                        <input name="" id="email" type="email" class="datthue__input">
+                        <input name="" id="second-email" type="email" class="datthue__input">
                         </input>
                     </div>
                     <div>
-                        <input type="button" value="Đặt thuê" src="./order.html" id="renting" onclick="renting"
+                        <input type="button" value="Đặt thuê" src="./order.html" id="renting" onclick="renting()"
                          class="datthue__input datthue__input--button2">
+                        <a hfef = "#" id = "submit-form" hidden></a>
                     </div>
                     <div class="note">
                     <p class="bottom">(Bạn phải trả tiền đặt cọc = 50% tổng số tiền thuê)</p>                  
@@ -198,13 +199,144 @@
             var today = new Date();
             var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
             document.getElementById("date").innerHTML = date;   
-
+            let isConfirm = false;
         
             var today = new Date();      
             var time = today.getHours() + ":" + today.getMinutes();
             document.getElementById("time").innerHTML = time;
 
-            
+            // mấy cái thông tin ở trên nè
+            let personalFullName = document.getElementById("personal-full-name"); // -> Họ và tên
+            let personalNumberPhone = document.getElementById("personal-phone"); // -> Số điện thoại
+            let personalIdentifyNumber = document.getElementById("personal-identify-number"); // -> CMND/CCCD
+            let personalEmail = document.getElementById("personal-email"); // -> Email
+            // Các thông tin ở dưới nè
+            let secondFullName = document.getElementById("second-name"); // -> Họ và tên
+            let secondNumberPhone = document.getElementById("second-phone"); // -> Số điện thoại
+            let secondIdentifyNumber = document.getElementById("second-identify-number"); // -> CMND/CCCD
+            let secondEmail = document.getElementById("second-email"); // -> Email
+
+            // hàm để đặt thuê
+            function renting() {
+                if (handleErrorValidate()) {  // -> kiểm tra validate oke thì sẽ submit form để qua trang khác ->? chưa có trang nên nhỏ tự thêm thẻ vô
+                    document.getElementById("submit-form").onsubmit;
+                }
+            }
+
+            // xử lý khib  gặp lỗi nè
+            function handleErrorValidate() {
+                let isError = true;
+                if (!validateFullName(personalFullName.value)) { // hàm kiểm tra lỗi của tên
+                    isError = false;
+                    personalFullName.classList.add("error");  // add thêm 1 class error vào, mấy cái dưới tương tự
+                    secondFullName.classList.add("error");
+                } else {
+                    debugger;
+                    personalFullName.classList.remove("error"); // loại bỏ 1 class error đó ra, mấy cái dưới tương tự
+                    secondFullName.classList.remove("error");
+                }
+
+                if (!validateNumberPhone(personalNumberPhone.value)) {
+                    isError = false;
+                    personalNumberPhone.classList.add("error");
+                    secondNumberPhone.classList.add("error");
+                } else {
+                    personalNumberPhone.classList.remove("error");
+                    secondNumberPhone.classList.remove("error");
+                }
+
+                if (!validateIdentifyNumber(personalIdentifyNumber.value)) {
+                    isError = false;
+                    personalIdentifyNumber.classList.add("error");
+                    secondIdentifyNumber.classList.add("error");
+                } else {
+                    personalIdentifyNumber.classList.remove("error");
+                    secondIdentifyNumber.classList.remove("error");
+                }
+                debugger
+                if (!validateEmail(personalEmail.value)) {
+                    isError = false;
+                    personalEmail.classList.add("error");
+                    secondEmail.classList.add("error");
+                } else {
+                    personalEmail.classList.remove("error");
+                    secondEmail.classList.remove("error");
+                }
+                return isError;
+            }
+
+            // hàm kiểm tra lỗi của tên
+            function validateFullName(personalFullName) {
+                const regex = /(.[^\d\!\@\#\$\%\^\&\*\(\)\-\=\+\_\;\:\'\"\,\<\.\>\/\?])+/g;  //-> regex này là nó lấy tấy cả các kí tự ngoại trừ những kí tự đặc biệt và số
+                const result = personalFullName.match(regex);
+                return result && result[0] == personalFullName ? true : false;
+            }
+            // hàm kiểm tra lỗi của số điện thoại
+            function validateNumberPhone(personalNumberPhone) {
+                const regex = /^\d{10}$/g; //-> regex này là nó lấy chỉ có số và phải đủ 10 số
+                const result = personalNumberPhone.match(regex);
+                return result && result[0] == personalNumberPhone ? true : false;
+            }
+
+            function validateIdentifyNumber(personalIdentifyNumber) {
+                const regex = /^\d{9}$/g; //-> regex này là nó lấy chỉ có số và phải đủ 9 số
+                const result = personalIdentifyNumber.match(regex);
+                return result && result[0] == personalIdentifyNumber ? true : false;
+            }
+
+            function validateEmail(personalEmail) {
+                const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/g; //-> regex này là nó lấy đúng định dạng email abc@abc.abc
+                const result = personalEmail.match(regex);
+               return result && result[0] == personalEmail ? true : false;
+            }
+
+            // check checkbox người nhận là bạn
+            function confirmInfor() {
+                isConfirm = !isConfirm;  // 1 biến để lưu status hiện tại của checkbox đó
+                if (isConfirm) {  // nếu là tick checkbox
+                    secondFullName.disabled = true;  // disable mấy thẻ ni luôn, k cho nhập
+                    secondNumberPhone.disabled = true;
+                    secondIdentifyNumber.disabled = true;
+                    secondEmail.disabled = true;
+                    secondFullName.value = document.getElementById("personal-full-name").value;  // lấy giá trị tương ứng ở trên bỏ vào đây
+                    secondNumberPhone.value = document.getElementById("personal-phone").value;
+                    secondIdentifyNumber.value = document.getElementById("personal-identify-number").value;
+                    secondEmail.value = document.getElementById("personal-email").value;
+                } else {
+                    secondFullName.disabled = false;  // ngược lại ở trên
+                    secondNumberPhone.disabled = false;
+                    secondIdentifyNumber.disabled = false;
+                    secondEmail.disabled = false;
+                }
+            }
+
+            // hàm thay đổi input tên ở trên k phải ở dưới
+            function changeName(data) {
+                if (isConfirm) {
+                    secondFullName.value = data;  // gán ô ở dưới với value ở trên tương ứng -> name với name, sdt với sđt
+                }
+            }
+
+            // hàm thay đổi input tên ở trên k phải ở dưới
+            function changePhone(data) {
+                if (isConfirm) {
+                    secondNumberPhone.value = data;
+                }
+            }
+
+            // hàm thay đổi input tên ở trên k phải ở dưới
+            function changeIdentifyNumber(data) {
+                if (isConfirm) {
+                    secondIdentifyNumber.value = data;
+                }
+            }
+
+            // hàm thay đổi input tên ở trên k phải ở dưới
+            function changeEmail(data) {
+                if (isConfirm) {
+                    secondEmail.value = data;
+                }
+            }
     </script>
 </body>
 </html>
