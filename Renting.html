@@ -12,26 +12,42 @@
 </head>
 <body>
     <div class="website">
-        <div class="Page__Header--Container">
-            <div class="Page__Header--Tach">Tách studio</div>   
-            <div class="Page__Header--Title"><i class="glyphicon glyphicon-home"></i></div>   
+        <div id="myHeader2" class="header__vertical">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <div class="header__search">
+                <span class="glyphicon glyphicon-search Page__Header--Icon2"></span>
+                <input class="Page__Header--Search" type="text" placeholder="Nhập từ tìm kiếm">
+            </div>
+            <a href="" class="Page__Header--Title"><i class="glyphicon glyphicon-home"></i></a>
+            <button class="dropdown-btn">Cho Thuê</button>
+            <div class="dropdown-container">
+                <a href=""> Máy ảnh</a>
+                <a href=""> Studio</a>
+                <a href=""> Trang phục</a>
+            </div>
+            <a href="">Album</a>
+            <a href="">Blog</a>
+        </div>
+        <div class="Page__Header--Container" id="myHeader">
+            <a href="javascript:void(0);" class="header__button" onclick="openNav()"><i
+                    class="glyphicon glyphicon-menu-hamburger"></i></a>
+            <a href="" class="Page__Header--Tach">Tách studio</a>
+            <a href="" class="Page__Header--Title"><i class="glyphicon glyphicon-home"></i></a>
             <div class="Page__Header--Title Page__Header--Dropdown">
-                Cho thuê
-                <div class="dropdown-content">
-                    <a href="#">Máy ảnh</a>
-                    <a href="#">Studio</a>
-                    <a href="#">Trang phục</a>
+                <button class="dropdown__button">Cho Thuê</button>
+                <div class="dropdown__content">
+                    <a href="">Máy ảnh</a>
+                    <a href="">Studio</a>
+                    <a href="">Trang phục</a>
                 </div>
-            </div>   
-            <div class="Page__Header--Title" id="color"><a href="#album">Album</a></div>
-    
-            <div class="Page__Header--Title">Blog</div>
-    
+            </div>
+            <a href="" class="Page__Header--Title">Album</a>
+            <a href="" class="Page__Header--Title">Blog</a>
             <div class="Page__Header--Icon">
                 <span class="glyphicon glyphicon-search Page__Header--Icon2"></span>
                 <input class="Page__Header--Search" type="text" placeholder="Nhập từ tìm kiếm">
-            </div>            
-            <div class="Page__Header--Ava"><img src="../IMAGES/header-avatar.png" alt=""></div>
+            </div>
+            <a href="" class="Page__Header--Login2"><img src="../Images/Avatar.png" alt=""></a>
         </div>
         <div class="container">
             <div class="datthue--top">
@@ -268,26 +284,22 @@
             // hàm kiểm tra lỗi của tên
             function validateFullName(personalFullName) {
                 const regex = /(.[^\d\!\@\#\$\%\^\&\*\(\)\-\=\+\_\;\:\'\"\,\<\.\>\/\?])+/g;  //-> regex này là nó lấy tấy cả các kí tự ngoại trừ những kí tự đặc biệt và số
-                const result = personalFullName.match(regex);
-                return result && result[0] == personalFullName ? true : false;
+                return regex.test(personalFullName); //dùng để kiểm tra xem một string có chứa khuôn mẫu đã định nghĩa hay không. Nếu có thì kết quả trả về là TRUE và ngược lại thì là FALSE.
             }
             // hàm kiểm tra lỗi của số điện thoại
             function validateNumberPhone(personalNumberPhone) {
                 const regex = /^\d{10}$/g; //-> regex này là nó lấy chỉ có số và phải đủ 10 số
-                const result = personalNumberPhone.match(regex);
-                return result && result[0] == personalNumberPhone ? true : false;
+                return regex.test(personalNumberPhone);
             }
 
             function validateIdentifyNumber(personalIdentifyNumber) {
                 const regex = /^\d{9}$/g; //-> regex này là nó lấy chỉ có số và phải đủ 9 số
-                const result = personalIdentifyNumber.match(regex);
-                return result && result[0] == personalIdentifyNumber ? true : false;
+                return regex.test(personalIdentifyNumber);
             }
-
+            
             function validateEmail(personalEmail) {
                 const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/g; //-> regex này là nó lấy đúng định dạng email abc@abc.abc
-                const result = personalEmail.match(regex);
-               return result && result[0] == personalEmail ? true : false;
+                return regex.test(personalEmail);               
             }
 
             // check checkbox người nhận là bạn
