@@ -1,867 +1,659 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap');
-html, body{
-    margin: 0;
-    padding: 0;
-}
-/*Trang*/
-.HorHeader__container{
-    background-color: #242426;
-    width: 100%;
-    top: 0px;
-    position: fixed;
-    z-index: 1;
-}
-.HorHeader__container .HorHeader__button{
-    display: none;
-}
-.HorHeader__tach{ 
-    font-family: 'Racing Sans One', cursive;
-    font-weight: bold;
-    color: white;
-    font-size: 21px;
-}
-.HorHeader__login{
-    color: white;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-    font-size: 20px;
-}
-.Header__title{
-    color: white;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-    font-size: 20px;
-}
-.HorHeader__button{
-    font-size: 0px;
-}
-.Header__search{
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 100%;
-    padding: 5px 5px 5px 35px;
-    font-size: 15px;
-    color: black;
-}
-.VerHeader__search{
-    margin-left: 32px;
-    margin-right: 8px;
-}
-.Header__icon--2{
-    color: black;
-    margin-right: -30px;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap");
 
-.HorHeader__dropdown {
-    float: left;
-    overflow: hidden;
-    width: 12%;
+body,
+html {
+  margin: 0;
+  padding: 0;
 }
-.HorHeader__dropdown .HorHeader__dropdown--button{    
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: #242426;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0px;
+/* header, footer */
+
+/* Hiếu */
+.TrangChu__header--banner {
+  position: relative;
+  width: 100%;
 }
-.HorHeader__dropdown:hover .HorHeader__dropdown--button{
-    background-color: #242426;
-    color: white;
+.TrangChu__header--banner img {
+  width: 100%;
+  height: auto;
 }
-.HorHeader__container a,.HorHeader__container div:nth-of-type(2){
-  float: left;
-  width: 14.3%;
-  display: block;
-  color: white;
+.TrangChu__header--introduction {
+  margin-top: 100px;
+  display: flex;
+}
+.TrangChu__introduction--1 {
+  border: 1px solid white;
+  padding: 30px;
+}
+.TrangChu__introduction--2 img {
+  height: auto;
+  width: 100%;
+}
+.TrangChu__introduction--header {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+.TrangChu__introduction--para {
+  font-family: "Roboto", sans-serif;
+}
+.TrangChu__body--service,
+.TrangChu__body--album {
+  margin-top: 50px;
+}
+.TrangChu__body--space {
+  border: 1px solid white;
+  margin: 50px 5px;
+  padding: 20px 0px;
+}
+.TrangChu__body--h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 50px;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
 }
-.HorHeader__container a:not(:nth-of-type(2)):hover, .HorHeader__container a:not(:nth-of-type(6)):hover {
-    background-color: white;
-    color: black;
-    text-decoration: none;
+.TrangChu__item--service,
+.TrangChu__item--album,
+.TrangChu__item--space {
+  display: flex;
 }
-.HorHeader__container a:nth-of-type(2):hover, .HorHeader__container a:nth-of-type(6):hover{
-    background-color: #242426;
-    color: white;
-    text-decoration: none;
+.TrangChu__service--1,
+.TrangChu__space--1,
+.TrangChu__album--1 {
+  position: relative;
+  text-align: center;
 }
-.HorHeader__dropdown--content{
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 160px;
-    z-index: 2;
+.TrangChu__service--1 img,
+.TrangChu__album--1 img,
+.TrangChu__space--1 img {
+  opacity: 80%;
+  height: auto;
 }
-.HorHeader__dropdown--content a:nth-of-type(1):hover, .HorHeader__dropdown--content a:nth-of-type(2):hover,.HorHeader__dropdown--content a:nth-of-type(3):hover{
-    background-color: #242426;
-    color: white;
+.TrangChu__space--1 img {
+  border-radius: 20px;
 }
-.HorHeader__dropdown--content a{
-    float: none;
-    color: black;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    display: block;
-    width: 100%;
-    text-align: left;
+.TrangChu__album--1 div,
+.TrangChu__space--1 div,
+.TrangChu__service--1 div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
-.HorHeader__dropdown:hover .HorHeader__dropdown--content{
-    display: block;
+.TrangChu__service--1 input {
+  border-radius: 5px;
+  color: white;
+  background-color: #f2c806;
+  border: none;
+  text-align: center;
+  cursor: pointer;
 }
-.VerHeader__container  {
-    width: 0;
-    position: fixed;
-    z-index: 2;
-    height: 100%;
-    background-color: #242426;
-    overflow-x: hidden;
-    transition: 0.3s;
-    padding-top: 60px;
+.TrangChu__item--space--more {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin-top: 30px;
 }
-.VerHeader__container a {
-    padding: 8px 8px 8px 32px;
-    font-family: 'Montserrat', sans-serif;
+.TrangChu__item--space--more a {
+  color: white;
+}
+.TrangChu__body--color {
+  background-color: black;
+  color: white;
+}
+.TrangCaNhan__body--container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 150px;
+}
+.TrangCaNhan__body--container h1,
+.TrangCaNhan__body--container h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.TrangCaNhan__body--container p {
+  font-family: "Roboto", sans-serif;
+}
+.TrangCaNhan__icon--edit {
+  margin-right: 5px;
+}
+.TrangCaNhan__item--1 {
+  width: 90%;
+  background: black;
+  border-radius: 5px;
+  position: relative;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.TrangCaNhan__item--1 img {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.TrangCaNhan__item--2 {
+  position: relative;
+  margin-top: 24px;
+  text-align: center;
+}
+.TrangCaNhan__item--3 {
+  text-align: center;
+}
+.TrangCaNhan__container--function {
+  display: flex;
+  justify-content: space-around;
+}
+.TrangCaNhan__container--function div,
+.TrangCaNhan__body--cursor {
+  cursor: pointer;
+}
+.TrangCaNhan__icon--size {
+  margin-bottom: 15px;
+}
+.ChiTietKM__container {
+  max-width: 555px;
+  margin: auto;
+  padding-bottom: 24px;
+  border: 1px solid black;
+}
+.ChiTietKM__header {
+  height: 93px;
+  width: 100%;
+  background: black;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+.ChiTietKM__header--container {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  display: flex;
+  height: 141px;
+  width: 90%;
+}
+.ChiTietKM__item--1 {
+  position: relative;
+  width: 30%;
+}
+.ChiTietKM__item--1 p {
+  font-weight: bold;
+  position: absolute;
+  top: 37%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.ChiTietKM__item--2 {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: white;
+  width: 70%;
+  height: 100%;
+  position: relative;
+  left: 4px;
+  box-shadow: 2.5px 2px rgba(173, 173, 173, 0.2);
+}
+.ChiTietKM__item--container {
+  margin: 10px;
+  width: 100%;
+}
+.ChiTietKM__item--container > div p:first-child {
+  color: #ff0000;
+  border: 1px solid #ff0000;
+  padding: 4px 15px;
+  border-radius: 5px;
+  margin-right: 18px;
+}
+.ChiTietKM__item--container > div p:last-child {
+  margin-top: 22px;
+}
+.ChiTietKM--price {
+  display: flex;
+}
+.ChiTietKM--date {
+  color: #a7a7a7;
+}
+.ChiTietKM__body--container {
+  margin: 100px 24px 20px 24px;
+}
+.ChiTietKM__body--container h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.ChiTietKM__body--container p {
+  font-family: "Roboto", sans-serif;
+}
+.ChiTietKM__footer--button {
+  text-align: center;
+}
+.ChiTietKM__footer--button button {
+  width: 91%;
+  height: 35px;
+  background: black;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+.DoiDiem--point {
+  width: 271px;
+  height: 80px;
+  background: #3bb8c3;
+  color: white;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 80px;
+  margin: auto;
+}
+@media only screen and (max-width: 600px) {
+  /* header, footer */
+
+  /* Hiếu */
+  .TrangChu__header--banner {
+    top: 25px;
+  }
+  .TrangChu__introduction--header {
     font-size: 18px;
-    color: white;
-    display: block;
-    text-decoration: none;
-}
-.VerHeader__container > a:not(:nth-of-type(1)):hover{
-    text-decoration: none;
-    color: black;
-    background-color: white;
-}
-.VerHeader__container > a:nth-of-type(1):hover{
-    text-decoration: none;
-    color: white;
-}
-.VerHeader__container .VerHeader__closebtn {
-    position: absolute;
-    top: 0;
-    right: 20px;
-    font-size: 36px;
-}
-.VerHeader__btn {
-    padding: 6px 8px 6px 32px;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 19px;
-    color: white;
-    display: block;
-    border: none;
-    background: none;
-    width: 100%;
-    text-align: left;
-    outline: none;
-}
-.VerHeader__btn:hover{
-    color: black;
-    background-color: white;
-}
-.VerHeader__dropdown--container {
+  }
+  .TrangChu__introduction--1 {
+    margin: 0px 20px;
+  }
+  .TrangChu__introduction--2 {
     display: none;
-    background-color: #242424;
-    padding-left: 16px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 19px;
-}
-.VerHeader__dropdown--container a:hover{
-    background-color: white;
-    color: black;
-    text-decoration: none;
-}
-.Page__footer--container {
-    display: flex;
-    background-color: #242426;
-    color: white;
-    height: 100%;
-    width: 100%;
-    padding: 25px 0px;
-    position: relative;
-    bottom: 0px;
-    flex-wrap: wrap;
-}
-
-.Footer__text{
-    font-family: 'Roboto', sans-serif;
-}
-
-.Footer__heading{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-}
-
-.Footer--left {
-    flex: 20%;
-    margin-left: 50px;
-}
-
-.Footer--right {
-    flex: -5%;
-    margin-right: 50px;
-}
-
-.Footer--right img{
-    position: relative;
-    margin-right: 7px;
-}
-
-.bg-color{
-    background-color: black;
-}
-.ChuChoThue__background{
-    background-color: black;
-}
-.ChuChoThue{
-    padding-top: 50px;
-}
-.ChuChoThue__banner{
-    width: 100%;
-}
-.ChuChoThue__container{
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-top: 50px;
-    background-color: black;
-}
-.ChuChoThue__title{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 32px;
-    text-align: center;
-    font-weight: bold;
-    color: white;
-}
-.ChuChoThue__container--1{
-    margin-top: 24px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.ChuChoThue__product{
-    margin: 24px;
-    border-radius: 5px;
-    text-align: center;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-}
-.ChuChoThue__container--image{
-    margin: 16px;
-    flex: 100%;
-    max-width: 100%;
-}
-.ChuChoThue__product--image{
-    border-radius: 5px;
-    object-fit: contain;
-    max-width: 100%;
-}
-.ChuChoThue__product--title{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
+  }
+  .TrangChu__album--1,
+  .TrangChu__service--1,
+  .TrangChu__space--1 {
     margin-bottom: 16px;
-    margin-top: 16px;
-}
-.ChuChoThue__product--price{
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    margin-bottom: 24px;
-}
-.ChuChoThue__product--button{
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    background-color: #F2C806;
+  }
+  .TrangChu__album--1 div,
+  .TrangChu__space--1 div,
+  .TrangChu__service--1 div {
+    font-size: 18px;
+  }
+  .TrangChu__service--1 input {
     width: 140px;
-    height: 44px;
-    margin-bottom: 24px;
-    border-radius: 5px;
-    border: 0px;
-}
-.ChuChoThue__product--seemore{
-    font-family: 'Roboto', sans-serif;
+    height: 35px;
+    line-height: 24px;
+  }
+  .TrangChu__service--1 img,
+  .TrangChu__album--1 img,
+  .TrangChu__space--1 img {
+    width: 400px;
+    margin: 0px 20px;
+  }
+  .TrangChu__scrollbar {
+    overflow-x: scroll;
+  }
+  #scrollbarStyle::-webkit-scrollbar {
+    width: 20px;
+    height: 10px;
+  }
+  #scrollbarStyle::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+  }
+  .TrangCaNhan__body--container {
+    top: 50px;
+  }
+  .TrangCaNhan__body--container h1 {
     font-size: 20px;
-    color: white;
-}
-.ChuChoThue__product--seemore1{
-    margin: 20px auto;
-    text-align: center;
-}
-#more3, #more2, #more1{
-    display: none;
-}
-.KhuyenMai__container{
-    display: flex;
-    margin-left: 4%;
-    margin-right: 4%;
-    padding-top: 80px;
-}
-.KhuyenMai__container--1{
-    border: 1px solid #a7a7a7;
-    margin-right: 16px;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
-    flex: 15%;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    max-height: 580px;
-}
-.KhuyenMai__container--2{
-    display: flex;
-    flex-direction: column;
-    flex: 75%;
-}
-.KhuyenMai__avatar{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-}
-.KhuyenMai__user--icon{
-    display: flex;
-    flex-direction: row;
-    padding: 8px;
-    border-radius: 5px;
-}
-.KhuyenMai__user--icon:hover{
-    background-color: black;
-    color: white;
-}
-.KhuyenMai__title{
-    background-color: black;
-    color: white;
-    padding: 12px;
     margin-bottom: 16px;
-    font-weight: bold;
-}
-.KhuyenMai__title--left{
-    float: left;
-}
-.KhuyenMai__title--right{
-    float: right;
-}
-.KhuyenMai__card{
-    border: 1px solid #a7a7a7;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    padding: 6px;
-}
-.KhuyenMai__header--2{
-    display: flex;
-    flex-direction: row;
-    padding: 1px;
-}
-.KhuyenMai__header2--title{
-    padding: 8px;
-}
-.KhuyenMai__header2--title:hover{
-    border-bottom: 2px solid black;
-}
-.KhuyenMai__dexuat--title{
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 24px;
-    margin-bottom: 16px;
+  }
+  .TrangCaNhan__body--container h2 {
     font-size: 18px;
-    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  .TrangCaNhan__body--container p {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  .TrangCaNhan__item--1 {
+    height: 70px;
+  }
+  .TrangCaNhan__item--1 img {
+    height: 90px;
+  }
+  .TrangCaNhan__body--container > h2 {
+    margin-left: 20px;
+  }
+  .ChiTietKM__item--container {
+    font-size: 17px;
+    margin-top: 18px;
+  }
+  .ChiTietKM__body--container h2,
+  .ChiTietKM__footer--button button {
+    font-size: 18px;
+  }
+  .ChiTietKM__body--container p {
+    font-size: 16px;
+  }
 }
-.KhuyenMai__dexuat--2{
-    display: flex;
-    flex-direction: row;
+@media only screen and (min-width: 600px) {
+  /* header, footer */
+
+  /* Hiếu */
+  .TrangChu__header--banner {
+    top: 30px;
+  }
+  .TrangChu__introduction--header {
+    font-size: 18px;
+  }
+  .TrangChu__header--introduction,
+  .TrangChu__item--album,
+  .TrangChu__item--service,
+  .TrangChu__item--space {
     flex-wrap: wrap;
-    padding: 4px;
+  }
+  .TrangChu__introduction--1 {
+    margin: 0px 40px;
+  }
+  .TrangChu__introduction--2 {
+    display: none;
+  }
+  .TrangChu__item--service,
+  .TrangChu__item--album,
+  .TrangChu__item--space {
+    overflow: hidden;
+    justify-content: space-evenly;
+  }
+  .TrangChu__album--1 img,
+  .TrangChu__service--1 img,
+  .TrangChu__space--1 img {
+    width: 150px;
+  }
+  .TrangChu__album--1 div,
+  .TrangChu__space--1 div,
+  .TrangChu__service--1 div {
+    font-size: 7px;
+  }
+  .TrangChu__service--1 input {
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+  }
+  .TrangChu__album--1 {
+    margin: 0px 20px 20px 20px;
+  }
+  .TrangCaNhan__body--container {
+    top: 70px;
+  }
+  .TrangCaNhan__body--container h1 {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+  .TrangCaNhan__body--container h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+  .TrangCaNhan__body--container p {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+  .TrangCaNhan__item--1 {
+    height: 80px;
+  }
+  .TrangCaNhan__item--1 img {
+    height: 95px;
+  }
+  .TrangCaNhan__body--container > h2 {
+    margin-left: 25px;
+  }
+  .ChiTietKM__item--container {
+    font-size: 17px;
+    margin-top: 18px;
+  }
+  .ChiTietKM__body--container h2,
+  .ChiTietKM__footer--button button {
+    font-size: 18px;
+  }
+  .ChiTietKM__body--container p {
+    font-size: 16px;
+  }
 }
-.KhuyenMai__dexuat--3{
-    flex:50%;
-    max-width: 50%;
-}
-.KhuyenMai__tag--1, .KhuyenMai__tag--2, .KhuyenMai__tag--3{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border: 1px solid #a7a7a7;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    margin-right: 6px;
-    margin-bottom: 6px;
-}
-.KhuyenMai__tag--type{
-    flex:30%;
-    background-color: #3BB8C3;
-    border-radius: 5px;
-    color: white;
-    text-align: center;
-}
-.KhuyenMai__tag--type2{
-    flex:30%;
-    background-color: #FFC530;
-    border-radius: 5px;
-    color: white;
-    text-align: center;
-}
-.KhuyenMai__tag--content{
-    display: flex;
-    flex-direction: column;
-    flex: 70%;
-    padding: 8px;
-}
-.KhuyenMai__tag--doidiem {
-    text-align: right;
-    color: red;
-}
-.KhuyenMai__tag--diem{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 8px;
-    margin-top: 8px;
-    align-items: center;
-}
-.KhuyenMai__tag--giam{
-    color: red;
-    border: 1px solid red;
-    border-radius: 4px;
-    padding: 3px;
-    margin-right: 10px;
-}
-.KhuyenMai__tag--hsd{
-    color: gray;
-}
-.KhuyenMai__tag--dk{
-    color: blue;
-    text-align: right;
-}
-/*Trang*/
-@media only screen and (max-width: 600px){
-    .ChuChoThue__container{
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-    .ChuChoThue__container--1{
-        flex-wrap: nowrap;
-        overflow-y: scroll;
-    }
-    .ChuChoThue__container--image{
-        margin: 8px;
-    }
-    .ChuChoThue__product{
-        flex: 100%;
-        margin: 4px;
-        min-width: 50%;
-    }
-    .ChuChoThue__title{
-        font-size: 18px;
-    }
-    .ChuChoThue__product--title{
-        font-size: 16px;
-    }
-    .ChuChoThue__product--price{
-        font-size: 14px;
-    }
-    .ChuChoThue__product--button{
-        width: 90px;
-        height: 40px;
-        font-size: 14px;
-    }
-    .ChuChoThue__product--seemore{
-        display: none;
-    }
-    .KhuyenMai__container--1{
-        display: none;
-    }
-    .KhuyenMai__container--2{
-        flex: 100%;
-    }
-    .KhuyenMai__dexuat--3{
-        flex: 100%;
-        max-width: 100%;
-    }
-    .KhuyenMai__card{
-        border: none;
-        box-shadow: none;
-    }
-    .KhuyenMai__title{
-        background-color: white;
-        color: black;
-        font-size: 16px;
-        margin-bottom: 0;
-    }
-    .KhuyenMai__header--2{
-        font-size: 14px;
-    }
-    .KhuyenMai__dexuat--title{
-        font-size: 16px;
-        margin-top: 16px;
-        margin-bottom: 8px;
-    }
-    .KhuyenMai__tag{
-        font-size: 14px;
-    }
-    .KhuyenMai__tag--type2{
-        padding-top: 12%;
-        padding-bottom: 12%;
-    }
-    .KhuyenMai__tag--type{
-        padding-top: 12%;
-        padding-bottom: 12%;
-    }
-    .Footer__text{
-        font-size: 14px;
-    }
+@media only screen and (min-width: 768px) {
+  /* header, footer */
 
-    .Footer__heading{
-        font-size: 13px;
-    }
-
-    .Footer--right img{
-        height: 20px;
-    }
-    .Footer--left {
-        flex: 50%;
-        margin-left: 30px;
-        margin-bottom: 20px;
-    }
-    
-    .Footer--right {
-        flex: 50%;
-        margin-left: 30px;
-    }
+  /* Hiếu */
+  .TrangChu__header--banner {
+    top: 40px;
+  }
+  .TrangChu__introduction--header {
+    font-size: 18px;
+  }
+  .TrangChu__header--introduction,
+  .TrangChu__item--album,
+  .TrangChu__item--service,
+  .TrangChu__item--space {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .TrangChu__introduction--1 {
+    margin: 0px 50px;
+  }
+  .TrangChu__introduction--2 {
+    display: none;
+  }
+  .TrangChu__album--1 img,
+  .TrangChu__service--1 img,
+  .TrangChu__space--1 img {
+    width: 220px;
+  }
+  .TrangChu__album--1 {
+    margin: 15px;
+  }
+  .TrangChu__service--1 input {
+    width: 90px;
+    height: 23px;
+    line-height: 20px;
+  }
+  .TrangChu__album--1 div,
+  .TrangChu__space--1 div,
+  .TrangChu__service--1 div {
+    font-size: 10px;
+  }
+  .TrangCaNhan__body--container {
+    top: 80px;
+  }
+  .TrangCaNhan__body--container h1 {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+  .TrangCaNhan__body--container h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+  .TrangCaNhan__body--container p {
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+  .TrangCaNhan__item--1 {
+    height: 85px;
+  }
+  .TrangCaNhan__item--1 img {
+    height: 100px;
+  }
+  .TrangCaNhan__body--container > h2 {
+    margin-left: 30px;
+  }
+  .ChiTietKM__item--container {
+    font-size: 17px;
+    margin-top: 18px;
+  }
+  .ChiTietKM__body--container h2,
+  .ChiTietKM__footer--button button {
+    font-size: 18px;
+  }
+  .ChiTietKM__body--container p {
+    font-size: 16px;
+  }
 }
-/*Trang*/
-@media only screen and (min-width: 600px){
-    .ChuChoThue__container{
-        margin-left: 25px;
-        margin-right: 25px;
-    }
-    .ChuChoThue__container--1{
-        flex-wrap: nowrap;
-        overflow-y: scroll;
-    }
-    .ChuChoThue__container--image{
-        margin: 8px;
-    }
-    .ChuChoThue__product{
-        flex: 100%;
-        margin: 4px;
-        min-width: 33%;
-    }
-    .ChuChoThue__title{
-        font-size: 18px;
-    }
-    .ChuChoThue__product--title{
-        font-size: 17px;
-    }
-    .ChuChoThue__product--price{
-        font-size: 16px;
-    }
-    .ChuChoThue__product--button{
-        width: 100px;
-        height: 44px;
-        font-size: 16px;
-    }
-    .ChuChoThue__product--seemore{
-        display: none;
-    }
-    .KhuyenMai__container--1{
-        display: none;
-    }
-    .KhuyenMai__container--2{
-        flex: 100%;
-    }
-    .KhuyenMai__dexuat--3{
-        flex: 50%;
-        max-width: 50%;
-    }
-    .KhuyenMai__card{
-        border: none;
-        box-shadow: none;
-    }
-    .KhuyenMai__title{
-        background-color: white;
-        color: black;
-        font-size: 14px;
-        margin-bottom: 0;
-    }
-    .KhuyenMai__header--2{
-        font-size: 13px;
-    }
-    .KhuyenMai__dexuat--title{
-        font-size: 13px;
-        margin-top: 10px;
-        margin-bottom: 6px;
-    }
-    .KhuyenMai__tag{
-        font-size: 12px;
-    }
-    .KhuyenMai__tag--type2{
-        padding-top: 20%;
-        padding-bottom: 20%;
-    }
-    .KhuyenMai__tag--type{
-        padding-top: 20%;
-        padding-bottom: 20%;
-    }
-    .Footer__text{
-        font-size: 10px;
-    }
-
-    .Footer__heading{
-        font-size: 12px;
-    }
-
-    .Footer--right img{
-        height: 18px;
-    }
-}
-/*Trang*/
-@media only screen and (min-width: 768px){
-    .ChuChoThue__container{
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-    .ChuChoThue__container--1{
-        flex-wrap: nowrap;
-        overflow-y: scroll;
-    }
-    .ChuChoThue__container--image{
-        margin: 8px;
-    }
-    .ChuChoThue__product{
-        flex: 100%;
-        margin: 8px;
-        min-width: 25%;
-    }
-    .ChuChoThue__title{
-        font-size: 20px;
-    }
-    .ChuChoThue__product--title{
-        font-size: 18px;
-    }
-    .ChuChoThue__product--price{
-        font-size: 16px;
-    }
-    .ChuChoThue__product--button{
-        width: 110px;
-        height: 44px;
-        font-size: 17px;
-    }
-    .ChuChoThue__product--seemore{
-        display: none;
-    }
-    .KhuyenMai__dexuat--3{
-        flex: 50%;
-        max-width: 50%;
-    }
-    .KhuyenMai__title{
-        font-size: 15px;
-    }
-    .KhuyenMai__header--2{
-        font-size: 14px;
-    }
-    .KhuyenMai__dexuat--title{
-        font-size: 15px;
-        margin-top: 12px;
-        margin-bottom: 8px;
-    }
-    .KhuyenMai__tag{
-        font-size: 13px;
-    }
-    .KhuyenMai__tag--type2{
-        padding-top: 14.5%;
-        padding-bottom: 14.5%;
-    }
-    .KhuyenMai__tag--type{
-        padding-top: 14.5%;
-        padding-bottom: 14.5%;
-    }
-    .Footer__text{
-        font-size: 12px;
-    }
-
-    .Footer__heading{
-        font-size: 16px;
-    }
-
-    .Footer--right img{
-        height: 20px;
-    }
-}
-/*Trang*/
 @media only screen and (max-width: 992px) {
-    .HorHeader__tach{
-        font-size: 17px;
-    }
-    .HorHeader__button{
-        font-size: 17px;
-    }
-    .HorHeader__login{
-        font-size: 17px;
-    }
-    .HorHeader__container a{
-        width: auto;
-    }
-    .HorHeader__container a:not(:nth-child(2)), .HorHeader__dropdown .HorHeader__dropdown--button,.HorHeader__container div:nth-of-type(2) {display: none;}
-    .HorHeader__container a.HorHeader__button {
-        float: left;
-        display: block;
-    }
-    .HorHeader__container a.HorHeader__login{
-        float: right;
-        display: block;
-    }
-    .HorHeader__container a.HorHeader__login2{
-        float: right;
-        display: block;
-    }
+  /* header, footer */
 }
-/* Này thêm cái max-width 992 nha!!! Tại kích thước trở lại thì header đều nhỏ á */
-/*Trang*/
 @media only screen and (min-width: 992px) {
-    .ChuChoThue__container{
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-    .ChuChoThue__container--1{
-        flex-wrap: wrap;
-        overflow: auto;
-    }
-    .ChuChoThue__container--image{
-        margin: 12px;
-    }
-    .ChuChoThue__product{
-        flex: 20%;
-        margin: 8px;
-        min-width: 20%;
-        max-width: 20%;
-    }
-    .ChuChoThue__title{
-        font-size: 22px;
-    }
-    .ChuChoThue__product--title{
-        font-size: 19px;
-    }
-    .ChuChoThue__product--price{
-        font-size: 16px;
-    }
-    .ChuChoThue__product--button{
-        width: 110px;
-        height: 44px;
-        font-size: 18px;
-    }
-    .ChuChoThue__product--seemore{
-        display: contents;
-    }
-    .KhuyenMai__container--1{
-        display: flex;
-    }
-    .KhuyenMai__container--2{
-        flex: 70%;
-    }
-    .KhuyenMai__dexuat--3{
-        flex: 50%;
-        max-width: 50%;
-    }
-    .KhuyenMai__card{
-        border: 1px solid #a7a7a7;
-        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
-    }
-    .KhuyenMai__title{
-        background-color: black;
-        color: white;
-        font-size: 18px;
-        margin-bottom: 16px;
-    }
-    .KhuyenMai__header--2{
-        font-size: 16px;
-    }
-    .KhuyenMai__dexuat--title{
-        font-size: 18px;
-        margin-top: 16px;
-        margin-bottom: 12px;
-    }
-    .KhuyenMai__tag{
-        font-size: 15px;
-    }
-    .KhuyenMai__tag--type2{
-        padding-top: 19%;
-        padding-bottom: 19%;
-    }
-    .KhuyenMai__tag--type{
-        padding-top: 19%;
-        padding-bottom: 19%;
-    }
-    .HorHeader__container a{
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .HorHeader__tach{
-        font-size: 19px;
-    }
-    .Header__title{
-        font-size: 19px;
-    }
-    .HorHeader__dropdown{
-        font-size: 19px;
-    }
-    .Header__search{
-        padding: 4px 4px 4px 22px;
-        font-size: 12px;
-        width: 100%;
-    }
-    .HorHeader__login{
-        font-size: 19px;
-    }
-    .Header__icon--2{
-        font-size: 13px;
-        margin-right: -22px;
-    }
-    .Page__Header--Ava > img{
-        width: 35px;
-    }
-    .Footer__text{
-        font-size: 14px;
-    }
-    .Footer__heading{
-        font-size: 18px;
-    }
-    .Footer--right img{
-        height: 25px;
-    }
+  /* header, footer */
+
+  /* Hiếu */
+  .TrangChu__header--banner {
+    top: 45px;
+  }
+  .TrangChu__introduction--1 {
+    margin: 0px 5px 0px 10px;
+  }
+  .TrangChu__introduction--2 {
+    display: block;
+    margin: 0px 10px 0px 5px;
+  }
+  .TrangChu__introduction--1,
+  .TrangChu__introduction--2 {
+    width: 45%;
+  }
+  .TrangChu__introduction--header {
+    font-size: 14px;
+  }
+  .TrangChu__introduction--para {
+    font-size: 12px;
+  }
+  .TrangChu__album--1 img,
+  .TrangChu__service--1 img,
+  .TrangChu__space--1 img {
+    width: 270px;
+  }
+  .TrangChu__album--1 div,
+  .TrangChu__space--1 div,
+  .TrangChu__service--1 div {
+    font-size: 12px;
+  }
+  .TrangChu__service--1 input {
+    width: 120px;
+    height: 30px;
+    line-height: 22px;
+  }
+  .TrangChu__item--service,
+  .TrangChu__item--album,
+  .TrangChu__item--space {
+    justify-content: space-evenly;
+  }
+  .TrangChu__album--1 {
+    margin: 16px;
+  }
+  .TrangCaNhan__body--container {
+    top: 100px;
+  }
+  .TrangCaNhan__body--container h1 {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+  .TrangCaNhan__body--container h2 {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+  .TrangCaNhan__body--container p {
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+  .TrangCaNhan__body--container > h2 {
+    margin-left: 40px;
+  }
+  .ChiTietKM__item--container {
+    font-size: 17.5px;
+  }
+  .ChiTietKM__body--container h2,
+  .ChiTietKM__footer--button button {
+    font-size: 20px;
+  }
+  .ChiTietKM__body--container p {
+    font-size: 17px;
+  }
 }
-/*Trang*/
 @media only screen and (min-width: 1200px) {
-    .HorHeader__container a{
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .Page__Header--Ava > img{
-        width: 40px;
-    }
-    .KhuyenMai__tag--type2{
-        padding-top: 14%;
-        padding-bottom: 14%;
-    }
-    .KhuyenMai__tag--type{
-        padding-top: 14%;
-        padding-bottom: 14%;
-    }
-    .Footer__text{
-        font-size: 14px;
-    }
-    .Footer__heading{
-        font-size: 18px;
-    }
-    .Footer--right img{
-        height: 25px;
-    }
+  /* header, footer */
+
+  /* Hiếu */
+  .TrangChu__header--banner {
+    top: 50px;
+  }
+  .TrangChu__header--introduction {
+    flex-wrap: nowrap;
+  }
+  .TrangChu__introduction--1 {
+    margin: 0px 25px 0px 50px;
+  }
+  .TrangChu__introduction--2 {
+    display: block;
+    margin: 0px 50px 0px 25px;
+  }
+  .TrangChu__introduction--1,
+  .TrangChu__introduction--2 {
+    width: 90%;
+  }
+  .TrangChu__introduction--header {
+    font-size: 20px;
+  }
+  .TrangChu__introduction--para {
+    font-size: 14px;
+  }
+  .TrangChu__service--1 img,
+  .TrangChu__album--1 img,
+  .TrangChu__space--1 img {
+    width: 350px;
+  }
+  .TrangChu__album--1 div,
+  .TrangChu__space--1 div,
+  .TrangChu__service--1 div {
+    font-size: 15px;
+  }
+  .TrangChu__service--1 input {
+    width: 124px;
+    height: 32px;
+    line-height: 24px;
+  }
+  .TrangChu__item--service,
+  .TrangChu__item--album,
+  .TrangChu__item--space {
+    justify-content: space-evenly;
+  }
+  .TrangChu__album--1 {
+    margin: 10px;
+  }
+  .TrangCaNhan__body--container {
+    top: 110px;
+  }
+  .TrangCaNhan__body--container h1 {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+  .TrangCaNhan__body--container h2 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  .TrangCaNhan__body--container p {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .TrangCaNhan__body--container > h2 {
+    margin-left: 50px;
+  }
+  .ChiTietKM__item--container {
+    font-size: 17.5px;
+  }
+  .ChiTietKM__body--container h2,
+  .ChiTietKM__footer--button button {
+    font-size: 20px;
+  }
+  .ChiTietKM__body--container p {
+    font-size: 17px;
+  }
 }

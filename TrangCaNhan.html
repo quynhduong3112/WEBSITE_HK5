@@ -9,91 +9,120 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="/html/css/TrangCaNhan.css" />
-    <link rel="stylesheet" href="/html/css/style.css" />
+    <link rel="stylesheet" href="/html/css/Style.css" />
+    <link rel="stylesheet" href="/html/css/style-1.css" />
     <link
       rel="stylesheet"
       href="/IMAGES/ICONS/fontawesome-free-5.15.4-web/css/all.min.css"
     />
-    <script src="/html/js/javascript.js" defer></script>
+    <script src="/html/js/Javascript.js" defer></script>
   </head>
   <body>
-    <div class="Page__Header--Container">
-      <div class="Page__Header--Tach">Tách studio</div>
-      <div class="Page__Header--Title">
-        <i class="glyphicon glyphicon-home"></i>
-      </div>
-      <div class="Page__Header--Title Page__Header--Dropdown">
-        Cho thuê
-        <div class="dropdown-content">
-          <a href="#">Máy ảnh</a>
-          <a href="#">Studio</a>
-          <a href="#">Trang phục</a>
-        </div>
-      </div>
-      <div class="Page__Header--Title" id="color">
-        <a href="/HTML/homepage.html#album">Album</a>
-      </div>
-      <div class="Page__Header--Title">Blog</div>
-      <div class="Page__Header--Icon">
-        <span class="glyphicon glyphicon-search Page__Header--Icon2"></span>
+    <div id="myHeader2" class="VerHeader__container">
+      <a
+        href="javascript:void(0)"
+        class="VerHeader__closebtn"
+        onclick="closeNav()"
+        >×</a
+      >
+      <div class="VerHeader__search">
+        <span class="glyphicon glyphicon-search Header__icon--2"></span>
         <input
-          class="Page__Header--Search"
+          class="Header__search"
           type="text"
           placeholder="Nhập từ tìm kiếm"
         />
       </div>
-      <div class="Page__Header--Ava">
-        <img src="/images/avatar-2.png" alt="" />
+      <a href="" class="Header__title"
+        ><i class="glyphicon glyphicon-home"></i
+      ></a>
+      <button class="VerHeader__btn">Cho Thuê</button>
+      <div class="VerHeader__dropdown--container">
+        <a href=""> Máy ảnh</a>
+        <a href=""> Studio</a>
+        <a href=""> Trang phục</a>
       </div>
+      <a href="">Album</a>
+      <a href="">Blog</a>
     </div>
-
-    <div class="body__container">
-      <h2>Tài khoản của tôi</h2>
-      <div class="body__item--1">
-        <img src="/images/avatar-2.png" alt="" />
+    <div class="HorHeader__container" id="myHeader">
+      <a
+        href="javascript:void(0);"
+        class="HorHeader__button"
+        onclick="openNav()"
+        ><i class="glyphicon glyphicon-menu-hamburger"></i
+      ></a>
+      <a href="" class="HorHeader__tach">Tách studio</a>
+      <a href="" class="Header__title"
+        ><i class="glyphicon glyphicon-home"></i
+      ></a>
+      <div class="Header__title HorHeader__dropdown">
+        <button class="HorHeader__dropdown--button">Cho Thuê</button>
+        <div class="HorHeader__dropdown--content">
+          <a href="">Máy ảnh</a>
+          <a href="">Studio</a>
+          <a href="">Trang phục</a>
+        </div>
       </div>
-      <div class="body__item--2">
+      <a href="" class="Header__title">Album</a>
+      <a href="" class="Header__title">Blog</a>
+      <div class="HorHeader__icon">
+        <span class="glyphicon glyphicon-search Header__icon--2"></span>
+        <input
+          class="Header__search"
+          type="text"
+          placeholder="Nhập từ tìm kiếm"
+        />
+      </div>
+      <a href="" class="HorHeader__login2"
+        ><img src="../Images/Avatar.png" alt=""
+      /></a>
+    </div>
+    <div class="TrangCaNhan__body--container">
+      <h2>Tài khoản của tôi</h2>
+      <div class="TrangCaNhan__item--1">
+        <img src="/images/avatar.png" alt="" />
+      </div>
+      <div class="TrangCaNhan__item--2">
         <h1 id="tenDangNhap"></h1>
-        <p class="body__cursor" id="chinhSua">
-          <i class="fas fa-edit body__icon--edit"></i>Chỉnh sửa hồ sơ
+        <p class="TrangCaNhan__body--cursor" id="chinhSua">
+          <i class="fas fa-edit TrangCaNhan__icon--edit"></i>Chỉnh sửa hồ sơ
         </p>
         <h2>Điểm tích lũy: <span id="diemTichLuy"></span></h2>
       </div>
       <hr />
-      <div class="body__item--2">
+      <div class="TrangCaNhan__item--2">
         <h2>Thông tin cá nhân</h2>
         <p>Họ và tên: <span id="hoTen"></span></p>
         <p>Số điện thoại: <span id="soDienThoai"></span></p>
         <p>Email: <span id="email"></span></p>
       </div>
       <hr />
-      <div class="body__item--3">
+      <div class="TrangCaNhan__item--3">
         <h2>Đơn hàng của tôi</h2>
-        <div class="function__container">
+        <div class="TrangCaNhan__container--function">
           <div id="datThue">
-            <i class="fas fa-shopping-cart fa-2x"></i>
+            <i class="fas fa-shopping-cart fa-2x TrangCaNhan__icon--size"></i>
             <p>Đặt thuê</p>
           </div>
           <div id="thongBao">
-            <i class="fas fa-bell fa-2x"></i>
+            <i class="fas fa-bell fa-2x TrangCaNhan__icon--size"></i>
             <p>Thông báo</p>
           </div>
           <div id="khuyenMai">
-            <i class="fas fa-percentage fa-2x"></i>
+            <i class="fas fa-percentage fa-2x TrangCaNhan__icon--size"></i>
             <p>Khuyến mãi</p>
           </div>
           <div id="dangXuat">
-            <i class="fas fa-sign-out-alt fa-2x"></i>
+            <i class="fas fa-sign-out-alt fa-2x TrangCaNhan__icon--size"></i>
             <p>Đăng xuất</p>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="page__footer--container footer__text">
-      <div class="footer--left">
-        <p class="footer__header">TÁCH STUDIO</p>
+    <div class="Page__footer--container Footer__text">
+      <div class="Footer--left">
+        <p class="Footer__heading">TÁCH STUDIO</p>
         <p>
           UEL, Tp Thủ Đức, Tp Hồ Chí Minh <br />
           Call us: 0123456789 <br />
@@ -101,8 +130,9 @@
         </p>
         <p>Copyright @2021 Tách Creative Studio</p>
       </div>
-      <div class="footer--right">
-        <p class="footer__header">LIÊN HỆ VỚI CHÚNG TÔI</p>
+
+      <div class="Footer--right">
+        <p class="Footer__heading">LIÊN HỆ VỚI CHÚNG TÔI</p>
         <p><img src="/images/footer-fb.png" alt="" /> Tách studio</p>
         <p><img src="/images/footer-ins.png" alt="" /> tach.studio</p>
         <p><img src="/images/footer-ytb.png" alt="" /> Tách Studio Official</p>
