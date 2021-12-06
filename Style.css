@@ -5,43 +5,41 @@ html, body{
     margin: 0;
     padding: 0;
 }
-.background{
-    background-color: black;
-}
-.Page__Header--Container{
+/*Trang*/
+.HorHeader__container{
     background-color: #242426;
     width: 100%;
     top: 0px;
     position: fixed;
     z-index: 1;
 }
-.Page__Header--Container .header__button{
+.HorHeader__container .HorHeader__button{
     display: none;
 }
-.Page__Header--Tach{ 
+.HorHeader__tach{ 
     font-family: 'Racing Sans One', cursive;
     font-weight: bold;
     color: white;
     font-size: 21px;
 }
-.Page__Header--Login{
+.HorHeader__login{
     color: white;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
     font-size: 20px;
 }
-.Page__Header--Title{
+.Header__title{
     color: white;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
     font-size: 20px;
 }
-.header__button{
+.HorHeader__button{
     font-size: 0px;
 }
-.Page__Header--Search{
+.Header__search{
     border: 1px solid black;
     border-radius: 5px;
     width: 100%;
@@ -49,21 +47,21 @@ html, body{
     font-size: 15px;
     color: black;
 }
-.header__search{
+.VerHeader__search{
     margin-left: 32px;
     margin-right: 8px;
 }
-.Page__Header--Icon2{
+.Header__icon--2{
     color: black;
     margin-right: -30px;
 }
 
-.Page__Header--Dropdown {
+.HorHeader__dropdown {
     float: left;
     overflow: hidden;
     width: 12%;
 }
-.Page__Header--Dropdown .dropdown__button{    
+.HorHeader__dropdown .HorHeader__dropdown--button{    
     border: none;
     outline: none;
     color: white;
@@ -72,11 +70,11 @@ html, body{
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
 }
-.Page__Header--Dropdown:hover .dropdown__button{
+.HorHeader__dropdown:hover .HorHeader__dropdown--button{
     background-color: #242426;
     color: white;
 }
-.Page__Header--Container a,.Page__Header--Container div:nth-of-type(2){
+.HorHeader__container a,.HorHeader__container div:nth-of-type(2){
   float: left;
   width: 14.3%;
   display: block;
@@ -85,28 +83,28 @@ html, body{
   padding: 14px 16px;
   text-decoration: none;
 }
-.Page__Header--Container a:not(:nth-of-type(2)):hover, .Page__Header--Container a:not(:nth-of-type(6)):hover {
+.HorHeader__container a:not(:nth-of-type(2)):hover, .HorHeader__container a:not(:nth-of-type(6)):hover {
     background-color: white;
     color: black;
     text-decoration: none;
 }
-.Page__Header--Container a:nth-of-type(2):hover, .Page__Header--Container a:nth-of-type(6):hover{
+.HorHeader__container a:nth-of-type(2):hover, .HorHeader__container a:nth-of-type(6):hover{
     background-color: #242426;
     color: white;
     text-decoration: none;
 }
-.dropdown__content{
+.HorHeader__dropdown--content{
     display: none;
     position: absolute;
     background-color: white;
     min-width: 160px;
     z-index: 2;
 }
-.dropdown__content a:nth-of-type(1):hover, .dropdown__content a:nth-of-type(2):hover,.dropdown__content a:nth-of-type(3):hover{
+.HorHeader__dropdown--content a:nth-of-type(1):hover, .HorHeader__dropdown--content a:nth-of-type(2):hover,.HorHeader__dropdown--content a:nth-of-type(3):hover{
     background-color: #242426;
     color: white;
 }
-.dropdown__content a{
+.HorHeader__dropdown--content a{
     float: none;
     color: black;
     padding-top: 12px;
@@ -115,10 +113,10 @@ html, body{
     width: 100%;
     text-align: left;
 }
-.Page__Header--Dropdown:hover .dropdown__content{
+.HorHeader__dropdown:hover .HorHeader__dropdown--content{
     display: block;
 }
-.header__vertical  {
+.VerHeader__container  {
     width: 0;
     position: fixed;
     z-index: 2;
@@ -128,7 +126,7 @@ html, body{
     transition: 0.3s;
     padding-top: 60px;
 }
-.header__vertical a {
+.VerHeader__container a {
     padding: 8px 8px 8px 32px;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
@@ -136,22 +134,22 @@ html, body{
     display: block;
     text-decoration: none;
 }
-.header__vertical > a:not(:nth-of-type(1)):hover{
+.VerHeader__container > a:not(:nth-of-type(1)):hover{
     text-decoration: none;
     color: black;
     background-color: white;
 }
-.header__vertical > a:nth-of-type(1):hover{
+.VerHeader__container > a:nth-of-type(1):hover{
     text-decoration: none;
     color: white;
 }
-.header__vertical .closebtn {
+.VerHeader__container .VerHeader__closebtn {
     position: absolute;
     top: 0;
     right: 20px;
     font-size: 36px;
 }
-.dropdown-btn {
+.VerHeader__btn {
     padding: 6px 8px 6px 32px;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
@@ -164,23 +162,23 @@ html, body{
     text-align: left;
     outline: none;
 }
-.dropdown-btn:hover{
+.VerHeader__btn:hover{
     color: black;
     background-color: white;
 }
-.dropdown-container {
+.VerHeader__dropdown--container {
     display: none;
     background-color: #242424;
     padding-left: 16px;
     font-family: 'Montserrat', sans-serif;
     font-size: 19px;
 }
-.dropdown-container a:hover{
+.VerHeader__dropdown--container a:hover{
     background-color: white;
     color: black;
     text-decoration: none;
 }
-.page__footer--container {
+.Page__footer--container {
     display: flex;
     background-color: #242426;
     color: white;
@@ -192,26 +190,26 @@ html, body{
     flex-wrap: wrap;
 }
 
-.footer__text{
+.Footer__text{
     font-family: 'Roboto', sans-serif;
 }
 
-.footer__header{
+.Footer__heading{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
-.footer--left {
+.Footer--left {
     flex: 20%;
     margin-left: 50px;
 }
 
-.footer--right {
+.Footer--right {
     flex: -5%;
     margin-right: 50px;
 }
 
-.footer--right img{
+.Footer--right img{
     position: relative;
     margin-right: 7px;
 }
@@ -219,149 +217,651 @@ html, body{
 .bg-color{
     background-color: black;
 }
+.ChuChoThue__background{
+    background-color: black;
+}
+.ChuChoThue{
+    padding-top: 50px;
+}
+.ChuChoThue__banner{
+    width: 100%;
+}
+.ChuChoThue__container{
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 50px;
+    background-color: black;
+}
+.ChuChoThue__title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+.ChuChoThue__container--1{
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ChuChoThue__product{
+    margin: 24px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.ChuChoThue__container--image{
+    margin: 16px;
+    flex: 100%;
+    max-width: 100%;
+}
+.ChuChoThue__product--image{
+    border-radius: 5px;
+    object-fit: contain;
+    max-width: 100%;
+}
+.ChuChoThue__product--title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+.ChuChoThue__product--price{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+.ChuChoThue__product--button{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #F2C806;
+    width: 140px;
+    height: 44px;
+    margin-bottom: 24px;
+    border-radius: 5px;
+    border: 0px;
+}
+.ChuChoThue__product--seemore{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.ChuChoThue__product--seemore1{
+    margin: 20px auto;
+    text-align: center;
+}
+#more3, #more2, #more1{
+    display: none;
+}
+.KhuyenMai__container{
+    display: flex;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding-top: 80px;
+}
+.KhuyenMai__container--1{
+    border: 1px solid #a7a7a7;
+    margin-right: 16px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    flex: 15%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    max-height: 580px;
+}
+.KhuyenMai__container--2{
+    display: flex;
+    flex-direction: column;
+    flex: 75%;
+}
+.KhuyenMai__avatar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.KhuyenMai__user--icon{
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    border-radius: 5px;
+}
+.KhuyenMai__user--icon:hover{
+    background-color: black;
+    color: white;
+}
+.KhuyenMai__title{
+    background-color: black;
+    color: white;
+    padding: 12px;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+.KhuyenMai__title--left{
+    float: left;
+}
+.KhuyenMai__title--right{
+    float: right;
+}
+.KhuyenMai__card{
+    border: 1px solid #a7a7a7;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+}
+.KhuyenMai__header--2{
+    display: flex;
+    flex-direction: row;
+    padding: 1px;
+}
+.KhuyenMai__header2--title{
+    padding: 8px;
+}
+.KhuyenMai__header2--title:hover{
+    border-bottom: 2px solid black;
+}
+.KhuyenMai__dexuat--title{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.KhuyenMai__dexuat--2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 4px;
+}
+.KhuyenMai__dexuat--3{
+    flex:50%;
+    max-width: 50%;
+}
+.KhuyenMai__tag--1, .KhuyenMai__tag--2, .KhuyenMai__tag--3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #a7a7a7;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+.KhuyenMai__tag--type{
+    flex:30%;
+    background-color: #3BB8C3;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+.KhuyenMai__tag--type2{
+    flex:30%;
+    background-color: #FFC530;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+.KhuyenMai__tag--content{
+    display: flex;
+    flex-direction: column;
+    flex: 70%;
+    padding: 8px;
+}
+.KhuyenMai__tag--doidiem {
+    text-align: right;
+    color: red;
+}
+.KhuyenMai__tag--diem{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    align-items: center;
+}
+.KhuyenMai__tag--giam{
+    color: red;
+    border: 1px solid red;
+    border-radius: 4px;
+    padding: 3px;
+    margin-right: 10px;
+}
+.KhuyenMai__tag--hsd{
+    color: gray;
+}
+.KhuyenMai__tag--dk{
+    color: blue;
+    text-align: right;
+}
+/*Trang*/
 @media only screen and (max-width: 600px){
-    .footer__text{
+    .ChuChoThue__container{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .ChuChoThue__container--1{
+        flex-wrap: nowrap;
+        overflow-y: scroll;
+    }
+    .ChuChoThue__container--image{
+        margin: 8px;
+    }
+    .ChuChoThue__product{
+        flex: 100%;
+        margin: 4px;
+        min-width: 50%;
+    }
+    .ChuChoThue__title{
+        font-size: 18px;
+    }
+    .ChuChoThue__product--title{
+        font-size: 16px;
+    }
+    .ChuChoThue__product--price{
+        font-size: 14px;
+    }
+    .ChuChoThue__product--button{
+        width: 90px;
+        height: 40px;
+        font-size: 14px;
+    }
+    .ChuChoThue__product--seemore{
+        display: none;
+    }
+    .KhuyenMai__container--1{
+        display: none;
+    }
+    .KhuyenMai__container--2{
+        flex: 100%;
+    }
+    .KhuyenMai__dexuat--3{
+        flex: 100%;
+        max-width: 100%;
+    }
+    .KhuyenMai__card{
+        border: none;
+        box-shadow: none;
+    }
+    .KhuyenMai__title{
+        background-color: white;
+        color: black;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .KhuyenMai__header--2{
+        font-size: 14px;
+    }
+    .KhuyenMai__dexuat--title{
+        font-size: 16px;
+        margin-top: 16px;
+        margin-bottom: 8px;
+    }
+    .KhuyenMai__tag{
+        font-size: 14px;
+    }
+    .KhuyenMai__tag--type2{
+        padding-top: 12%;
+        padding-bottom: 12%;
+    }
+    .KhuyenMai__tag--type{
+        padding-top: 12%;
+        padding-bottom: 12%;
+    }
+    .Footer__text{
         font-size: 14px;
     }
 
-    .footer__header{
+    .Footer__heading{
         font-size: 13px;
     }
 
-    .footer--right img{
+    .Footer--right img{
         height: 20px;
     }
-    .footer--left {
+    .Footer--left {
         flex: 50%;
         margin-left: 30px;
         margin-bottom: 20px;
     }
     
-    .footer--right {
+    .Footer--right {
         flex: 50%;
         margin-left: 30px;
     }
 }
+/*Trang*/
 @media only screen and (min-width: 600px){
-    .footer__text{
+    .ChuChoThue__container{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .ChuChoThue__container--1{
+        flex-wrap: nowrap;
+        overflow-y: scroll;
+    }
+    .ChuChoThue__container--image{
+        margin: 8px;
+    }
+    .ChuChoThue__product{
+        flex: 100%;
+        margin: 4px;
+        min-width: 33%;
+    }
+    .ChuChoThue__title{
+        font-size: 18px;
+    }
+    .ChuChoThue__product--title{
+        font-size: 17px;
+    }
+    .ChuChoThue__product--price{
+        font-size: 16px;
+    }
+    .ChuChoThue__product--button{
+        width: 100px;
+        height: 44px;
+        font-size: 16px;
+    }
+    .ChuChoThue__product--seemore{
+        display: none;
+    }
+    .KhuyenMai__container--1{
+        display: none;
+    }
+    .KhuyenMai__container--2{
+        flex: 100%;
+    }
+    .KhuyenMai__dexuat--3{
+        flex: 50%;
+        max-width: 50%;
+    }
+    .KhuyenMai__card{
+        border: none;
+        box-shadow: none;
+    }
+    .KhuyenMai__title{
+        background-color: white;
+        color: black;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .KhuyenMai__header--2{
+        font-size: 13px;
+    }
+    .KhuyenMai__dexuat--title{
+        font-size: 13px;
+        margin-top: 10px;
+        margin-bottom: 6px;
+    }
+    .KhuyenMai__tag{
+        font-size: 12px;
+    }
+    .KhuyenMai__tag--type2{
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    .KhuyenMai__tag--type{
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    .Footer__text{
         font-size: 10px;
     }
 
-    .footer__header{
+    .Footer__heading{
         font-size: 12px;
     }
 
-    .footer--right img{
+    .Footer--right img{
         height: 18px;
     }
 }
+/*Trang*/
 @media only screen and (min-width: 768px){
-    .footer__text{
+    .ChuChoThue__container{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .ChuChoThue__container--1{
+        flex-wrap: nowrap;
+        overflow-y: scroll;
+    }
+    .ChuChoThue__container--image{
+        margin: 8px;
+    }
+    .ChuChoThue__product{
+        flex: 100%;
+        margin: 8px;
+        min-width: 25%;
+    }
+    .ChuChoThue__title{
+        font-size: 20px;
+    }
+    .ChuChoThue__product--title{
+        font-size: 18px;
+    }
+    .ChuChoThue__product--price{
+        font-size: 16px;
+    }
+    .ChuChoThue__product--button{
+        width: 110px;
+        height: 44px;
+        font-size: 17px;
+    }
+    .ChuChoThue__product--seemore{
+        display: none;
+    }
+    .KhuyenMai__dexuat--3{
+        flex: 50%;
+        max-width: 50%;
+    }
+    .KhuyenMai__title{
+        font-size: 15px;
+    }
+    .KhuyenMai__header--2{
+        font-size: 14px;
+    }
+    .KhuyenMai__dexuat--title{
+        font-size: 15px;
+        margin-top: 12px;
+        margin-bottom: 8px;
+    }
+    .KhuyenMai__tag{
+        font-size: 13px;
+    }
+    .KhuyenMai__tag--type2{
+        padding-top: 14.5%;
+        padding-bottom: 14.5%;
+    }
+    .KhuyenMai__tag--type{
+        padding-top: 14.5%;
+        padding-bottom: 14.5%;
+    }
+    .Footer__text{
         font-size: 12px;
     }
 
-    .footer__header{
+    .Footer__heading{
         font-size: 16px;
     }
 
-    .footer--right img{
+    .Footer--right img{
         height: 20px;
     }
 }
+/*Trang*/
 @media only screen and (max-width: 992px) {
-    .Page__Header--Tach{
+    .HorHeader__tach{
         font-size: 17px;
     }
-    .header__button{
+    .HorHeader__button{
         font-size: 17px;
     }
-    .Page__Header--Login{
+    .HorHeader__login{
         font-size: 17px;
     }
-    .Page__Header--Container a{
+    .HorHeader__container a{
         width: auto;
     }
-    .Page__Header--Container a:not(:nth-child(2)), .Page__Header--Dropdown .dropdown__button,.Page__Header--Container div:nth-of-type(2) {display: none;}
-    .Page__Header--Container a.header__button {
+    .HorHeader__container a:not(:nth-child(2)), .HorHeader__dropdown .HorHeader__dropdown--button,.HorHeader__container div:nth-of-type(2) {display: none;}
+    .HorHeader__container a.HorHeader__button {
         float: left;
         display: block;
     }
-    .Page__Header--Container a.Page__Header--Login{
+    .HorHeader__container a.HorHeader__login{
         float: right;
         display: block;
     }
-    .Page__Header--Container a.Page__Header--Login2{
+    .HorHeader__container a.HorHeader__login2{
         float: right;
         display: block;
     }
 }
 /* Này thêm cái max-width 992 nha!!! Tại kích thước trở lại thì header đều nhỏ á */
-
+/*Trang*/
 @media only screen and (min-width: 992px) {
-    .Page__Header--Container a{
+    .ChuChoThue__container{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .ChuChoThue__container--1{
+        flex-wrap: wrap;
+        overflow: auto;
+    }
+    .ChuChoThue__container--image{
+        margin: 12px;
+    }
+    .ChuChoThue__product{
+        flex: 20%;
+        margin: 8px;
+        min-width: 20%;
+        max-width: 20%;
+    }
+    .ChuChoThue__title{
+        font-size: 22px;
+    }
+    .ChuChoThue__product--title{
+        font-size: 19px;
+    }
+    .ChuChoThue__product--price{
+        font-size: 16px;
+    }
+    .ChuChoThue__product--button{
+        width: 110px;
+        height: 44px;
+        font-size: 18px;
+    }
+    .ChuChoThue__product--seemore{
+        display: contents;
+    }
+    .KhuyenMai__container--1{
+        display: flex;
+    }
+    .KhuyenMai__container--2{
+        flex: 70%;
+    }
+    .KhuyenMai__dexuat--3{
+        flex: 50%;
+        max-width: 50%;
+    }
+    .KhuyenMai__card{
+        border: 1px solid #a7a7a7;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    }
+    .KhuyenMai__title{
+        background-color: black;
+        color: white;
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+    .KhuyenMai__header--2{
+        font-size: 16px;
+    }
+    .KhuyenMai__dexuat--title{
+        font-size: 18px;
+        margin-top: 16px;
+        margin-bottom: 12px;
+    }
+    .KhuyenMai__tag{
+        font-size: 15px;
+    }
+    .KhuyenMai__tag--type2{
+        padding-top: 19%;
+        padding-bottom: 19%;
+    }
+    .KhuyenMai__tag--type{
+        padding-top: 19%;
+        padding-bottom: 19%;
+    }
+    .HorHeader__container a{
         padding-left: 0;
         padding-right: 0;
     }
-    .Page__Header--Tach{
+    .HorHeader__tach{
         font-size: 19px;
     }
-
-    .Page__Header--Title{
+    .Header__title{
         font-size: 19px;
     }
-
-    .Page__Header--Dropdown{
+    .HorHeader__dropdown{
         font-size: 19px;
     }
-
-    .Page__Header--Search{
+    .Header__search{
         padding: 4px 4px 4px 22px;
         font-size: 12px;
         width: 100%;
     }
-    .Page__Header--Login{
+    .HorHeader__login{
         font-size: 19px;
     }
-    .Page__Header--Icon2{
+    .Header__icon--2{
         font-size: 13px;
         margin-right: -22px;
     }
-
     .Page__Header--Ava > img{
         width: 35px;
     }
-
-    .footer__text{
+    .Footer__text{
         font-size: 14px;
     }
-
-    .footer__header{
+    .Footer__heading{
         font-size: 18px;
     }
-
-    .footer--right img{
+    .Footer--right img{
         height: 25px;
     }
 }
-
+/*Trang*/
 @media only screen and (min-width: 1200px) {
-    .Page__Header--Container a{
+    .HorHeader__container a{
         padding-left: 0;
         padding-right: 0;
     }
     .Page__Header--Ava > img{
         width: 40px;
     }
-
-    .footer__text{
+    .KhuyenMai__tag--type2{
+        padding-top: 14%;
+        padding-bottom: 14%;
+    }
+    .KhuyenMai__tag--type{
+        padding-top: 14%;
+        padding-bottom: 14%;
+    }
+    .Footer__text{
         font-size: 14px;
     }
-
-    .footer__header{
+    .Footer__heading{
         font-size: 18px;
     }
-
-    .footer--right img{
+    .Footer--right img{
         height: 25px;
     }
 }
