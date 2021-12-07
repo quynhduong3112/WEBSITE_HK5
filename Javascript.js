@@ -1,90 +1,82 @@
-// Hiếu
-var dangXuat = document.getElementById("dangXuat"),
-  thongBao = document.getElementById("thongBao"),
-  khuyenMai = document.getElementById("khuyenMai"),
-  datThue = document.getElementById("datThue"),
-  chinhSua = document.getElementById("chinhSua"),
-  soDienThoai = document.getElementById("soDienThoai"),
-  tenDangNhap = document.getElementById("tenDangNhap"),
-  hoTen = document.getElementById("hoTen"),
-  diemTichLuy = document.getElementById("diemTichLuy"),
-  email = document.getElementById("email");
-
-dangXuat.addEventListener("click", () => {
-  location.href = "/html/homepage.html";
+function openNav() {
+    document.getElementById("myHeader2").style.width = "250px";
+}
+function closeNav() {
+    document.getElementById("myHeader2").style.width = "0";
+}
+var dropdown = document.getElementsByClassName("VerHeader__btn");
+var i;
+for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+        } else {
+            dropdownContent.style.display = "block";
+        }
+    });
+}
+var KhuyenMaiDemTag1 = document.getElementsByClassName("KhuyenMai__tag--1");
+var KhuyenMaiDemTag2 = document.getElementsByClassName("KhuyenMai__tag--2");
+var KhuyenMaiDemTag3 = document.getElementsByClassName("KhuyenMai__tag--3");
+var KhuyenMaiDem1 = document.getElementById("KhuyenMaiDem1");
+var KhuyenMaiDem2 = document.getElementById("KhuyenMaiDem2");
+var KhuyenMaiDem3 = document.getElementById("KhuyenMaiDem3");
+var KhuyenMaiDoiDiem = document.getElementById("KhuyenMaiDoiDiem");
+window.onload = function () {
+    KhuyenMaiDem1.innerHTML = KhuyenMaiDemTag1.length;
+    KhuyenMaiDem2.innerHTML = KhuyenMaiDemTag2.length;
+    KhuyenMaiDem3.innerHTML = KhuyenMaiDemTag3.length;
+}
+KhuyenMaiDoiDiem.addEventListener("click", () => {
+    location.href = "/html/popupdoidiem.html";
 });
-khuyenMai.addEventListener("click", () => {
-  window.open("/html/homepage.html");
-});
-datThue.addEventListener("click", () => {
-  window.open("/html/homepage.html");
-});
-thongBao.addEventListener("click", () => {
-  alert("Hiện tại bạn không có thông báo!");
-});
-
-var score = ["10"];
-
-diemTichLuy.innerHTML = score;
-
-const thongTin = {
-  userName: "Ngocs",
-  fullName: "Dương Phạm Diễm Quỳnh",
-  phoneNumber: "0819636086",
-  email: "",
-};
-// window.localStorage.setItem("user", JSON.stringify(thongTin));
-var user = JSON.parse(localStorage.getItem("user"));
-tenDangNhap.innerHTML = user.userName;
-hoTen.innerHTML = user.fullName;
-soDienThoai.innerHTML = user.phoneNumber;
-email.innerHTML = user.email;
-
-chinhSua.addEventListener("click", () => {
-  let text1,
-    text2,
-    text3,
-    text4,
-    editTenDangNhap = prompt(
-      "Bạn có muốn sửa tên đăng nhập không?",
-      tenDangNhap.innerHTML
-    ),
-    editHoTen = prompt("Bạn có muốn sửa họ tên không?", hoTen.innerHTML),
-    editSoDT = prompt(
-      "Bạn có muốn sửa số điện thoại không?",
-      soDienThoai.innerHTML
-    ),
-    editEmail = prompt("Bạn có muốn sửa email không?", email.innerHTML);
-  if (editTenDangNhap == null || editTenDangNhap == "") {
-    text1 = tenDangNhap.innerHTML;
-  } else {
-    text1 = editTenDangNhap;
-    thongTin["userName"] = text1;
-    window.localStorage.setItem("user", JSON.stringify(thongTin));
-  }
-  if (editHoTen == null || editHoTen == "") {
-    text2 = hoTen.innerHTML;
-  } else {
-    text2 = editHoTen;
-    thongTin["fullName"] = text2;
-    window.localStorage.setItem("user", JSON.stringify(thongTin));
-  }
-  if (editSoDT == null || editSoDT == "") {
-    text3 = soDienThoai.innerHTML;
-  } else {
-    text3 = editSoDT;
-    thongTin["phoneNumber"] = text3;
-    window.localStorage.setItem("user", JSON.stringify(thongTin));
-  }
-  if (editEmail == null || editEmail == "") {
-    text4 = "";
-  } else {
-    text4 = editEmail;
-    thongTin["email"] = text4;
-    window.localStorage.setItem("user", JSON.stringify(thongTin));
-  }
-  tenDangNhap.innerHTML = text1;
-  hoTen.innerHTML = text2;
-  soDienThoai.innerHTML = text3;
-  email.innerHTML = text4;
-});
+function KhuyenMaiTinhTong() {
+    var dungNgay = document.getElementById("")
+}
+function openNav() {
+    document.getElementById("myHeader2").style.width = "250px";
+}
+function closeNav() {
+    document.getElementById("myHeader2").style.width = "0";
+}
+function chuChoThueSeeMore1() {
+    var more1 = document.getElementById("more1");
+    var seeMore1 = document.getElementById("seeMore1");
+    if (more1.style.display === "none") {
+        seeMore1.innerHTML = "Xem thêm...";
+        more1.style.display = "none";
+    } else {
+        seeMore1.innerHTML = "";
+        more1.style.display = "flex";
+        more1.style.flexWrap ="wrap";
+        more1.style.justifyContent="center";
+    }
+}
+function chuChoThueSeeMore2() {
+    var more2 = document.getElementById("more2");
+    var seeMore2 = document.getElementById("seeMore2");
+    if (more2.style.display === "none") {
+        seeMore2.innerHTML = "Xem thêm...";
+        more2.style.display = "none";
+    } else {
+        seeMore2.innerHTML = "";
+        more2.style.display = "flex";
+        more2.style.flexWrap ="wrap";
+        more2.style.justifyContent="center";
+    }
+}
+function chuChoThueSeeMore3() {
+    var more3 = document.getElementById("more3");
+    var seeMore3 = document.getElementById("seeMore3");
+    if (more3.style.display === "none") {
+        seeMore3.innerHTML = "Xem thêm...";
+        more3.style.display = "none";
+    } else {
+        seeMore3.innerHTML = "";
+        more3.style.display = "flex";
+        more3.style.flexWrap ="wrap";
+        more3.style.justifyContent="center";
+    }
+}
