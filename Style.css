@@ -1,281 +1,257 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap');
-html, body{
+
+.GioiThieuTach__header{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: bold
+}
+.GioiThieuTach__header--images{
+    margin-top: 24px;
+}
+.GioiThieuTach__header--images img{
+    width: 80%;
+}
+   
+.GioiThieuTach__mainpage{
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.GioiThieuTach__footer--heading{
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif ;
+    font-weight: bold;
+
+}
+.GioiThieuTach__footer{
+    display: flex;
+
+}
+.GioiThieuTach__footer--col1{
+    width: 50%;
+    text-align: right;
+    margin-right: 10px;
+    max-width: 100%;
+    height: auto;
+}
+.GioiThieuTach__footer--col2{
+    width: 50%;
+    text-align: left;
+    margin-left: 50px;
+    padding-top: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+.GioiThieuTach__footer--col2heading{
+    font-weight: bold;
+}
+.GioiThieuTach__mainpage--text{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+.GioiThieuTach__footer--col1 img {
+    width: 100%;
+}
+.GioiThieuTach--images img{
+    width: 80%;
+}
+
+.BaiViet__header{
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.BaiViet__mainpage{
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.BaiViet__mainpage--images{
+    text-align: center;
+}
+.BaiViet__mainpage--text{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.BaiViet__mainpage--heading{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+.BaiViet__mainpage--images img{
+    width: 80%;
+}
+
+html{
     margin: 0;
     padding: 0;
 }
-/*Trang*/
-.HorHeader__container{
-    background-color: #242426;
-    width: 100%;
-    top: 0px;
-    position: fixed;
-    z-index: 1;
+.Blog__layout{
+    display: flex;
+    flex-direction: row;
+    margin: 0 125px;
 }
-.HorHeader__container .HorHeader__button{
-    display: none;
-}
-.HorHeader__tach{ 
-    font-family: 'Racing Sans One', cursive;
-    font-weight: bold;
-    color: white;
-    font-size: 21px;
-}
-.HorHeader__login{
-    color: white;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-    font-size: 20px;
-}
-.Header__title{
-    color: white;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-    font-size: 20px;
-}
-.HorHeader__button{
-    font-size: 0px;
-}
-.Header__search{
+.Blog__item{
     border: 1px solid black;
-    border-radius: 5px;
-    width: 100%;
-    padding: 5px 5px 5px 35px;
-    font-size: 15px;
-    color: black;
+    position: relative;
+    margin-top: 80px;
 }
-.VerHeader__search{
+.Blog__item--left{
+    flex: 1.5;
+    font-size: 20px;
+    font-family: roboto;
+}
+.Blog__item--right{
+    flex: 4;
     margin-left: 32px;
-    margin-right: 8px;
 }
-.Header__icon--2{
-    color: black;
-    margin-right: -30px;
-}
-
-.HorHeader__dropdown {
-    float: left;
-    overflow: hidden;
-    width: 12%;
-}
-.HorHeader__dropdown .HorHeader__dropdown--button{    
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: #242426;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0px;
-}
-.HorHeader__dropdown:hover .HorHeader__dropdown--button{
-    background-color: #242426;
-    color: white;
-}
-.HorHeader__container a,.HorHeader__container div:nth-of-type(2){
-  float: left;
-  width: 14.3%;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-.HorHeader__container a:not(:nth-of-type(2)):hover, .HorHeader__container a:not(:nth-of-type(6)):hover {
-    background-color: white;
-    color: black;
-    text-decoration: none;
-}
-.HorHeader__container a:nth-of-type(2):hover, .HorHeader__container a:nth-of-type(6):hover{
-    background-color: #242426;
-    color: white;
-    text-decoration: none;
-}
-.HorHeader__dropdown--content{
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 160px;
-    z-index: 2;
-}
-.HorHeader__dropdown--content a:nth-of-type(1):hover, .HorHeader__dropdown--content a:nth-of-type(2):hover,.HorHeader__dropdown--content a:nth-of-type(3):hover{
-    background-color: #242426;
-    color: white;
-}
-.HorHeader__dropdown--content a{
-    float: none;
-    color: black;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    display: block;
-    width: 100%;
-    text-align: left;
-}
-.HorHeader__dropdown:hover .HorHeader__dropdown--content{
-    display: block;
-}
-.VerHeader__container  {
-    width: 0;
-    position: fixed;
-    z-index: 2;
-    height: 100%;
-    background-color: #242426;
-    overflow-x: hidden;
-    transition: 0.3s;
-    padding-top: 60px;
-}
-.VerHeader__container a {
-    padding: 8px 8px 8px 32px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    color: white;
-    display: block;
-    text-decoration: none;
-}
-.VerHeader__container > a:not(:nth-of-type(1)):hover{
-    text-decoration: none;
-    color: black;
-    background-color: white;
-}
-.VerHeader__container > a:nth-of-type(1):hover{
-    text-decoration: none;
-    color: white;
-}
-.VerHeader__container .VerHeader__closebtn {
-    position: absolute;
-    top: 0;
-    right: 20px;
-    font-size: 36px;
-}
-.VerHeader__btn {
-    padding: 6px 8px 6px 32px;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 19px;
-    color: white;
-    display: block;
-    border: none;
-    background: none;
-    width: 100%;
-    text-align: left;
-    outline: none;
-}
-.VerHeader__btn:hover{
-    color: black;
-    background-color: white;
-}
-.VerHeader__dropdown--container {
-    display: none;
-    background-color: #242424;
-    padding-left: 16px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 19px;
-}
-.VerHeader__dropdown--container a:hover{
-    background-color: white;
-    color: black;
-    text-decoration: none;
-}
-.Page__footer--container {
-    display: flex;
-    background-color: #242426;
-    color: white;
-    height: 100%;
-    width: 100%;
-    padding: 25px 0px;
-    position: relative;
-    bottom: 0px;
-    flex-wrap: wrap;
-}
-
-.Footer__text{
-    font-family: 'Roboto', sans-serif;
-}
-
-.Footer__heading{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-}
-
-.Footer--left {
-    flex: 20%;
-    margin-left: 50px;
-}
-
-.Footer--right {
-    flex: -5%;
-    margin-right: 50px;
-}
-
-.Footer--right img{
-    position: relative;
-    margin-right: 7px;
-}
-
-.bg-color{
+.Blog__header--column2{
+    height: 112px;
     background-color: black;
-}
-.ChuChoThue__background{
-    background-color: black;
-}
-.ChuChoThue{
-    padding-top: 50px;
-}
-.ChuChoThue__banner{
-    width: 100%;
-}
-.ChuChoThue__container{
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-top: 50px;
-    background-color: black;
-}
-.ChuChoThue__title{
-    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
     font-size: 32px;
-    text-align: center;
     font-weight: bold;
-    color: white;
+    line-height: 112px;
+    font-family: 'Montserrat', sans-serif;
 }
-.ChuChoThue__container--1{
-    margin-top: 24px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.Blog__mainpage--column2{
+    padding: 0 10px;
 }
-.ChuChoThue__product{
-    margin: 24px;
-    border-radius: 5px;
+.Blog__header--column1{
+ height: 112px;
+ text-align: center;
+ font-size: 32px;
+ font-family: 'Montserrat', sans-serif;
+ font-weight: bold;
+ line-height: 112px;
+}
+.Blog__tittle--1{
+    padding: 5px;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.Blog__tittle--2{
+    padding-left: 20px;
+    margin-bottom: 2px;
+}
+.Blog__tittle--3{
+    padding-left: 15px;
+    font-size: 20px;
+}
+ .Blog__text--decoration{
+    color: black;
+    text-decoration: none;
+ }
+ .Blog__mainpage--column1{
+     font-size: 20px;
+     font-family: 'roboto';
+     margin-left: 10px;
+ }
+
+ .Popup__container{
+    width: 450px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+.Popup__daunhan{
+    text-align: right;
+}
+.Popup__daunhan button{
+border: none;
+background-color: white;
+}
+.Popup__image{
     text-align: center;
-    background-color: white;
+}
+.Popup__text{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+.Popup__button input {
+    width: 140px;
+    height: 44px;
+    /* background-color: black; */
+    color: white;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 1px 1px 1px rgba(0, 0,0, 0.1);
+    cursor: pointer;
+}
+.Popup__button{
+    text-align: center;
+    padding-top: 30px;
+}
+.Popup__image--2{
+    display: none;
+}
+.Popup__button :hover{
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388; 
+}
+.Popup__button--1 input{
+    background-color: black;
+}
+.Popup__button--2 input{
+    margin: 0 35px;
+}
+.Popup__button--left{
+        background-color: #c4c4c4;
+}
+.Popup__button--right{
+        background-color: #f2c806;
+}
+.ChiTiet__product{
     display: flex;
-    flex-direction: column;
+    margin: 0px 125px;
+    padding-top: 100px;
+    position: relative;
 }
-.ChuChoThue__container--image{
-    margin: 16px;
-    flex: 100%;
-    max-width: 100%;
+.ChiTiet__product--col1{
+    display: flex;
 }
-.ChuChoThue__product--image{
-    border-radius: 5px;
-    object-fit: contain;
-    max-width: 100%;
+.ChiTiet__product--col2{
+   
+    padding-left: 30px;
 }
-.ChuChoThue__product--title{
+.ChiTiet--image{
+    padding-bottom: 13px;
+    padding-right: 10px;
+}
+.ChiTiet__product--title{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 16px;
     margin-top: 16px;
 }
-.ChuChoThue__product--price{
+.ChiTiet__product--price{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+.ChiTiet__product--number{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     margin-bottom: 24px;
 }
-.ChuChoThue__product--button{
+.ChiTiet__product--button input{
     color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -287,581 +263,522 @@ html, body{
     border-radius: 5px;
     border: 0px;
 }
-.ChuChoThue__product--seemore{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    color: white;
-}
-.ChuChoThue__product--seemore1{
-    margin: 20px auto;
-    text-align: center;
-}
-#more3, #more2, #more1{
-    display: none;
-}
-.KhuyenMai__container{
-    display: flex;
-    margin-left: 4%;
-    margin-right: 4%;
-    padding-top: 80px;
-}
-.KhuyenMai__container--1{
-    border: 1px solid #a7a7a7;
-    margin-right: 16px;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
-    flex: 15%;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    max-height: 580px;
-}
-.KhuyenMai__container--2{
-    display: flex;
-    flex-direction: column;
-    flex: 75%;
-}
-.KhuyenMai__avatar{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-}
-.KhuyenMai__user--icon{
-    display: flex;
-    flex-direction: row;
-    padding: 8px;
-    border-radius: 5px;
-}
-.KhuyenMai__user--icon:hover{
-    background-color: black;
-    color: white;
-}
-.KhuyenMai__title{
-    background-color: black;
-    color: white;
-    padding: 12px;
-    margin-bottom: 16px;
+.ChiTiet--pricecolor{
+    color: red;
     font-weight: bold;
 }
-.KhuyenMai__title--left{
-    float: left;
-}
-.KhuyenMai__title--right{
-    float: right;
-}
-.KhuyenMai__card{
-    border: 1px solid #a7a7a7;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    padding: 6px;
-}
-.KhuyenMai__header--2{
-    display: flex;
-    flex-direction: row;
-    padding: 1px;
-}
-.KhuyenMai__header2--title{
-    padding: 8px;
-}
-.KhuyenMai__header2--title:hover{
-    border-bottom: 2px solid black;
-}
-.KhuyenMai__dexuat--title{
+.ChiTiet__infor--tittle{
+    margin: 40px 125px;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 24px;
-    margin-bottom: 16px;
-    font-size: 18px;
     font-weight: bold;
+    font-size: 20px;
 }
-.KhuyenMai__dexuat--2{
+.ChiTiet__infor{
     display: flex;
-    flex-direction: row;
+    margin: 0px 125px;
+}
+.ChiTiet__infor--col1{
+    flex: 1;
+    background-color: lightgray;
+}
+.ChiTiet__infor--col2{
+    flex: 3;
+    padding-left: 30px;
+}
+.ChiTiet__infor--dientich{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    padding-left: 15px;
+}
+.ChiTiet__infor--sodo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-bottom: 16px;
+    padding-left: 15px;
+}
+.ChiTiet__infor--phongmau{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-bottom: 16px;
+    padding-left: 15px;
+}
+.ChiTiet__infor--col2tittle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.ChiTiet__infor--col2text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+.ChiTiet__sameproduct--heading{
+    margin: 40px 125px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.ChiTiet__sameproduct{
+    display: flex;
+    margin: 0 125px;
+    justify-content: space-around;
     flex-wrap: wrap;
-    padding: 4px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
-.KhuyenMai__dexuat--3{
-    flex:50%;
-    max-width: 50%;
-}
-.KhuyenMai__tag--1, .KhuyenMai__tag--2, .KhuyenMai__tag--3{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.ChiTiet__sameproduct--item{
+    text-align: center;
+    margin: 3px;
     border: 1px solid #a7a7a7;
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    margin-right: 6px;
-    margin-bottom: 6px;
+    box-shadow: 1px 1px 1px rgba(0, 0,0, 0.1);
 }
-.KhuyenMai__tag--type{
-    flex:30%;
-    background-color: #3BB8C3;
-    border-radius: 5px;
-    color: white;
-    text-align: center;
+.ChiTiet__sameproduct--tittle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 16px;
 }
-.KhuyenMai__tag--type2{
-    flex:30%;
-    background-color: #FFC530;
-    border-radius: 5px;
-    color: white;
-    text-align: center;
+.ChiTiet__sameproduct--price{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding-top: 16px;
+    padding-bottom: 24px;
+    font-size: 16px;
 }
-.KhuyenMai__tag--content{
-    display: flex;
-    flex-direction: column;
-    flex: 70%;
+/* .ChiTiet--button{
+    width: 25px;
+} */
+.ChiTiet__sameproduct--image{
     padding: 8px;
 }
-.KhuyenMai__tag--doidiem {
-    text-align: right;
-    color: red;
+.ChiTiet__sameproduct--button input{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #F2C806;
+    width: 140px;
+    height: 44px;
+    margin-bottom: 24px;
+    border-radius: 5px;
+    border: 0px;
 }
-.KhuyenMai__tag--diem{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 8px;
-    margin-top: 8px;
-    align-items: center;
-}
-.KhuyenMai__tag--giam{
-    color: red;
-    border: 1px solid red;
-    border-radius: 4px;
-    padding: 3px;
-    margin-right: 10px;
-}
-.KhuyenMai__tag--hsd{
-    color: gray;
-}
-.KhuyenMai__tag--dk{
-    color: blue;
-    text-align: right;
-}
-/*Trang*/
 @media only screen and (max-width: 600px){
-    .ChuChoThue__container{
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-    .ChuChoThue__container--1{
-        flex-wrap: nowrap;
-        overflow-y: scroll;
-    }
-    .ChuChoThue__container--image{
-        margin: 8px;
-    }
-    .ChuChoThue__product{
-        flex: 100%;
-        margin: 4px;
-        min-width: 50%;
-    }
-    .ChuChoThue__title{
-        font-size: 18px;
-    }
-    .ChuChoThue__product--title{
-        font-size: 16px;
-    }
-    .ChuChoThue__product--price{
+    .GioiThieuTach__header{
         font-size: 14px;
     }
-    .ChuChoThue__product--button{
-        width: 90px;
-        height: 40px;
+    .GioiThieuTach__mainpage--text{
+        font-size: 12px;
+    }
+    .GioiThieuTach__mainpage{
+        padding-left: 10px;
+        padding-right: 10px;
+    } 
+    .GioiThieuTach__footer--heading{
         font-size: 14px;
     }
-    .ChuChoThue__product--seemore{
-        display: none;
+    .GioiThieuTach__footer--col2{
+        font-size: 12px;
     }
-    .KhuyenMai__container--1{
-        display: none;
-    }
-    .KhuyenMai__container--2{
-        flex: 100%;
-    }
-    .KhuyenMai__dexuat--3{
-        flex: 100%;
-        max-width: 100%;
-    }
-    .KhuyenMai__card{
-        border: none;
-        box-shadow: none;
-    }
-    .KhuyenMai__title{
-        background-color: white;
-        color: black;
-        font-size: 16px;
-        margin-bottom: 0;
-    }
-    .KhuyenMai__header--2{
+    .BaiViet__header{
         font-size: 14px;
+    } 
+    .BaiViet__mainpage{
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 12px;
     }
-    .KhuyenMai__dexuat--title{
-        font-size: 16px;
-        margin-top: 16px;
-        margin-bottom: 8px;
-    }
-    .KhuyenMai__tag{
+    .Blog__header--column1{
         font-size: 14px;
+        height: 50px;
+        line-height: 50px;
+        
     }
-    .KhuyenMai__tag--type2{
-        padding-top: 12%;
-        padding-bottom: 12%;
-    }
-    .KhuyenMai__tag--type{
-        padding-top: 12%;
-        padding-bottom: 12%;
-    }
-    .Footer__text{
+    .Blog__header--column2{
         font-size: 14px;
+        height: 50px;
+        line-height: 50px;
+        margin: 0 auto;
+        
     }
-
-    .Footer__heading{
-        font-size: 13px;
+    .Blog__layout{
+        margin: 0 20px;
+        flex-direction: column;
     }
-
-    .Footer--right img{
-        height: 20px;
+    .Blog__tittle--1{
+        font-size: 12px;
     }
-    .Footer--left {
-        flex: 50%;
-        margin-left: 30px;
-        margin-bottom: 20px;
+    .Blog__item--right{
+        margin-top: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+        /* margin: 0 10px; */
+    }
+    .Blog__item--left{
+        margin-top: 50px;
+        margin-left: 5px;
+        margin-right: 5px;
+        /* margin: 0 10px; */
     }
     
-    .Footer--right {
-        flex: 50%;
-        margin-left: 30px;
+    .blog__mainpage--column1{
+        padding-top: 5px;
+
     }
-}
-/*Trang*/
-@media only screen and (min-width: 600px){
-    .ChuChoThue__container{
-        margin-left: 25px;
-        margin-right: 25px;
+    .Blog__tittle--3{
+        font-size: 12px ;
     }
-    .ChuChoThue__container--1{
-        flex-wrap: nowrap;
-        overflow-y: scroll;
+    .Blog__item{
+        margin-bottom: 10px;
     }
-    .ChuChoThue__container--image{
-        margin: 8px;
+    .Popup__container{
+        width: 300px;
+        height: 200px;
     }
-    .ChuChoThue__product{
-        flex: 100%;
-        margin: 4px;
-        min-width: 33%;
-    }
-    .ChuChoThue__title{
-        font-size: 18px;
-    }
-    .ChuChoThue__product--title{
-        font-size: 17px;
-    }
-    .ChuChoThue__product--price{
-        font-size: 16px;
-    }
-    .ChuChoThue__product--button{
-        width: 100px;
-        height: 44px;
-        font-size: 16px;
-    }
-    .ChuChoThue__product--seemore{
-        display: none;
-    }
-    .KhuyenMai__container--1{
-        display: none;
-    }
-    .KhuyenMai__container--2{
-        flex: 100%;
-    }
-    .KhuyenMai__dexuat--3{
-        flex: 50%;
-        max-width: 50%;
-    }
-    .KhuyenMai__card{
-        border: none;
-        box-shadow: none;
-    }
-    .KhuyenMai__title{
-        background-color: white;
-        color: black;
+    .Popup__text{
         font-size: 14px;
-        margin-bottom: 0;
+        padding-top: 20px;
     }
-    .KhuyenMai__header--2{
-        font-size: 13px;
-    }
-    .KhuyenMai__dexuat--title{
-        font-size: 13px;
-        margin-top: 10px;
-        margin-bottom: 6px;
-    }
-    .KhuyenMai__tag{
-        font-size: 12px;
-    }
-    .KhuyenMai__tag--type2{
-        padding-top: 20%;
-        padding-bottom: 20%;
-    }
-    .KhuyenMai__tag--type{
-        padding-top: 20%;
-        padding-bottom: 20%;
-    }
-    .Footer__text{
-        font-size: 10px;
-    }
-
-    .Footer__heading{
-        font-size: 12px;
-    }
-
-    .Footer--right img{
-        height: 18px;
-    }
-}
-/*Trang*/
-@media only screen and (min-width: 768px){
-    .ChuChoThue__container{
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-    .ChuChoThue__container--1{
-        flex-wrap: nowrap;
-        overflow-y: scroll;
-    }
-    .ChuChoThue__container--image{
-        margin: 8px;
-    }
-    .ChuChoThue__product{
-        flex: 100%;
-        margin: 8px;
-        min-width: 25%;
-    }
-    .ChuChoThue__title{
-        font-size: 20px;
-    }
-    .ChuChoThue__product--title{
-        font-size: 18px;
-    }
-    .ChuChoThue__product--price{
+    .Popup__button input{
+        width: 70px;
+        height: 25px;
         font-size: 16px;
+        cursor: pointer;
     }
-    .ChuChoThue__product--button{
-        width: 110px;
-        height: 44px;
-        font-size: 17px;
-    }
-    .ChuChoThue__product--seemore{
+    .Popup__image--1{
         display: none;
     }
-    .KhuyenMai__dexuat--3{
-        flex: 50%;
-        max-width: 50%;
+    .Popup__image--2{
+        display: inline;
     }
-    .KhuyenMai__title{
-        font-size: 15px;
+    .Popup__button{
+          padding-top: 20px; 
     }
-    .KhuyenMai__header--2{
-        font-size: 14px;
+    .Popup__button :hover{
+        border: 1px solid;
+        box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+        outline-color: rgba(255, 255, 255, 0);
+        outline-offset: 15px;
+        text-shadow: 1px 1px 2px #427388; 
     }
-    .KhuyenMai__dexuat--title{
-        font-size: 15px;
-        margin-top: 12px;
-        margin-bottom: 8px;
+    .ChiTiet__product--col1 img{
+        width: 100%;
+        border-radius: 5px;
     }
-    .KhuyenMai__tag{
-        font-size: 13px;
+    .ChiTiet__sameproduct--item{
+        flex-direction: column;
     }
-    .KhuyenMai__tag--type2{
-        padding-top: 14.5%;
-        padding-bottom: 14.5%;
-    }
-    .KhuyenMai__tag--type{
-        padding-top: 14.5%;
-        padding-bottom: 14.5%;
-    }
-    .Footer__text{
-        font-size: 12px;
-    }
-
-    .Footer__heading{
-        font-size: 16px;
-    }
-
-    .Footer--right img{
-        height: 20px;
-    }
-}
-/*Trang*/
-@media only screen and (max-width: 992px) {
-    .HorHeader__tach{
-        font-size: 17px;
-    }
-    .HorHeader__button{
-        font-size: 17px;
-    }
-    .HorHeader__login{
-        font-size: 17px;
-    }
-    .HorHeader__container a{
-        width: auto;
-    }
-    .HorHeader__container a:not(:nth-child(2)), .HorHeader__dropdown .HorHeader__dropdown--button,.HorHeader__container div:nth-of-type(2) {display: none;}
-    .HorHeader__container a.HorHeader__button {
-        float: left;
-        display: block;
-    }
-    .HorHeader__container a.HorHeader__login{
-        float: right;
-        display: block;
-    }
-    .HorHeader__container a.HorHeader__login2{
-        float: right;
-        display: block;
-    }
-}
-/* Này thêm cái max-width 992 nha!!! Tại kích thước trở lại thì header đều nhỏ á */
-/*Trang*/
-@media only screen and (min-width: 992px) {
-    .ChuChoThue__container{
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-    .ChuChoThue__container--1{
+    .ChiTiet__product{
         flex-wrap: wrap;
-        overflow: auto;
     }
-    .ChuChoThue__container--image{
-        margin: 12px;
+    .ChiTiet__infor{
+        margin: 0 10px;
     }
-    .ChuChoThue__product{
-        flex: 20%;
-        margin: 8px;
-        min-width: 20%;
-        max-width: 20%;
+    .ChiTiet__product--col1right{
+        text-align: center;
     }
-    .ChuChoThue__title{
-        font-size: 22px;
+    .ChiTiet__infor--tittle{
+        text-align: center;
     }
-    .ChuChoThue__product--title{
-        font-size: 19px;
+    .ChiTiet__sameproduct--heading{
+        text-align: center;
     }
-    .ChuChoThue__product--price{
-        font-size: 16px;
+    .ChiTiet__sameproduct--image img{
+        border-radius: 5px;
     }
-    .ChuChoThue__product--button{
-        width: 110px;
-        height: 44px;
-        font-size: 18px;
+    .ChiTiet__infor{
+        flex-direction: column;
     }
-    .ChuChoThue__product--seemore{
-        display: contents;
-    }
-    .KhuyenMai__container--1{
-        display: flex;
-    }
-    .KhuyenMai__container--2{
-        flex: 70%;
-    }
-    .KhuyenMai__dexuat--3{
-        flex: 50%;
-        max-width: 50%;
-    }
-    .KhuyenMai__card{
-        border: 1px solid #a7a7a7;
-        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
-    }
-    .KhuyenMai__title{
-        background-color: black;
-        color: white;
-        font-size: 18px;
+    .ChiTiet__infor--col1{
+        margin-left: 30px;
         margin-bottom: 16px;
     }
-    .KhuyenMai__header--2{
+    .ChiTiet__sameproduct{
+        margin: 0 20px;
+    }
+    .ChiTiet__product{
+        margin: 0 30px;
+        text-align: center;
+    }
+    .ChiTiet__product--col2{
+        text-align: center;
+        flex: 1;
+    }
+
+}
+
+@media only screen and (min-width: 600px){
+    .GioiThieuTach__header{
         font-size: 16px;
     }
-    .KhuyenMai__dexuat--title{
-        font-size: 18px;
-        margin-top: 16px;
-        margin-bottom: 12px;
+    .GioiThieuTach__mainpage--text{
+        font-size: 14px;
     }
-    .KhuyenMai__tag{
-        font-size: 15px;
+    .GioiThieuTach__mainpage{
+        padding-left: 15px;
+        padding-right: 15px;
+    } 
+    .GioiThieuTach__footer--heading{
+        font-size: 16px;
     }
-    .KhuyenMai__tag--type2{
-        padding-top: 19%;
-        padding-bottom: 19%;
+    .GioiThieuTach__footer--col2{
+        font-size: 14px;
     }
-    .KhuyenMai__tag--type{
-        padding-top: 19%;
-        padding-bottom: 19%;
+    .BaiViet__header{
+        font-size: 16px;
+    } 
+    .BaiViet__mainpage{
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 14px;
     }
-    .HorHeader__container a{
-        padding-left: 0;
-        padding-right: 0;
+    .Blog__header--column1{
+        font-size: 14px;
     }
-    .HorHeader__tach{
-        font-size: 19px;
+    .Blog__header--column2{
+        font-size: 14px;
     }
-    .Header__title{
-        font-size: 19px;
+    .Blog__layout{
+        margin: 0 20px;
     }
-    .HorHeader__dropdown{
-        font-size: 19px;
-    }
-    .Header__search{
-        padding: 4px 4px 4px 22px;
+    .Blog__tittle--1{
         font-size: 12px;
+    }
+    .Blog__item--right{
+        margin-left: 10px;
+    }
+    .Blog__item{
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .Blog__tittle--3{
+        font-size: 12px ;
+    }
+    .ChiTiet__product--col1 img{
         width: 100%;
     }
-    .HorHeader__login{
-        font-size: 19px;
+    .ChiTiet__sameproduct--item{
+        flex-direction: column;
     }
-    .Header__icon--2{
-        font-size: 13px;
-        margin-right: -22px;
+    .ChiTiet__infor{
+        margin: 0 30px;
     }
-    .Page__Header--Ava > img{
-        width: 35px;
+    .ChiTiet__sameproduct{
+        margin: 0 30px;
     }
-    .Footer__text{
-        font-size: 14px;
+    .ChiTiet__product{
+        margin: 0 30px;
     }
-    .Footer__heading{
-        font-size: 18px;
-    }
-    .Footer--right img{
-        height: 25px;
+    .ChiTiet__product{
+        flex-direction: column;
     }
 }
-/*Trang*/
-@media only screen and (min-width: 1200px) {
-    .HorHeader__container a{
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .Page__Header--Ava > img{
-        width: 40px;
-    }
-    .KhuyenMai__tag--type2{
-        padding-top: 14%;
-        padding-bottom: 14%;
-    }
-    .KhuyenMai__tag--type{
-        padding-top: 14%;
-        padding-bottom: 14%;
-    }
-    .Footer__text{
-        font-size: 14px;
-    }
-    .Footer__heading{
+@media only screen and (min-width: 768px){
+    .GioiThieuTach__header{
         font-size: 18px;
     }
-    .Footer--right img{
-        height: 25px;
+    .GioiThieuTach__mainpage--text{
+        font-size: 16px;
+    }
+    .GioiThieuTach__mainpage{
+        padding-left: 40px;
+        padding-right: 40px;
+    } 
+    .GioiThieuTach__footer--heading{
+        font-size: 18px;
+    }
+    .GioiThieuTach__footer--col2{
+        font-size: 16px;
+    }
+    .BaiViet__header{
+        font-size: 18px;
+    } 
+    .BaiViet__mainpage{
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 16px;
+    }
+    .Blog__header--column1{
+        font-size: 18px;
+    }
+    .Blog__header--column2{
+        font-size: 18px;
+    }
+    .Blog__layout{
+        margin: 0 30px;
+    }
+    .Blog__tittle--1{
+        font-size: 14px;
+    }
+    .Blog__item--right{
+        margin-left: 10px;
+    }
+    .Blog__item{
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+    .Blog__tittle--3{
+        font-size: 14px ;
+    }
+    .ChiTiet__product--col1 img{
+        width: 100%;
+    }
+    .ChiTiet__sameproduct--item{
+        flex-direction: column;
+    }
+    .ChiTiet__product--col2 div{
+        font-size: 16px;
+    }
+    .ChiTiet__product--col2 input{
+        font-size: 16px;
+        width: 100px;
+        height: 30px;
+    }
+    .ChiTiet__infor{
+        margin: 0 50px;
+    }
+    .ChiTiet__product{
+        flex-direction: column;  
+    }
+}
+@media only screen and (min-width: 992px){
+    .GioiThieuTach__header{
+        font-size: 20px;
+    }
+    .GioiThieuTach__mainpage--text{
+        font-size: 18px;
+    }
+    .GioiThieuTach__mainpage{
+        padding-left: 60px;
+        padding-right: 60px;
+    } 
+    .GioiThieuTach__footer--heading{
+        font-size: 20px;
+    }
+    .GioiThieuTach__footer--col2{
+        font-size: 18px;
+    }
+    .BaiViet__header{
+        font-size: 20px;
+    } 
+    .BaiViet__mainpage{
+        padding-left: 60px;
+        padding-right: 60px;
+        font-size: 18px;
+    }
+    .Blog__header--column1{
+        font-size: 22px;
+    }
+    .Blog__header--column2{
+        font-size: 22px;
+    }
+    .Blog__layout{
+        margin: 0 40px;
+    }
+    .Blog__tittle--1{
+        font-size: 16px;
+    }
+    .Blog__item--right{
+        margin-left: 22px;
+    }
+    .Blog__item{
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+    .Blog__tittle--3{
+        font-size: 16px ;
+    }
+    .ChiTiet__product--col1 img{
+        width: 100%;
+    }
+    .ChiTiet__sameproduct--item{
+        flex-direction: column;
+    }
+    .ChiTiet__infor{
+        margin: 0 30px;
+    }
+    .ChiTiet__product{
+        flex-direction: column;
+    }
+    .ChiTiet__infor{
+        margin: 0 125px;
+    }
+    .ChiTiet__product{
+        margin: 0 125px;
+    }
+    .ChiTiet__product{
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .GioiThieuTach__header{
+        font-size: 32px;
+    }
+    .GioiThieuTach__mainpage--text{
+        font-size: 20px;
+    }
+    .GioiThieuTach__mainpage{
+        padding-left: 80px;
+        padding-right: 80px;
+    } 
+    .GioiThieuTach__footer--heading{
+        font-size: 32px;
+    }
+    .GioiThieuTach__footer--col2{
+        font-size: 20px;
+    }
+    .BaiViet__header{
+        font-size: 32px;
+    } 
+    .BaiViet__mainpage{
+        padding-left: 80px;
+        padding-right: 80px;
+        font-size: 20px;
+    }
+    .Blog__header--column1{
+        font-size: 24px;
+    }
+    .Blog__header--column2{
+        font-size: 22px;
+    }
+    .Blog__layout{
+        margin: 0 125px;
+    }
+    .Blog__tittle--1{
+        font-size: 18px;
+    }
+    .Blog__item--right{
+        margin-left: 22px;
+    }
+    .Blog__item{
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (min-width: 1400px){
+    .Blog__header--column1{
+        font-size: 32px;
+    }
+    .Blog__header--column2{
+        font-size: 32px;
+    }
+    .Blog__layout{
+        margin: 0 125px;
+    }
+    .Blog__tittle--1{
+        font-size: 20px;
+    }
+    .Blog__item--right{
+        margin-left: 22px;
+    }
+    .Blog__item{
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+    .ChiTiet__product{
+        flex-direction: row;
     }
 }

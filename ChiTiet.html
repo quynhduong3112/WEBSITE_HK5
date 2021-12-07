@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết test</title>
+    <link rel="stylesheet" href="./CSS/Style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/javascript.js" defer>
+    
+</head>
+<body>
+    <!-- header -->
+    <div id="myHeader2" class="VerHeader__container">
+        <a href="javascript:void(0)" class="VerHeader__closebtn" onclick="closeNav()">×</a>
+        <div class="VerHeader__search">
+            <span class="glyphicon glyphicon-search Header__icon--2"></span>
+            <input class="Header__search" type="text" placeholder="Nhập từ tìm kiếm">
+        </div>
+        <a href="" class="Header__title"><i class="glyphicon glyphicon-home"></i></a>
+        <button class="VerHeader__btn">Cho Thuê</button>
+        <div class="VerHeader__dropdown--container">
+            <a href="">Máy ảnh</a>
+            <a href="">Studio</a>
+            <a href="">Trang phục</a>
+        </div>
+        <a href="">Album</a>
+        <a href="">Blog</a>
+    </div>
+    <div class="HorHeader__container" id="myHeader">
+        <a href="javascript:void(0);" class="HorHeader__button" onclick="openNav()"><i
+                class="glyphicon glyphicon-menu-hamburger"></i></a>
+        <a href="" class="HorHeader__tach">Tách studio</a>
+        <a href="" class="Header__title"><i class="glyphicon glyphicon-home"></i></a>
+        <div class="Header__title HorHeader__dropdown">
+            <button class="HorHeader__dropdown--button">Cho Thuê</button>
+            <div class="HorHeader__dropdown--content">
+                <a href=""> Máy ảnh</a>
+                <a href=""> Studio</a>
+                <a href=""> Trang phục</a>
+            </div>
+        </div>
+        <a href="" class="Header__title">Album</a>
+        <a href="" class="Header__title">Blog</a>
+        <div class="HorHeader__icon">
+            <span class="glyphicon glyphicon-search Header__icon--2"></span>
+            <input class="Header__search" type="text" placeholder="Nhập từ tìm kiếm">
+        </div>
+        <a href="" class="HorHeader__login">Đăng nhập</a>
+    </div>
+
+    <!-- Mainpage -->
+    <div class="ChiTiet__product">
+        <div class="ChiTiet__product--col1">
+            <div class="ChiTiet__product--col1left">
+               <div> <img class="ChiTiet--image" src="../IMAGES/Studio_Small.png" alt="" id="smallImage"></div>
+             <div>   <img class="ChiTiet--image" src="../IMAGES/Studio_Small.png" alt=""></div>
+               <div> <img class="ChiTiet--image" src="../IMAGES/Studio_Small.png" alt=""></div>
+            </div>
+            <div class="ChiTiet__product--col1right">
+                <img src="../IMAGES/Studio_Big.png" alt="">
+            </div>
+        </div>
+        <div class="ChiTiet__product--col2">
+            <div class="ChiTiet__product--title" id="ChiTiet__product--tittle">Studio tối giản</div>
+            <div class="ChiTiet__product--price">Giá thuê: <span class="ChiTiet--pricecolor" id="chitiet__product--price">500.000 VNĐ</span></div>
+            <div class="ChiTiet__product--number">Số lượng:
+                <button class="ChiTiet--button" onclick="truSanpham()">-</button>
+                <input class="ChiTiet__product--input" type="text" value="1" style="width:30px" readonly id="chitiet__product--input">
+                <button onclick="congSanpham()">+</button>
+            </div>
+            <div class="ChiTiet__product--button">
+            <input type="button" value="Đặt thuê"></div>
+        </div>
+    </div>
+    <div class="ChiTiet__infor--tittle">Thông tin chi tiết</div>
+    <div class="ChiTiet__infor">
+        <div class="ChiTiet__infor--col1">
+            <div class="ChiTiet__infor--dientich" id="chitiet__infor--dientich">
+                <p> Kích thước phòng :  50m <sup>2</sup></p>
+            </div>
+            <div class="ChiTiet__infor--sodo" id="chitiet__infor--sodo">
+               <p> CD: 5,5m, CR: 9m, CC: 4m</p>
+            </div>
+            <div class="ChiTiet__infor--phongmau" id="chitiet__infor--phongmau">
+              <p> Phông màu: Trắng, vàng, xám</p>
+            </div>
+        </div>
+        <div class="ChiTiet__infor--col2">
+            <div class="ChiTiet__infor--col2tittle">
+                Mô tả dịch vụ
+            </div>
+            <div class="ChiTiet__infor--col2text" id="ChiTiet__infor--col2text">
+               <p> Bạn là người đam mê chụp ảnh? Có nhiều ý tưởng mới, sáng tạo trong các gói chụp ảnh của mình THẾ NHƯNG bạn lại chưa tìm được studio ưng ý để chụp cho khách hàng yêu quý. Bạn có sản phẩm ưng ý muốn quảng cáo tới khánh hàng nhưng chưa có hình ảnh đẹp. Bạn muốn có 1 MV hàng trăm ngàn lượt view gửi tới khách hàng biết đến hình ảnh thương hiệu công ty bạn nhưng chư biết nên chụp như thế nào và chụp ở đâu.</p>
+             <p>  Nhằm phục vụ các cho các khách hàng  thượng đế Tách studio hiện đang có dịch vụ cho thuê phòng chụp bao gồm đầy đủ các thiết bị ánh sáng, phông màu, wifi, phụ kiện chụp…v.v. Thích hợp chụp ảnh thời trang, ảnh cưới, ảnh sản phẩm…v.v Thiết bị hiện đại và chuyên nghiệp, đáp ứng tốt nhất nhu cầu cho việc chụp hình của bạn</p> 
+               <p> Tách studio cho thuê phòng chụp Indoor chuyên nghiệp, đầy đủ trang thiết bị. Địa điểm mặt phố thuận tiện đi lại, chỗ để xe rộng và an toàn. Trang thiết bị của Tách studio Quy mô phòng chụp: rộng 60m2 (5mx14m) với bàn trang điểm đạt chuẩn, hệ thống chiếu sáng, điều hòa hoạt động mạnh mẽ. Hệ thống trang thiết bị studio chuyênnghiệp: đèn Jinbei DPE 600 - 6 phông màu: Đen, ghi, trắng, vàng, xanh, hồng - Softbox bát giác khổng lồ (có lưới) 1500 - Softbox bát giác M950 - 2 Softbox chữ nhật 80x1200 - Dù bạc siêu lớn 150cm - Hắt sáng 5 trong 1 - Máy đo sáng Sekonic L308S - Gray card để cân bằng trắng - Chân đèn, boom set, chân đèn gầm, tripod, khung treo hắt sáng - Trigger Và nhiều phụ đạo cụ chụp ảnh khác như ghế bar, ghế gỗ...</p>
+               <p> Thứ nhất là về Giá cả dao động rất lớn từ studio này sang studio kia, tuy nhiên bao gồm luôn việc tính thời gian, do đó Bạn cần phải lưu ý trước khi lựa chọn, nhất là khi mức phí thuê studio được tính đến những phần lẻ của ngày chụp. Đến với Tách studio bạn có thể hoàn toàn yên tâm về các vấn đề này, với chi phí chỉ từ 200 -600 ngàn cho một buổi chụp.</p>
+              <p>  Thứ hai là về  không gian và kích cỡ của các studio. Bạn cần lưu ý đến không gian của studio trước khi lựa chọn. Studio càng lớn với nhiều bối cảnh sẽ khơi gợi nhiều ý tưởng sáng tạo cho bạn. Đến với Wishstar với không gian rộng lớn bao gồm các khung cảnh indoor và out door sẽ mang lại cho bạn một không gian lớn, thoáng mát, để bạn có thể thỏa sức sáng tạo hứa hẹn sẽ mang lại cho bạn những shoot ảnh đẹp với mức chi phí ưu đãi nhất.</p>
+              <p>  Thứ ba về: Chi phí phụ thu: Bạn cần phải thận trọng với các khoản phí ngầm, chẳng hạn như việc sử dụng các đạo cụ như giấy phông màn,  đèn led... hoặc phí đậu xe, đay là các khoản chi phí ngầm mà một số studio sẽ thu tách biệt với tổng tiền thuê. Đến với Wishstar bạn có thể yên tâm về các vấn đề này. Wishstar có bãi đỗ xe rất an toàn, đạo cụ và phụ kiện đa dạng phong phú cho bạn thỏa sức sáng tạo và bạn sẽ không phải mất thêm bất kỳ một phụ phí nào cho một buổi chụp hoàn mỹ.</p> 
+               <p > Với nhiều năm kinh nghiệm trong nghề chụp ảnh chúng tôi hiểu rằng để có một bức hình đẹp tại studio thì studio đó phải đáp ứng đầy đủ tất cả các yêu cầu từ các dịch vụ kỹ thuật đến hệ thống trang thiết bị. Với phòng chụp rộng rãi, không gian thoáng đãng rất phù hợp để chụp model, chụp thời trang, chụp các sản phẩm lớn… Hệ thống trang thiết bị ánh sáng sẽ đem đến cho khách hàng những hình ảnh chất lượng và tông màu đẹp tự nhiên.
+                Với nhiều năm kinh nghiệm trong nghề chụp ảnh chúng tôi hiểu rằng để có một bức hình đẹp tại studio thì studio đó phải đáp ứng đầy đủ tất cả các yêu cầu từ các dịch vụ kỹ thuật đến hệ thống trang thiết bị. Với phòng chụp rộng rãi, không gian thoáng đãng rất phù hợp để chụp model, chụp thời trang, chụp các sản phẩm lớn… Hệ thống trang thiết bị ánh sáng sẽ đem đến cho khách hàng những hình ảnh chất lượng và tông màu đẹp tự nhiên.</p>
+            </div>
+        </div>
+    </div>
+    <div class="ChiTiet__sameproduct--heading">Sản phẩm tương tự</div>
+    <div class="ChiTiet__sameproduct">
+        <div class="ChiTiet__sameproduct--item">
+            <div class="ChiTiet__sameproduct--image">
+                <img src="../IMAGES/studiocodien.png" alt="Hình ảnh">
+            </div>
+            <div class="ChiTiet__sameproduct--tittle">Studio cổ điển</div>
+            <div class="ChiTiet__sameproduct--price">Giá thuê: 1.000.000VNĐ</div>
+            <div class="ChiTiet__sameproduct--button" >
+                <input  type="button" value="Đặt thuê">
+                </div>
+        </div>
+        <div class="ChiTiet__sameproduct--item">
+            <div class="ChiTiet__sameproduct--image">
+                <img src="../IMAGES/studiongaytet.png" alt="Hình ảnh">
+            </div>
+            <div class="ChiTiet__sameproduct--tittle">Studio ngày tết</div>
+            <div class="ChiTiet__sameproduct--price">Giá thuê: 700.000VNĐ</div>
+            <div class="ChiTiet__sameproduct--button" >
+                <input  type="button" value="Đặt thuê">
+                </div>
+        </div>
+        <div class="ChiTiet__sameproduct--item">
+            <div class="ChiTiet__sameproduct--image">
+                <img src="../IMAGES/studiotoigian.png" alt="Hình ảnh">
+            </div>
+            <div class="ChiTiet__sameproduct--tittle">Studio tối giản</div>
+            <div class="ChiTiet__sameproduct--price">Giá thuê: 500.000VNĐ</div>
+            <div class="ChiTiet__sameproduct--button" >
+                <input  type="button" value="Đặt thuê">
+                </div>
+        </div>
+        <div class="ChiTiet__sameproduct--item">
+            <div class="ChiTiet__sameproduct--image">
+                <img src="../IMAGES/studiogiangsinh.png" alt="Hình ảnh">
+            </div>
+            <div class="ChiTiet__sameproduct--tittle">Studio giáng sinh</div>
+            <div class="ChiTiet__sameproduct--price">Giá thuê: 700.000VNĐ</div>
+            <div class="ChiTiet__sameproduct--button" >
+                <input  type="button" value="Đặt thuê">
+                </div>
+        </div>
+        <div class="ChiTiet__sameproduct--item">
+            <div class="ChiTiet__sameproduct--image">
+                <img src="../IMAGES/studioanhcuoi.png" alt="Hình ảnh">
+            </div>
+            <div class="ChiTiet__sameproduct--tittle">Studio ảnh cưới</div>
+            <div class="ChiTiet__sameproduct--price">Giá thuê: 500.000VNĐ</div>
+            <div class="ChiTiet__sameproduct--button" >
+                <input  type="button" value="Đặt thuê">
+                </div>
+        </div>
+    </div>
+<!-- Footer -->
+<div class="Page__footer--container Footer__text">
+    <div class="Footer--left">
+        <p class="Footer__heading">TÁCH STUDIO</p>
+        <p>UEL, Tp Thủ Đức, Tp Hồ Chí Minh <br>
+            Call us: 0123456789 <br>
+            tachstudio@gmail.com
+        </p>
+        <p>Copyright @2021 Tách Creative Studio</p>
+    </div>
+
+    <div class="Footer--right">
+        <p class="Footer__heading">LIÊN HỆ VỚI CHÚNG TÔI</p>
+        <p> <img src="/images/footer-fb.png" alt=""> Tách studio</p>
+        <p> <img src="/images/footer-ins.png" alt=""> tach.studio</p>
+        <p> <img src="/images/footer-ytb.png" alt=""> Tách Studio Official</p>
+    </div>
+</div>
+</body>
+</html>
