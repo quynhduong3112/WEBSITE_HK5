@@ -1,0 +1,1102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background-color: black;
+}
+.DatThue--top {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  margin-top: 170px;
+}
+.DatThue__top--flex .DatThue__icons {
+  display: flex;
+  justify-content: center;
+}
+.DatThue__top {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+}
+.DatThue__top--item1 {
+  margin-bottom: 25px;
+}
+.DatThue__top--item {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  margin-top: 15px;
+}
+.DatThue__top--circle {
+  border-radius: 50px;
+  background: #c6c6c6;
+  width: 50px;
+  height: 50px;
+  margin-top: -10px;
+  background-color: rgba(18, 201, 47, 1);
+}
+.DatThue__top--circle2 {
+  background-color: rgba(196, 196, 196, 1);
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  margin-top: -10px;
+}
+.DatThue__item--1 {
+  margin-left: 2%;
+}
+.DatThue__item--2 {
+  margin-left: 10%;
+}
+.DatThue__item--3 {
+  margin-left: 10%;
+}
+.DatThue__icons svg {
+  margin-top: 13px;
+}
+.DatThue__flex {
+  display: flex;
+  margin-top: 3%;
+  justify-content: center;
+  margin-bottom: 8%;
+}
+.DatThue__profile {
+  display: flex;
+  margin-left: 2%;
+  margin-top: 5%;
+}
+.DatThue--left {
+  margin-left: 0%;
+  width: 35%;
+  border: rgba(167, 167, 167, 1) solid 1px;
+  border-radius: 5px;
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+}
+.DatThue--name {
+  margin-left: 4%;
+}
+.DatThue__profile--img {
+  border-radius: 300px;
+  width: 80px;
+  height: 79.84px;
+}
+.DatThue__name {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+}
+.DatThue__fontsize {
+  font-weight: normal;
+  font-size: 18px;
+}
+.DatThue__bottom {
+  margin-top: 5%;
+  margin-left: 18%;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+.DatThue--item {
+  margin-bottom: 10px;
+}
+.DatThue__input {
+  height: 35px;
+  width: 40%;
+  border-radius: 5px;
+  border: rgba(167, 167, 167, 1) solid 1px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.DatThue__align {
+  margin-top: 3%;
+}
+.DatThue__label {
+  width: 21%;
+  margin-right: -2%;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+.DatThue__label--4,
+.DatThue__label--3,
+.DatThue__label--1 {
+  width: 30%;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+.DatThue__label--1 {
+  margin-right: 2%;
+}
+.DatThue__label--2 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+.DatThue__select {
+  font-size: 14px;
+  height: 35px;
+  margin-left: 2%;
+  width: 20%;
+  border-radius: 5px;
+  border: rgba(167, 167, 167, 1) solid 1px;
+  font-family: "Roboto", sans-serif;
+  flex-wrap: wrap;
+}
+.DatThue--color {
+  color: red;
+}
+.DatThue__input--discount {
+  width: 22%;
+  margin-right: 1%;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+.DatThue__input--discount1 {
+  width: 17%;
+  height: 35px;
+  background: #f2c806;
+  color: #fff;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  border: none;
+}
+.DatThue--line {
+  margin-left: -8.5%;
+  min-width: 100%;
+}
+.DatThue__input--checkbox {
+  margin-left: 30%;
+}
+.DatThue__input--button2 {
+  width: 17%;
+  background: #f2c806;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  border: none;
+}
+.DatThue__right {
+  display: flex;
+  margin-bottom: 16px;
+  margin-left: 10%;
+}
+.DatThue__right--item {
+  margin-left: 8%;
+  margin-top: 4%;
+}
+.DatThue--title {
+  text-align: center;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.DatThue__input--info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+  font-family: "Roboto", sans-serif;
+}
+.DatThue--right {
+  float: left;
+  border: rgba(167, 167, 167, 1) solid 1px;
+  border-radius: 5px;
+  background-color: white;
+  width: 100%;
+  margin-right: 0%;
+  margin-left: 3%;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: rgba(36, 36, 38, 1);
+}
+.DatThue--note {
+  font-size: 14px;
+  float: right;
+}
+.DatThue--bottom {
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  margin-left: -73%;
+}
+.DatThue--error {
+  border-color: #ff4d4d;
+}
+.DatThue__background {
+  background-color: black;
+}
+@media only screen and (max-width: 600px) {
+  .DatThue--left,
+  .DatThue__bottom {
+    display: none;
+  }
+  .DatThue--top {
+    margin-top: 150px;
+  }
+  .DatThue__input {
+    height: 25px;
+    width: 50%;
+    margin-bottom: 14px;
+    border-radius: 5px;
+    border: rgba(167, 167, 167, 1) solid 1px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -30%;
+  }
+  .DatThue__input--discount {
+    margin-bottom: 10px;
+    width: 29%;
+  }
+  .DatThue__input--discount1 {
+    width: 20%;
+    font-size: 16px;
+    margin-left: 0%;
+    border: none;
+  }
+  .DatThue__input--button2 {
+    width: 20%;
+    font-size: 16px;
+    margin-left: 40%;
+    margin-top: -35px;
+    margin-bottom: 20px;
+    border: none;
+  }
+  .DatThue--right {
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    margin-left: 0%;
+  }
+  .DatThue__right {
+    margin-left: 7%;
+    font-size: 10px;
+  }
+  .DatThue__label--1,
+  .DatThue__label--3,
+  .DatThue__label--4 {
+    font-size: 15px;
+  }
+  .DatThue__select {
+    font-size: 10px;
+    height: 25px;
+    margin-left: 1%;
+    width: 26%;
+    margin-bottom: 10px;
+    padding-left: -4%;
+    padding-top: 2px;
+  }
+  .DatThue__select--1 {
+    margin-left: -20%;
+  }
+  .DatThue__select--4 {
+    margin-left: -20%;
+    width: 18%;
+  }
+  .DatThue__label--2 {
+    font-size: 12px;
+    width: 100%;
+    margin-left: 7%;
+  }
+  .DatThue__label--3 {
+    width: 60%;
+  }
+  .DatThue__label--1,
+  .DatThue__label--3,
+  .DatThue__label--4,
+  .DatThue__label--5,
+  .DatThue__label--6,
+  .DatThue__label--7,
+  .DatThue__label--8,
+  .DatThue__label--9,
+  .DatThue__label--10,
+  .DatThue__label--11,
+  .DatThue__label--12,
+  .DatThue__label--13 {
+    width: 65%;
+  }
+  .DatThue__label--9 {
+    margin-left: 0%;
+  }
+  .DatThue__input--info {
+    margin-left: -2%;
+    font-size: 15px;
+  }
+  .DatThue__input--checkbox {
+    margin-left: 25%;
+  }
+  .DatThue__right--item1,
+  .DatThue__right--item2,
+  .DatThue__right--item3,
+  .DatThue__right--item4,
+  .DatThue__right--item5,
+  .DatThue__right--item6,
+  .DatThue__right--item7,
+  .DatThue__right--item8,
+  .DatThue__right--item9,
+  .DatThue__right--item10,
+  .DatThue__right--item11,
+  .DatThue__right--item12 {
+    flex-direction: row;
+  }
+  .DatThue--bottom {
+    font-size: 12px;
+    text-align: center;
+    margin-top: -10px;
+  }
+  .DatThue--top {
+    font-size: 18px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+  }
+  .DatThue__icons svg {
+    margin-top: 13px;
+    width: 120px;
+    height: 6px;
+  }
+  .DatThue__icon {
+    padding-top: 7px;
+  }
+  .DatThue__top--circle {
+    border-radius: 40px;
+    width: 35px;
+    height: 35px;
+    margin-top: 0px;
+    background-color: rgba(18, 201, 47, 1);
+  }
+  .DatThue__top--circle2 {
+    background-color: rgba(196, 196, 196, 1);
+    border-radius: 40px;
+    width: 35px;
+    height: 35px;
+    margin-top: 0px;
+  }
+  .DatThue__top--item {
+    display: flex;
+    justify-content: space-around;
+    font-size: 13px;
+    line-height: 27px;
+    margin-left: -10%;
+    margin-top: 0px;
+    width: 120%;
+  }
+  .DatThue__top--item1 {
+    font-size: 15px;
+  }
+  .DatThue__profile {
+    flex-direction: column;
+    margin-bottom: -15px;
+  }
+  .DatThue__profile--img {
+    border-radius: 300px;
+    width: 60px;
+    height: 60px;
+    margin-left: 20%;
+  }
+  .DatThue__bottom {
+    margin-top: -5px;
+  }
+  .DatThue--item {
+    font-size: 10px;
+    margin-left: -5%;
+  }
+  .DatThue--title {
+    font-size: 15px;
+  }
+  .DatThue__input--checkbox {
+    margin-left: 26%;
+    margin-bottom: 10px;
+    font-size: 15px;
+    margin-top: -7px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .DatThue--left,
+  .DatThue__bottom {
+    display: none;
+  }
+  .DatThue--top {
+    margin-top: 150px;
+  }
+  .DatThue__input {
+    height: 30px;
+    width: 65%;
+    margin-left: 0%;
+  }
+  .DatThue__input--discount {
+    margin-bottom: 10px;
+  }
+  .DatThue__input--discount1 {
+    width: 40%;
+    font-size: 16px;
+    margin-left: 13%;
+  }
+  .DatThue__input--button2 {
+    width: 30%;
+    font-size: 16px;
+    margin-left: 33%;
+    margin-bottom: 7px;
+  }
+  .DatThue--right {
+    font-size: 15px;
+  }
+  .DatThue__select {
+    font-size: 12px;
+    height: 30px;
+    margin-left: 0%;
+    width: 35%;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-top: 3px;
+  }
+  .DatThue__right {
+    margin-left: 26%;
+  }
+  .DatThue__label--2 {
+    font-size: 15px;
+    width: 100%;
+  }
+  .DatThue__label--1,
+  .DatThue__label--3,
+  .DatThue__label--4,
+  .DatThue__label--5,
+  .DatThue__label--6,
+  .DatThue__label--7,
+  .DatThue__label--8,
+  .DatThue__label--9,
+  .DatThue__label--10,
+  .DatThue__label--11,
+  .DatThue__label--12,
+  .DatThue__label--13 {
+    width: 65%;
+  }
+  .DatThue__input--info {
+    margin-left: 26%;
+  }
+  .DatThue__right--item1,
+  .DatThue__right--item2,
+  .DatThue__right--item3,
+  .DatThue__right--item4,
+  .DatThue__right--item5,
+  .DatThue__right--item6,
+  .DatThue__right--item7,
+  .DatThue__right--item8,
+  .DatThue__right--item9,
+  .DatThue__right--item10,
+  .DatThue__right--item11,
+  .DatThue__right--item12 {
+    flex-direction: column;
+  }
+  .DatThue--bottom {
+    font-size: 15px;
+    margin-left: -45%;
+  }
+  .DatThue--top {
+    font-size: 18px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+  }
+  .DatThue__icons svg {
+    justify-content: center;
+    margin-top: 13px;
+    width: 160px;
+    height: 6px;
+  }
+  .DatThue__icon {
+    padding-top: 7px;
+  }
+  .DatThue__top--circle {
+    border-radius: 40px;
+    width: 35px;
+    height: 35px;
+    margin-top: 0px;
+    background-color: rgba(18, 201, 47, 1);
+  }
+  .DatThue__top--circle2 {
+    background-color: rgba(196, 196, 196, 1);
+    border-radius: 40px;
+    width: 35px;
+    height: 35px;
+    margin-top: 0px;
+  }
+  .DatThue__top--item {
+    display: flex;
+    justify-content: space-around;
+    width: 120%;
+    font-size: 13px;
+    line-height: 27px;
+    margin-left: -10%;
+    margin-top: 0px;
+  }
+  .DatThue__top--item1 {
+    font-size: 15px;
+  }
+  .DatThue__profile {
+    flex-direction: column;
+    margin-bottom: -15px;
+  }
+  .DatThue__profile--img {
+    border-radius: 300px;
+    width: 60px;
+    height: 60px;
+    margin-left: 30%;
+  }
+  .DatThue__name {
+    font-size: 15px;
+    margin-left: 32%;
+    margin-bottom: 5px;
+  }
+  .DatThue__fontsize {
+    font-size: 13px;
+    margin-left: 13%;
+  }
+  .DatThue__bottom {
+    margin-top: -5px;
+  }
+  .DatThue--item {
+    font-size: 13px;
+    margin-left: 0%;
+  }
+  .DatThue--title {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .DatThue--left,
+  .DatThue__bottom {
+    display: none;
+  }
+  .DatThue--top {
+    margin-top: 150px;
+  }
+  .DatThue__top--item1 {
+    font-size: 25px;
+  }
+  .DatThue__input {
+    height: 40px;
+    width: 65%;
+    margin-bottom: 14px;
+    border-radius: 5px;
+    border: rgba(167, 167, 167, 1) solid 1px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 0%;
+  }
+  .DatThue__input--discount {
+    margin-bottom: 10px;
+  }
+  .DatThue__input--discount1 {
+    width: 40%;
+    font-size: 20px;
+    margin-left: 13%;
+    border: none;
+  }
+  .DatThue__input--button2 {
+    width: 30%;
+    font-size: 20px;
+    margin-left: 35%;
+    border: none;
+  }
+  .DatThue--right {
+    font-size: 20px;
+  }
+  .DatThue__right {
+    margin-left: 25%;
+  }
+  .DatThue__select {
+    font-size: 15px;
+    height: 35px;
+    width: 35%;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-top: 3px;
+  }
+  .DatThue__label--2 {
+    font-size: 20px;
+    width: 100%;
+  }
+  .DatThue__label--1,
+  .DatThue__label--3,
+  .DatThue__label--4,
+  .DatThue__label--5,
+  .DatThue__label--6,
+  .DatThue__label--7,
+  .DatThue__label--8,
+  .DatThue__label--9,
+  .DatThue__label--10,
+  .DatThue__label--11,
+  .DatThue__label--12,
+  .DatThue__label--13 {
+    width: 65%;
+  }
+  .DatThue__input--info {
+    margin-left: 25%;
+  }
+  .DatThue__right--item1,
+  .DatThue__right--item2,
+  .DatThue__right--item3,
+  .DatThue__right--item4,
+  .DatThue__right--item5,
+  .DatThue__right--item6,
+  .DatThue__right--item7,
+  .DatThue__right--item8,
+  .DatThue__right--item9,
+  .DatThue__right--item10,
+  .DatThue__right--item11,
+  .DatThue__right--item12 {
+    flex-direction: column;
+  }
+  .DatThue--bottom {
+    font-size: 20px;
+    margin-left: -57%;
+  }
+  .DatThue--top {
+    font-size: 18px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 70px;
+  }
+  .DatThue__icons svg {
+    margin-top: 13px;
+    width: 210px;
+    height: 6px;
+  }
+  .DatThue__icon {
+    padding-top: 7px;
+  }
+  .DatThue__top--circle {
+    border-radius: 40px;
+    width: 35px;
+    height: 35px;
+    margin-top: 0px;
+    background-color: rgba(18, 201, 47, 1);
+  }
+  .DatThue__top--circle2 {
+    background-color: rgba(196, 196, 196, 1);
+    border-radius: 40px;
+    width: 35px;
+    height: 35px;
+    margin-top: 0px;
+  }
+  .DatThue__top--item {
+    display: flex;
+    justify-content: space-around;
+    width: 120%;
+    font-size: 13px;
+    line-height: 27px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-left: -10%;
+    margin-top: 0px;
+  }
+  .DatThue__top--item1 {
+    font-size: 20px;
+  }
+  .DatThue__profile {
+    flex-direction: column;
+    margin-bottom: -15px;
+  }
+  .DatThue__profile--img {
+    border-radius: 300px;
+    width: 50px;
+    height: 50px;
+    margin-left: 35%;
+  }
+  .DatThue__name {
+    font-size: 17px;
+    margin-left: 32%;
+    margin-bottom: 5px;
+  }
+  .DatThue__fontsize {
+    font-size: 15px;
+    margin-left: 10%;
+  }
+  .DatThue__bottom {
+    margin-top: -5px;
+  }
+  .DatThue--item {
+    font-size: 15px;
+  }
+  .DatThue--title {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .DatThue__flex {
+    display: flex;
+  }
+  .DatThue--left {
+    display: block;
+  }
+  .DatThue__bottom {
+    display: block;
+  }
+  .DatThue--top {
+    margin-top: 150px;
+  }
+  .DatThue__input {
+    flex: auto;
+    height: 35px;
+  }
+  .DatThue__input--discount {
+    margin-bottom: 10px;
+    width: 38%;
+    font-size: 15px;
+  }
+  .DatThue__input--discount1 {
+    width: 30%;
+    font-size: 20px;
+    margin-left: 2%;
+  }
+  .DatThue__input--button2 {
+    width: 30%;
+    font-size: 20px;
+    margin-left: 38%;
+  }
+  .DatThue--right {
+    font-size: 18px;
+    display: flex;
+    position: relative;
+  }
+  .DatThue__right {
+    flex-direction: row;
+    margin-left: 10%;
+    font-size: 20px;
+  }
+  .DatThue__select {
+    font-size: 12px;
+    height: 35px;
+    margin-left: 2%;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-top: 2px;
+  }
+  .DatThue__select--1 {
+    margin-left: -25%;
+  }
+  .DatThue__select--4 {
+    margin-left: -54%;
+    width: 24%;
+  }
+  .DatThue__label--2 {
+    font-size: 15px;
+    width: 65%;
+    margin-left: 5%;
+  }
+  .DatThue__label--1 {
+    width: 45%;
+    font-size: 18px;
+  }
+  .DatThue__label--3,
+  .DatThue__label--4 {
+    width: 280%;
+    font-size: 18px;
+  }
+  .DatThue__label--5,
+  .DatThue__label--6,
+  .DatThue__label--7,
+  .DatThue__label--8,
+  .DatThue__label--9,
+  .DatThue__label--10,
+  .DatThue__label--11,
+  .DatThue__label--12,
+  .DatThue__label--13 {
+    flex-basis: 30%;
+    width: 350px;
+  }
+  .DatThue__input--info {
+    margin-left: 10%;
+  }
+  .DatThue__right--item1,
+  .DatThue__right--item2,
+  .DatThue__right--item3,
+  .DatThue__right--item4,
+  .DatThue__right--item5,
+  .DatThue__right--item6,
+  .DatThue__right--item7,
+  .DatThue__right--item8,
+  .DatThue__right--item9,
+  .DatThue__right--item10,
+  .DatThue__right--item11,
+  .DatThue__right--item12 {
+    flex-direction: row;
+  }
+  .DatThue--bottom {
+    font-size: 16px;
+    margin-left: -33%;
+    width: 100%;
+  }
+  .DatThue--top {
+    font-size: 18px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px;
+  }
+  .DatThue__icons svg {
+    margin-top: 13px;
+    width: 285px;
+    height: 6px;
+  }
+  .DatThue__icon {
+    padding-top: 7px;
+  }
+  .DatThue__top--circle {
+    border-radius: 40px;
+    width: 35px;
+    height: 35px;
+    margin-top: 0px;
+    background-color: rgba(18, 201, 47, 1);
+  }
+  .DatThue__top--circle2 {
+    background-color: rgba(196, 196, 196, 1);
+    border-radius: 40px;
+    width: 35px;
+    height: 35px;
+    margin-top: 0px;
+  }
+  .DatThue__top--item {
+    display: flex;
+    justify-content: space-around;
+    width: 120%;
+    font-size: 13px;
+    line-height: 27px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-left: -10%;
+    margin-top: 0px;
+  }
+  .DatThue__top--item1 {
+    font-size: 20px;
+  }
+  .DatThue__profile {
+    flex-direction: column;
+    margin-bottom: -15px;
+    justify-content: center;
+  }
+  .DatThue__profile--img {
+    border-radius: 300px;
+    width: 60px;
+    height: 60px;
+    margin-left: 35%;
+  }
+  .DatThue__name {
+    font-size: 23px;
+    margin-bottom: 5px;
+  }
+  .DatThue__fontsize {
+    font-size: 18px;
+    margin-left: 10%;
+  }
+  .DatThue__bottom {
+    margin-top: -5px;
+  }
+  .DatThue--item {
+    font-size: 18px;
+    margin-left: 0%;
+  }
+  .DatThue--title {
+    font-size: 20px;
+    margin-left: 10%;
+  }
+  .DatThue__input--checkbox {
+    margin-left: 32%;
+    margin-bottom: 10px;
+    margin-top: -10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .DatThue__flex {
+    display: flex;
+  }
+  .DatThue--left {
+    display: block;
+  }
+  .DatThue__bottom {
+    display: block;
+  }
+  .DatThue--right {
+    font-size: 18px;
+  }
+  .DatThue__right--item1,
+  .DatThue__right--item2,
+  .DatThue__right--item3,
+  .DatThue__right--item4,
+  .DatThue__right--item5,
+  .DatThue__right--item6,
+  .DatThue__right--item7,
+  .DatThue__right--item8,
+  .DatThue__right--item9,
+  .DatThue__right--item10,
+  .DatThue__right--item11,
+  .DatThue__right--item12 {
+    flex-direction: row;
+  }
+  .DatThue__label--5,
+  .DatThue__label--6,
+  .DatThue__label--7,
+  .DatThue__label--8,
+  .DatThue__label--9,
+  .DatThue__label--10,
+  .DatThue__label--11,
+  .DatThue__label--12,
+  .DatThue__label--13 {
+    flex-basis: 30%;
+    width: 350px;
+  }
+  .DatThue__input {
+    flex: auto;
+    width: 300px;
+    height: 40px;
+  }
+  .DatThue__input--checkbox {
+    margin-left: 30%;
+  }
+  .DatThue__select {
+    padding-top: 2px;
+    font-size: 12px;
+    height: 35px;
+  }
+  .DatThue__select--1 {
+    margin-left: -20%;
+  }
+  .DatThue__select--4 {
+    margin-left: -52%;
+  }
+  .DatThue__input--checkbox {
+    margin-left: 35%;
+  }
+  .DatThue__align {
+    margin-left: 6%;
+  }
+  .DatThue--color {
+    color: red;
+  }
+  .DatThue__input--discount {
+    width: 43%;
+    font-size: 14px;
+  }
+  .DatThue__input--discount1 {
+    width: 27%;
+    height: 40px;
+    font-size: 22px;
+    margin-left: 1%;
+    border: none;
+  }
+  .DatThue--line {
+    margin-left: -8.5%;
+    min-width: 100%;
+  }
+  .DatThue__input--button2 {
+    width: 150px;
+    margin-left: 45%;
+  }
+  .DatThue__input--info {
+    margin-left: 10%;
+  }
+  .DatThue--bottom {
+    font-size: 18px;
+    margin-left: -20%;
+  }
+  .DatThue--top {
+    font-size: 18px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .DatThue__icons svg {
+    margin-top: 13px;
+    width: 340px;
+    height: 6px;
+  }
+  .DatThue__top--circle {
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+    background-color: rgba(18, 201, 47, 1);
+  }
+  .DatThue__icon {
+    padding-top: 15px;
+  }
+  .DatThue__top--circle2 {
+    background-color: rgba(196, 196, 196, 1);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+  }
+  .DatThue__top--item {
+    display: flex;
+    justify-content: space-around;
+    width: 120%;
+    font-size: 17px;
+    line-height: 27px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-left: -10%;
+    margin-top: 7px;
+  }
+  .DatThue__top--item1 {
+    font-size: 25px;
+  }
+  .DatThue__profile {
+    flex-direction: row;
+    margin-bottom: 5px;
+    margin-left: 4%;
+  }
+  .DatThue__profile--img {
+    border-radius: 300px;
+    width: 80px;
+    height: 79.84px;
+    margin-left: 0%;
+  }
+  .DatThue__name {
+    font-size: 22px;
+    margin-left: 0%;
+    margin-bottom: 5px;
+  }
+  .DatThue__fontsize {
+    font-size: 20px;
+    margin-left: 0%;
+  }
+  .DatThue__bottom {
+    margin-top: -5px;
+  }
+  .DatThue--name {
+    margin-top: 10px;
+  }
+  .DatThue--item {
+    font-size: 20px;
+    margin-left: 3%;
+  }
+  .DatThue--title {
+    font-size: 20px;
+    flex: auto;
+    margin-left: 13%;
+  }
+}

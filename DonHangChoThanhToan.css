@@ -1,0 +1,754 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap');
+
+body,html{
+    margin: 0;
+    padding: 0;
+}
+.ChoThanhToan__background{
+    background-color: black;
+}
+.container{
+    margin-bottom: 50px;
+}
+.ChoThanhToan--top {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+}
+.ChoThanhToan__top--flex .ChoThanhToan__icons{
+    display: flex;
+    justify-content: center;
+}
+.ChoThanhToan__top{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+}
+.ChoThanhToan__top--item1{
+    margin-bottom: 25px;
+}
+.ChoThanhToan__top--item{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    margin-top: 15px;
+}
+.ChoThanhToan__top--circle {
+    border-radius: 50px;
+    background: #C6C6C6;
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+    background-color: rgba(18, 201, 47, 1);
+}
+.ChoThanhToan__top--circle2 {
+    background-color: rgba(196, 196, 196, 1);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+}
+.ChoThanhToan__icon{
+    padding-top: 10px;
+}
+.ChoThanhToan__item1{
+    margin-left: 2%;
+}
+.ChoThanhToan__item2{
+    margin-left: 10%;
+}
+.ChoThanhToan__item3{
+    margin-left: 10%;
+}
+.ChoThanhToan__icons svg{
+    margin-top: 13px;
+}
+.ChoThanhToan__body{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+.ChoThanhToan__body--left, .ChoThanhToan__body--right{
+    
+    background-color: white;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 15px;
+    padding-bottom: 20px;
+
+}
+.ChoThanhToan__body--left{
+    width: 50%;
+    justify-content: center;
+    padding-top: 10px;
+    font-weight: bold;
+
+}
+.ChoThanhToan__label--flex{
+    display: flex;
+}
+.ChoThanhToan__label{
+    font-weight: normal;
+}
+.ChoThanhToan__label--10, .ChoThanhToan__label--26{
+    font-weight: bold;
+}
+.ChoThanhToan__title{
+    color: black;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+.ChoThanhToan__title--1,.ChoThanhToan__title--3{
+    font-size: 22px;
+}
+.ChoThanhToan__title--2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.ChoThanhToan__line{
+    margin-left: -2%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.ChoThanhToan__label{
+    width: 35%;
+}
+.ChoThanhToan__label--2{
+    width: 45%;
+
+}
+.ChoThanhToan__label--right{
+    width: 40%;
+}
+.ChoThanhToan__label--12{
+    width: 55%;
+}
+.ChoThanhToan__label--20, .ChoThanhToan__label--22{
+    color: red;
+    font-weight: bold;
+}
+.ChoThanhToan__note{
+    font-size: 15px;
+    font-style: italic;
+    margin-right: 5px;
+}
+.ChoThanhToan__body--right{
+    width: 50%;
+    margin-left: 5%;
+    padding-top: 10px;
+    justify-content: center;
+}
+.ChoThanhToan__button--flex{
+    text-align: center;
+
+}
+.ChoThanhToan__button{
+    width: 25%;
+    border-radius: 5px;
+    background-color: #F2C806;
+    color: white;
+    border-color: rgba(196, 196, 196, 1);
+    border: none;
+}
+.ChoThanhToan__button--2{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+@media only screen and (max-width: 600px) 
+{
+    .ChoThanhToan--top {
+        font-size: 18px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 50px;
+    }
+    .ChoThanhToan__icons svg{
+        margin-top: 13px;
+        width: 120px;
+        height: 6px ;
+    }
+    .ChoThanhToan__icon{
+        padding-top: 7px;
+    }
+    .ChoThanhToan__top--circle{
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+    .ChoThanhToan__top--circle2 {
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+    }
+    .ChoThanhToan__top--item{
+        display: flex;
+        justify-content:space-around;
+        font-size: 13px;
+        line-height: 27px;
+        margin-left: -10%;
+        margin-top: 0px;
+        width: 120%;
+    }
+    .ChoThanhToan__top--item1{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .ChoThanhToan__body{
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .ChoThanhToan__body--left, .ChoThanhToan__body--right{       
+        font-size: 12px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+    
+    }
+    .ChoThanhToan__body--left{
+        width: 90%;
+        justify-content: center;
+        padding-top: 10px;
+        margin-left: 5%;
+        margin-top: 20px;
+    }
+    .ChoThanhToan__label--flex{
+        display: flex;
+    
+    }
+    
+    .ChoThanhToan__title--1,.ChoThanhToan__title--3{
+        font-size: 15px;
+    }
+    .ChoThanhToan__title--2{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .ChoThanhToan__line{
+        margin-left: -2%;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .ChoThanhToan__label{
+        width: 35%;
+    }
+    .ChoThanhToan__label--2{
+        width: 45%;
+    
+    }
+    .ChoThanhToan__label--right{
+        width: 40%;
+    }
+    .ChoThanhToan__label--12{
+        width: 55%;
+    }
+    .ChoThanhToan__note{
+        font-size: 12px;
+        margin-right: 5px;
+        font-weight: normal;
+    }
+    .ChoThanhToan__body--right{
+        width: 90%;
+        margin-left: 5%;
+        padding-top: 10px;
+        justify-content: center;
+        margin-top: -15px;
+    }
+    .ChoThanhToan__ChoThanhToan__button--flex{
+        text-align: center;
+    
+    }
+    .ChoThanhToan__button{
+        width: 25%;
+        margin-left: -3%;
+       
+    }
+    .ChoThanhToan__button--2{
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .ChoThanhToan--top {
+        font-size: 18px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 50px;
+    }
+    .ChoThanhToan__icons svg{
+        justify-content: center;
+        margin-top: 13px;
+        width: 160px;
+        height: 6px ;
+    }
+    .ChoThanhToan__icon{
+        padding-top: 7px;
+    }  
+    .ChoThanhToan__top--circle{
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+    .ChoThanhToan__top--circle2 {
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+    }
+    .ChoThanhToan__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 13px;
+        line-height: 27px;
+        margin-left: -10%;
+        margin-top: 0px;
+    }
+    .ChoThanhToan__top--item1{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .ChoThanhToan__body{
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .ChoThanhToan__body--left, .ChoThanhToan__body--right{       
+        font-size: 15px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+    
+    }
+    .ChoThanhToan__body--left{
+        width: 90%;
+        justify-content: center;
+        padding-top: 10px;
+        margin-left: 5%;
+        margin-top: 20px;
+    }
+    .ChoThanhToan__label--flex{
+        display: flex;
+    
+    }
+    
+    .ChoThanhToan__title--1,.ChoThanhToan__title--3{
+        font-size: 18px;
+    }
+    .ChoThanhToan__title--2{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .ChoThanhToan__line{
+        margin-left: -2%;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .ChoThanhToan__label{
+        width: 35%;
+    }
+    .ChoThanhToan__label--2{
+        width: 45%;
+    
+    }
+    .ChoThanhToan__label--right{
+        width: 40%;
+    }
+    .ChoThanhToan__label--12{
+        width: 55%;
+    }
+    .ChoThanhToan__note{
+        font-size: 15px;
+        margin-right: 5px;
+        font-weight: normal;
+    }
+    .ChoThanhToan__body--right{
+        width: 90%;
+        margin-left: 5%;
+        padding-top: 10px;
+        justify-content: center;
+    }
+    .ChoThanhToan__ChoThanhToan__button--flex{
+        text-align: center;
+    
+    }
+    .ChoThanhToan__button{
+        width: 25%;
+        margin-left: -3%;
+        font-size: 18px;
+       
+    }
+    .ChoThanhToan__button--2{
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .ChoThanhToan--top {
+        font-size: 18px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 70px;
+    }
+    .ChoThanhToan__icons svg{
+        margin-top: 13px;
+        width: 210px;
+        height: 6px ;
+    }
+    .ChoThanhToan__icon{
+        padding-top: 7px;
+    }
+    .ChoThanhToan__top--circle{
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+   
+    .ChoThanhToan__top--circle2 {
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+    }
+    .ChoThanhToan__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 13px;
+        line-height: 27px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-left: -10%;
+        margin-top: 0px;
+    }
+    .ChoThanhToan__top--item1{
+        font-size: 20px;
+    }
+    .ChoThanhToan__body{
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .ChoThanhToan__body--left, .ChoThanhToan__body--right{       
+        font-size: 17px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+    
+    }
+    .ChoThanhToan__body--left{
+        width: 90%;
+        justify-content: center;
+        padding-top: 10px;
+        margin-left: 5%;
+        margin-top: 30px;
+    }
+    .ChoThanhToan__label--flex{
+        display: flex;
+    
+    }
+    
+    .ChoThanhToan__title--1,.ChoThanhToan__title--3{
+        font-size: 20px;
+    }
+    .ChoThanhToan__title--2{
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .ChoThanhToan__line{
+        margin-left: -2%;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .ChoThanhToan__label{
+        width: 35%;
+    }
+    .ChoThanhToan__label--2{
+        width: 45%;
+    
+    }
+    .ChoThanhToan__label--right{
+        width: 40%;
+    }
+    .ChoThanhToan__label--12{
+        width: 55%;
+    }
+    .ChoThanhToan__note{
+        font-size: 17px;
+        margin-right: 5px;
+        font-weight: normal;
+    }
+    .ChoThanhToan__body--right{
+        width: 90%;
+        margin-left: 5%;
+        padding-top: 10px;
+        justify-content: center;
+    }
+    .ChoThanhToan__ChoThanhToan__button--flex{
+        text-align: center;
+    
+    }
+    .ChoThanhToan__button{
+        width: 25%;
+        margin-left: -3%;
+        font-size: 20px;
+       
+    }
+    .ChoThanhToan__button--2{
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+}
+@media screen and (min-width: 992px){
+    .ChoThanhToan--top {
+        font-size: 22px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 100px;
+    }
+    .ChoThanhToan__icons svg{
+        margin-top: 13px;
+        width: 265px;
+        height: 6px ;
+    }
+    .ChoThanhToan__icon{
+        padding-top: 12px;
+    }
+    .ChoThanhToan__top--circle{
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+   
+    .ChoThanhToan__top--circle2 {
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+    }
+    .ChoThanhToan__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 20px;
+        line-height: 27px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-left: -10%;
+        margin-top: 10px;
+    }  
+    .ChoThanhToan__top--item1{
+        font-size: 23px;
+        margin-bottom: 30px;
+    }
+    .ChoThanhToan__body{
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .ChoThanhToan__body--left, .ChoThanhToan__body--right{       
+        font-size: 16px;
+        padding-left: 15px;
+        padding-bottom: 20px;    
+    }
+    .ChoThanhToan__body--left{
+        width: 50%;
+        justify-content: center;
+        padding-top: 10px;
+        margin-top: 0%;
+        margin-left: 0%;
+    }
+    .ChoThanhToan__label--flex{
+        display: flex;
+    
+    }   
+    .ChoThanhToan__title--1,.ChoThanhToan__title--3{
+        font-size: 20px;
+    }
+    .ChoThanhToan__title--2{
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .ChoThanhToan__line{
+        margin-left: -2%;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .ChoThanhToan__label{
+        width: 35%;
+    }
+    .ChoThanhToan__label--2{
+        width: 45%;
+    
+    }
+    .ChoThanhToan__label--right{
+        width: 40%;
+    }
+    .ChoThanhToan__label--12{
+        width: 60%;
+    }
+    .ChoThanhToan__note{
+        font-size: 15px;
+        margin-right: 5px;
+        font-weight: normal;
+    }
+    .ChoThanhToan__body--right{
+        width: 50%;
+        margin-left: 3%;
+        padding-top: 10px;
+        justify-content: center;
+    }
+    .ChoThanhToan__ChoThanhToan__button--flex{
+        text-align: center;
+    
+    }
+    .ChoThanhToan__button{
+        width: 30%;      
+    }
+    .ChoThanhToan__button--2{
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .ChoThanhToan--top {
+        font-size: 22px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 100px;
+    }
+    .ChoThanhToan__icons svg{
+        margin-top: 13px;
+        width: 340px;
+        height: 6px ;
+    }
+    .ChoThanhToan__icon{
+        padding-top: 12px;
+    }
+    .ChoThanhToan__top--circle{
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+   
+    .ChoThanhToan__top--circle2 {
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+    }
+    .ChoThanhToan__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 20px;
+        line-height: 27px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-left: -10%;
+        margin-top: 10px;
+    }  
+    .ChoThanhToan__top--item1{
+        font-size: 23px;
+        margin-bottom: 30px;
+    }
+    .ChoThanhToan__body{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .ChoThanhToan__body--left, .ChoThanhToan__body--right{       
+        font-size: 18px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+        font-weight: normal;
+    
+    }
+    .ChoThanhToan__body--left{
+        width: 50%;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    .ChoThanhToan__label--flex{
+        display: flex;
+        font-weight: normal;    
+    }
+    .ChoThanhToan__title--1,.ChoThanhToan__title--3{
+        font-size: 22px;
+    }
+    .ChoThanhToan__title--2{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .ChoThanhToan__line{
+        margin-left: -2%;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .ChoThanhToan__label{
+        width: 35%;
+    }
+    .ChoThanhToan__label--2{
+        width: 45%;
+    
+    }
+    .ChoThanhToan__label--right{
+        width: 40%;
+    }
+    .ChoThanhToan__label--12{
+        width: 55%;
+    }
+    .ChoThanhToan__note{
+        font-size: 17px;
+        margin-right: 5px;
+    }
+    .ChoThanhToan__body--right{
+        width: 50%;
+        margin-left: 5%;
+        padding-top: 10px;
+        justify-content: center;
+    }
+    .ChoThanhToan__ChoThanhToan__button--flex{
+        text-align: center;
+    
+    }
+    .ChoThanhToan__button{
+        width: 30%;
+        font-size: 22px;
+       
+    }
+    .ChoThanhToan__button--2{
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+}
