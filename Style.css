@@ -1,784 +1,3708 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&family=Roboto&display=swap');
 
-.GioiThieuTach__header{
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 32px;
-    font-weight: bold
-}
-.GioiThieuTach__header--images{
-    margin-top: 24px;
-}
-.GioiThieuTach__header--images img{
-    width: 80%;
-}
-   
-.GioiThieuTach__mainpage{
-    padding-left: 80px;
-    padding-right: 80px;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-}
-.GioiThieuTach__footer--heading{
-    text-align: center;
-    font-size: 32px;
-    font-family: 'Montserrat', sans-serif ;
-    font-weight: bold;
+/* Trang đặt thuê */
 
-}
-.GioiThieuTach__footer{
-    display: flex;
-
-}
-.GioiThieuTach__footer--col1{
-    width: 50%;
-    text-align: right;
-    margin-right: 10px;
-    max-width: 100%;
-    height: auto;
-}
-.GioiThieuTach__footer--col2{
-    width: 50%;
-    text-align: left;
-    margin-left: 50px;
-    padding-top: 0px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    flex-wrap: wrap;
-}
-.GioiThieuTach__footer--col2heading{
-    font-weight: bold;
-}
-.GioiThieuTach__mainpage--text{
-    margin-top: 16px;
-    margin-bottom: 16px;
-    font-family: 'Roboto', sans-serif;
-}
-.GioiThieuTach__footer--col1 img {
-    width: 100%;
-}
-.GioiThieuTach--images img{
-    width: 80%;
-}
-
-.BaiViet__header{
-    text-align: center;
-    font-size: 32px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-}
-.BaiViet__mainpage{
-    padding-left: 80px;
-    padding-right: 80px;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-}
-.BaiViet__mainpage--images{
-    text-align: center;
-}
-.BaiViet__mainpage--text{
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-.BaiViet__mainpage--heading{
-    margin-top: 16px;
-    margin-bottom: 16px;
-    font-weight: bold;
-}
-.BaiViet__mainpage--images img{
-    width: 80%;
-}
-
-html{
+body,html{
     margin: 0;
     padding: 0;
 }
-.Blog__layout{
-    display: flex;
-    flex-direction: row;
-    margin: 0 125px;
-}
-.Blog__item{
-    border: 1px solid black;
-    position: relative;
-    margin-top: 80px;
-}
-.Blog__item--left{
-    flex: 1.5;
-    font-size: 20px;
-    font-family: roboto;
-}
-.Blog__item--right{
-    flex: 4;
-    margin-left: 32px;
-}
-.Blog__header--column2{
-    height: 112px;
-    background-color: black;
-    color: white;
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    line-height: 112px;
-    font-family: 'Montserrat', sans-serif;
-}
-.Blog__mainpage--column2{
-    padding: 0 10px;
-}
-.Blog__header--column1{
- height: 112px;
- text-align: center;
- font-size: 32px;
- font-family: 'Montserrat', sans-serif;
- font-weight: bold;
- line-height: 112px;
-}
-.Blog__tittle--1{
-    padding: 5px;
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-.Blog__tittle--2{
-    padding-left: 20px;
-    margin-bottom: 2px;
-}
-.Blog__tittle--3{
-    padding-left: 15px;
-    font-size: 20px;
-}
- .Blog__text--decoration{
-    color: black;
-    text-decoration: none;
- }
- .Blog__mainpage--column1{
-     font-size: 20px;
-     font-family: 'roboto';
-     margin-left: 10px;
- }
-
- .Popup__container{
-    width: 450px;
-    height: 300px;
-    border: 2px solid black;
-    margin: 0 auto;
-}
-.Popup__daunhan{
-    text-align: right;
-}
-.Popup__daunhan button{
-border: none;
-background-color: white;
-}
-.Popup__image{
-    text-align: center;
-}
-.Popup__text{
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    padding-top: 30px;
-}
-.Popup__button input {
-    width: 140px;
-    height: 44px;
-    /* background-color: black; */
-    color: white;
-    font-size: 24px;
-    font-family: 'Roboto', sans-serif;
-    box-shadow: 1px 1px 1px rgba(0, 0,0, 0.1);
-    cursor: pointer;
-}
-.Popup__button{
-    text-align: center;
-    padding-top: 30px;
-}
-.Popup__image--2{
-    display: none;
-}
-.Popup__button :hover{
-    border: 1px solid;
-    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
-    outline-color: rgba(255, 255, 255, 0);
-    outline-offset: 15px;
-    text-shadow: 1px 1px 2px #427388; 
-}
-.Popup__button--1 input{
+.Website{
     background-color: black;
 }
-.Popup__button--2 input{
-    margin: 0 35px;
+.container{
+    background-color:black;
 }
-.Popup__button--left{
-        background-color: #c4c4c4;
-}
-.Popup__button--right{
-        background-color: #f2c806;
-}
-.ChiTiet__product{
-    display: flex;
-    margin: 0px 125px;
-    padding-top: 100px;
-    position: relative;
-}
-.ChiTiet__product--col1{
-    display: flex;
-}
-.ChiTiet__product--col2{
-   
-    padding-left: 30px;
-}
-.ChiTiet--image{
-    padding-bottom: 13px;
-    padding-right: 10px;
-}
-.ChiTiet__product--title{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 16px;
-    margin-top: 16px;
-}
-.ChiTiet__product--price{
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    margin-bottom: 16px;
-}
-.ChiTiet__product--number{
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    margin-bottom: 24px;
-}
-.ChiTiet__product--button input{
+.datthue--top{
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    margin-top: 170px;
+}
+.datthue__top--flex .icons{
+    display: flex;
+    justify-content: center;
+}
+.datthue__top{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
     font-weight: bold;
-    font-size: 20px;
-    background-color: #F2C806;
-    width: 140px;
-    height: 44px;
-    margin-bottom: 24px;
+    font-size: 30px;
+    line-height: 37px;
+}
+.datthue__top--item--1{
+    margin-bottom: 25px;
+}
+.datthue__top--item{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    margin-top: 15px;
+}
+.datthue__top--circle{
+    border-radius: 50px;
+    background: #C6C6C6;
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+    background-color: rgba(18, 201, 47, 1);
+}
+.datthue__top--circle--2{
+    background-color: rgba(196, 196, 196, 1);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+}
+.item1{
+    margin-left: 2%;
+}
+.item2{
+    margin-left: 10%;
+}
+.item3{
+    margin-left: 10%;
+}
+svg{
+    margin-top: 13px;
+}
+.datthue__flex{
+    display: flex;
+    margin-top: 3%;
+    justify-content: center;
+    margin-bottom: 8%;
+}
+.datthue__profile{
+    display: flex;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+.datthue--left{
+    margin-left: 0%;
+    width: 35%;
+    border: rgba(167, 167, 167, 1) solid 1px;
     border-radius: 5px;
-    border: 0px;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
 }
-.ChiTiet--pricecolor{
+.datthue--name{
+    margin-left: 4%;
+}
+.img{
+    border-radius: 300px;
+    width: 80px;
+    height: 79.84px;
+}
+.name{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+}
+.font__size{
+
+font-weight:normal;
+font-size: 18px;
+}
+
+.datthue__bottom{
+    margin-top: 5%;
+    margin-left: 18%;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.datthue--item{
+    margin-bottom: 10px;
+}
+.datthue__input{
+    height: 35px;
+    width: 40%;
+    border-radius: 5px;
+    border: rgba(167, 167, 167, 1) solid 1px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.datthue__align{
+    margin-top: 3%;
+}
+.datthue__label{
+    width: 21%;
+    margin-right: -2%;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+.datthue__label--4, .datthue__label--3, .datthue__label--1{
+    width: 30%;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+
+}
+.datthue__label--1{
+    margin-right: 2%;
+}
+.datthue__label--2{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+
+}
+.datthue__select{
+    font-size: 14px;
+    height: 35px;
+    margin-left: 2%;
+    width: 20%;
+    border-radius: 5px;
+    border: rgba(167, 167, 167, 1) solid 1px;
+    font-family: 'Roboto', sans-serif;
+    flex-wrap: wrap;
+}
+.color{
+    color: red;
+}
+.datthue__input--GG{
+    width: 22%;
+    margin-right: 1%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+.datthue__input--GG1{
+    /* line-height: 10%;
+    text-align: center; */
+    width: 17%;
+    height: 35px;
+    background: #F2C806;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    border:none;
+}
+.line{
+    margin-left: -8.5%;
+    min-width: 100%;
+}
+.input__checkbox{
+    margin-left: 30%;
+}
+.datthue__input--button2{
+    width: 17%;
+    background: #F2C806;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    border: none;
+}
+.datthue__right{
+    display: flex;
+    margin-bottom: 16px;
+    margin-left: 10%;
+}
+.datthue__right--item{
+    margin-left: 8%;
+    margin-top: 4%;
+}
+
+.DatThue--Title{
+    text-align: center;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.DatThue__nhapthongtin{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    font-family: 'Roboto', sans-serif;
+   
+}
+.datthue--right{ 
+    float: left;
+    border:rgba(167, 167, 167, 1) solid 1px;
+    border-radius: 5px;
+    background-color: white;
+    width: 100%;
+    margin-right: 0%;
+    margin-left: 3%;   
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(36, 36, 38, 1);
+}
+.note{
+    font-size: 14px;
+    float: right;
+}
+.bottom{    
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin-left: -73%;
+}
+
+/* Trang thanh toán */
+
+.ThanhToan-container{
+    background-color: black;
+}
+.ThanhToan__body--container{
+    margin-bottom: 50px;
+}
+.thanhtoan--top{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+}
+.thanhtoan__top--flex .icons{
+    display: flex;
+    justify-content: center;
+}
+.thanhtoan__top{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+}
+.thanhtoan__top--item--1{
+    margin-bottom: 25px;
+}
+.thanhtoan__top--item{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    margin-top: 15px;
+}
+.thanhtoan__top--circle {
+    border-radius: 50px;
+    background: #C6C6C6;
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+    background-color: rgba(18, 201, 47, 1);
+}
+.thanhtoan__top--circle--2{
+    background-color: rgba(196, 196, 196, 1);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+}
+.icon{
+    padding-top: 10px;
+    /* justify-content: center; */
+}
+.item1{
+    margin-left: 2%;
+}
+.item2{
+    margin-left: 10%;
+}
+.item3{
+    margin-left: 10%;
+}
+svg{
+    margin-top: 13px;
+}
+.thanhtoan__body{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+
+}
+.thanhtoan__body--left, .thanhtoan__body--right{
+    
+    background-color: white;
+    font-size: 18px;
+    font-weight: normal;
+
+}
+.thanhtoan__body--left{
+    width: 50%;
+    justify-content: center;
+    padding-top: 10px;
+}
+.icon-edit{
+    color:#C4C4C4;
+    top:100px;
+    margin-left: 93%;
+    margin-bottom: 10px;
+}
+.label--flex{
+    display: flex;
+    margin-left: 5%;
+}
+.thanhtoan__label{
+    width: 35%;
+    font-weight: normal;
+}
+.thanhtoan__label--2, .thanhtoan__label--8{
+    width: 55%;
+}
+
+.thanhtoan__label--4, .thanhtoan__label--16, .thanhtoan__label--22, .thanhtoan__label--24{
     color: red;
     font-weight: bold;
 }
-.ChiTiet__infor--tittle{
-    margin: 40px 125px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
+.font-size {
+    font-size: 12px;
+    border-radius: 5px;
 }
-.ChiTiet__infor{
-    display: flex;
-    margin: 0px 125px;
-}
-.ChiTiet__infor--col1{
-    flex: 1;
-    background-color: lightgray;
-}
-.ChiTiet__infor--col2{
-    flex: 3;
-    padding-left: 30px;
-}
-.ChiTiet__infor--dientich{
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    margin-bottom: 16px;
-    margin-top: 16px;
-    padding-left: 15px;
-}
-.ChiTiet__infor--sodo{
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    margin-bottom: 16px;
-    padding-left: 15px;
-}
-.ChiTiet__infor--phongmau{
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    margin-bottom: 16px;
-    padding-left: 15px;
-}
-.ChiTiet__infor--col2tittle{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    padding-bottom: 20px;
-}
-.ChiTiet__infor--col2text{
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-}
-.ChiTiet__sameproduct--heading{
-    margin: 40px 125px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-}
-.ChiTiet__sameproduct{
-    display: flex;
-    margin: 0 125px;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-}
-.ChiTiet__sameproduct--item{
+.note--1{
+    font-size: 15px;
+    font-style: italic;
     text-align: center;
-    margin: 3px;
-    border: 1px solid #a7a7a7;
-    border-radius: 5px;
-    box-shadow: 1px 1px 1px rgba(0, 0,0, 0.1);
 }
-.ChiTiet__sameproduct--tittle{
+.thanhtoan__button{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: white;
+   
+}
+.button{
+    background: #F2C806;
+    border-radius: 5px;
+    height: 40px;
+    width: 25%;
+    font-size: 20px;
+    border: none;
+
+}
+.thanhtoan__body--right{
+    width: 50%;
+    margin-left: 5%;
+    padding-top: 40px;
+    justify-content: center;
+    padding-left: 3%;
+}
+.title{
+    font-size: 22px;
+    color: red;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 20px;
-    padding-top: 16px;
+    margin-bottom: 10px;
 }
-.ChiTiet__sameproduct--price{
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    padding-top: 16px;
-    padding-bottom: 24px;
-    font-size: 16px;
-}
-/* .ChiTiet--button{
-    width: 25px;
+/* .font{
+    font-weight: "Racings San one", san-serif;
 } */
-.ChiTiet__sameproduct--image{
-    padding: 8px;
-}
-.ChiTiet__sameproduct--button input{
-    color: white;
-    font-family: 'Roboto', sans-serif;
+.font__style{
     font-weight: bold;
-    font-size: 20px;
-    background-color: #F2C806;
-    width: 140px;
-    height: 44px;
-    margin-bottom: 24px;
-    border-radius: 5px;
-    border: 0px;
 }
-@media only screen and (max-width: 600px){
-    .GioiThieuTach__header{
-        font-size: 14px;
-    }
-    .GioiThieuTach__mainpage--text{
-        font-size: 12px;
-    }
-    .GioiThieuTach__mainpage{
-        padding-left: 10px;
-        padding-right: 10px;
-    } 
-    .GioiThieuTach__footer--heading{
-        font-size: 14px;
-    }
-    .GioiThieuTach__footer--col2{
-        font-size: 12px;
-    }
-    .BaiViet__header{
-        font-size: 14px;
-    } 
-    .BaiViet__mainpage{
-        padding-left: 10px;
-        padding-right: 10px;
-        font-size: 12px;
-    }
-    .Blog__header--column1{
-        font-size: 14px;
-        height: 50px;
-        line-height: 50px;
-        
-    }
-    .Blog__header--column2{
-        font-size: 14px;
-        height: 50px;
-        line-height: 50px;
-        margin: 0 auto;
-        
-    }
-    .Blog__layout{
-        margin: 0 20px;
-        flex-direction: column;
-    }
-    .Blog__tittle--1{
-        font-size: 12px;
-    }
-    .Blog__item--right{
-        margin-top: 20px;
-        margin-left: 5px;
-        margin-right: 5px;
-        /* margin: 0 10px; */
-    }
-    .Blog__item--left{
-        margin-top: 50px;
-        margin-left: 5px;
-        margin-right: 5px;
-        /* margin: 0 10px; */
-    }
+.line{
+    margin-left: -6%;
+}
+.note--2{
+    color: red;
+    font-style: italic;
+    font-size: 15px;
+}
+/* Trang chi tiết đơn hàng_Chờ thanh toán */
+.website{
+    background-color: black;
+}
+.container{
+    margin-bottom: 50px;
+}
+.chothanhtoan--top{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+}
+.chothanhtoan__top--flex .icons{
+    display: flex;
+    justify-content: center;
+}
+.chothanhtoan__top{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+}
+.chothanhtoan__top--item--1{
+    margin-bottom: 25px;
+}
+.chothanhtoan__top--item{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    margin-top: 15px;
+}
+.chothanhtoan__top--circle {
+    border-radius: 50px;
+    background: #C6C6C6;
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+    background-color: rgba(18, 201, 47, 1);
+}
+.chothanhtoan__top--circle--2{
+    background-color: rgba(196, 196, 196, 1);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+}
+.icon{
+    padding-top: 10px;
+    /* justify-content: center; */
+}
+.item1{
+    margin-left: 2%;
+}
+.item2{
+    margin-left: 10%;
+}
+.item3{
+    margin-left: 10%;
+}
+svg{
+    margin-top: 13px;
+}
+.chothanhtoan__body{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+.chothanhtoan__body--left, .chothanhtoan__body--right{
     
-    .blog__mainpage--column1{
-        padding-top: 5px;
+    background-color: white;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 15px;
+    padding-bottom: 20px;
 
-    }
-    .Blog__tittle--3{
-        font-size: 12px ;
-    }
-    .Blog__item{
-        margin-bottom: 10px;
-    }
-    .Popup__container{
-        width: 300px;
-        height: 200px;
-    }
-    .Popup__text{
-        font-size: 14px;
-        padding-top: 20px;
-    }
-    .Popup__button input{
-        width: 70px;
-        height: 25px;
-        font-size: 16px;
-        cursor: pointer;
-    }
-    .Popup__image--1{
+}
+.chothanhtoan__body--left{
+    width: 50%;
+    justify-content: center;
+    padding-top: 10px;
+    font-weight: bold;
+
+}
+.label--flex{
+    display: flex;
+
+
+}
+.chothanhtoan__label{
+    font-weight: normal;
+}
+.chothanhtoan__label--10, .chothanhtoan__label--26{
+    font-weight: bold;
+}
+.title{
+    color: black;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+.title--1,.title--3{
+    font-size: 22px;
+}
+.title--2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.line{
+    margin-left: -2%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.chothanhtoan__label{
+    width: 35%;
+}
+.chothanhtoan__label--2{
+    width: 45%;
+
+}
+.chothanhtoan__label--right{
+    width: 40%;
+}
+.chothanhtoan__label--12{
+    width: 55%;
+}
+.chothanhtoan__label--20, .chothanhtoan__label--22{
+    color: red;
+    font-weight: bold;
+}
+.note{
+    font-size: 15px;
+    font-style: italic;
+    margin-right: 5px;
+}
+.chothanhtoan__body--right{
+    width: 50%;
+    margin-left: 5%;
+    padding-top: 10px;
+    justify-content: center;
+}
+.chothanhtoan__button--flex{
+    text-align: center;
+
+}
+.button{
+    width: 25%;
+    border-radius: 5px;
+    background-color: #F2C806;
+    color: white;
+    border-color: rgba(196, 196, 196, 1);
+    border: none;
+}
+.button--2{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+/* Trang đã hoàn tất */
+.website{
+    background-color: black;
+}
+.container{
+    margin-bottom: 50px;
+}
+.hoantat--top{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+}
+.hoantat__top--flex .icons{
+    display: flex;
+    justify-content: center;
+}
+.hoantat__top{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+}
+.hoantat__top--item--1{
+    margin-bottom: 25px;
+}
+.hoantat__top--item{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    margin-top: 15px;
+}
+.hoantat__top--circle {
+    border-radius: 50px;
+    background: #C6C6C6;
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+    background-color: rgba(18, 201, 47, 1);
+}
+.hoantat__top--circle--2{
+    background-color:  rgba(18, 201, 47, 1);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+}
+.icon{
+    padding-top: 10px;
+    /* justify-content: center; */
+}
+.item1{
+    margin-left: 2%;
+}
+.item2{
+    margin-left: 10%;
+}
+.item3{
+    margin-left: 10%;
+}
+svg{
+    margin-top: 13px;
+}
+.hoantat__body{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+.hoantat__body--left, .hoantat__body--right{
+    
+    background-color: white;
+    font-size: 18px;
+    font-weight: normal;
+    padding-left: 15px;
+    padding-bottom: 20px;
+
+}
+.hoantat__body--left{
+    width: 50%;
+    justify-content: center;
+    padding-top: 10px;
+}
+.label--flex{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+
+}
+.title{
+    color: black;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.title--1,.title--3{
+    font-size: 22px;
+}
+.title--2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.line{
+    margin-left: -2%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.hoantat__label{
+    width: 35%;
+    font-weight: normal;
+}
+.hoantat__label--2{
+    width: 55%;
+
+}
+.hoantat__label--right{
+    width: 40%;
+}
+.hoantat__label--12{
+    width: 55%;
+}
+.hoantat__label--10, .hoantat__label--26{
+    font-weight: bold;
+}
+.hoantat__label--20{
+    color:rgba(18, 201, 47, 1);
+    font-weight: bold;
+}
+.note{
+    font-size: 15px;
+    font-style: italic;
+    margin-right: 5px;
+}
+.hoantat__body--right{
+    width: 50%;
+    margin-left: 5%;
+    padding-top: 10px;
+    justify-content: center;
+}
+.hoantat__button--flex{
+    text-align: center;
+
+}
+.button{
+    width: 25%;
+    border-radius: 5px;
+    background-color: #F2C806;
+    color: white;
+    border-color: rgba(196, 196, 196, 1);
+}
+.button--1{
+    background-color: #C4C4C4;
+    border: none;
+
+}
+.button--2{
+    margin-left: 15px;
+    margin-top: 10px;
+    border: none;
+}
+
+ @media only screen and (max-width: 600px) 
+
+{   
+    /* Trang đặt thuê */
+    .datthue--left, .datthue__bottom{
         display: none;
     }
-    .Popup__image--2{
-        display: inline;
+    .datthue--top{
+        margin-top: 150px;
     }
-    .Popup__button{
-          padding-top: 20px; 
-    }
-    .Popup__button :hover{
-        border: 1px solid;
-        box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
-        outline-color: rgba(255, 255, 255, 0);
-        outline-offset: 15px;
-        text-shadow: 1px 1px 2px #427388; 
-    }
-    .ChiTiet__product--col1 img{
-        width: 100%;
+    .datthue__input{
+        height: 25px;
+        width: 50%;
+        margin-bottom: 14px;
         border-radius: 5px;
-    }
-    .ChiTiet__sameproduct--item{
-        flex-direction: column;
-    }
-    .ChiTiet__product{
+        border: rgba(167, 167, 167, 1) solid 1px;
+        flex-direction: row;
         flex-wrap: wrap;
+        margin-left: -30%;
     }
-    .ChiTiet__infor{
-        margin: 0 10px;
+    .datthue__input--GG{
+        margin-bottom: 10px;
+        width: 29%;
     }
-    .ChiTiet__product--col1right{
-        text-align: center;
-    }
-    .ChiTiet__infor--tittle{
-        text-align: center;
-    }
-    .ChiTiet__sameproduct--heading{
-        text-align: center;
-    }
-    .ChiTiet__sameproduct--image img{
-        border-radius: 5px;
-    }
-    .ChiTiet__infor{
-        flex-direction: column;
-    }
-    .ChiTiet__infor--col1{
-        margin-left: 30px;
-        margin-bottom: 16px;
-    }
-    .ChiTiet__sameproduct{
-        margin: 0 20px;
-    }
-    .ChiTiet__product{
-        margin: 0 30px;
-        text-align: center;
-    }
-    .ChiTiet__product--col2{
-        text-align: center;
-        flex: 1;
-    }
-
-}
-
-@media only screen and (min-width: 600px){
-    .GioiThieuTach__header{
+    .datthue__input--GG1{
+        width: 20%;
         font-size: 16px;
+        margin-left: 0%;
+        border: none;
     }
-    .GioiThieuTach__mainpage--text{
-        font-size: 14px;
-    }
-    .GioiThieuTach__mainpage{
-        padding-left: 15px;
-        padding-right: 15px;
-    } 
-    .GioiThieuTach__footer--heading{
+    .datthue__input--button2{
+        width: 20%;
         font-size: 16px;
+        margin-left: 40%;
+        margin-top: -35px;
+        margin-bottom: 20px;
+        border: none;
     }
-    .GioiThieuTach__footer--col2{
-        font-size: 14px;
+    .datthue--right{
+        font-family: 'Roboto', sans-serif;
+        font-size: 10px; 
+        margin-left: 0%;
     }
-    .BaiViet__header{
-        font-size: 16px;
-    } 
-    .BaiViet__mainpage{
-        padding-left: 15px;
-        padding-right: 15px;
-        font-size: 14px;
+    .datthue__right{
+        margin-left: 7%;
+        font-size: 10px;
     }
-    .Blog__header--column1{
-        font-size: 14px;
+    .datthue__label--1, .datthue__label--3, .datthue__label--4{
+        font-size: 15px;
     }
-    .Blog__header--column2{
-        font-size: 14px;
+    .datthue__select{
+        font-size: 10px;
+        height: 25px;
+        margin-left: 1%;
+        width: 26%;
+        margin-bottom: 10px;
+        padding-left: -4%;
+        padding-top: 2px;
     }
-    .Blog__layout{
-        margin: 0 20px;
+    .datthue__select--1{
+        margin-left: -20%;
     }
-    .Blog__tittle--1{
+    .datthue__select--4{
+        margin-left: -20%;
+        width: 18%;
+    }
+    .datthue__label--2{
         font-size: 12px;
-    }
-    .Blog__item--right{
-        margin-left: 10px;
-    }
-    .Blog__item{
-        margin-top: 50px;
-        margin-bottom: 20px;
-    }
-    .Blog__tittle--3{
-        font-size: 12px ;
-    }
-    .ChiTiet__product--col1 img{
         width: 100%;
+        margin-left: 7%;
     }
-    .ChiTiet__sameproduct--item{
-        flex-direction: column;
+    .datthue__label--3{
+        width: 60%;
     }
-    .ChiTiet__infor{
-        margin: 0 30px;
-    }
-    .ChiTiet__sameproduct{
-        margin: 0 30px;
-    }
-    .ChiTiet__product{
-        margin: 0 30px;
-    }
-    .ChiTiet__product{
-        flex-direction: column;
-    }
-}
-@media only screen and (min-width: 768px){
-    .GioiThieuTach__header{
-        font-size: 18px;
-    }
-    .GioiThieuTach__mainpage--text{
-        font-size: 16px;
-    }
-    .GioiThieuTach__mainpage{
-        padding-left: 40px;
-        padding-right: 40px;
+    .datthue__label--1, .datthue__label--3, .datthue__label--4, .datthue__label--5, .datthue__label--6, .datthue__label--7, .datthue__label--8, .datthue__label--9, .datthue__label--10, .datthue__label--11, .datthue__label--12, .datthue__label--13{
+        width: 65%;
     } 
-    .GioiThieuTach__footer--heading{
-        font-size: 18px;
+    .datthue__label--9{
+        margin-left: 0%;
     }
-    .GioiThieuTach__footer--col2{
-        font-size: 16px;
+    .DatThue__nhapthongtin{
+        margin-left: -2%;
+        font-size: 15px;
     }
-    .BaiViet__header{
-        font-size: 18px;
-    } 
-    .BaiViet__mainpage{
-        padding-left: 40px;
-        padding-right: 40px;
-        font-size: 16px;
+    .form__select{
+        width: 50%;
+        height: 25px;
+        margin-left: -30%;
     }
-    .Blog__header--column1{
-        font-size: 18px;
+    .input__checkbox{
+        margin-left: 25%;
     }
-    .Blog__header--column2{
-        font-size: 18px;
-    }
-    .Blog__layout{
-        margin: 0 30px;
-    }
-    .Blog__tittle--1{
-        font-size: 14px;
-    }
-    .Blog__item--right{
-        margin-left: 10px;
-    }
-    .Blog__item{
-        margin-top: 60px;
-        margin-bottom: 20px;
-    }
-    .Blog__tittle--3{
-        font-size: 14px ;
-    }
-    .ChiTiet__product--col1 img{
-        width: 100%;
-    }
-    .ChiTiet__sameproduct--item{
-        flex-direction: column;
-    }
-    .ChiTiet__product--col2 div{
-        font-size: 16px;
-    }
-    .ChiTiet__product--col2 input{
-        font-size: 16px;
-        width: 100px;
-        height: 30px;
-    }
-    .ChiTiet__infor{
-        margin: 0 50px;
-    }
-    .ChiTiet__product{
-        flex-direction: column;  
-    }
-}
-@media only screen and (min-width: 992px){
-    .GioiThieuTach__header{
-        font-size: 20px;
-    }
-    .GioiThieuTach__mainpage--text{
-        font-size: 18px;
-    }
-    .GioiThieuTach__mainpage{
-        padding-left: 60px;
-        padding-right: 60px;
-    } 
-    .GioiThieuTach__footer--heading{
-        font-size: 20px;
-    }
-    .GioiThieuTach__footer--col2{
-        font-size: 18px;
-    }
-    .BaiViet__header{
-        font-size: 20px;
-    } 
-    .BaiViet__mainpage{
-        padding-left: 60px;
-        padding-right: 60px;
-        font-size: 18px;
-    }
-    .Blog__header--column1{
-        font-size: 22px;
-    }
-    .Blog__header--column2{
-        font-size: 22px;
-    }
-    .Blog__layout{
-        margin: 0 40px;
-    }
-    .Blog__tittle--1{
-        font-size: 16px;
-    }
-    .Blog__item--right{
-        margin-left: 22px;
-    }
-    .Blog__item{
-        margin-top: 70px;
-        margin-bottom: 20px;
-    }
-    .Blog__tittle--3{
-        font-size: 16px ;
-    }
-    .ChiTiet__product--col1 img{
-        width: 100%;
-    }
-    .ChiTiet__sameproduct--item{
-        flex-direction: column;
-    }
-    .ChiTiet__infor{
-        margin: 0 30px;
-    }
-    .ChiTiet__product{
-        flex-direction: column;
-    }
-    .ChiTiet__infor{
-        margin: 0 125px;
-    }
-    .ChiTiet__product{
-        margin: 0 125px;
-    }
-    .ChiTiet__product{
-        flex-direction: column;
-    }
-}
-@media only screen and (min-width: 1200px){
-    .GioiThieuTach__header{
-        font-size: 32px;
-    }
-    .GioiThieuTach__mainpage--text{
-        font-size: 20px;
-    }
-    .GioiThieuTach__mainpage{
-        padding-left: 80px;
-        padding-right: 80px;
-    } 
-    .GioiThieuTach__footer--heading{
-        font-size: 32px;
-    }
-    .GioiThieuTach__footer--col2{
-        font-size: 20px;
-    }
-    .BaiViet__header{
-        font-size: 32px;
-    } 
-    .BaiViet__mainpage{
-        padding-left: 80px;
-        padding-right: 80px;
-        font-size: 20px;
-    }
-    .Blog__header--column1{
-        font-size: 24px;
-    }
-    .Blog__header--column2{
-        font-size: 22px;
-    }
-    .Blog__layout{
-        margin: 0 125px;
-    }
-    .Blog__tittle--1{
-        font-size: 18px;
-    }
-    .Blog__item--right{
-        margin-left: 22px;
-    }
-    .Blog__item{
-        margin-top: 80px;
-        margin-bottom: 20px;
-    }
-}
-@media only screen and (min-width: 1400px){
-    .Blog__header--column1{
-        font-size: 32px;
-    }
-    .Blog__header--column2{
-        font-size: 32px;
-    }
-    .Blog__layout{
-        margin: 0 125px;
-    }
-    .Blog__tittle--1{
-        font-size: 20px;
-    }
-    .Blog__item--right{
-        margin-left: 22px;
-    }
-    .Blog__item{
-        margin-top: 80px;
-        margin-bottom: 20px;
-    }
-    .ChiTiet__product{
+    .datthue__right--item1, .datthue__right--item2, .datthue__right--item3, .datthue__right--item4, .datthue__right--item5, .datthue__right--item6, .datthue__right--item7, .datthue__right--item8, .datthue__right--item9, .datthue__right--item10, .datthue__right--item11, .datthue__right--item12{
         flex-direction: row;
     }
+    .bottom{
+        font-size: 12px;
+        text-align: center;
+        margin-top: -10px;
+    }
+    .datthue--top{
+        font-size: 18px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 50px;
+    }
+    svg{
+        margin-top: 13px;
+        width: 120px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 7px;
+    }
+    .datthue__top--circle{
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+    .datthue__top--circle--2{
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+    }
+    .datthue__top--item{
+        display: flex;
+        justify-content:space-around;
+        font-size: 13px;
+        line-height: 27px;
+        margin-left: -10%;
+        margin-top: 0px;
+        width: 120%;
+    }
+    .datthue__top--item--1{
+        margin-top: 100px;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .datthue__profile{
+        flex-direction: column;
+        margin-bottom: -15px;
+    }
+    .img{
+        border-radius: 300px;
+        width: 60px;
+        height: 60px;
+        margin-left: 20%;
+    }       
+   .datthue__bottom{
+       margin-top: -5px;
+   }
+   .datthue--item{
+       font-size: 10px;
+       margin-left: -5%;
+   }
+   .DatThue--Title{
+       font-size: 15px;
+   }
+   .input__checkbox{
+       margin-left: 26%;
+       margin-bottom: 10px;
+       font-size: 15px;
+       margin-top: -7px;
+   }
+   /* Trang thanh toán */
+   .thanhtoan--top{
+    font-size: 18px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    }
+    svg{
+        margin-top: 13px;
+        width: 120px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 7px;
+    }
+    .thanhtoan__top--circle{
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+    .thanhtoan__top--circle--2{
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+    }
+    .thanhtoan__top--item{
+        display: flex;
+        justify-content:space-around;
+        font-size: 13px;
+        line-height: 27px;
+        margin-left: -10%;
+        margin-top: 0px;
+        width: 120%;
+    }
+    .thanhtoan__top--item--1{
+        margin-top: 80px;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .thanhtoan__body{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 10%;   
+    }
+    .thanhtoan__body--left, .thanhtoan__body--right{        
+        font-size: 12px; 
+    }
+    .thanhtoan__body--left{
+        width: 90%;
+    }
+    .thanhtoan__label{
+        width: 35%;
+    }
+    .thanhtoan__label--2, .thanhtoan__label--8{
+        width: 55%;
+    }
+    .font-size {
+        font-size: 9px;
+        border-radius: 5px;
+    }
+    .note--1{
+        font-size: 10px;
+    }
+    .thanhtoan__button{
+        margin-top: 10px;
+        margin-bottom: 10px;      
+    }
+    .button{
+        border-color: rgba(196, 196, 196, 1);
+        border-radius: 5px;
+        height: 30px;
+        width: 25%;
+        font-size: 15px;   
+    }
+    .thanhtoan__body--right{
+        width: 90%;
+        margin-top: 20px;
+        padding-top: 10px;
+        padding-left: 5%;
+        padding-bottom: 10px;
+        margin-left: 0%;
+    }
+    .title{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .line{
+        margin-left: -3%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .note--2{
+        font-size: 10px;
+    }
+ 
 }
+.chothanhtoan--top{
+    font-size: 18px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+}
+svg{
+    margin-top: 13px;
+    width: 120px;
+    height: 6px ;
+}
+.icon{
+    padding-top: 7px;
+}
+.chothanhtoan__top--circle{
+    border-radius: 40px;
+    width: 35px;
+    height: 35px;
+    margin-top: 0px;
+    background-color: rgba(18, 201, 47, 1);
+}
+.chothanhtoan__top--circle--2{
+    background-color: rgba(196, 196, 196, 1);
+    border-radius: 40px;
+    width: 35px;
+    height: 35px;
+    margin-top: 0px;
+}
+.chothanhtoan__top--item{
+    display: flex;
+    justify-content:space-around;
+    font-size: 13px;
+    line-height: 27px;
+    margin-left: -10%;
+    margin-top: 0px;
+    width: 120%;
+}
+.chothanhtoan__top--item--1{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.chothanhtoan__body{
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-top: 30px;
+}
+.chothanhtoan__body--left, .chothanhtoan__body--right{       
+    font-size: 12px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+
+}
+.chothanhtoan__body--left{
+    width: 90%;
+    justify-content: center;
+    padding-top: 10px;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+.label--flex{
+    display: flex;
+}
+.title--1,.title--3{
+    font-size: 15px;
+}
+.title--2{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.line{
+    margin-left: -2%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.chothanhtoan__label{
+    width: 35%;
+}
+.chothanhtoan__label--2{
+    width: 45%;
+
+}
+.chothanhtoan__label--right{
+    width: 40%;
+}
+.chothanhtoan__label--12{
+    width: 55%;
+}
+.note{
+    font-size: 12px;
+    margin-right: 5px;
+    font-weight: normal;
+}
+.chothanhtoan__body--right{
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 10px;
+    justify-content: center;
+    margin-top: -15px;
+}
+.chothanhtoan__button--flex{
+    text-align: center;
+
+}
+.button{
+    width: 25%;
+    margin-left: -3%;
+   
+}
+.button--2{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+/* Trang đã hoàn tất */
+.hoantat--top{
+    font-size: 18px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+}
+svg{
+    margin-top: 13px;
+    width: 120px;
+    height: 6px ;
+}
+.icon{
+    padding-top: 7px;
+}
+.hoantat__top--circle{
+    border-radius: 40px;
+    width: 35px;
+    height: 35px;
+    margin-top: 0px;
+    background-color: rgba(18, 201, 47, 1);
+}
+.hoantat__top--circle--2{
+    background-color:  rgba(18, 201, 47, 1);
+    border-radius: 40px;
+    width: 35px;
+    height: 35px;
+    margin-top: 0px;
+}
+.hoantat__top--item{
+    display: flex;
+    justify-content:space-around;
+    font-size: 13px;
+    line-height: 27px;
+    margin-left: -10%;
+    margin-top: 0px;
+    width: 120%;
+}
+.hoantat__top--item--1{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.hoantat__body{
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-top: 30px;
+}
+.hoantat__body--left, .hoantat__body--right{       
+    font-size: 12px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+
+}
+.hoantat__body--left{
+    width: 90%;
+    justify-content: center;
+    padding-top: 10px;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+.label--flex{
+    display: flex;
+
+}
+
+.title--1,.title--3{
+    font-size: 15px;
+}
+.title--2{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.line{
+    margin-left: -2%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.hoantat__label{
+    width: 35%;
+}
+.hoantat__label--2{
+    width: 45%;
+
+}
+.hoantat__label--right{
+    width: 40%;
+}
+.hoantat__label--12{
+    width: 55%;
+}
+.hoantat__label--10, .hoantat__label--26{
+    font-weight: bold;
+}
+.hoantat__label--20{
+    font-weight: bold;
+}
+.note{
+    font-size: 12px;
+    margin-right: 5px;
+}
+.hoantat__body--right{
+    width: 90%;
+    margin-top: 15px;
+    margin-left: 5%;
+    padding-top: 10px;
+    justify-content: center;
+}
+.hoantat__button--flex{
+    text-align: center;
+
+}
+.button{
+    width: 25%;
+    margin-left: -3%;
+   
+}
+.button--2{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+
+@media only screen and (min-width: 600px) {
+    /* Trang đặt thuê */
+    .datthue--left, .datthue__bottom{
+        display: none;
+    }
+    .datthue--top{
+        margin-top: 150px;
+    }
+    .datthue__input{
+        height: 30px;
+        width: 65%;
+        margin-left: 0%;
+    }
+    .datthue__input--GG{
+        margin-bottom: 10px;
+
+    }
+    .datthue__input--GG1{
+        width: 40%;
+        font-size: 16px;
+        margin-left: 13%;
+    }
+    .datthue__input--button2{
+        width: 30%;
+        font-size: 16px;
+        margin-left: 33%;
+        margin-bottom: 7px;
+    }
+    .datthue--right{
+        font-size: 15px;        
+    }
+    .datthue__select{
+        font-size: 12px;
+        height: 30px;
+        margin-left: 0%;
+        width: 35%;
+        margin-bottom: 10px;
+        padding-left: 5px;
+        padding-top: 3px;
+    }
+    .datthue__right{
+        margin-left: 26%;
+    }
+    .form__select{
+        width: 70%;
+        height: 25px;
+    }
+    .datthue__label--2{
+        font-size: 15px;
+        width: 100%;
+    }
+    .datthue__label--1, .datthue__label--3, .datthue__label--4, .datthue__label--5, .datthue__label--6, .datthue__label--7, .datthue__label--8, .datthue__label--9, .datthue__label--10, .datthue__label--11, .datthue__label--12, .datthue__label--13{
+        width: 65%;
+    } 
+    
+    .DatThue__nhapthongtin{
+        margin-left: 26%;
+    }
+    .datthue__right--item1, .datthue__right--item2, .datthue__right--item3, .datthue__right--item4, .datthue__right--item5, .datthue__right--item6, .datthue__right--item7, .datthue__right--item8, .datthue__right--item9, .datthue__right--item10, .datthue__right--item11, .datthue__right--item12{
+        flex-direction: column;
+    }
+    .bottom{
+        font-size: 15px;
+        margin-left: -45%;
+    }
+    .datthue--top{
+        font-size: 18px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 50px;
+    }
+    svg{
+        justify-content: center;
+        margin-top: 13px;
+        width: 160px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 7px;
+    }
+   
+    .datthue__top--circle{
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+    .datthue__top--circle--2{
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+    }
+    .datthue__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 13px;
+        line-height: 27px;
+        margin-left: -10%;
+        margin-top: 0px;
+    }
+    .datthue__top--item--1{
+        font-size: 15px;
+        margin-top: 100px;
+    }
+    .datthue__profile{
+        flex-direction: column;
+        margin-bottom: -15px;
+    }
+    .img{
+        border-radius: 300px;
+        width: 60px;
+        height: 60px;
+        margin-left: 30%;
+    }      
+   .name{
+       font-size: 15px;
+       margin-left: 32%;
+       margin-bottom: 5px;
+   }
+   .font__size{
+       font-size: 13px;
+       margin-left: 13%;
+   }
+   .datthue__bottom{
+       margin-top: -5px;
+   }
+   .datthue--item{
+       font-size: 13px;
+       margin-left: 0%;
+   }
+   .title{
+       font-size: 15px;
+   }
+
+   /* Trang thanh toán */
+   .thanhtoan--top{
+        font-size: 18px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 50px;
+    }
+    svg{
+        justify-content: center;
+        margin-top: 13px;
+        width: 160px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 7px;
+    }  
+    .thanhtoan__top--circle{
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+    .thanhtoan__top--circle--2{
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+    }
+    .thanhtoan__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 13px;
+        line-height: 27px;
+        margin-left: -10%;
+        margin-top: 0px;
+    }
+    .thanhtoan__top--item--1{
+        margin-top: 80px;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .thanhtoan__body{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 10%;   
+    }
+    .thanhtoan__body--left, .thanhtoan__body--right{        
+        font-size: 15px; 
+    }
+    .thanhtoan__body--left{
+        width: 90%;
+    }
+    /* .icon-edit{
+        margin-left: 93%;
+        margin-bottom: 10px;
+    } */
+    .thanhtoan__label{
+        width: 35%;
+    }
+    .thanhtoan__label--2, .thanhtoan__label--8{
+        width: 55%;
+    }
+    .font-size {
+        font-size: 12px;
+        border-radius: 5px;
+    }
+    .note--1{
+        font-size: 12px;
+    }
+    .thanhtoan__button{
+        margin-top: 10px;
+        margin-bottom: 10px;      
+    }
+    .button{
+        border-color: rgba(196, 196, 196, 1);
+        border-radius: 5px;
+        height: 30px;
+        width: 25%;
+        font-size: 15px;   
+    }
+    .thanhtoan__body--right{
+        width: 90%;
+        margin-top: 20px;
+        padding-top: 10px;
+        padding-left: 5%;
+        padding-bottom: 10px;
+        margin-left: 0%;
+    }
+    .title{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .line{
+        margin-left: -3%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .note--2{
+        font-size: 12px;
+    }
+    .thanhtoan--top{
+        font-size: 18px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 50px;
+    }
+    svg{
+        justify-content: center;
+        margin-top: 13px;
+        width: 160px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 7px;
+    }  
+    .thanhtoan__top--circle{
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+    .thanhtoan__top--circle--2{
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+    }
+    .thanhtoan__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 13px;
+        line-height: 27px;
+        margin-left: -10%;
+        margin-top: 0px;
+    }
+    .thanhtoan__top--item--1{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .thanhtoan__body{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 10%;   
+    }
+    .thanhtoan__body--left, .thanhtoan__body--right{        
+        font-size: 15px; 
+    }
+    .thanhtoan__body--left{
+        width: 90%;
+    }
+    /* .icon-edit{
+        margin-left: 93%;
+        margin-bottom: 10px;
+    } */
+    .thanhtoan__label{
+        width: 35%;
+    }
+    .thanhtoan__label--2, .thanhtoan__label--8{
+        width: 55%;
+    }
+    .font-size {
+        font-size: 12px;
+        border-radius: 5px;
+    }
+    .note--1{
+        font-size: 12px;
+    }
+    .thanhtoan__button{
+        margin-top: 10px;
+        margin-bottom: 10px;      
+    }
+    .button{
+        border-color: rgba(196, 196, 196, 1);
+        border-radius: 5px;
+        height: 30px;
+        width: 25%;
+        font-size: 15px;   
+    }
+    .thanhtoan__body--right{
+        width: 90%;
+        margin-top: 20px;
+        padding-top: 10px;
+        padding-left: 5%;
+        padding-bottom: 10px;
+        margin-left: 0%;
+    }
+    .DatThue--Title{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .line{
+        margin-left: -3%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .note--2{
+        font-size: 12px;
+    }
+    /* Chờ thanh toán */
+    .chothanhtoan--top{
+        font-size: 18px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 50px;
+    }
+    svg{
+        justify-content: center;
+        margin-top: 13px;
+        width: 160px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 7px;
+    }  
+    .chothanhtoan__top--circle{
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+    .chothanhtoan__top--circle--2{
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+    }
+    .chothanhtoan__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 13px;
+        line-height: 27px;
+        margin-left: -10%;
+        margin-top: 0px;
+    }
+    .chothanhtoan__top--item--1{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .chothanhtoan__body{
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .chothanhtoan__body--left, .chothanhtoan__body--right{       
+        font-size: 15px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+    
+    }
+    .chothanhtoan__body--left{
+        width: 90%;
+        justify-content: center;
+        padding-top: 10px;
+        margin-left: 5%;
+        margin-top: 20px;
+    }
+    .label--flex{
+        display: flex;
+    
+    }
+    
+    .title--1,.title--3{
+        font-size: 18px;
+    }
+    .title--2{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .line{
+        margin-left: -2%;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .chothanhtoan__label{
+        width: 35%;
+    }
+    .chothanhtoan__label--2{
+        width: 45%;
+    
+    }
+    .chothanhtoan__label--right{
+        width: 40%;
+    }
+    .chothanhtoan__label--12{
+        width: 55%;
+    }
+    .note{
+        font-size: 15px;
+        margin-right: 5px;
+        font-weight: normal;
+    }
+    .chothanhtoan__body--right{
+        width: 90%;
+        margin-left: 5%;
+        padding-top: 10px;
+        justify-content: center;
+    }
+    .chothanhtoan__button--flex{
+        text-align: center;
+    
+    }
+    .button{
+        width: 25%;
+        margin-left: -3%;
+        font-size: 18px;
+       
+    }
+    .button--2{
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    .hoantat--top{
+        font-size: 18px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 50px;
+    }
+    svg{
+        justify-content: center;
+        margin-top: 13px;
+        width: 160px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 7px;
+    }  
+    .hoantat__top--circle{
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+    .hoantat__top--circle--2{
+        background-color:  rgba(18, 201, 47, 1);
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+    }
+    .hoantat__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 13px;
+        line-height: 27px;
+        margin-left: -10%;
+        margin-top: 0px;
+    }
+    .hoantat__top--item--1{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .hoantat__body{
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .hoantat__body--left, .hoantat__body--right{       
+        font-size: 15px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+    
+    }
+    .hoantat__body--left{
+        width: 90%;
+        justify-content: center;
+        padding-top: 10px;
+        margin-left: 5%;
+        margin-top: 20px;
+    }
+    .label--flex{
+        display: flex;
+    
+    }
+    
+    .title--1,.title--3{
+        font-size: 18px;
+    }
+    .title--2{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .line{
+        margin-left: -2%;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .hoantat__label{
+        width: 35%;
+    }
+    .chothanhtoan__label--2{
+        width: 45%;
+    
+    }
+    .hoantat__label--right{
+        width: 40%;
+    }
+    .hoantat__label--12{
+        width: 55%;
+    }
+    .hoantat__label--10, .hoantat__label--26{
+        font-weight: bold;
+    }
+    .note{
+        font-size: 15px;
+        margin-right: 5px;
+    }
+    .hoantat__body--right{
+        width: 90%;
+        margin-left: 5%;
+        padding-top: 10px;
+        justify-content: center;
+    }
+    .hoantat__button--flex{
+        text-align: center;
+    
+    }
+    .button{
+        width: 25%;
+        margin-left: -3%;
+        font-size: 18px;
+       
+    }
+    .button--2{
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .hoantat--top{
+        font-size: 18px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 70px;
+    }
+    svg{
+        margin-top: 13px;
+        width: 210px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 7px;
+    }
+    .hoantat__top--circle{
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+   
+    .hoantat__top--circle--2{
+        background-color:  rgba(18, 201, 47, 1);
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+    }
+    .hoantat__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 13px;
+        line-height: 27px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-left: -10%;
+        margin-top: 0px;
+    }
+    .hoantat__top--item--1{
+        font-size: 20px;
+    }
+    .hoantat__body{
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .hoantat__body--left, .hoantat__body--right{       
+        font-size: 17px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+    
+    }
+    .hoantat__body--left{
+        width: 90%;
+        justify-content: center;
+        padding-top: 10px;
+        margin-left: 5%;
+        margin-top: 30px;
+    }
+    .label--flex{
+        display: flex;
+    
+    }
+    
+    .title--1,.title--3{
+        font-size: 20px;
+    }
+    .title--2{
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .line{
+        margin-left: -2%;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .hoantat__label{
+        width: 35%;
+    }
+    .hoantat__label--2{
+        width: 45%;
+    
+    }
+    .hoantat__label--right{
+        width: 40%;
+    }
+    .hoantat__label--12{
+        width: 55%;
+    }
+    .hoantat__label--10, .hoantat__label--26{
+        font-weight: bold;
+    }
+    .note{
+        font-size: 17px;
+        margin-right: 5px;
+    }
+    .hoantat__body--right{
+        width: 90%;
+        margin-left: 5%;
+        padding-top: 10px;
+        justify-content: center;
+    }
+    .hoantat__button--flex{
+        text-align: center;
+    
+    }
+    .button{
+        width: 25%;
+        margin-left: -3%;
+        font-size: 20px;
+       
+    }
+    .button--2{
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+}
+
+ @media only screen and (min-width: 768px) {
+
+     /* Trang đặt thuê */
+    .datthue--left, .datthue__bottom{
+        display: none;
+    }
+    .datthue--top{
+        margin-top: 150px;
+    }
+    .datthue__top--item--1{
+        font-size: 25px;
+    }
+    .datthue__input{
+        height: 40px;
+        width: 65%;
+        margin-bottom: 14px;
+        border-radius: 5px;
+        border: rgba(167, 167, 167, 1) solid 1px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 0%;
+    }
+    .datthue__input--GG{
+        margin-bottom: 10px;
+
+    }
+    .form__select{
+        width: 65%;
+    }
+    .datthue__input--GG1{
+        width: 40%;
+        font-size: 20px;
+        margin-left: 13%;
+        border: none;
+    }
+    .datthue__input--button2{
+        width: 30%;
+        font-size: 20px;
+        margin-left:35%;
+        border: none;
+    }
+    .datthue--right{
+        font-size: 20px;        
+    }.datthue__right{
+        margin-left: 25%;
+    }
+    .datthue__select{
+        font-size: 15px;
+        height: 35px;
+        width: 35%;
+        margin-bottom: 10px;
+        padding-left: 5px;
+        padding-top: 3px;
+    }
+    
+    .datthue__label--2{
+        font-size: 20px;
+        width: 100%;
+    }
+    .datthue__label--1, .datthue__label--3, .datthue__label--4, .datthue__label--5, .datthue__label--6, .datthue__label--7, .datthue__label--8, .datthue__label--9, .datthue__label--10, .datthue__label--11, .datthue__label--12, .datthue__label--13{
+        width: 65%;
+    } 
+    
+    .DatThue__nhapthongtin{
+        margin-left: 25%;
+    }
+    .datthue__right--item1, .datthue__right--item2, .datthue__right--item3, .datthue__right--item4, .datthue__right--item5, .datthue__right--item6, .datthue__right--item7, .datthue__right--item8, .datthue__right--item9, .datthue__right--item10, .datthue__right--item11, .datthue__right--item12{
+        flex-direction: column;
+    }
+    .bottom{
+        font-size: 20px;
+        margin-left: -25%;
+    }
+    .datthue--top{
+        font-size: 18px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 70px;
+    }
+    svg{
+        margin-top: 13px;
+        width: 210px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 7px;
+    }
+    .datthue__top--circle{
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+   
+    .datthue__top--circle--2{
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+    }
+    .datthue__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 13px;
+        line-height: 27px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-left: -10%;
+        margin-top: 0px;
+    }
+    .datthue__top--item--1{
+        font-size: 20px;
+    }
+    .datthue__profile{
+        flex-direction: column;
+        margin-bottom: -15px;
+    }
+    .img{
+        border-radius: 300px;
+        width: 50px;
+        height: 50px;
+        margin-left: 35%;
+    }      
+   .name{
+       font-size: 17px;
+       margin-left: 32%;
+       margin-bottom: 5px;
+   }
+   .font__size{
+       font-size: 15px;
+       margin-left: 10%;
+   }
+   .datthue__bottom{
+       margin-top: -5px;
+   }
+   .datthue--item{
+       font-size: 15px;
+   }
+   .title{
+       font-size: 20px;
+   }
+   /* Trang thanh toán */
+   .thanhtoan--top{
+        font-size: 18px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 70px;
+    }
+    svg{
+        margin-top: 13px;
+        width: 210px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 7px;
+    }
+    .thanhtoan__top--circle{
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+   
+    .thanhtoan__top--circle--2{
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+    }
+    .thanhtoan__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 13px;
+        line-height: 27px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-left: -10%;
+        margin-top: 0px;
+    }
+    .thanhtoan__top--item--1{
+        font-size: 20px;
+    }
+    .thanhtoan__body{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 5%;   
+    }
+    .thanhtoan__body--left, .thanhtoan__body--right{        
+        font-size: 18px; 
+    }
+    .thanhtoan__body--left{
+        width: 95%;
+        padding-left: 5%;
+    }
+    /* .icon-edit{
+        margin-left: 93%;
+        margin-bottom: 10px;
+    } */
+    .thanhtoan__label{
+        width: 35%;
+    }
+    .thanhtoan__label--2, .thanhtoan__label--8{
+        width: 55%;
+    }
+    .font-size {
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    .note--1{
+        font-size: 15px;
+        margin-left: -5%;
+        margin-bottom: 20px;
+    }
+    .thanhtoan__button{
+        margin-top: 10px;
+        margin-bottom: 10px;      
+    }
+    .button{
+        border-color: rgba(196, 196, 196, 1);
+        border-radius: 5px;
+        height: 40px;
+        width: 25%;
+        font-size: 20px;  
+        margin-left: -5%; 
+    }
+    .thanhtoan__body--right{
+        width: 95%;
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-left: 10%;
+        padding-bottom: 20px;
+        margin-left: 0%;
+    }
+    .DatThue--Title{
+        font-size: 22px;
+        margin-bottom: 10px;
+        margin-left: 5%;
+    }
+    .line{
+        margin-left: -11%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .note--2{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .thanhtoan--top{
+        font-size: 18px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 70px;
+    }
+    svg{
+        margin-top: 13px;
+        width: 210px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 7px;
+    }
+    .thanhtoan__top--circle{
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+   
+    .thanhtoan__top--circle--2{
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+    }
+    .thanhtoan__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 13px;
+        line-height: 27px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-left: -10%;
+        margin-top: 0px;
+    }
+    .thanhtoan__top--item--1{
+        font-size: 20px;
+    }
+    .thanhtoan__body{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 5%;   
+    }
+    .thanhtoan__body--left, .thanhtoan__body--right{        
+        font-size: 18px; 
+    }
+    .thanhtoan__body--left{
+        width: 95%;
+        padding-left: 5%;
+    }
+    .thanhtoan__label{
+        width: 35%;
+    }
+    .thanhtoan__label--2, .thanhtoan__label--8{
+        width: 55%;
+    }
+    .font-size {
+        font-size: 15px;
+        border-radius: 5px;
+    }
+    .note--1{
+        font-size: 15px;
+        margin-left: -5%;
+        margin-bottom: 20px;
+    }
+    .thanhtoan__button{
+        margin-top: 10px;
+        margin-bottom: 10px;      
+    }
+    .button{
+        border-color: rgba(196, 196, 196, 1);
+        border-radius: 5px;
+        height: 40px;
+        width: 25%;
+        font-size: 20px;  
+        margin-left: -5%; 
+    }
+    .thanhtoan__body--right{
+        width: 95%;
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-left: 10%;
+        padding-bottom: 20px;
+        margin-left: 0%;
+    }
+    .title{
+        font-size: 22px;
+        margin-bottom: 10px;
+        margin-left: -5%;
+    }
+    .line{
+        margin-left: -11%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .note--2{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    /* Chờ thanh toán */
+    .chothanhtoan--top{
+        font-size: 18px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 70px;
+    }
+    svg{
+        margin-top: 13px;
+        width: 210px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 7px;
+    }
+    .chothanhtoan__top--circle{
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+   
+    .chothanhtoan__top--circle--2{
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+    }
+    .chothanhtoan__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 13px;
+        line-height: 27px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-left: -10%;
+        margin-top: 0px;
+    }
+    .chothanhtoan__top--item--1{
+        font-size: 20px;
+    }
+    .chothanhtoan__body{
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .chothanhtoan__body--left, .chothanhtoan__body--right{       
+        font-size: 17px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+    
+    }
+    .chothanhtoan__body--left{
+        width: 90%;
+        justify-content: center;
+        padding-top: 10px;
+        margin-left: 5%;
+        margin-top: 30px;
+    }
+    .label--flex{
+        display: flex;
+    
+    }
+    
+    .title--1,.title--3{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    .title--2{
+        font-size: 17px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    .line{
+        margin-left: -2%;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .chothanhtoan__label{
+        width: 35%;
+    }
+    .chothanhtoan__label--2{
+        width: 45%;
+    
+    }
+    .chothanhtoan__label--right{
+        width: 40%;
+    }
+    .chothanhtoan__label--12{
+        width: 55%;
+    }
+    .note{
+        font-size: 17px;
+        margin-right: 5px;
+        font-weight: normal;
+    }
+    .chothanhtoan__body--right{
+        width: 90%;
+        margin-left: 5%;
+        padding-top: 10px;
+        justify-content: center;
+    }
+    .chothanhtoan__button--flex{
+        text-align: center;
+    
+    }
+    .button{
+        width: 25%;
+        margin-left: -3%;
+        font-size: 20px;
+       
+    }
+    .button--2{
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    /* Trang đã hoàn tất */
+    .hoantat--top{
+        font-size: 18px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 70px;
+    }
+    svg{
+        margin-top: 13px;
+        width: 210px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 7px;
+    }
+    .hoantat__top--circle{
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+   
+    .hoantat__top--circle--2{
+        background-color:  rgba(18, 201, 47, 1);
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+    }
+    .hoantat__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 13px;
+        line-height: 27px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-left: -10%;
+        margin-top: 0px;
+    }
+    .hoantat__top--item--1{
+        font-size: 20px;
+    }
+    .hoantat__body{
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .hoantat__body--left, .hoantat__body--right{       
+        font-size: 17px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+    
+    }
+    .hoantat__body--left{
+        width: 90%;
+        justify-content: center;
+        padding-top: 10px;
+        margin-left: 5%;
+        margin-top: 30px;
+    }
+    .label--flex{
+        display: flex;
+    
+    }
+    
+    .title--1,.title--3{
+        font-size: 20px;
+    }
+    .title--2{
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .line{
+        margin-left: -2%;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .hoantat__label{
+        width: 35%;
+    }
+    .hoantat__label--2{
+        width: 45%;
+    
+    }
+    .hoantat__label--right{
+        width: 40%;
+    }
+    .hoantat__label--12{
+        width: 55%;
+    }
+    .hoantat__label--10, .hoantat__label--26{
+        font-weight: bold;
+    }
+    .note{
+        font-size: 17px;
+        margin-right: 5px;
+    }
+    .hoantat__body--right{
+        width: 90%;
+        margin-left: 5%;
+        padding-top: 10px;
+        justify-content: center;
+    }
+    .hoantat__button--flex{
+        text-align: center;
+    
+    }
+    .button{
+        width: 25%;
+        margin-left: -3%;
+        font-size: 20px;
+       
+    }
+    .button--2{
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+}
+@media screen and (min-width: 992px){
+
+    /* Trang đặt thuê */
+    .datthue__flex{
+        display: flex;
+    }
+    .datthue--left{
+        display: block;
+    }
+    .datthue__bottom{
+        display: block;
+
+    }
+    .datthue--top{
+        margin-top: 150px;
+    }  
+    .datthue__input{
+        flex: auto;
+        height: 35px;       
+    }
+    .datthue__input--GG{
+        margin-bottom: 10px;
+        width: 38%;
+        font-size: 15px;
+
+    }
+    .datthue__input--GG1{
+        width: 30%;
+        font-size: 20px;
+        margin-left: 2%;
+    }
+    .datthue__input--button2{
+        width: 30%;
+        font-size: 20px;
+        margin-left: 38%;
+    }
+    .datthue--right{
+        font-size: 18px;     
+        display: flex;   
+        position: relative;
+    }
+    .datthue__right{
+        flex-direction: row;
+        margin-left: 10%;
+        font-size: 20px;
+    }
+    .datthue__select{
+        font-size: 12px;
+        height: 35px;
+        margin-left: 2%;
+        width: 100%;
+        margin-bottom: 10px;
+        padding-left: 5px;
+        padding-top: 2px;
+    }
+    .datthue__select--1{
+        margin-left: -25%;
+    }
+    .datthue__select--4{
+        margin-left: -54%;
+        width: 24%;
+    }
+    .datthue__label--2{
+        font-size: 15px;
+        width: 65%;
+        margin-left: 5%;
+    }
+    .datthue__label--1{
+        width: 45%;
+        font-size: 18px;
+    }
+     .datthue__label--3, .datthue__label--4{
+        width: 280%;
+        font-size: 18px;
+    }
+  .datthue__label--5, .datthue__label--6, .datthue__label--7, .datthue__label--8, .datthue__label--9, .datthue__label--10, .datthue__label--11, .datthue__label--12, .datthue__label--13{
+      flex-basis: 30%;
+      width: 350px;
+    }    
+    .DatThue__nhapthongtin{
+        margin-left: 10%;
+    }
+    .datthue__right--item1, .datthue__right--item2, .datthue__right--item3, .datthue__right--item4, .datthue__right--item5, .datthue__right--item6, .datthue__right--item7, .datthue__right--item8, .datthue__right--item9, .datthue__right--item10, .datthue__right--item11, .datthue__right--item12{
+        flex-direction: row;
+    }
+    .bottom{
+        font-size: 16px;
+        margin-left: -33%;
+        width: 100%;
+    }
+    .datthue--top{
+        font-size: 18px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 100px;
+    }
+    svg{
+        margin-top: 13px;
+        width: 285px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 7px;
+    }
+    .datthue__top--circle{
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+        background-color: rgba(18, 201, 47, 1);
+    }  
+    .datthue__top--circle--2{
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 40px;
+        width: 35px;
+        height: 35px;
+        margin-top: 0px;
+    }
+    .datthue__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 13px;
+        line-height: 27px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-left: -10%;
+        margin-top: 0px;
+    }
+    .datthue__top--item--1{
+        font-size: 20px;
+    }
+    .datthue__profile{
+        flex-direction: column;
+        margin-bottom: -15px;
+        justify-content: center;
+    }
+    .img{
+        border-radius: 300px;
+        width: 60px;
+        height: 60px;
+        margin-left: 35%;
+    }      
+   .name{
+        font-size: 23px;
+        margin-bottom: 5px;
+    }
+   .font__size{
+       font-size: 18px;
+       margin-left: 10%;
+   }
+   .datthue__bottom{
+       margin-top: -5px;
+   }
+   .datthue--item{
+       font-size: 18px;
+       margin-left: 0%;
+   }
+   .DatThue--Title{
+       font-size: 20px;
+       margin-left: 0%;
+
+   }  
+   .input__checkbox{
+       margin-left: 32%;
+       margin-bottom: 10px;
+       margin-top: -10px;
+   }
+
+   /* Trang thanh toán */
+   .thanhtoan--top{
+        font-size: 22px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 100px;
+    }
+    svg{
+        margin-top: 13px;
+        width: 265px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 12px;
+    }
+    .thanhtoan__top--circle{
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+   
+    .thanhtoan__top--circle--2{
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+    }
+    .thanhtoan__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 20px;
+        line-height: 27px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-left: -10%;
+        margin-top: 10px;
+    }  
+    .thanhtoan__top--item--1{
+        font-size: 23px;
+        margin-bottom: 30px;
+    }
+    .thanhtoan__body{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 5%;   
+    }
+    .thanhtoan__body--left, .thanhtoan__body--right{        
+        font-size: 20px; 
+    }
+    .thanhtoan__body--left{
+        width: 95%;
+        padding-left: 5%;
+    }
+    .icon-edit{
+        margin-left: 95%;
+        margin-bottom: 10px;
+    }
+    .thanhtoan__label{
+        width: 35%;
+    }
+    .thanhtoan__label--2, .thanhtoan__label--8{
+        width: 55%;
+    }
+    .font-size {
+        height: 35px;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+    .note--1{
+        font-size: 17px;
+        margin-left: -5%;
+        margin-bottom: 20px;
+    }
+    .thanhtoan__button{
+        margin-top: 10px;
+        margin-bottom: 10px;      
+    }
+    .button{
+        border-color: rgba(196, 196, 196, 1);
+        border-radius: 5px;
+        height: 40px;
+        width: 25%;
+        font-size: 20px;  
+        margin-left: -5%; 
+    }
+    .thanhtoan__body--right{
+        width: 95%;
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-left: 10%;
+        padding-bottom: 20px;
+        margin-left: 0%;
+    }
+    .title{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .line{
+        margin-left: -11%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .note--2{
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .thanhtoan--top{
+        font-size: 22px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 100px;
+    }
+    svg{
+        margin-top: 13px;
+        width: 265px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 12px;
+    }
+    .thanhtoan__top--circle{
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+   
+    .thanhtoan__top--circle--2{
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+    }
+    .thanhtoan__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 20px;
+        line-height: 27px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-left: -10%;
+        margin-top: 10px;
+    }  
+    .thanhtoan__top--item--1{
+        font-size: 23px;
+        margin-bottom: 30px;
+    }
+    .thanhtoan__body{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+        margin-left: 5%;   
+    }
+    .thanhtoan__body--left, .thanhtoan__body--right{        
+        font-size: 20px; 
+    }
+    .thanhtoan__body--left{
+        width: 95%;
+        padding-left: 5%;
+    }
+    .icon-edit{
+        margin-left: 95%;
+        margin-bottom: 10px;
+    }
+    .thanhtoan__label{
+        width: 35%;
+    }
+    .thanhtoan__label--2, .thanhtoan__label--8{
+        width: 55%;
+    }
+    .font-size {
+        height: 35px;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+    .note--1{
+        font-size: 17px;
+        margin-left: -5%;
+        margin-bottom: 20px;
+    }
+    .thanhtoan__button{
+        margin-top: 10px;
+        margin-bottom: 10px;      
+    }
+    .button{
+        border-color: rgba(196, 196, 196, 1);
+        border-radius: 5px;
+        height: 40px;
+        width: 25%;
+        font-size: 20px;  
+        margin-left: -5%; 
+    }
+    .thanhtoan__body--right{
+        width: 95%;
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-left: 10%;
+        padding-bottom: 20px;
+        margin-left: 0%;
+    }
+    .DatThue--Title{
+        font-size: 22px;
+        margin-bottom: 10px;
+        margin-left: 15%;
+    }
+    .line{
+        margin-left: -11%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .note--2{
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    /* Chờ thanh toán */
+    .chothanhtoan--top{
+        font-size: 22px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 100px;
+    }
+    svg{
+        margin-top: 13px;
+        width: 265px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 12px;
+    }
+    .chothanhtoan__top--circle{
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+   
+    .chothanhtoan__top--circle--2{
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+    }
+    .chothanhtoan__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 20px;
+        line-height: 27px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-left: -10%;
+        margin-top: 10px;
+    }  
+    .chothanhtoan__top--item--1{
+        font-size: 23px;
+        margin-bottom: 30px;
+    }
+    .chothanhtoan__body{
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .chothanhtoan__body--left, .chothanhtoan__body--right{       
+        font-size: 16px;
+        padding-left: 15px;
+        padding-bottom: 20px;    
+    }
+    .chothanhtoan__body--left{
+        width: 50%;
+        justify-content: center;
+        padding-top: 10px;
+        margin-top: 0%;
+        margin-left: 0%;
+    }
+    .label--flex{
+        display: flex;
+    
+    }   
+    .title--1,.title--3{
+        font-size: 20px;
+    }
+    .title--2{
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .line{
+        margin-left: 0%;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .chothanhtoan__label{
+        width: 35%;
+    }
+    .chothanhtoan__label--2{
+        width: 45%;
+    
+    }
+    .chothanhtoan__label--right{
+        width: 40%;
+    }
+    .chothanhtoan__label--12{
+        width: 60%;
+    }
+    .note{
+        font-size: 15px;
+        margin-right: 5px;
+        font-weight: normal;
+    }
+    .chothanhtoan__body--right{
+        width: 50%;
+        margin-left: 3%;
+        padding-top: 10px;
+        justify-content: center;
+        margin-top: 0%;
+        padding-left: 0%;
+    }
+    .chothanhtoan__button--flex{
+        text-align: center;
+    
+    }
+    .button{
+        width: 30%;      
+    }
+    .button--2{
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    /* Trang đã hoàn tất */
+    .hoantat--top{
+        font-size: 22px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 100px;
+    }
+    svg{
+        margin-top: 13px;
+        width: 265px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 12px;
+    }
+    .hoantat__top--circle{
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+   
+    .hoantat__top--circle--2{
+        background-color:  rgba(18, 201, 47, 1);
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+    }
+    .hoantat__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 20px;
+        line-height: 27px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-left: -10%;
+        margin-top: 10px;
+    }  
+    .hoantat__top--item--1{
+        font-size: 23px;
+        margin-bottom: 30px;
+    }
+    .hoantat__body{
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .hoantat__body--left, .hoantat__body--right{       
+        font-size: 16px;
+        padding-left: 15px;
+        padding-bottom: 20px;    
+    }
+    .hoantat__body--left{
+        width: 50%;
+        justify-content: center;
+        padding-top: 10px;
+        margin-top: 0%;
+        margin-left: 0%;
+    }
+    .label--flex{
+        display: flex;
+    
+    }   
+    .title--1,.title--3{
+        font-size: 20px;
+    }
+    .title--2{
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .line{
+        margin-left: 0%;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .hoantat__label{
+        width: 35%;
+    }
+    .hoantat__label--2{
+        width: 45%;
+    
+    }
+    .hoantat_label--right{
+        width: 40%;
+    }
+    .hoantat__label--12{
+        width: 60%;
+    }
+    .hoantat__label--10, .hoantat__label--26{
+        font-weight: bold;
+    }
+    .note{
+        font-size: 15px;
+        margin-right: 5px;
+    }
+    .hoantat__body--right{
+        width: 50%;
+        margin-left: 3%;
+        padding-top: 10px;
+        justify-content: center;
+        margin-top: 0%;
+        padding-left: 0%;
+    }
+    .hoantat__button--flex{
+        text-align: center;
+    
+    }
+    .button{
+        width: 30%;      
+    }
+    .button--2{
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    /* Trang đặt thuê */
+    .datthue__flex{
+        display: flex;
+    }
+    .datthue--left{
+        display: block;
+    }
+    .datthue__bottom{
+        display: block;
+
+    }
+    .datthue--right{
+        font-size: 18px;
+    }
+    .datthue__right--item1, .datthue__right--item2, .datthue__right--item3, .datthue__right--item4, .datthue__right--item5, .datthue__right--item6, .datthue__right--item7, .datthue__right--item8, .datthue__right--item9, .datthue__right--item10, .datthue__right--item11, .datthue__right--item12{
+        flex-direction: row;
+    }
+   
+    .datthue__label--5, .datthue__label--6, .datthue__label--7, .datthue__label--8, .datthue__label--9, .datthue__label--10, .datthue__label--11, .datthue__label--12, .datthue__label--13{
+        flex-basis: 30%;
+        width: 350px;
+    }   
+    .datthue__input{
+        flex: auto;
+        width: 300px;
+        height: 40px;        
+    }
+    .input__checkbox{
+        margin-left: 30%;
+    }
+    .datthue__select{
+        padding-top: 2px;
+        font-size: 12px;
+        height: 35px;
+    }
+    .datthue__select--1{
+    margin-left: -20%; 
+    } 
+    .datthue__select--4{
+        margin-left: -52%;
+    }
+    .input__checkbox{
+        margin-left: 35%;
+    }
+    .datthue__align{
+        margin-left: 6%;   
+    }
+    .color{
+        color: red;
+    }
+    .datthue__input--GG{
+        width: 43%;
+        font-size: 14px;
+    }
+    .datthue__input--GG1{
+        width: 27%;
+        height: 40px;
+        font-size: 22px;
+        margin-left: 1%;
+        border: none;
+    }
+    .datthue__input--button2{
+        width: 150px;
+        margin-left: 45%;
+    }
+    .DatThue__nhapthongtin{
+        margin-left: 10%;
+    }
+  
+    .bottom{
+        font-size: 18px;
+        margin-left: -20%;
+    }
+    .datthue--top{
+        font-size: 18px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    svg{
+        margin-top: 13px;
+        width: 340px;
+        height: 6px ;
+    }
+    .datthue__top--circle{
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+    .icon{
+        padding-top: 15px;
+    }
+   
+    .datthue__top--circle--2{
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+    }
+    .datthue__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 17px;
+        line-height: 27px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-left: -10%;
+        margin-top: 7px;
+    }
+    .datthue__top--item--1{
+        font-size: 25px;
+    }
+    .datthue__profile{
+        flex-direction: row;
+        margin-bottom: 5px;
+        margin-left: 4%;
+    }
+    .img{
+        border-radius: 300px;
+        width: 80px;
+        height: 79.84px;
+        margin-left: 0%;
+    }      
+   .name{
+       font-size: 22px;
+       margin-left: 0%;
+       margin-bottom: 5px;
+   }
+   .font__size{
+       font-size: 20px;
+       margin-left: 0%;
+   }
+   .datthue__bottom{
+       margin-top: -5px;
+   }
+   .datthue--name{
+       margin-top: 10px;
+   }
+   .datthue--item{
+       font-size: 20px;
+       margin-left: 3%;
+   }
+  
+   .DatThue--Title{
+       font-size: 20px;
+       margin-left: 15%;
+   }
+   
+    /* Trang thanh toán */
+        .thanhtoan--top{
+        font-size: 22px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 100px;
+    }
+    svg{
+        margin-top: 13px;
+        width: 340px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 12px;
+    }
+    .thanhtoan__top--circle{
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+   
+    .thanhtoan__top--circle--2{
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+    }
+    .thanhtoan__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 20px;
+        line-height: 27px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-left: -10%;
+        margin-top: 10px;
+    }  
+    .thanhtoan__top--item--1{
+        font-size: 23px;
+        margin-bottom: 30px;
+    }
+    .thanhtoan__body{
+        flex-direction: row;
+    }
+    .thanhtoan__body{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .thanhtoan__body--left, .thanhtoan__body--right{        
+        font-size: 18px; 
+    }
+    .thanhtoan__body--left{
+        width: 50%;
+        justify-content: center;
+        padding-top:10px;
+        margin-left: -5%;
+        padding-left: 0%;
+    }
+    .icon-edit{
+        margin-left: 93%;
+        margin-bottom: 10px;
+    }
+    .label--flex{
+        display: flex;
+        margin-left: 5%;
+    }
+    .thanhtoan__label{
+        width: 35%;
+    }
+    .thanhtoan__label--2, .thanhtoan__label--8{
+        width: 55%;
+    }
+    .font-size {
+        height: 35px;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+    .note--1{
+        font-size: 15px;
+        margin-left: 0%;
+    }
+    .thanhtoan__button{
+        margin-top: 20px;
+        margin-bottom: 10px; 
+        margin-left: 0%;     
+    }
+    .button{
+        border-color: rgba(196, 196, 196, 1);
+        border-radius: 5px;
+        height: 40px;
+        width: 25%;
+        font-size: 20px;  
+        
+    }
+    .thanhtoan__body--right{
+        width: 50%;
+        padding-top: 30px;
+        padding-left: 3%;
+        padding-bottom: 20px;
+        margin-left: 5%;
+        margin-top: 0%;
+    }
+    .title{
+        font-size: 22px;
+        margin-bottom: 10px;
+        margin-left: 0%;
+    }
+    .line{
+        margin-left: -6%;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    .note--2{
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .chothanhtoan--top{
+        font-size: 22px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 100px;
+    }
+    svg{
+        margin-top: 13px;
+        width: 340px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 12px;
+    }
+    .chothanhtoan__top--circle{
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+   
+    .chothanhtoan__top--circle--2{
+        background-color: rgba(196, 196, 196, 1);
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+    }
+    .chothanhtoan__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 20px;
+        line-height: 27px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-left: -10%;
+        margin-top: 10px;
+    }  
+    .chothanhtoan__top--item--1{
+        font-size: 23px;
+        margin-bottom: 30px;
+    }
+    .chothanhtoan__body{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .chothanhtoan__body--left, .chothanhtoan__body--right{       
+        font-size: 18px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+        font-weight: normal;
+    
+    }
+    .chothanhtoan__body--left{
+        width: 50%;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    .label--flex{
+        display: flex;
+        font-weight: normal;    
+    }
+    .title--1,.title--3{
+        font-size: 22px;
+    }
+    .title--3{
+        margin-left: 10px;
+    }
+    .title--2{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .line{
+        margin-left: 0%;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .chothanhtoan__label{
+        width: 35%;
+    }
+    .chothanhtoan__label--2{
+        width: 45%;
+    
+    }
+    .chothanhtoan__label--right{
+        width: 40%;
+    }
+    .chothanhtoan__label--12{
+        width: 55%;
+    }
+    .note{
+        font-size: 17px;
+        margin-right: 5px;
+    }
+    .chothanhtoan__body--right{
+        width: 50%;
+        margin-left: 5%;
+        padding-top: 10px;
+        justify-content: center;
+        padding-left: 0%;
+    }
+    .chothanhtoan__button--flex{
+        text-align: center;
+    
+    }
+    .button{
+        width: 30%;
+        font-size: 22px;
+       
+    }
+    .button--2{
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    /* Trang đã haofn tất */
+    .hoantat--top{
+        font-size: 22px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 100px;
+    }
+    svg{
+        margin-top: 13px;
+        width: 340px;
+        height: 6px ;
+    }
+    .icon{
+        padding-top: 12px;
+    }
+    .hoantat__top--circle{
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+        background-color: rgba(18, 201, 47, 1);
+    }
+   
+    .hoantat__top--circle--2{
+        background-color:  rgba(18, 201, 47, 1);
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+    }
+    .hoantat__top--item{
+        display: flex;
+        justify-content:space-around;
+        width: 120%;
+        font-size: 20px;
+        line-height: 27px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-left: -10%;
+        margin-top: 10px;
+    }  
+    .hoantat__top--item--1{
+        font-size: 23px;
+        margin-bottom: 30px;
+    }
+    .hoantat__body{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .hoantat__body--left, .hoantat__body--right{       
+        font-size: 18px;
+        padding-left: 15px;
+        padding-bottom: 20px;
+    
+    }
+    .hoantat__body--left{
+        width: 50%;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    .label--flex{
+        display: flex;
+    
+    }
+    .title--1,.title--3{
+        font-size: 22px;
+    }
+    .title--2{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .line{
+        margin-left: 0%;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+    .hoantat__label{
+        width: 35%;
+        font-weight: normal;
+    }
+    .hoantat__label--2{
+        width: 45%;
+    }
+ 
+    .hoantat__label--right{
+        width: 40%;
+    }
+    .hoantat__label--12{
+        width: 55%;
+    }
+    .hoantat__label--10, .hoantat__label--26, .hoantat__label--20{
+        font-weight: bold;
+    }
+    .note{
+        font-size: 17px;
+        margin-right: 5px;
+    }
+    .hoantat__body--right{
+        width: 50%;
+        margin-left: 5%;
+        padding-top: 10px;
+        justify-content: center;
+        padding-left: 0%;
+    }
+    .hoantat__button--flex{
+        text-align: center;    
+    }
+    .button{
+        width: 30%;
+        font-size: 22px;
+       
+    }
+    .button--2{
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+
+}
+
+.error {
+    border-color: #FF4D4D;
+}
+
+
+
+
+
+
+
