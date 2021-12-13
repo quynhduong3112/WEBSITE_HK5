@@ -7,10 +7,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khuyến mãi</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="./CSS/Style.css">
+    <script src="./JS/angular.js"></script>
+    <script>
+        let app=angular.module("KhuyenMai", []);
+        app.controller("VoucherController1",($scope,$http)=>{
+            $http({
+                method:"GET",
+                url:"./DATA/vouchergoiy.json",
+            }).then(
+                function success(response){
+                    $scope.vouchers=response.data;
+                },
+                function error(response){
+                    $scope.error=response.statusText;
+                }
+            );
+        });
+        app.controller("VoucherController2",($scope,$http)=>{
+            $http({
+                method:"GET",
+                url:"./DATA/vouchercuatoi.json",
+            }).then(
+                function success(response){
+                    $scope.vouchers=response.data;
+                },
+                function error(response){
+                    $scope.error=response.statusText;
+                }
+            );
+        });
+        app.controller("VoucherController3",($scope,$http)=>{
+            $http({
+                method:"GET",
+                url:"./DATA/voucherkhac.json",
+            }).then(
+                function success(response){
+                    $scope.vouchers=response.data;
+                },
+                function error(response){
+                    $scope.error=response.statusText;
+                }
+            );
+        });
+    </script>
 </head>
 
-<body>
+<body ng-app="KhuyenMai">
     <div id="myHeader2" class="VerHeader__container">
         <a href="javascript:void(0)" class="VerHeader__closebtn" onclick="closeNav()">×</a>
         <div class="VerHeader__search">
@@ -106,152 +149,67 @@
                     <div class="KhuyenMai__header2--title">Kho khuyến mãi</div>
                 </div>
                 <hr style="color: black; height: 1px; width: 90%; padding: 0; margin: 0;">
-                <div class="KhuyenMai__dexuat">
+                <div class="KhuyenMai__dexuat" ng-controller="VoucherController1">
                     <div class="KhuyenMai__dexuat--title">Đề xuất (<span id="KhuyenMaiDem1"></span>)</div>
                     <div class="KhuyenMai__dexuat--2">
                         <div class="KhuyenMai__dexuat--3">
-                            <div class="KhuyenMai__tag--1">
+                            <div class="KhuyenMai__tag--1" ng-repeat="v in vouchers">
                                 <div class="KhuyenMai__tag--type">MIỄN PHÍ VẬN CHUYỂN</div>
                                 <div class="KhuyenMai__tag--content">
-                                    <div class="KhuyenMai__tag--doidiem" id="KhuyenMaiDoiDien">Đổi điểm
-                                        <i class="glyphicon glyphicon-menu-right"></i>
+                                    <div class="KhuyenMai__tag--doidiem" id="KhuyenMaiDoiDien"><a href="DatThue.html?voucherId={{v.voucherID}}">Đổi điểm
+                                        <i class="glyphicon glyphicon-menu-right"></i></a>
                                     </div>
-                                    <div>Voucher khuyến mãi giảm 30%</div>
+                                    <div>Voucher khuyến mãi giảm {{v.voucherPrice}}%</div>
                                     <div class="KhuyenMai__tag--diem">
-                                        <div class="KhuyenMai__tag--giam">Giảm 30%</div>
-                                        <div>04 điểm</div>
+                                        <div class="KhuyenMai__tag--giam">Giảm {{v.voucherPrice}}%</div>
+                                        <div>0{{v.voucherPoint}} điểm</div>
                                     </div>
-                                    <div class="KhuyenMai__tag--hsd">Hạn sử dụng: 29/10/2021</div>
-                                    <div class="KhuyenMai__tag--dk"> <a href="/html/ChiTietKM"> Điều kiện</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="KhuyenMai__dexuat--3">
-                            <div class="KhuyenMai__tag--1">
-                                <div class="KhuyenMai__tag--type2">MIỄN PHÍ VẬN CHUYỂN</div>
-                                <div class="KhuyenMai__tag--content">
-                                    <div class="KhuyenMai__tag--doidiem" id="KhuyenMaiDoiDien">Đổi điểm
-                                        <i class="glyphicon glyphicon-menu-right"></i>
-                                    </div>
-                                    <div>Voucher khuyến mãi giảm 30%</div>
-                                    <div class="KhuyenMai__tag--diem">
-                                        <div class="KhuyenMai__tag--giam">Giảm 30%</div>
-                                        <div>04 điểm</div>
-                                    </div>
-                                    <div class="KhuyenMai__tag--hsd">Hạn sử dụng: 29/10/2021</div>
-                                    <div class="KhuyenMai__tag--dk"><a href="/html/ChiTietKM"> Điều kiện</a></div>
+                                    <div class="KhuyenMai__tag--hsd">Hạn sử dụng: {{v.expiry}}</div>
+                                    <div class="KhuyenMai__tag--dk"> <a href="ChiTietKM.html?voucherId={{v.voucherID}}"> Điều kiện</a></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="KhuyenMai__dexuat">
+                <div class="KhuyenMai__dexuat" ng-controller="VoucherController2">
                     <div class="KhuyenMai__dexuat--title">Khuyến mãi của tôi (<span id="KhuyenMaiDem2"></span>)</div>
                     <div class="KhuyenMai__dexuat--2">
                         <div class="KhuyenMai__dexuat--3">
-                            <div class="KhuyenMai__tag--2">
+                            <div class="KhuyenMai__tag--2" ng-repeat="v in vouchers">
                                 <div class="KhuyenMai__tag--type">MIỄN PHÍ VẬN CHUYỂN</div>
                                 <div class="KhuyenMai__tag--content">
                                     <div class="KhuyenMai__tag--doidiem">Dùng ngay
                                         <i class="glyphicon glyphicon-menu-right"></i>
                                     </div>
-                                    <div>Voucher khuyến mãi giảm 30%</div>
+                                    <div>Voucher khuyến mãi giảm {{v.voucherPrice}}%</div>
                                     <div class="KhuyenMai__tag--diem">
-                                        <div class="KhuyenMai__tag--giam">Giảm 30%</div>
-                                        <div>04 điểm</div>
+                                        <div class="KhuyenMai__tag--giam">Giảm {{v.voucherPrice}}%</div>
+                                        <div>0{{v.voucherPoint}} điểm</div>
                                     </div>
-                                    <div class="KhuyenMai__tag--hsd">Hạn sử dụng: 29/10/2021</div>
-                                    <div class="KhuyenMai__tag--dk"><a href="/html/ChiTietKM"> Điều kiện</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="KhuyenMai__dexuat--3">
-                            <div class="KhuyenMai__tag--2">
-                                <div class="KhuyenMai__tag--type2">MIỄN PHÍ VẬN CHUYỂN</div>
-                                <div class="KhuyenMai__tag--content">
-                                    <div class="KhuyenMai__tag--doidiem">Dùng ngay
-                                        <i class="glyphicon glyphicon-menu-right"></i>
-                                    </div>
-                                    <div>Voucher khuyến mãi giảm 30%</div>
-                                    <div class="KhuyenMai__tag--diem">
-                                        <div class="KhuyenMai__tag--giam">Giảm 30%</div>
-                                        <div>04 điểm</div>
-                                    </div>
-                                    <div class="KhuyenMai__tag--hsd">Hạn sử dụng: 29/10/2021</div>
-                                    <div class="KhuyenMai__tag--dk"><a href="/html/ChiTietKM"> Điều kiện</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="KhuyenMai__dexuat--3">
-                            <div class="KhuyenMai__tag--2">
-                                <div class="KhuyenMai__tag--type">MIỄN PHÍ VẬN CHUYỂN</div>
-                                <div class="KhuyenMai__tag--content">
-                                    <div class="KhuyenMai__tag--doidiem">Dùng ngay
-                                        <i class="glyphicon glyphicon-menu-right"></i>
-                                    </div>
-                                    <div>Voucher khuyến mãi giảm 30%</div>
-                                    <div class="KhuyenMai__tag--diem">
-                                        <div class="KhuyenMai__tag--giam">Giảm 30%</div>
-                                        <div>04 điểm</div>
-                                    </div>
-                                    <div class="KhuyenMai__tag--hsd">Hạn sử dụng: 29/10/2021</div>
-                                    <div class="KhuyenMai__tag--dk"><a href="/html/ChiTietKM"> Điều kiện</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="KhuyenMai__dexuat--3">
-                            <div class="KhuyenMai__tag--2">
-                                <div class="KhuyenMai__tag--type">MIỄN PHÍ VẬN CHUYỂN</div>
-                                <div class="KhuyenMai__tag--content">
-                                    <div class="KhuyenMai__tag--doidiem">Dùng ngay
-                                        <i class="glyphicon glyphicon-menu-right"></i>
-                                    </div>
-                                    <div>Voucher khuyến mãi giảm 30%</div>
-                                    <div class="KhuyenMai__tag--diem">
-                                        <div class="KhuyenMai__tag--giam">Giảm 30%</div>
-                                        <div>04 điểm</div>
-                                    </div>
-                                    <div class="KhuyenMai__tag--hsd">Hạn sử dụng: 29/10/2021</div>
-                                    <div class="KhuyenMai__tag--dk"><a href="/html/ChiTietKM"> Điều kiện</a></div>
+                                    <div class="KhuyenMai__tag--hsd">Hạn sử dụng: {{v.expiry}}</div>
+                                    <div class="KhuyenMai__tag--dk"><a href="ChiTietKM.html?voucherId={{v.voucherID}}"> Điều kiện</a></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="KhuyenMai__dexuat">
+                <div class="KhuyenMai__dexuat" ng-controller="VoucherController3">
                     <div class="KhuyenMai__dexuat--title">Khuyến mãi khác (<span id="KhuyenMaiDem3"></span>)</div>
                     <div class="KhuyenMai__dexuat--2">
                         <div class="KhuyenMai__dexuat--3">
-                            <div class="KhuyenMai__tag--3">
+                            <div class="KhuyenMai__tag--3" ng-repeat="v in vouchers">
                                 <div class="KhuyenMai__tag--type">MIỄN PHÍ VẬN CHUYỂN</div>
                                 <div class="KhuyenMai__tag--content">
                                     <div class="KhuyenMai__tag--doidiem" id="KhuyenMaiDoiDien">Đổi điểm
                                         <i class="glyphicon glyphicon-menu-right"></i>
                                     </div>
-                                    <div>Voucher khuyến mãi giảm 30%</div>
+                                    <div>Voucher khuyến mãi giảm {{v.voucherPrice}}%</div>
                                     <div class="KhuyenMai__tag--diem">
-                                        <div class="KhuyenMai__tag--giam">Giảm 30%</div>
-                                        <div>04 điểm</div>
+                                        <div class="KhuyenMai__tag--giam">Giảm {{v.voucherPrice}}%</div>
+                                        <div>0{{v.voucherPoint}} điểm</div>
                                     </div>
-                                    <div class="KhuyenMai__tag--hsd">Hạn sử dụng: 29/10/2021</div>
-                                    <div class="KhuyenMai__tag--dk"><a href="/html/ChiTietKM"> Điều kiện</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="KhuyenMai__dexuat--3">
-                            <div class="KhuyenMai__tag--3">
-                                <div class="KhuyenMai__tag--type2">MIỄN PHÍ VẬN CHUYỂN</div>
-                                <div class="KhuyenMai__tag--content">
-                                    <div class="KhuyenMai__tag--doidiem" id="KhuyenMaiDoiDien">Đổi điểm
-                                        <i class="glyphicon glyphicon-menu-right"></i>
-                                    </div>
-                                    <div>Voucher khuyến mãi giảm 30%</div>
-                                    <div class="KhuyenMai__tag--diem">
-                                        <div class="KhuyenMai__tag--giam">Giảm 30%</div>
-                                        <div>04 điểm</div>
-                                    </div>
-                                    <div class="KhuyenMai__tag--hsd">Hạn sử dụng: 29/10/2021</div>
-                                    <div class="KhuyenMai__tag--dk"><a href="/html/ChiTietKM"> Điều kiện</a></div>
+                                    <div class="KhuyenMai__tag--hsd">Hạn sử dụng: {{v.expiry}}</div>
+                                    <div class="KhuyenMai__tag--dk"><a href="ChiTietKM.html?voucherId={{v.voucherID}}"> Điều kiện</a></div>
                                 </div>
                             </div>
                         </div>
@@ -277,45 +235,6 @@
             <p> <img src="/images/footer-ytb.png" alt=""> Tách Studio Official</p>
         </div>
     </div>
-    <script>
-        function openNav() {
-            document.getElementById("myHeader2").style.width = "250px";
-        }
-        function closeNav() {
-            document.getElementById("myHeader2").style.width = "0";
-        }
-        var dropdown = document.getElementsByClassName("VerHeader__btn");
-        var i;
-        for (i = 0; i < dropdown.length; i++) {
-            dropdown[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var dropdownContent = this.nextElementSibling;
-                if (dropdownContent.style.display === "block") {
-                    dropdownContent.style.display = "none";
-                } else {
-                    dropdownContent.style.display = "block";
-                }
-            });
-        }
-        var KhuyenMaiDemTag1 = document.getElementsByClassName("KhuyenMai__tag--1");
-        var KhuyenMaiDemTag2 = document.getElementsByClassName("KhuyenMai__tag--2");
-        var KhuyenMaiDemTag3 = document.getElementsByClassName("KhuyenMai__tag--3");
-        var KhuyenMaiDem1 = document.getElementById("KhuyenMaiDem1");
-        var KhuyenMaiDem2 = document.getElementById("KhuyenMaiDem2");
-        var KhuyenMaiDem3 = document.getElementById("KhuyenMaiDem3");
-        var KhuyenMaiDoiDiem = document.getElementById("KhuyenMaiDoiDiem");
-        window.onload = function () {
-            KhuyenMaiDem1.innerHTML = KhuyenMaiDemTag1.length;
-            KhuyenMaiDem2.innerHTML = KhuyenMaiDemTag2.length;
-            KhuyenMaiDem3.innerHTML = KhuyenMaiDemTag3.length;
-        }
-        KhuyenMaiDoiDiem.addEventListener("click", () => {
-            location.href = "/html/popupdoidiem.html";
-        });
-        function KhuyenMaiTinhTong() {
-            var dungNgay = document.getElementById("")
-        }
-    </script>
 </body>
 
 </html>
