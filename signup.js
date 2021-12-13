@@ -40,7 +40,7 @@ function validateForm(event) {
     if (firstpwd != secondpwd) {
         inputSecondPwd.focus;
         alert("sai rồi");
-      } else{ isDonePhone = true;}
+      } else{ isDonePass = true;}
     event.preventDefault();
     if(isDonePhone == true && isDonePass == true){
         isDone = true;
