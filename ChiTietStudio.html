@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi Tiết Studio</title>
+    <link rel="stylesheet" href="./CSS/Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <!-- <script src="./CSS/javascript.js" defer></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script>
+      var urlparams = new URLSearchParams(location.search);
+      var id = urlparams.get("productId");
+      let app = angular.module("angularApp", []);
+      app.controller("DetailController", ($scope, $http) => {
+        $http({
+          method: "GET",
+          url: "./DATA/productstudio.json",
+        }).then(
+          function success(response) {
+            $scope.selectedProduct = response.data.find(function (value) {
+              return value.productID == id;
+            });
+          },
+          function error(response) {
+            $scope.error = response.statusText;
+          }
+        );
+      });
+      app.controller("ProductController", ($scope, $http) => {
+        $http({
+          method: "GET",
+          url: "./DATA/productstudio.json",
+        }).then(
+          function success(response) {
+            $scope.products = response.data;
+          },
+          function error(response) {
+            $scope.error = response.statusText;
+          }
+        );
+      });
+    </script>
+  </head>
+  <body ng-app="angularApp">
+    <!-- header -->
+    <div id="myHeader2" class="VerHeader__container">
+      <a
+        href="javascript:void(0)"
+        class="VerHeader__closebtn"
+        onclick="closeNav()"
+        >×</a
+      >
+      <div class="VerHeader__search">
+        <span class="glyphicon glyphicon-search Header__icon--2"></span>
+        <input
+          class="Header__search"
+          type="text"
+          placeholder="Nhập từ tìm kiếm"
+        />
+      </div>
+      <a href="" class="Header__title"
+        ><i class="glyphicon glyphicon-home"></i
+      ></a>
+      <button class="VerHeader__btn">Cho Thuê</button>
+      <div class="VerHeader__dropdown--container">
+        <a href="">Máy ảnh</a>
+        <a href="">Studio</a>
+        <a href="">Trang phục</a>
+      </div>
+      <a href="">Album</a>
+      <a href="">Blog</a>
+    </div>
+    <div class="HorHeader__container" id="myHeader">
+      <a
+        href="javascript:void(0);"
+        class="HorHeader__button"
+        onclick="openNav()"
+        ><i class="glyphicon glyphicon-menu-hamburger"></i
+      ></a>
+      <a href="" class="HorHeader__tach">Tách studio</a>
+      <a href="" class="Header__title"
+        ><i class="glyphicon glyphicon-home"></i
+      ></a>
+      <div class="Header__title HorHeader__dropdown">
+        <button class="HorHeader__dropdown--button">Cho Thuê</button>
+        <div class="HorHeader__dropdown--content">
+          <a href=""> Máy ảnh</a>
+          <a href=""> Studio</a>
+          <a href=""> Trang phục</a>
+        </div>
+      </div>
+      <a href="" class="Header__title">Album</a>
+      <a href="" class="Header__title">Blog</a>
+      <div class="HorHeader__icon">
+        <span class="glyphicon glyphicon-search Header__icon--2"></span>
+        <input
+          class="Header__search"
+          type="text"
+          placeholder="Nhập từ tìm kiếm"
+        />
+      </div>
+      <a href="" class="HorHeader__login">Đăng nhập</a>
+    </div>
+
+    <!-- Mainpage -->
+    <div ng-controller="DetailController">
+      <div class="ChiTiet__product">
+        <div class="ChiTiet__product--col1">
+          <div class="ChiTiet__product--col1left">
+            <div>
+              <img
+                class="ChiTiet--image"
+                alt="Hình ảnh"
+                src="{{selectedProduct.imgProduct2}}"
+              />
+            </div>
+            <div>
+              <img
+                class="ChiTiet--image"
+                alt="Hình ảnh"
+                src="{{selectedProduct.imgProduct2}}"
+              />
+            </div>
+            <div>
+              <img
+                class="ChiTiet--image"
+                alt="Hình ảnh"
+                src="{{selectedProduct.imgProduct2}}"
+              />
+            </div>
+          </div>
+          <div class="ChiTiet__product--col1right">
+            <img src="{{selectedProduct.imgProduct1}}" alt="Hình ảnh" />
+          </div>
+        </div>
+        <div class="ChiTiet__product--col2">
+          <div class="ChiTiet__product--title">
+            {{selectedProduct.productName}}
+          </div>
+          <div class="ChiTiet__product--price">
+            Giá thuê:
+            <span class="ChiTiet--pricecolor"
+              >{{selectedProduct.unitPrice}}</span
+            >
+          </div>
+          <div class="ChiTiet__product--number">
+            Số lượng:
+            <button class="ChiTiet--button" onclick="truSanpham()">-</button>
+            <input
+              class="ChiTiet__product--input"
+              type="text"
+              value="1"
+              style="width: 30px"
+              readonly
+            />
+            <button onclick="congSanpham()">+</button>
+          </div>
+          <div class="ChiTiet__product--button">
+            <a href="DatThueStudio.html?productId={{selectedProduct.productID}}"
+              ><input type="button" value="Đặt thuê" id="btnDatThue"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="ChiTiet__infor--tittle">Thông tin chi tiết</div>
+      <div class="ChiTiet__infor">
+        <div class="ChiTiet__infor--col1">
+          <div class="ChiTiet__infor--dientich">
+            <p>Nguồn gốc: {{selectedProduct.productTechnical.origin}}</p>
+          </div>
+          <div class="ChiTiet__infor--sodo">
+            <p>Thương hiệu: {{selectedProduct.productTechnical.brand}}</p>
+          </div>
+        </div>
+        <div class="ChiTiet__infor--col2">
+          <div class="ChiTiet__infor--col2tittle">Mô tả dịch vụ</div>
+          <div class="ChiTiet__infor--col2text">
+            <p>{{selectedProduct.productDecription.productDescription1}}</p>
+            <p>{{selectedProduct.productDecription.productDescription2}}</p>
+            <p>{{selectedProduct.productDecription.productDescription3}}</p>
+            <p>{{selectedProduct.productDecription.productDescription4}}</p>
+            <p>{{selectedProduct.productDecription.productDescription5}}</p>
+            <p>{{selectedProduct.productDecription.productDescription6}}</p>
+            <p>{{selectedProduct.productDecription.productDescription7}}</p>
+            <p>{{selectedProduct.productDecription.productDescription8}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="ChiTiet__sameproduct--heading">Sản phẩm tương tự</div>
+      <div ng-controller="ProductController">
+        <div class="ChiTiet__sameproduct">
+          <div class="ChiTiet__sameproduct--item" ng-repeat="p in products">
+            <div class="ChiTiet__sameproduct--image">
+              <img src="{{p.imgProduct2}}" alt="Hình ảnh" />
+            </div>
+            <div class="ChiTiet__sameproduct--tittle">{{p.productName}}</div>
+            <div class="ChiTiet__sameproduct--price">
+              Giá thuê: {{p.unitPrice}}
+            </div>
+            <div class="ChiTiet__sameproduct--button">
+              <a href="ChiTietStudio.html?productId={{p.productID}}">
+                <input type="button" value="Đặt thuê"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="Page__footer--container Footer__text">
+      <div class="Footer--left">
+        <p class="Footer__heading">TÁCH STUDIO</p>
+        <p>
+          UEL, Tp Thủ Đức, Tp Hồ Chí Minh <br />
+          Call us: 0123456789 <br />
+          tachstudio@gmail.com
+        </p>
+        <p>Copyright @2021 Tách Creative Studio</p>
+      </div>
+
+      <div class="Footer--right">
+        <p class="Footer__heading">LIÊN HỆ VỚI CHÚNG TÔI</p>
+        <p><img src="/images/footer-fb.png" alt="" /> Tách studio</p>
+        <p><img src="/images/footer-ins.png" alt="" /> tach.studio</p>
+        <p><img src="/images/footer-ytb.png" alt="" /> Tách Studio Official</p>
+      </div>
+    </div>
+  </body>
+</html>
