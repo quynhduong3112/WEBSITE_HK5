@@ -2,7 +2,10 @@ var taiKhoan = document.getElementById("taiKhoan"),
   khuyenMai = document.getElementById("khuyenMai"),
   dangXuat = document.getElementById("dangXuat"),
   thongBao = document.getElementById("thongBao"),
-  datThue = document.getElementById("datThue");
+  datThue = document.getElementById("datThue"),
+  thoiHan = document.getElementById("thoiHan"),
+  dateRent = document.getElementById("date"),
+  timeRent = document.getElementById("time");
 
 taiKhoan.addEventListener("click", function () {
   window.open("./TrangCaNhan.html");
@@ -32,24 +35,9 @@ var personalFullName = document.getElementById("fullName"),
   checkBoxConfirm = document.getElementById("checkBoxConfirm");
 
 window.addEventListener("load", function () {
-  fetch("./DATA/users.json")
-    .then(function (response) {
-      if (!response.ok) {
-        throw new Error("HTTP error, status: " + response.status);
-      }
-      return response.json();
-    })
-    .then(function (users) {
-      for (let u of users) {
-        personalFullName.value = u.fullName;
-        personalNumberPhone.value = u.phone;
-        personalEmail.value = u.email;
-        personalIdentifyNumber.value = u.identifyNumber;
-      }
-    })
-    .catch(function (error) {
-      alert("Error: " + error.message);
-    });
+  personalFullName.value = JSON.parse(localStorage.getItem("fullname"));
+  personalNumberPhone.value = JSON.parse(localStorage.getItem("phone"));
+  personalEmail.value = JSON.parse(localStorage.getItem("email"));
 });
 
 checkBoxConfirm.addEventListener("click", function () {
@@ -59,9 +47,145 @@ checkBoxConfirm.addEventListener("click", function () {
   secondEmail.value = personalEmail.value;
 });
 
+btnRenting.addEventListener("click", function () {
+  if (!isValid(secondFullName.value)) {
+    alert("sai");
+  } else {
+    alert("đúng");
+    window.localStorage.setItem(
+      "identify",
+      JSON.stringify(personalIdentifyNumber.value)
+    );
+    window.localStorage.setItem(
+      "fullname2",
+      JSON.stringify(secondFullName.value)
+    );
+    window.localStorage.setItem(
+      "phone2",
+      JSON.stringify(secondNumberPhone.value)
+    );
+    window.localStorage.setItem(
+      "identify2",
+      JSON.stringify(secondIdentifyNumber.value)
+    );
+    window.localStorage.setItem("email2", JSON.stringify(secondEmail.value));
+    window.localStorage.setItem("thoiHan", JSON.stringify(thoiHan.value));
+    window.localStorage.setItem("dateRent", JSON.stringify(dateRent.value));
+    window.localStorage.setItem("timeRent", JSON.stringify(timeRent.value));
+
+    const tomorrow = new Date();
+    tomorrow.setDate(new Date().getDate() + 1);
+    var ngayMoi = tomorrow.getDate(),
+      thangMoi = tomorrow.getMonth() + 1,
+      namMoi = tomorrow.getFullYear(),
+      gioMoi = tomorrow.getHours(),
+      giayMoi = tomorrow.getSeconds(),
+      phutMoi = tomorrow.getMinutes();
+
+    window.localStorage.setItem("ngayMai", JSON.stringify(ngayMoi));
+    window.localStorage.setItem("thangMai", JSON.stringify(thangMoi));
+    window.localStorage.setItem("namMai", JSON.stringify(namMoi));
+    window.localStorage.setItem("gioMai", JSON.stringify(gioMoi));
+    window.localStorage.setItem("phutMai", JSON.stringify(phutMoi));
+    window.localStorage.setItem("giayMai", JSON.stringify(giayMoi));
+  }
+});
+
+// btnRenting.addEventListener("click", function () {
+//   if (!validateIdentifyNumber(personnalIdentifyNumber)) {
+//     alert("sai");
+//   } else {
+//     alert("đúng");
+//   }
+//   if (!validateIdentifyNumber(secondIdentifyNumber)) {
+//     alert("sai");
+//   } else {
+//     alert("đúng");
+//   }
+// if (!validatePhoneNumber(secondNumberPhone.value)) {
+//   alert("sai");
+// } else {
+//   alert("đúng");
+// }
+// if (!checkEmail(secondEmail.value)) {
+//   alert("sai");
+// } else {
+//   alert("đúng");
+// }
+// if (secondFullName.value == null || secondFullName.value == "") {
+//   alert("Bạn cần nhập Họ tên người nhận");
+//   if (secondNumberPhone.value == null || secondNumberPhone.value == "") {
+//     alert("Bạn cần nhập Số điện thoại");
+//     if (
+//       secondIdentifyNumber.value == null ||
+//       secondIdentifyNumber.value == ""
+//     ) {
+//       alert("Bạn cần nhập CMND/CCCD");
+//     }
+//     if (secondEmail.value == null || secondEmail.value == "") {
+//       alert("Bạn cần nhập Email");
+//     }
+//   }
+// }
+// if (secondNumberPhone.value == null || secondNumberPhone.value == "") {
+//   alert("Bạn cần nhập Số điện thoại");
+//   if (secondFullName.value == null || secondFullName.value == "") {
+//     alert("Bạn cần nhập Họ tên");
+//     if (
+//       secondIdentifyNumber.value == null ||
+//       secondIdentifyNumber.value == ""
+//     ) {
+//       alert("Bạn cần nhập CMND/CCCD");
+//     }
+//     if (secondEmail.value == null || secondEmail.value == "") {
+//       alert("Bạn cần nhập Email");
+//     }
+//   }
+// }
+// if (secondIdentifyNumber.value == null || secondIdentifyNumber.value == "") {
+//   alert("Bạn cần nhập CMND/CCCD");
+//   if (secondNumberPhone.value == null || secondNumberPhone.value == "") {
+//     alert("Bạn cần nhập Số điện thoại");
+//     if (secondFullName.value == null || secondFullName.value == "") {
+//       alert("Bạn cần nhập Họ tên");
+//     }
+//     if (secondEmail.value == null || secondEmail.value == "") {
+//       alert("Bạn cần nhập Email");
+//     }
+//   }
+// }
+// if (secondEmail.value == null || secondEmail.value == "") {
+//   alert("Bạn cần nhập Email");
+//   if (secondNumberPhone.value == null || secondNumberPhone.value == "") {
+//     alert("Bạn cần nhập Số điện thoại");
+//     if (
+//       secondIdentifyNumber.value == null ||
+//       secondIdentifyNumber.value == ""
+//     ) {
+//       alert("Bạn cần nhập CMND/CCCD");
+//     }
+//     if (senconFullName.value == null || senconFullName.value == "") {
+//       alert("Bạn cần nhập Họ tên");
+//     }
+//   }
+// }
+// else {
+//   window.open("./DonHangChoThanhToan.html");
+// }
+
 function validatePhoneNumber(input_str) {
   var re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
   return re.test(input_str);
+}
+
+function validatePhoneNumber(personalNumberPhone) {
+  var re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+  return re.test(personalNumberPhone);
+}
+
+function validatePhoneNumber(secondNumberPhone) {
+  var re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+  return re.test(secondNumberPhone);
 }
 
 function checkEmail(input_str) {
@@ -81,6 +205,7 @@ function removeAscent(str) {
   str = str.replace(/đ/g, "d");
   return str;
 }
+
 function isValid(string) {
   var re = /(.[^\d\!\@\#\$\%\^\&\*\(\)\-\=\+\_\;\:\'\"\,\<\.\>\/\?])+/g;
   return re.test(removeAscent(string));
@@ -88,84 +213,13 @@ function isValid(string) {
   // var re = /^[a-zA-Z]{2,}$/g;
   // return re.test(removeAscent(string));
 }
+
+function validateIdentifyNumber(personnalIdentifyNumber) {
+  const regex = /^\d{9}$/g;
+  return regex.test(personnalIdentifyNumber);
+}
+
 function validateIdentifyNumber(secondIdentifyNumber) {
   const regex = /^\d{9}$/g;
   return regex.test(secondIdentifyNumber);
 }
-btnRenting.addEventListener("click", function () {
-  if (!isValid(secondFullName.value)) {
-    alert("sai");
-  } else {
-    alert("đúng");
-  }
-  // if (!validatePhoneNumber(secondNumberPhone.value)) {
-  //   alert("sai");
-  // } else {
-  //   alert("đúng");
-  // }
-  // if (!checkEmail(secondEmail.value)) {
-  //   alert("sai");
-  // } else {
-  //   alert("đúng");
-  // }
-  // if (secondFullName.value == null || secondFullName.value == "") {
-  //   alert("Bạn cần nhập Họ tên người nhận");
-  //   if (secondNumberPhone.value == null || secondNumberPhone.value == "") {
-  //     alert("Bạn cần nhập Số điện thoại");
-  //     if (
-  //       secondIdentifyNumber.value == null ||
-  //       secondIdentifyNumber.value == ""
-  //     ) {
-  //       alert("Bạn cần nhập CMND/CCCD");
-  //     }
-  //     if (secondEmail.value == null || secondEmail.value == "") {
-  //       alert("Bạn cần nhập Email");
-  //     }
-  //   }
-  // }
-  // if (secondNumberPhone.value == null || secondNumberPhone.value == "") {
-  //   alert("Bạn cần nhập Số điện thoại");
-  //   if (secondFullName.value == null || secondFullName.value == "") {
-  //     alert("Bạn cần nhập Họ tên");
-  //     if (
-  //       secondIdentifyNumber.value == null ||
-  //       secondIdentifyNumber.value == ""
-  //     ) {
-  //       alert("Bạn cần nhập CMND/CCCD");
-  //     }
-  //     if (secondEmail.value == null || secondEmail.value == "") {
-  //       alert("Bạn cần nhập Email");
-  //     }
-  //   }
-  // }
-  // if (secondIdentifyNumber.value == null || secondIdentifyNumber.value == "") {
-  //   alert("Bạn cần nhập CMND/CCCD");
-  //   if (secondNumberPhone.value == null || secondNumberPhone.value == "") {
-  //     alert("Bạn cần nhập Số điện thoại");
-  //     if (secondFullName.value == null || secondFullName.value == "") {
-  //       alert("Bạn cần nhập Họ tên");
-  //     }
-  //     if (secondEmail.value == null || secondEmail.value == "") {
-  //       alert("Bạn cần nhập Email");
-  //     }
-  //   }
-  // }
-  // if (secondEmail.value == null || secondEmail.value == "") {
-  //   alert("Bạn cần nhập Email");
-  //   if (secondNumberPhone.value == null || secondNumberPhone.value == "") {
-  //     alert("Bạn cần nhập Số điện thoại");
-  //     if (
-  //       secondIdentifyNumber.value == null ||
-  //       secondIdentifyNumber.value == ""
-  //     ) {
-  //       alert("Bạn cần nhập CMND/CCCD");
-  //     }
-  //     if (senconFullName.value == null || senconFullName.value == "") {
-  //       alert("Bạn cần nhập Họ tên");
-  //     }
-  //   }
-  // }
-  // else {
-  //   window.open("./DonHangChoThanhToan.html");
-  // }
-});

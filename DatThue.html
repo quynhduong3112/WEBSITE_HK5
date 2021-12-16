@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đặt Thuê</title>
+  <link rel="stylesheet" href="/Images/ICONS/css/all.min.css" />
+  <link rel="stylesheet" href="/HTML/CSS/Style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <script src="./JS/DatThue.js" defer></script>
+  <script src="./JS/angular.js"></script>
+  <script>
+    function getUrlParams() {
+      const Params = new URLSearchParams(location.search);
+      return Params;
+    }
+    var id2 = getUrlParams().get("voucherId"),
+      id = getUrlParams().get("productId");
+    let app = angular.module("angularApp", []);
+    app.controller("DetailController", ($scope, $http) => {
+      $http({
+        method: "GET",
+        url: "./DATA/products2.json",
+      }).then(
+        function success(response) {
+          $scope.selectedProduct = response.data.find(function (value) {
+            return value.productID == id;
+          });
+        },
+        function error(response) {
+          $scope.error = response.statusText;
+        }
+      );
+    });
+    app.controller("DetailController2", ($scope, $http) => {
+      $http({
+        method: "GET",
+        url: "./DATA/vouchers2.json",
+      }).then(
+        function success(response) {
+          $scope.selectedVoucher = response.data.find(function (value) {
+            return value.voucherID == id2;
+          });
+        },
+        function error(response) {
+          $scope.error = response.statusText;
+        }
+      );
+    });
+  </script>
+</head>
+
+<body class="DatThue__background" ng-app="angularApp" ng-controller="DetailController2">
+  <div id="myHeader2" class="VerHeader__container">
+    <a href="javascript:void(0)" class="VerHeader__closebtn" onclick="closeNav()">×</a>
+    <div class="VerHeader__search">
+      <span class="glyphicon glyphicon-search Header__icon--2">
+
+      </span>
+      <input class="Header__search" type="text" placeholder="Nhập từ tìm kiếm" />
+    </div>
+    <a href="" class="Header__title"><i class="glyphicon glyphicon-home"></i></a>
+    <button class="VerHeader__btn">Cho Thuê</button>
+    <div class="VerHeader__dropdown--container">
+      <a href=""> Máy ảnh</a>
+      <a href=""> Studio</a>
+      <a href=""> Trang phục</a>
+    </div>
+    <a href="">Album</a>
+    <a href="">Blog</a>
+  </div>
+  <div class="HorHeader__container" id="myHeader">
+    <a href="javascript:void(0);" class="HorHeader__button" onclick="openNav()"><i
+        class="glyphicon glyphicon-menu-hamburger"></i></a>
+    <a href="" class="HorHeader__tach">Tách studio</a>
+    <a href="" class="Header__title"><i class="glyphicon glyphicon-home"></i></a>
+    <div class="Header__title HorHeader__dropdown">
+      <button class="HorHeader__dropdown--button">Cho Thuê</button>
+      <div class="HorHeader__dropdown--content">
+        <a href="">Máy ảnh</a>
+        <a href="">Studio</a>
+        <a href="">Trang phục</a>
+      </div>
+    </div>
+    <a href="" class="Header__title">Album</a>
+    <a href="" class="Header__title">Blog</a>
+    <div class="HorHeader__icon">
+      <span class="glyphicon glyphicon-search Header__icon--2"></span>
+      <input class="Header__search" type="text" placeholder="Nhập từ tìm kiếm" />
+    </div>
+    <a href="" class="HorHeader__login2"><img src="../Images/Avatar.png" alt="" /></a>
+  </div>
+  <div class="container">
+    <div class="DatThue--top">
+      <p class="DatThue__top DatThue__top--item1">ĐẶT THUÊ</p>
+      <div class="DatThue__top--flex">
+        <div class="DatThue__icons">
+          <div class="DatThue__top--circle">
+            <i class="DatThue__icon fas fa-edit"></i>
+          </div>
+          <svg width="350" height="6" viewBox="0 0 350 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="6" fill="#C4C4C4" />
+          </svg>
+          <div class="DatThue__top--circle DatThue__top--circle2">
+            <i class="DatThue__icon far fa-credit-card"></i>
+          </div>
+          <svg width="350" height="6" viewBox="0 0 350 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="350" height="6" fill="#C4C4C4" />
+          </svg>
+          <div class="DatThue__top--circle2">
+            <i class="DatThue__icon fas fa-check"></i>
+          </div>
+        </div>
+        <div class="DatThue__top--item">
+          <div class="DatThue__item--1">
+            <p>Điền thông tin</p>
+          </div>
+          <div class="DatThue__item--2">
+            <p>Thanh toán</p>
+          </div>
+          <div class="DatThue__item--3">
+            <p>Hoàn tất đặt thuê</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="KhuyenMai__container">
+    <div class="KhuyenMai__container--1">
+      <div class="KhuyenMai__avatar">
+        <div>
+          <img src="/IMAGES/avatar3.png" alt="Lỗi hiển thị hình ảnh" />
+        </div>
+        <div>
+          <div><b>Ngocs</b></div>
+          <div class="KhuyenMai__user--icon">
+            <div><i class="glyphicon glyphicon-edit"></i></div>
+            <div>&nbsp; Chỉnh sửa hồ sơ</div>
+          </div>
+        </div>
+      </div>
+      <hr style="color: black; height: 1px; width: 95%" />
+      <div>
+        <div class="KhuyenMai__user--icon" id="taiKhoan">
+          <div><i class="glyphicon glyphicon-user"></i></div>
+          <div>&nbsp; Tài khoản của tôi</div>
+        </div>
+      </div>
+      <div>
+        <div class="KhuyenMai__user--icon" id="datThue">
+          <div><i class="glyphicon glyphicon-shopping-cart"></i></div>
+          <div>&nbsp; Đơn đặt thuê</div>
+        </div>
+      </div>
+      <div>
+        <div class="KhuyenMai__user--icon" id="thongBao">
+          <div><i class="glyphicon glyphicon-bell"></i></div>
+          <div>&nbsp; Thông báo</div>
+        </div>
+      </div>
+      <div>
+        <div class="KhuyenMai__user--icon" id="khuyenMai">
+          <div><i class="glyphicon glyphicon-tag"></i></div>
+          <div>&nbsp; Khuyến mãi</div>
+        </div>
+      </div>
+      <div>
+        <div class="KhuyenMai__user--icon" id="dangXuat">
+          <div><i class="glyphicon glyphicon-log-out"></i></div>
+          <div>&nbsp; Đăng xuất</div>
+        </div>
+      </div>
+    </div>
+    <div class="DatThue--right" ng-controller="DetailController">
+      <div class="DatThue__align">
+        <div class="DatThue__right DatThue__right--item1">
+          <label for="" class="DatThue__label--1">Dịch vụ/Sản phẩm:</label>
+          <label for="" class="DatThue__label--2" id="tenSanPham">{{selectedProduct.productName}}</label>
+        </div>
+        <div class="DatThue__right DatThue__right--item2">
+          <label for="" class="DatThue__label--3">Thời gian đến nhận/đặt DV:</label>
+          <input type="date" name="" id="date" checked class="DatThue__select DatThue__select--1" />
+          <input type="time" name="" id="time" class="DatThue__select DatThue__select--2" />
+        </div>
+        <div class="DatThue__right DatThue__right--item3">
+          <label for="" class="DatThue__label--4">Thời hạn đặt thuê:</label>
+          <select name="thoiHan" id="thoiHan" class="DatThue__select DatThue__select--4">
+            <option value="1 ngày">1 Ngày</option>
+            <option value="2 ngày">2 Ngày</option>
+            <option value="3 ngày">3 Ngày</option>
+            <option value="4 ngày">4 Ngày</option>
+            <option value="5 ngày">5 Ngày</option>
+          </select>
+        </div>
+        <p class="DatThue--title">NHẬP THÔNG TIN CÁ NHÂN</p>
+        <div class="DatThue__input--info DatThue__right--item4">
+          <label for="" class="DatThue__label DatThue__label--5">Họ và tên:<span class="DatThue--color">*</span></label>
+          <input id="fullName" type="text" class="DatThue__input" required />
+        </div>
+        <div class="DatThue__input--info DatThue__right--item5">
+          <label for="" class="DatThue__label DatThue__label--6">Số điện thoại:<span
+              class="DatThue--color">*</span></label>
+          <input id="phone" type="text" class="DatThue__input" required />
+        </div>
+        <div class="DatThue__input--info DatThue__right--item6">
+          <label for="" class="DatThue__label DatThue__label--7">CMND/CCCD:<span class="DatThue--color">*</span></label>
+          <input id="identifyNumber" type="text" class="DatThue__input" required />
+        </div>
+        <div class="DatThue__input--info DatThue__right--item7">
+          <label for="" class="DatThue__label DatThue__label--8">Địa chỉ email:<span
+              class="DatThue--color">*</span></label>
+          <input id="email" type="email" class="DatThue__input" required />
+        </div>
+        <div class="DatThue__input--info DatThue__right--item8">
+          <label for="" class="DatThue__label DatThue__label--9">Nhập mã giảm giá:</label>
+          <input type="text" class="DatThue__input DatThue__input--discount" placeholder="Mã giảm giá" disabled
+            id="maGiam" value="{{selectedVoucher.voucherID}}" />
+          <a href="KhuyenMai.html?productId={{selectedProduct.productID}}">
+            <input type="button" value="Dùng ngay" class="DatThue__input DatThue__input--discount1"
+              id="btnDungNgay" /></a>
+        </div>
+        <hr class="DatThue--line" />
+        <p class="DatThue--title">NHẬP THÔNG TIN NGƯỜI NHẬN</p>
+        <div class="DatThue__input--checkbox">
+          <input type="checkbox" name="" id="checkBoxConfirm" />
+          Người nhận là bạn
+        </div>
+        <div class="DatThue__input--info DatThue__right--item9">
+          <label for="" class="DatThue__label DatThue__label--10">Họ và tên:<span
+              class="DatThue--color">*</span></label>
+          <input type="text" name="" id="secondName" class="DatThue__input" />
+        </div>
+        <div class="DatThue__input--info DatThue__right--item10">
+          <label for="" class="DatThue__label DatThue__label--11">Số điện thoại:<span
+              class="DatThue--color">*</span></label>
+          <input name="" id="secondPhone" type="text" checkmobile class="DatThue__input" />
+        </div>
+        <div class="DatThue__input--info DatThue__right--item11">
+          <label for="" class="DatThue__label DatThue__label--12">CMND/CCCD:<span
+              class="DatThue--color">*</span></label>
+          <input name="" id="secondIdentifyNumber" class="DatThue__input" />
+        </div>
+        <div class="DatThue__input--info DatThue__right--item12">
+          <label for="" class="DatThue__label DatThue__label--13">Địa chỉ email:<span
+              class="DatThue--color">*</span></label>
+          <input name="" id="secondEmail" type="email" class="DatThue__input" />
+        </div>
+        <div>
+          <a
+            href="DonHangChoThanhToan.html?voucherId={{selectedVoucher.voucherID}}&productId={{selectedProduct.productID}}"><input
+              type="button" value="Đặt thuê" src="" id="btnRenting"
+              class="DatThue__input DatThue__input--button2" /></a>
+        </div>
+        <div class="DatThue--note">
+          <p class="DatThue--bottom">
+            (Bạn phải trả tiền đặt cọc = 50% tổng số tiền thuê)
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Page__footer--container Footer__text">
+    <div class="Footer--left">
+      <p class="Footer__heading">TÁCH STUDIO</p>
+      <p>
+        UEL, Tp Thủ Đức, Tp Hồ Chí Minh <br />
+        Call us: 0123456789 <br />
+        tachstudio@gmail.com
+      </p>
+      <p>Copyright @2021 Tách Creative Studio</p>
+    </div>
+    <div class="Footer--right">
+      <p class="Footer__heading">LIÊN HỆ VỚI CHÚNG TÔI</p>
+      <p><img src="/images/footer-fb.png" alt="" /> Tách studio</p>
+      <p><img src="/images/footer-ins.png" alt="" /> tach.studio</p>
+      <p><img src="/images/footer-ytb.png" alt="" /> Tách Studio Official</p>
+    </div>
+  </div>
+</body>
+
+</html>
