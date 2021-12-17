@@ -2,239 +2,328 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khuyến mãi</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./CSS/Style.css">
-    <script src="./JS/angular.js"></script>
-    <script>
-        let app=angular.module("KhuyenMai", []);
-        app.controller("VoucherController1",($scope,$http)=>{
-            $http({
-                method:"GET",
-                url:"./DATA/vouchergoiy.json",
-            }).then(
-                function success(response){
-                    $scope.vouchers=response.data;
-                },
-                function error(response){
-                    $scope.error=response.statusText;
-                }
-            );
-        });
-        app.controller("VoucherController2",($scope,$http)=>{
-            $http({
-                method:"GET",
-                url:"./DATA/vouchercuatoi.json",
-            }).then(
-                function success(response){
-                    $scope.vouchers=response.data;
-                },
-                function error(response){
-                    $scope.error=response.statusText;
-                }
-            );
-        });
-        app.controller("VoucherController3",($scope,$http)=>{
-            $http({
-                method:"GET",
-                url:"./DATA/voucherkhac.json",
-            }).then(
-                function success(response){
-                    $scope.vouchers=response.data;
-                },
-                function error(response){
-                    $scope.error=response.statusText;
-                }
-            );
-        });
-    </script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khuyến mãi</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./CSS/Style.css" />
+  <script src="./JS/KhuyenMai.js" defer></script>
+  <script src="./JS/Popup.js" defer></script>
+  <script src="./JS/angular.js"></script>
+  <script>
+    var urlparams = new URLSearchParams(location.search);
+    var id = urlparams.get("productId");
+    let app = angular.module("KhuyenMai", []);
+    app.controller("VoucherController1", ($scope, $http) => {
+      $http({
+        method: "GET",
+        url: "./DATA/vouchers.json",
+      }).then(
+        function success(response) {
+          $scope.vouchers = response.data[0].vouchergoiy;
+        },
+        function error(response) {
+          $scope.error = response.statusText;
+        }
+      );
+    });
+    app.controller("VoucherController2", ($scope, $http) => {
+      $http({
+        method: "GET",
+        url: "./DATA/vouchers.json",
+      }).then(
+        function success(response) {
+          $scope.vouchers = response.data[1].vouchercuatoi;
+        },
+        function error(response) {
+          $scope.error = response.statusText;
+        }
+      );
+    });
+    app.controller("VoucherController3", ($scope, $http) => {
+      $http({
+        method: "GET",
+        url: "./DATA/vouchers.json",
+      }).then(
+        function success(response) {
+          $scope.vouchers = response.data[2].voucherkhac;
+        },
+        function error(response) {
+          $scope.error = response.statusText;
+        }
+      );
+    });
+    app.controller("DetailController", ($scope, $http) => {
+      $http({
+        method: "GET",
+        url: "./DATA/products2.json",
+      }).then(
+        function success(response) {
+          $scope.selectedProduct = response.data.find(function (value) {
+            return value.productID == id;
+          });
+        },
+        function error(response) {
+          $scope.error = response.statusText;
+        }
+      );
+    });
+  </script>
 </head>
 
-<body ng-app="KhuyenMai">
-    <div id="myHeader2" class="VerHeader__container">
-        <a href="javascript:void(0)" class="VerHeader__closebtn" onclick="closeNav()">×</a>
-        <div class="VerHeader__search">
-            <span class="glyphicon glyphicon-search Header__icon--2"></span>
-            <input class="Header__search" type="text" placeholder="Nhập từ tìm kiếm">
-        </div>
-        <a href="" class="Header__title"><i class="glyphicon glyphicon-home"></i></a>
-        <button class="VerHeader__btn">Cho Thuê</button>
-        <div class="VerHeader__dropdown--container">
-            <a href="">Máy ảnh</a>
-            <a href="">Studio</a>
-            <a href="">Trang phục</a>
-        </div>
-        <a href="">Album</a>
-        <a href="">Blog</a>
+<body ng-app="KhuyenMai" ng-controller="DetailController">
+  <div id="myHeader2" class="VerHeader__container">
+    <a href="javascript:void(0)" class="VerHeader__closebtn" onclick="closeNav()">×</a>
+    <div class="VerHeader__search">
+      <span class="glyphicon glyphicon-search Header__icon--2"></span>
+      <input class="Header__search" type="text" placeholder="Nhập từ tìm kiếm" />
     </div>
-    <div class="HorHeader__container" id="myHeader">
-        <a href="javascript:void(0);" class="HorHeader__button" onclick="openNav()"><i
-                class="glyphicon glyphicon-menu-hamburger"></i></a>
-        <a href="" class="HorHeader__tach">Tách studio</a>
-        <a href="" class="Header__title"><i class="glyphicon glyphicon-home"></i></a>
-        <div class="Header__title HorHeader__dropdown">
-            <button class="HorHeader__dropdown--button">Cho Thuê</button>
-            <div class="HorHeader__dropdown--content">
-                <a href=""> Máy ảnh</a>
-                <a href=""> Studio</a>
-                <a href=""> Trang phục</a>
-            </div>
-        </div>
-        <a href="" class="Header__title">Album</a>
-        <a href="" class="Header__title">Blog</a>
-        <div class="HorHeader__icon">
-            <span class="glyphicon glyphicon-search Header__icon--2"></span>
-            <input class="Header__search" type="text" placeholder="Nhập từ tìm kiếm">
-        </div>
-        <a href="" class="HorHeader__login2"><img src="../Images/Avatar.png" alt=""></a>
+    <a href="" class="Header__title" id="btnHome1"><i class="glyphicon glyphicon-home"></i></a>
+    <button class="VerHeader__btn" id="btnChoThue1">Cho Thuê</button>
+    <div class="VerHeader__dropdown--container">
+      <a href="ChuChoThue.html#mayAnh" target="_blank"> Máy ảnh</a>
+      <a href="ChuChoThue.html#studio" target="_blank"> Studio</a>
+      <a href="ChuChoThue.html#trangPhuc" target="_blank"> Trang phục</a>
     </div>
-    <div class="KhuyenMai__container">
-        <div class="KhuyenMai__container--1">
-            <div class="KhuyenMai__avatar">
-                <div>
-                    <img src="../Images/Avatar2.png" alt="Lỗi hiển thị hình ảnh">
-                </div>
-                <div>
-                    <div><b>Ngocs</b></div>
-                    <div class="KhuyenMai__user--icon">
-                        <div><i class="glyphicon glyphicon-edit"></i></div>
-                        <div>&nbsp; Chỉnh sửa hồ sơ</div>
-                    </div>
-                </div>
-            </div>
-            <hr style="color: black; height: 1px; width: 95%;">
-            <div>
-                <div class="KhuyenMai__user--icon">
-                    <div><i class="glyphicon glyphicon-user"></i></div>
-                    <div>&nbsp; Tài khoản của tôi</div>
-                </div>
-            </div>
-            <div>
-                <div class="KhuyenMai__user--icon">
-                    <div><i class="glyphicon glyphicon-shopping-cart"></i></div>
-                    <div>&nbsp; Đơn đặt thuê</div>
-                </div>
-            </div>
-            <div>
-                <div class="KhuyenMai__user--icon">
-                    <div><i class="glyphicon glyphicon-bell"></i></div>
-                    <div>&nbsp; Thông báo</div>
-                </div>
-            </div>
-            <div>
-                <div class="KhuyenMai__user--icon">
-                    <div><i class="glyphicon glyphicon-tag"></i></div>
-                    <div>&nbsp; Khuyến mãi</div>
-                </div>
-            </div>
-            <div>
-                <div class="KhuyenMai__user--icon">
-                    <div><i class="glyphicon glyphicon-log-out"></i></div>
-                    <div>&nbsp; Đăng xuất</div>
-                </div>
-            </div>
-        </div>
-        <div class="KhuyenMai__container--2">
-            <div class="KhuyenMai__title">
-                <div class="KhuyenMai__title--left">VÍ KHUYẾN MÃI</div>
-                <div class="KhuyenMai__title--right">Điểm tích lũy: 02</div>
-            </div>
-            <div class="KhuyenMai__card">
-                <div class="KhuyenMai__header--2">
-                    <div class="KhuyenMai__header2--title">Tất cả</div>
-                    <div class="KhuyenMai__header2--title">Khuyến mãi của tôi</div>
-                    <div class="KhuyenMai__header2--title">Kho khuyến mãi</div>
-                </div>
-                <hr style="color: black; height: 1px; width: 90%; padding: 0; margin: 0;">
-                <div class="KhuyenMai__dexuat" ng-controller="VoucherController1">
-                    <div class="KhuyenMai__dexuat--title">Đề xuất (<span id="KhuyenMaiDem1"></span>)</div>
-                    <div class="KhuyenMai__dexuat--2">
-                        <div class="KhuyenMai__dexuat--3">
-                            <div class="KhuyenMai__tag--1" ng-repeat="v in vouchers">
-                                <div class="KhuyenMai__tag--type">MIỄN PHÍ VẬN CHUYỂN</div>
-                                <div class="KhuyenMai__tag--content">
-                                    <div class="KhuyenMai__tag--doidiem" id="KhuyenMaiDoiDien"><a href="DatThue.html?voucherId={{v.voucherID}}">Đổi điểm
-                                        <i class="glyphicon glyphicon-menu-right"></i></a>
-                                    </div>
-                                    <div>Voucher khuyến mãi giảm {{v.voucherPrice}}%</div>
-                                    <div class="KhuyenMai__tag--diem">
-                                        <div class="KhuyenMai__tag--giam">Giảm {{v.voucherPrice}}%</div>
-                                        <div>0{{v.voucherPoint}} điểm</div>
-                                    </div>
-                                    <div class="KhuyenMai__tag--hsd">Hạn sử dụng: {{v.expiry}}</div>
-                                    <div class="KhuyenMai__tag--dk"> <a href="ChiTietKM.html?voucherId={{v.voucherID}}"> Điều kiện</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="KhuyenMai__dexuat" ng-controller="VoucherController2">
-                    <div class="KhuyenMai__dexuat--title">Khuyến mãi của tôi (<span id="KhuyenMaiDem2"></span>)</div>
-                    <div class="KhuyenMai__dexuat--2">
-                        <div class="KhuyenMai__dexuat--3">
-                            <div class="KhuyenMai__tag--2" ng-repeat="v in vouchers">
-                                <div class="KhuyenMai__tag--type">MIỄN PHÍ VẬN CHUYỂN</div>
-                                <div class="KhuyenMai__tag--content">
-                                    <div class="KhuyenMai__tag--doidiem">Dùng ngay
-                                        <i class="glyphicon glyphicon-menu-right"></i>
-                                    </div>
-                                    <div>Voucher khuyến mãi giảm {{v.voucherPrice}}%</div>
-                                    <div class="KhuyenMai__tag--diem">
-                                        <div class="KhuyenMai__tag--giam">Giảm {{v.voucherPrice}}%</div>
-                                        <div>0{{v.voucherPoint}} điểm</div>
-                                    </div>
-                                    <div class="KhuyenMai__tag--hsd">Hạn sử dụng: {{v.expiry}}</div>
-                                    <div class="KhuyenMai__tag--dk"><a href="ChiTietKM.html?voucherId={{v.voucherID}}"> Điều kiện</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="KhuyenMai__dexuat" ng-controller="VoucherController3">
-                    <div class="KhuyenMai__dexuat--title">Khuyến mãi khác (<span id="KhuyenMaiDem3"></span>)</div>
-                    <div class="KhuyenMai__dexuat--2">
-                        <div class="KhuyenMai__dexuat--3">
-                            <div class="KhuyenMai__tag--3" ng-repeat="v in vouchers">
-                                <div class="KhuyenMai__tag--type">MIỄN PHÍ VẬN CHUYỂN</div>
-                                <div class="KhuyenMai__tag--content">
-                                    <div class="KhuyenMai__tag--doidiem" id="KhuyenMaiDoiDien">Đổi điểm
-                                        <i class="glyphicon glyphicon-menu-right"></i>
-                                    </div>
-                                    <div>Voucher khuyến mãi giảm {{v.voucherPrice}}%</div>
-                                    <div class="KhuyenMai__tag--diem">
-                                        <div class="KhuyenMai__tag--giam">Giảm {{v.voucherPrice}}%</div>
-                                        <div>0{{v.voucherPoint}} điểm</div>
-                                    </div>
-                                    <div class="KhuyenMai__tag--hsd">Hạn sử dụng: {{v.expiry}}</div>
-                                    <div class="KhuyenMai__tag--dk"><a href="ChiTietKM.html?voucherId={{v.voucherID}}"> Điều kiện</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <a href="TrangChu2.html#album">Album</a>
+    <a href="" id="btnBlog1">Blog</a>
+  </div>
+  <div class="HorHeader__container" id="myHeader">
+    <a href="javascript:void(0);" class="HorHeader__button" onclick="openNav()"><i
+        class="glyphicon glyphicon-menu-hamburger"></i></a>
+    <a href="" class="HorHeader__tach">Tách studio</a>
+    <a href="" class="Header__title" id="btnHome2"><i class="glyphicon glyphicon-home"></i></a>
+    <div class="Header__title HorHeader__dropdown">
+      <button class="HorHeader__dropdown--button" id="btnChoThue2">
+        Cho Thuê
+      </button>
+      <div class="HorHeader__dropdown--content">
+        <a href="ChuChoThue.html#mayAnh" target="_blank"> Máy ảnh</a>
+        <a href="ChuChoThue.html#studio" target="_blank"> Studio</a>
+        <a href="ChuChoThue.html#trangPhuc" target="_blank"> Trang phục</a>
+      </div>
     </div>
-    <div class="Page__footer--container Footer__text">
-        <div class="Footer--left">
-            <p class="Footer__heading">TÁCH STUDIO</p>
-            <p>UEL, Tp Thủ Đức, Tp Hồ Chí Minh <br>
-                Call us: 0123456789 <br>
-                tachstudio@gmail.com
-            </p>
-            <p>Copyright @2021 Tách Creative Studio</p>
+    <a href="TrangChu2.html#album" class="Header__title" target="_blank">Album</a>
+    <a href="" class="Header__title" id="btnBlog2">Blog</a>
+    <div class="HorHeader__icon">
+      <span class="glyphicon glyphicon-search Header__icon--2"></span>
+      <input class="Header__search" type="text" placeholder="Nhập từ tìm kiếm" />
+    </div>
+    <a href="" class="HorHeader__login2" id="btnAva"><img src="../Images/Avatar.png" alt="" /></a>
+  </div>
+  <div class="KhuyenMai__container">
+    <div class="KhuyenMai__container--1">
+      <div class="KhuyenMai__avatar">
+        <div>
+          <img src="../Images/Avatar2.png" alt="Lỗi hiển thị hình ảnh" />
         </div>
+        <div>
+          <div><b>Ngocs</b></div>
+          <div class="KhuyenMai__user--icon" id="chinhSua">
+            <div><i class="glyphicon glyphicon-edit"></i></div>
+            <div>&nbsp; Chỉnh sửa hồ sơ</div>
+          </div>
+        </div>
+      </div>
+      <hr style="color: black; height: 1px; width: 95%" />
+      <div>
+        <div class="KhuyenMai__user--icon" id="taiKhoan">
+          <div><i class="glyphicon glyphicon-user"></i></div>
+          <div>&nbsp; Tài khoản của tôi</div>
+        </div>
+      </div>
+      <div>
+        <div class="KhuyenMai__user--icon" id="datThue">
+          <div><i class="glyphicon glyphicon-shopping-cart"></i></div>
+          <div>&nbsp; Đơn đặt thuê</div>
+        </div>
+      </div>
+      <div>
+        <div class="KhuyenMai__user--icon" id="thongBao">
+          <div><i class="glyphicon glyphicon-bell"></i></div>
+          <div>&nbsp; Thông báo</div>
+        </div>
+      </div>
+      <div>
+        <div class="KhuyenMai__user--icon" id="khuyenMai">
+          <div><i class="glyphicon glyphicon-tag"></i></div>
+          <div>&nbsp; Khuyến mãi</div>
+        </div>
+      </div>
+      <div>
+        <div class="KhuyenMai__user--icon" id="dangXuat">
+          <div><i class="glyphicon glyphicon-log-out"></i></div>
+          <div>&nbsp; Đăng xuất</div>
+        </div>
+      </div>
+    </div>
+    <div class="KhuyenMai__container--2">
+      <div class="KhuyenMai__title">
+        <div class="KhuyenMai__title--left">VÍ KHUYẾN MÃI</div>
+        <div class="KhuyenMai__title--right">Điểm tích lũy: 02</div>
+      </div>
+      <div class="KhuyenMai__card">
+        <div class="KhuyenMai__header--2">
+          <div class="KhuyenMai__header2--title">Tất cả</div>
+          <div class="KhuyenMai__header2--title">Khuyến mãi của tôi</div>
+          <div class="KhuyenMai__header2--title">Kho khuyến mãi</div>
+        </div>
+        <hr style="color: black; height: 1px; width: 90%; padding: 0; margin: 0" />
+        <div class="KhuyenMai__dexuat" ng-controller="VoucherController1">
+          <div class="KhuyenMai__dexuat--title">
+            Đề xuất (<span id="KhuyenMaiDem1"></span>)
+          </div>
+          <div class="KhuyenMai__dexuat--2">
+            <div class="KhuyenMai__dexuat--3" ng-repeat="v in vouchers">
+              <div class="KhuyenMai__tag--1">
+                <div class="KhuyenMai__tag--type">MIỄN PHÍ VẬN CHUYỂN</div>
+                <div class="KhuyenMai__tag--content">
+                  <div class="KhuyenMai__tag--doidiem" id="KhuyenMaiDoiDien">
+                    Đổi điểm <i class="glyphicon glyphicon-menu-right"></i>
+                  </div>
+                  <div>Voucher khuyến mãi giảm {{v.voucherPrice}}%</div>
+                  <div class="KhuyenMai__tag--diem">
+                    <div class="KhuyenMai__tag--giam">
+                      Giảm {{v.voucherPrice}}%
+                    </div>
+                    <div>0{{v.voucherPoint}} điểm</div>
+                  </div>
+                  <div class="KhuyenMai__tag--hsd">
+                    Hạn sử dụng: {{v.expiry}}
+                  </div>
+                  <div class="KhuyenMai__tag--dk">
+                    <a href="ChiTietKM.html?voucherId={{v.voucherID}}&productId={{selectedProduct.productID}}">
+                      Điều kiện</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="KhuyenMai__dexuat" ng-controller="VoucherController2">
+          <div class="KhuyenMai__dexuat--title">
+            Khuyến mãi của tôi (<span id="KhuyenMaiDem2"></span>)
+          </div>
+          <div class="KhuyenMai__dexuat--2">
+            <div class="KhuyenMai__dexuat--3" ng-repeat="v in vouchers">
+              <div class="KhuyenMai__tag--2">
+                <div class="KhuyenMai__tag--type">MIỄN PHÍ VẬN CHUYỂN</div>
+                <div class="KhuyenMai__tag--content">
+                  <button class="KhuyenMai__tag--doidiem" id="khuyenMaiDungNgay" type="button">
+                    Dùng ngay
+                    <i class="glyphicon glyphicon-menu-right"></i>
+                  </button>
+                  <div>Voucher khuyến mãi giảm {{v.voucherPrice}}%</div>
+                  <div class="KhuyenMai__tag--diem">
+                    <div class="KhuyenMai__tag--giam">
+                      Giảm {{v.voucherPrice}}%
+                    </div>
+                    <div>0{{v.voucherPoint}} điểm</div>
+                  </div>
+                  <div class="KhuyenMai__tag--hsd">
+                    Hạn sử dụng: {{v.expiry}}
+                  </div>
+                  <div class="KhuyenMai__tag--dk">
+                    <a href="ChiTietKM.html?voucherId={{v.voucherID}}&productId={{selectedProduct.productID}}">
+                      Điều kiện</a>
+                  </div>
+                </div>
+              </div>
+              <div id="popupDungVoucher" class="PopupDungVoucher">
+                <div class="PopupDungVoucher__content">
+                  <div class="PopupDungVoucher__header">
+                    <span class="PopupDungVoucher__close">x</span>
+                    <div class="PopupDungVoucher__icon">
+                      <img src="../Images/canhbaosmall.png" alt="">
+                    </div>
+                  </div>
+                  <div class="PopupDungVoucher__body">
+                    <p>BẠN CÓ MUỐN SỬ DỤNG VOUCHER KHÔNG?</p>
+                  </div>
+                  <div class="PopupDungVoucher__button">
+                    <button id="popupDungVoucherKhong" type="button"
+                      class="PopupDungVoucher__button--left">KHÔNG</button>
+                    <a href="DatThue.html?voucherId={{v.voucherID}}&productId={{selectedProduct.productId}}"><button
+                        id="popupDungVoucherCo" type="button" class="PopupDungVoucher__button--right">CÓ</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="KhuyenMai__dexuat" ng-controller="VoucherController3">
+            <div class="KhuyenMai__dexuat--title">
+              Khuyến mãi khác (<span id="KhuyenMaiDem3"></span>)
+            </div>
+            <div class="KhuyenMai__dexuat--2">
+              <div class="KhuyenMai__dexuat--3" ng-repeat="v in vouchers">
+                <div class="KhuyenMai__tag--3">
+                  <div class="KhuyenMai__tag--type">MIỄN PHÍ VẬN CHUYỂN</div>
+                  <div class="KhuyenMai__tag--content">
+                    <button type="button" class="KhuyenMai__tag--doidiem" id="KhuyenMaiDoiDien">
+                      Đổi điểm
+                      <i class="glyphicon glyphicon-menu-right"></i>
+                    </button>
+                    <div>Voucher khuyến mãi giảm {{v.voucherPrice}}%</div>
+                    <div class="KhuyenMai__tag--diem">
+                      <div class="KhuyenMai__tag--giam">
+                        Giảm {{v.voucherPrice}}%
+                      </div>
+                      <div>0{{v.voucherPoint}} điểm</div>
+                    </div>
+                    <div class="KhuyenMai__tag--hsd">
+                      Hạn sử dụng: {{v.expiry}}
+                    </div>
+                    <div class="KhuyenMai__tag--dk">
+                      <a href="ChiTietKM.html?voucherId={{v.voucherID}}&productId={{selectedProduct.productID}}">
+                        Điều kiện</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="popupDoiDiem" class="PopupDoiDiem">
+      <div class="PopupDoiDiem__content">
+        <div class="PopupDoiDiem__header">
+          <span class="PopupDoiDiem__close">x</span>
+          <div class="PopupDoiDiem__icon">
+            <img src="../Images/canhbaosmall.png" alt="">
+          </div>
+        </div>
+        <div class="PopupDoiDiem__body">
+          <p>BẠN CÓ MUỐN ĐỔI ĐIỂM KHÔNG?</p>
+        </div>
+        <div class="PopupDoiDiem__button">
+          <button id="popupDoiDiemKhong" type="button" class="PopupDoiDiem__button--left">KHÔNG</button>
+          <a href="DatThue.html?voucherId={{v.voucherID}}&productId={{selectedProduct.productId}}"><button
+              id="popupDoiDiemCo" type="button" class="PopupDoiDiem__button--right">CÓ</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Page__footer--container Footer__text">
+    <div class="Footer--left">
+      <p class="Footer__heading">TÁCH STUDIO</p>
+      <p>
+        UEL, Tp Thủ Đức, Tp Hồ Chí Minh <br />
+        Call us: 0123456789 <br />
+        tachstudio@gmail.com
+      </p>
+      <p>Copyright @2021 Tách Creative Studio</p>
+    </div>
 
-        <div class="Footer--right">
-            <p class="Footer__heading">LIÊN HỆ VỚI CHÚNG TÔI</p>
-            <p> <img src="/images/footer-fb.png" alt=""> Tách studio</p>
-            <p> <img src="/images/footer-ins.png" alt=""> tach.studio</p>
-            <p> <img src="/images/footer-ytb.png" alt=""> Tách Studio Official</p>
-        </div>
+    <div class="Footer--right">
+      <p class="Footer__heading">LIÊN HỆ VỚI CHÚNG TÔI</p>
+      <p><img src="/images/footer-fb.png" alt="" /> Tách studio</p>
+      <p><img src="/images/footer-ins.png" alt="" /> tach.studio</p>
+      <p><img src="/images/footer-ytb.png" alt="" /> Tách Studio Official</p>
     </div>
+  </div>
 </body>
 
 </html>
