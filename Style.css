@@ -590,8 +590,12 @@ html {
 
 .KhuyenMai__tag--doidiem {
   text-align: right;
-  color: red;
   cursor: pointer;
+}
+
+.KhuyenMai__tag--doidiem a {
+  color: red;
+  text-decoration: none;
 }
 
 .KhuyenMai__tag--diem {
@@ -1071,6 +1075,7 @@ html {
   padding: 5px;
   font-size: 20px;
   margin-bottom: 5px;
+  cursor: pointer;
 }
 
 .Blog__tittle--2 {
@@ -1083,7 +1088,8 @@ html {
   font-size: 20px;
 }
 
-.Blog__text--decoration {
+.Blog__text--decoration,
+.Blog__text--decoration:hover {
   color: black;
   text-decoration: none;
 }
@@ -1762,6 +1768,15 @@ i.fas.fa-exclamation-circle,
   flex: 1 1 40%;
 }
 
+.DonHang--order-name a {
+  color: black;
+}
+
+.DonHang--order-name a:hover {
+  color: black;
+  text-decoration: none;
+}
+
 .DonHang--order-status {
   flex: 1 1 30%;
 }
@@ -1805,174 +1820,6 @@ i.fas.fa-exclamation-circle,
   font-weight: normal;
 }
 
-.ThanhToan__background {
-  background-color: black;
-}
-
-.container {
-  margin-bottom: 50px;
-}
-
-.ThanhToan--top {
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  text-align: center;
-  position: relative;
-  margin-top: 100px;
-}
-
-.ThanhToan__top--flex .ThanhToan__icons {
-  display: flex;
-  justify-content: center;
-}
-
-.ThanhToan__top {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 37px;
-}
-
-.ThanhToan__top--item1 {
-  margin-bottom: 25px;
-}
-
-.ThanhToan__top--item {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 27px;
-  margin-top: 15px;
-}
-
-.ThanhToan__top--circle {
-  border-radius: 50px;
-  background: #c6c6c6;
-  width: 50px;
-  height: 50px;
-  margin-top: -10px;
-  background-color: rgba(18, 201, 47, 1);
-}
-
-.ThanhToan__top--circle2 {
-  background-color: rgba(196, 196, 196, 1);
-  border-radius: 50px;
-  width: 50px;
-  height: 50px;
-  margin-top: -10px;
-}
-
-.ThanhToan__icon {
-  padding-top: 10px;
-}
-
-.ThanhToan__item--1 {
-  margin-left: 2%;
-}
-
-.ThanhToan__item--2 {
-  margin-left: 10%;
-}
-
-.ThanhToan__item--3 {
-  margin-left: 10%;
-}
-
-.ThanhToan__icons svg {
-  margin-top: 13px;
-}
-
-.ThanhToan__body {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  font-family: "Roboto", sans-serif;
-}
-
-.ThanhToan__body--left,
-.ThanhToan__body--right {
-  background-color: white;
-  font-size: 18px;
-  font-weight: normal;
-}
-
-.ThanhToan__body--left {
-  width: 50%;
-  justify-content: center;
-  padding-top: 10px;
-}
-
-.ThanhToan__icon--edit {
-  color: #c4c4c4;
-  top: 100px;
-  margin-left: 93%;
-  margin-bottom: 10px;
-}
-
-.ThanhToan__label--flex {
-  display: flex;
-  margin-left: 5%;
-}
-
-.ThanhToan__label {
-  width: 35%;
-  font-weight: normal;
-}
-
-.ThanhToan__label--2,
-.ThanhToan__label--8 {
-  width: 55%;
-}
-
-.ThanhToan__label--4,
-.ThanhToan__label--16,
-.ThanhToan__label--22,
-.ThanhToan__label--24 {
-  color: red;
-  font-weight: bold;
-}
-
-.ThanhToan__font--size {
-  font-size: 12px;
-  border-radius: 5px;
-}
-
-.ThanhToan__note--1 {
-  font-size: 15px;
-  font-style: italic;
-  text-align: center;
-}
-
-.ThanhToan__button {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  color: white;
-}
-
-.ThanhToan__button--1 {
-  background: #f2c806;
-  border-radius: 5px;
-  height: 40px;
-  width: 25%;
-  font-size: 20px;
-  border: none;
-}
-
-.ThanhToan__body--right {
-  width: 50%;
-  margin-left: 5%;
-  padding-top: 40px;
-  justify-content: center;
-  padding-left: 3%;
-}
-
 .ThanhToan__title {
   font-size: 22px;
   color: red;
@@ -1983,10 +1830,6 @@ i.fas.fa-exclamation-circle,
 
 .ThanhToan__font--style {
   font-weight: bold;
-}
-
-.ThanhToan__line {
-  margin-left: -6%;
 }
 
 .ThanhToan__note--2 {
@@ -2222,6 +2065,10 @@ i.fas.fa-exclamation-circle,
   background-color: black;
 }
 
+.ChoThanhToan__button--color {
+  background-color: gray;
+}
+
 .ChoThanhToan--top {
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -2277,6 +2124,40 @@ i.fas.fa-exclamation-circle,
   margin-top: -10px;
 }
 
+.ChoThanhToan__top--circle3 {
+  background-color: rgba(18, 201, 47, 1);
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  margin-top: -10px;
+}
+
+.ChoThanhToan__top--circle3 {
+  background-color: rgba(18, 201, 47, 1);
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  margin-top: -10px;
+}
+
+.ChoThanhToan__svg--1 {
+  width: 350px;
+  height: 3px;
+  fill: #12c92f;
+}
+
+.ChoThanhToan__svg--2 {
+  width: 350px;
+  height: 3px;
+  fill: #c4c4c4;
+}
+
+.ChoThanhToan__svg--3 {
+  width: 350px;
+  height: 3px;
+  fill: #12c92f;
+}
+
 .ChoThanhToan__icon {
   padding-top: 10px;
 }
@@ -2302,6 +2183,10 @@ i.fas.fa-exclamation-circle,
   justify-content: center;
   margin-top: 30px;
   font-family: "Roboto", sans-serif;
+}
+
+.ChoThanhToan__label--color1 {
+  color: black;
 }
 
 .ChoThanhToan__body--left,
@@ -2332,6 +2217,10 @@ i.fas.fa-exclamation-circle,
 .ChoThanhToan__label--10,
 .ChoThanhToan__label--26 {
   font-weight: bold;
+}
+
+.ChoThanhToan__label--color26 {
+  font-weight: normal;
 }
 
 .ChoThanhToan__title {
@@ -2372,6 +2261,11 @@ i.fas.fa-exclamation-circle,
   width: 55%;
 }
 
+.ChoThanhToan__label--color {
+  color: #12c92f;
+  font-weight: bold;
+}
+
 .ChoThanhToan__label--20,
 .ChoThanhToan__label--22 {
   color: red;
@@ -2407,199 +2301,21 @@ i.fas.fa-exclamation-circle,
   cursor: pointer;
 }
 
+.ChoThanhToan__button--color {
+  width: 25%;
+  border-radius: 5px;
+  background-color: gray;
+  color: white;
+  border-color: rgba(196, 196, 196, 1);
+  border: none;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+}
+
 .ChoThanhToan__button--2 {
   margin-left: 15px;
   margin-top: 10px;
-}
-
-.DonHangHoanTat--top {
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
-  text-align: center;
-  position: relative;
-  margin-top: 100px;
-}
-
-.DonHangHoanTat__top--flex .DonHangHoanTat__icons {
-  display: flex;
-  justify-content: center;
-}
-
-.DonHangHoanTat__top {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
-}
-
-.DonHangHoanTat__top--item1 {
-  margin-bottom: 25px;
-}
-
-.DonHangHoanTat__top--item {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
-  margin-top: 15px;
-}
-
-.DonHangHoanTat__top--circle {
-  border-radius: 50px;
-  background: #c6c6c6;
-  width: 50px;
-  height: 50px;
-  margin-top: -10px;
-  background-color: rgba(18, 201, 47, 1);
-}
-
-.DonHangHoanTat__top--circle2 {
-  background-color: rgba(18, 201, 47, 1);
-  border-radius: 50px;
-  width: 50px;
-  height: 50px;
-  margin-top: -10px;
-}
-
-.DonHangHoanTat__icon {
-  padding-top: 10px;
-}
-
-.DonHangHoanTat__item--1 {
-  margin-left: 2%;
-}
-
-.DonHangHoanTat__item--2 {
-  margin-left: 10%;
-}
-
-.DonHangHoanTat__item--3 {
-  margin-left: 10%;
-}
-
-.DonHangHoanTat__icons svg {
-  margin-top: 13px;
-}
-
-.DonHangHoanTat__body {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  font-family: "Roboto", sans-serif;
-}
-
-.DonHangHoanTat__body--left,
-.DonHangHoanTat__body--right {
-  background-color: white;
-  font-size: 18px;
-  font-weight: normal;
-  padding-left: 15px;
-  padding-bottom: 20px;
-}
-
-.DonHangHoanTat__body--left {
-  width: 50%;
-  justify-content: center;
-  padding-top: 10px;
-}
-
-.DonHangDonHangHoanTat__label--flex {
-  display: flex;
-  font-family: "Roboto", sans-serif;
-  font-weight: normal;
-}
-
-.DonHangHoanTat__title {
-  color: black;
-  font-weight: bold;
-  font-family: "Montserrat", sans-serif;
-}
-
-.DonHangHoanTat__title--1,
-.DonHangHoanTat__title--3 {
-  font-size: 22px;
-}
-
-.DonHangHoanTat__title--2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.DonHangHoanTat__line {
-  margin-left: -2%;
-  margin-top: 7px;
-  margin-bottom: 7px;
-}
-
-.DonHangHoanTat__label {
-  width: 35%;
-  font-weight: normal;
-}
-
-.DonHangHoanTat__label--2 {
-  width: 55%;
-}
-
-.DonHangHoanTat__label--right {
-  width: 40%;
-}
-
-.DonHangHoanTat__label--12 {
-  width: 55%;
-}
-
-.DonHangHoanTat__label--10,
-.DonHangHoanTat__label--26 {
-  font-weight: bold;
-}
-
-.DonHangHoanTat__label--20 {
-  color: rgba(18, 201, 47, 1);
-  font-weight: bold;
-}
-
-.DonHangHoanTat--note {
-  font-size: 15px;
-  font-style: italic;
-  margin-right: 5px;
-}
-
-.DonHangHoanTat__body--right {
-  width: 50%;
-  margin-left: 5%;
-  padding-top: 10px;
-  justify-content: center;
-}
-
-.DonHangHoanTat__button--flex {
-  text-align: center;
-}
-
-.DonHangHoanTat__button {
-  width: 25%;
-  border-radius: 5px;
-  background-color: #f2c806;
-  color: white;
-  border-color: rgba(196, 196, 196, 1);
-}
-
-.DonHangHoanTat__button--1 {
-  background-color: #c4c4c4;
-  border: none;
-}
-
-.DonHangHoanTat__button--2 {
-  margin-left: 15px;
-  margin-top: 10px;
-  border: none;
-}
-
-.DonHangHoanTat__background {
-  background-color: black;
 }
 
 @media only screen and (max-width: 600px) {
@@ -2721,7 +2437,7 @@ i.fas.fa-exclamation-circle,
 
   /* Hiếu */
   .TrangChu__header--banner {
-    top: 25px;
+    top: 52px;
   }
 
   .TrangChu__introduction--header {
@@ -2994,119 +2710,14 @@ i.fas.fa-exclamation-circle,
   }
 
   /* My */
-  .ThanhToan--top {
-    font-size: 18px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 50px;
-  }
-
-  .ThanhToan__icons svg {
-    margin-top: 13px;
-    width: 120px;
-    height: 6px;
-  }
-
-  .ThanhToan__icon {
-    padding-top: 7px;
-  }
-
-  .ThanhToan__top--circle {
-    border-radius: 40px;
-    width: 35px;
-    height: 35px;
-    margin-top: 0px;
-    background-color: rgba(18, 201, 47, 1);
-  }
-
-  .ThanhToan__top--circle2 {
-    background-color: rgba(196, 196, 196, 1);
-    border-radius: 40px;
-    width: 35px;
-    height: 35px;
-    margin-top: 0px;
-  }
-
-  .ThanhToan__top--item {
-    display: flex;
-    justify-content: space-around;
-    font-size: 13px;
-    line-height: 27px;
-    margin-left: -10%;
-    margin-top: 0px;
-    width: 120%;
-  }
-
-  .ThanhToan__top--item1 {
-    font-size: 15px;
-    margin-bottom: 10px;
-  }
-
-  .ThanhToan__body {
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 20px;
-    margin-left: 10%;
-  }
-
-  .ThanhToan__body--left,
-  .ThanhToan__body--right {
-    font-size: 12px;
-  }
-
-  .ThanhToan__body--left {
-    width: 90%;
-  }
-
-  .ThanhToan__label {
-    width: 35%;
-  }
-
-  .ThanhToan__label--2,
-  .ThanhToan__label--8 {
-    width: 55%;
-  }
-
-  .ThanhToan__font--size {
-    font-size: 9px;
-    border-radius: 5px;
-  }
 
   .ThanhToan__note--1 {
     font-size: 10px;
   }
 
-  .ThanhToan__button {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .ThanhToan__button--1 {
-    border-color: rgba(196, 196, 196, 1);
-    border-radius: 5px;
-    height: 30px;
-    width: 25%;
-    font-size: 15px;
-  }
-
-  .ThanhToan__body--right {
-    width: 90%;
-    margin-top: 20px;
-    padding-top: 10px;
-    padding-left: 5%;
-    padding-bottom: 10px;
-    margin-left: 0%;
-  }
-
   .ThanhToan__title {
     font-size: 15px;
     margin-bottom: 10px;
-  }
-
-  .ThanhToan__line {
-    margin-left: -3%;
-    margin-top: 5px;
-    margin-bottom: 5px;
   }
 
   .ThanhToan__note--2 {
@@ -3332,6 +2943,14 @@ i.fas.fa-exclamation-circle,
     margin-top: 0px;
   }
 
+  .ChoThanhToan__top--circle3 {
+    background-color: rgba(18, 201, 47, 1);
+    border-radius: 40px;
+    width: 35px;
+    height: 35px;
+    margin-top: 0px;
+  }
+
   .ChoThanhToan__top--item {
     display: flex;
     justify-content: space-around;
@@ -3432,150 +3051,14 @@ i.fas.fa-exclamation-circle,
     margin-top: 10px;
   }
 
-  .DonHangHoanTat--top {
-    font-size: 18px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 50px;
-  }
-
-  .DonHangHoanTat__icons svg {
-    margin-top: 13px;
-    width: 120px;
-    height: 6px;
-  }
-
-  .DonHangHoanTat__icon {
-    padding-top: 7px;
-  }
-
-  .DonHangHoanTat__top--circle {
-    border-radius: 40px;
-    width: 35px;
-    height: 35px;
-    margin-top: 0px;
-    background-color: rgba(18, 201, 47, 1);
-  }
-
-  .DonHangHoanTat__top--circle2 {
-    background-color: rgba(18, 201, 47, 1);
-    border-radius: 40px;
-    width: 35px;
-    height: 35px;
-    margin-top: 0px;
-  }
-
-  .DonHangHoanTat__top--item {
-    display: flex;
-    justify-content: space-around;
-    font-size: 13px;
-    margin-left: -10%;
-    margin-top: 0px;
-    width: 120%;
-  }
-
-  .DonHangHoanTat__top--item1 {
-    font-size: 15px;
-    margin-bottom: 10px;
-  }
-
-  .DonHangHoanTat__body {
-    flex-direction: column-reverse;
-    justify-content: center;
-    margin-top: 30px;
-  }
-
-  .DonHangHoanTat__body--left,
-  .DonHangHoanTat__body--right {
-    font-size: 12px;
-    padding-left: 15px;
-    padding-bottom: 20px;
-  }
-
-  .DonHangHoanTat__body--left {
-    width: 90%;
-    justify-content: center;
-    padding-top: 10px;
-    margin-left: 5%;
-    margin-top: 20px;
-  }
-
-  .DonHangDonHangHoanTat__label--flex {
-    display: flex;
-  }
-
-  .DonHangHoanTat__title--1,
-  .DonHangHoanTat__title--3 {
-    font-size: 15px;
-  }
-
-  .DonHangHoanTat__title--2 {
-    font-size: 12px;
-    margin-bottom: 10px;
-  }
-
-  .DonHangHoanTat__line {
-    margin-left: -2%;
-    margin-top: 7px;
-    margin-bottom: 7px;
-  }
-
-  .DonHangHoanTat__label {
-    width: 35%;
-  }
-
-  .DonHangHoanTat__label--2 {
-    width: 45%;
-  }
-
-  .DonHangHoanTat__label--right {
-    width: 40%;
-  }
-
-  .DonHangHoanTat__label--12 {
-    width: 55%;
-  }
-
-  .DonHangHoanTat__label--10,
-  .DonHangHoanTat__label--26 {
-    font-weight: bold;
-  }
-
-  .DonHangHoanTat__label--20 {
-    font-weight: bold;
-  }
-
-  .DonHangHoanTat--note {
-    font-size: 12px;
-    margin-right: 5px;
-  }
-
-  .DonHangHoanTat__body--right {
-    width: 90%;
-    margin-top: 15px;
-    margin-left: 5%;
-    padding-top: 10px;
-    justify-content: center;
-  }
-
-  .DonHangHoanTat__button--flex {
-    text-align: center;
-  }
-
-  .DonHangHoanTat__button {
-    width: 25%;
-    margin-left: -3%;
-  }
-
-  .DonHangHoanTat__button--2 {
-    margin-left: 15px;
-    margin-top: 10px;
-  }
-
   /* Quỳnh */
   #wedding .Album--prev,
   #wedding .Album--next {
     top: 15%;
+  }
+
+  .DangNhap__container {
+    width: 95%;
   }
 }
 
@@ -3687,7 +3170,7 @@ i.fas.fa-exclamation-circle,
 
   /* Hiếu */
   .TrangChu__header--banner {
-    top: 30px;
+    top: 42px;
   }
 
   .TrangChu__introduction--header {
@@ -3870,120 +3353,14 @@ i.fas.fa-exclamation-circle,
   }
 
   /* My */
-  .ThanhToan--top {
-    font-size: 18px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 50px;
-  }
-
-  .ThanhToan__icons svg {
-    justify-content: center;
-    margin-top: 13px;
-    width: 160px;
-    height: 6px;
-  }
-
-  .ThanhToan__icon {
-    padding-top: 7px;
-  }
-
-  .ThanhToan__top--circle {
-    border-radius: 40px;
-    width: 35px;
-    height: 35px;
-    margin-top: 0px;
-    background-color: rgba(18, 201, 47, 1);
-  }
-
-  .ThanhToan__top--circle2 {
-    background-color: rgba(196, 196, 196, 1);
-    border-radius: 40px;
-    width: 35px;
-    height: 35px;
-    margin-top: 0px;
-  }
-
-  .ThanhToan__top--item {
-    display: flex;
-    justify-content: space-around;
-    width: 120%;
-    font-size: 13px;
-    line-height: 27px;
-    margin-left: -10%;
-    margin-top: 0px;
-  }
-
-  .ThanhToan__top--item1 {
-    font-size: 15px;
-    margin-bottom: 10px;
-  }
-
-  .ThanhToan__body {
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 20px;
-    margin-left: 10%;
-  }
-
-  .ThanhToan__body--left,
-  .ThanhToan__body--right {
-    font-size: 15px;
-  }
-
-  .ThanhToan__body--left {
-    width: 90%;
-  }
-
-  .ThanhToan__label {
-    width: 35%;
-  }
-
-  .ThanhToan__label--2,
-  .ThanhToan__label--8 {
-    width: 55%;
-  }
-
-  .ThanhToan__font--size {
-    font-size: 12px;
-    border-radius: 5px;
-  }
 
   .ThanhToan__note--1 {
     font-size: 12px;
   }
 
-  .ThanhToan__button {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .ThanhToan__button--1 {
-    border-color: rgba(196, 196, 196, 1);
-    border-radius: 5px;
-    height: 30px;
-    width: 25%;
-    font-size: 15px;
-  }
-
-  .ThanhToan__body--right {
-    width: 90%;
-    margin-top: 20px;
-    padding-top: 10px;
-    padding-left: 5%;
-    padding-bottom: 10px;
-    margin-left: 0%;
-  }
-
   .ThanhToan__title {
     font-size: 18px;
     margin-bottom: 10px;
-  }
-
-  .ThanhToan__line {
-    margin-left: -3%;
-    margin-top: 5px;
-    margin-bottom: 5px;
   }
 
   .ThanhToan__note--2 {
@@ -4175,6 +3552,14 @@ i.fas.fa-exclamation-circle,
     margin-top: 0px;
   }
 
+  .ChoThanhToan__top--circle3 {
+    background-color: rgba(18, 201, 47, 1);
+    border-radius: 40px;
+    width: 35px;
+    height: 35px;
+    margin-top: 0px;
+  }
+
   .ChoThanhToan__top--item {
     display: flex;
     justify-content: space-around;
@@ -4275,139 +3660,6 @@ i.fas.fa-exclamation-circle,
     margin-top: 10px;
   }
 
-  .DonHangHoanTat--top {
-    font-size: 18px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 50px;
-  }
-
-  .DonHangHoanTat__icons svg {
-    justify-content: center;
-    margin-top: 13px;
-    width: 160px;
-    height: 6px;
-  }
-
-  .DonHangHoanTat__icon {
-    padding-top: 7px;
-  }
-
-  .DonHangHoanTat__top--circle {
-    border-radius: 40px;
-    width: 35px;
-    height: 35px;
-    margin-top: 0px;
-    background-color: rgba(18, 201, 47, 1);
-  }
-
-  .DonHangHoanTat__top--circle2 {
-    background-color: rgba(18, 201, 47, 1);
-    border-radius: 40px;
-    width: 35px;
-    height: 35px;
-    margin-top: 0px;
-  }
-
-  .DonHangHoanTat__top--item {
-    display: flex;
-    justify-content: space-around;
-    width: 120%;
-    font-size: 13px;
-    margin-left: -10%;
-    margin-top: 0px;
-  }
-
-  .DonHangHoanTat__top--item1 {
-    font-size: 15px;
-    margin-bottom: 10px;
-  }
-
-  .DonHangHoanTat__body {
-    flex-direction: column-reverse;
-    justify-content: center;
-    margin-top: 30px;
-  }
-
-  .DonHangHoanTat__body--left,
-  .DonHangHoanTat__body--right {
-    font-size: 15px;
-    padding-left: 15px;
-    padding-bottom: 20px;
-  }
-
-  .DonHangHoanTat__body--left {
-    width: 90%;
-    justify-content: center;
-    padding-top: 10px;
-    margin-left: 5%;
-    margin-top: 20px;
-  }
-
-  .DonHangDonHangHoanTat__label--flex {
-    display: flex;
-  }
-
-  .DonHangHoanTat__title--1,
-  .DonHangHoanTat__title--3 {
-    font-size: 18px;
-  }
-
-  .DonHangHoanTat__title--2 {
-    font-size: 15px;
-    margin-bottom: 10px;
-  }
-
-  .DonHangHoanTat__line {
-    margin-left: -2%;
-    margin-top: 7px;
-    margin-bottom: 7px;
-  }
-
-  .DonHangHoanTat__label {
-    width: 35%;
-  }
-
-  .DonHangHoanTat__label--right {
-    width: 40%;
-  }
-
-  .DonHangHoanTat__label--12 {
-    width: 55%;
-  }
-
-  .DonHangHoanTat__label--10,
-  .DonHangHoanTat__label--26 {
-    font-weight: bold;
-  }
-
-  .DonHangHoanTat--note {
-    font-size: 15px;
-    margin-right: 5px;
-  }
-
-  .DonHangHoanTat__body--right {
-    width: 90%;
-    margin-left: 5%;
-    padding-top: 10px;
-    justify-content: center;
-  }
-
-  .DonHangHoanTat__button--flex {
-    text-align: center;
-  }
-
-  .DonHangHoanTat__button {
-    width: 25%;
-    margin-left: -3%;
-    font-size: 18px;
-  }
-
-  .DonHangHoanTat__button--2 {
-    margin-left: 15px;
-    margin-top: 10px;
-  }
-
   /* Quỳnh */
   #chanDung .Album--mySlides {
     height: 500px;
@@ -4432,6 +3684,10 @@ i.fas.fa-exclamation-circle,
 
   .DonHang--title {
     font-size: 25px;
+  }
+
+  .DangNhap__container {
+    width: 95%;
   }
 }
 
@@ -4724,584 +3980,347 @@ i.fas.fa-exclamation-circle,
   }
 
   /* My */
-  .ThanhToan--top {
-    font-size: 18px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 70px;
-  }
-
-  .ThanhToan__icons svg {
-    margin-top: 13px;
-    width: 210px;
-    height: 6px;
-  }
-
-  .ThanhToan__icon {
-    padding-top: 7px;
-  }
-
-  .ThanhToan__top--circle {
-    border-radius: 40px;
-    width: 35px;
-    height: 35px;
-    margin-top: 0px;
-    background-color: rgba(18, 201, 47, 1);
-  }
-
-  .ThanhToan__top--circle2 {
-    background-color: rgba(196, 196, 196, 1);
-    border-radius: 40px;
-    width: 35px;
-    height: 35px;
-    margin-top: 0px;
-  }
-
-  .ThanhToan__top--item {
-    display: flex;
-    justify-content: space-around;
-    width: 120%;
-    font-size: 13px;
-    line-height: 27px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-left: -10%;
-    margin-top: 0px;
-  }
-
-  .ThanhToan__top--item1 {
-    font-size: 20px;
-  }
-
-  .ThanhToan__body {
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 20px;
-    margin-left: 5%;
-  }
-
-  .ThanhToan__body--left,
-  .ThanhToan__body--right {
-    font-size: 18px;
-  }
-
-  .ThanhToan__body--left {
-    width: 95%;
-    padding-left: 5%;
-  }
-
-  .ThanhToan__label {
-    width: 35%;
-  }
-
-  .ThanhToan__label--2,
-  .ThanhToan__label--8 {
-    width: 55%;
-  }
-
-  .ThanhToan__font--size {
-    font-size: 15px;
-    border-radius: 5px;
-  }
 
   .ThanhToan__note--1 {
     font-size: 15px;
     margin-left: -5%;
     margin-bottom: 20px;
   }
-
-  .ThanhToan__button {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .ThanhToan__button--1 {
-    border-color: rgba(196, 196, 196, 1);
-    border-radius: 5px;
-    height: 40px;
-    width: 25%;
-    font-size: 20px;
-    margin-left: -5%;
-  }
-
-  .ThanhToan__body--right {
-    width: 95%;
-    margin-top: 20px;
-    padding-top: 20px;
-    padding-left: 10%;
-    padding-bottom: 20px;
-    margin-left: 0%;
-  }
-
-  .ThanhToan__title {
-    font-size: 22px;
-    margin-bottom: 10px;
-  }
-
-  .ThanhToan__line {
-    margin-left: -11%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-
-  .ThanhToan__note--2 {
-    font-size: 15px;
-    margin-bottom: 10px;
-  }
-
-  .DatThue--top {
-    margin-top: 150px;
-  }
-
-  .DatThue__top--item1 {
-    font-size: 25px;
-  }
-
-  .DatThue__input {
-    height: 40px;
-    width: 65%;
-    margin-bottom: 14px;
-    border: rgba(167, 167, 167, 1) solid 1px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 0%;
-  }
-
-  .DatThue__input--discount {
-    margin-bottom: 10px;
-  }
-
-  .DatThue__input--discount1 {
-    width: 40%;
-    font-size: 20px;
-    margin-left: 13%;
-    border: none;
-  }
-
-  .DatThue__input--button2 {
-    width: 30%;
-    font-size: 20px;
-    margin-left: 35%;
-    border: none;
-  }
-
-  .DatThue--right {
-    font-size: 20px;
-    margin-bottom: 50px;
-  }
-
-  .DatThue__right {
-    margin-left: 25%;
-  }
-
-  .DatThue__select {
-    font-size: 15px;
-    height: 35px;
-    width: 35%;
-    margin-bottom: 10px;
-    padding-left: 5px;
-    padding-top: 3px;
-  }
-
-  .DatThue__label--2 {
-    font-size: 20px;
-    width: 100%;
-  }
-
-  .DatThue__label--1,
-  .DatThue__label--3,
-  .DatThue__label--4,
-  .DatThue__label--5,
-  .DatThue__label--6,
-  .DatThue__label--7,
-  .DatThue__label--8,
-  .DatThue__label--9,
-  .DatThue__label--10,
-  .DatThue__label--11,
-  .DatThue__label--12,
-  .DatThue__label--13 {
-    width: 65%;
-  }
-
-  .DatThue__input--info {
-    margin-left: 25%;
-  }
-
-  .DatThue__right--item1,
-  .DatThue__right--item2,
-  .DatThue__right--item3,
-  .DatThue__right--item4,
-  .DatThue__right--item5,
-  .DatThue__right--item6,
-  .DatThue__right--item7,
-  .DatThue__right--item8,
-  .DatThue__right--item9,
-  .DatThue__right--item10,
-  .DatThue__right--item11,
-  .DatThue__right--item12 {
-    flex-direction: column;
-  }
-
-  .DatThue--bottom {
-    font-size: 20px;
-    margin-left: -30%;
-  }
-
-  .DatThue--top {
-    font-size: 18px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 70px;
-    margin-bottom: -12%;
-  }
-
-  .DatThue__icons svg {
-    margin-top: 13px;
-    width: 210px;
-    height: 6px;
-  }
-
-  .DatThue__icon {
-    padding-top: 7px;
-  }
-
-  .DatThue__top--circle {
-    border-radius: 40px;
-    width: 35px;
-    height: 35px;
-    margin-top: 0px;
-    background-color: rgba(18, 201, 47, 1);
-  }
-
-  .DatThue__top--circle2 {
-    background-color: rgba(196, 196, 196, 1);
-    border-radius: 40px;
-    width: 35px;
-    height: 35px;
-    margin-top: 0px;
-  }
-
-  .DatThue__top--item {
-    display: flex;
-    justify-content: space-around;
-    width: 120%;
-    font-size: 13px;
-    line-height: 27px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-left: -10%;
-    margin-top: 0px;
-  }
-
-  .DatThue__top--item1 {
-    font-size: 20px;
-  }
-
-  .DatThue--title {
-    font-size: 20px;
-  }
-
-  .DatThue__input--checkbox {
-    margin-left: 48%;
-    margin-top: -10px;
-    margin-bottom: 10px;
-  }
-
-  .ChoThanhToan--top {
-    font-size: 18px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 70px;
-  }
-
-  .ChoThanhToan__icons svg {
-    margin-top: 13px;
-    width: 210px;
-    height: 6px;
-  }
-
-  .ChoThanhToan__icon {
-    padding-top: 7px;
-  }
-
-  .ChoThanhToan__top--circle {
-    border-radius: 40px;
-    width: 35px;
-    height: 35px;
-    margin-top: 0px;
-    background-color: rgba(18, 201, 47, 1);
-  }
-
-  .ChoThanhToan__top--circle2 {
-    background-color: rgba(196, 196, 196, 1);
-    border-radius: 40px;
-    width: 35px;
-    height: 35px;
-    margin-top: 0px;
-  }
-
-  .ChoThanhToan__top--item {
-    display: flex;
-    justify-content: space-around;
-    width: 120%;
-    font-size: 13px;
-    line-height: 27px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-left: -10%;
-    margin-top: 0px;
-  }
-
-  .ChoThanhToan__top--item1 {
-    font-size: 20px;
-  }
-
-  .ChoThanhToan__body {
-    flex-direction: column-reverse;
-    justify-content: center;
-    margin-top: 30px;
-  }
-
-  .ChoThanhToan__body--left,
-  .ChoThanhToan__body--right {
-    font-size: 17px;
-    padding-left: 15px;
-    padding-bottom: 20px;
-  }
-
-  .ChoThanhToan__body--left {
-    width: 90%;
-    justify-content: center;
-    padding-top: 10px;
-    margin-left: 5%;
-    margin-top: 30px;
-  }
-
-  .ChoThanhToan__label--flex {
-    display: flex;
-  }
-
-  .ChoThanhToan__title--1,
-  .ChoThanhToan__title--3 {
-    font-size: 20px;
-  }
-
-  .ChoThanhToan__title--2 {
-    font-size: 17px;
-    margin-bottom: 10px;
-  }
-
-  .ChoThanhToan__line {
-    margin-left: -2%;
-    margin-top: 7px;
-    margin-bottom: 7px;
-  }
-
-  .ChoThanhToan__label {
-    width: 35%;
-  }
-
-  .ChoThanhToan__label--2 {
-    width: 45%;
-  }
-
-  .ChoThanhToan__label--right {
-    width: 40%;
-  }
-
-  .ChoThanhToan__label--12 {
-    width: 55%;
-  }
-
-  .ChoThanhToan__note {
-    font-size: 17px;
-    margin-right: 5px;
-    font-weight: normal;
-  }
-
-  .ChoThanhToan__body--right {
-    width: 90%;
-    margin-left: 5%;
-    padding-top: 10px;
-    justify-content: center;
-  }
-
-  .ChoThanhToan__button--flex {
-    text-align: center;
-  }
-
-  .ChoThanhToan__button {
-    width: 25%;
-    margin-left: -3%;
-    font-size: 20px;
-  }
-
-  .ChoThanhToan__button--2 {
-    margin-left: 15px;
-    margin-top: 10px;
-  }
-
-  .DonHangHoanTat--top {
-    font-size: 18px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 70px;
-  }
-
-  .DonHangHoanTat__icons svg {
-    margin-top: 13px;
-    width: 210px;
-    height: 6px;
-  }
-
-  .DonHangHoanTat__icon {
-    padding-top: 7px;
-  }
-
-  .DonHangHoanTat__top--circle {
-    border-radius: 40px;
-    width: 35px;
-    height: 35px;
-    margin-top: 0px;
-    background-color: rgba(18, 201, 47, 1);
-  }
-
-  .DonHangHoanTat__top--circle2 {
-    background-color: rgba(18, 201, 47, 1);
-    border-radius: 40px;
-    width: 35px;
-    height: 35px;
-    margin-top: 0px;
-  }
-
-  .DonHangHoanTat__top--item {
-    display: flex;
-    justify-content: space-around;
-    width: 120%;
-    font-size: 13px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-left: -10%;
-    margin-top: 0px;
-  }
-
-  .DonHangHoanTat__top--item1 {
-    font-size: 20px;
-  }
-
-  .DonHangHoanTat__body {
-    flex-direction: column-reverse;
-    justify-content: center;
-    margin-top: 30px;
-  }
-
-  .DonHangHoanTat__body--left,
-  .DonHangHoanTat__body--right {
-    font-size: 17px;
-    padding-left: 15px;
-    padding-bottom: 20px;
-  }
-
-  .DonHangHoanTat__body--left {
-    width: 90%;
-    justify-content: center;
-    padding-top: 10px;
-    margin-left: 5%;
-    margin-top: 30px;
-  }
-
-  .DonHangDonHangHoanTat__label--flex {
-    display: flex;
-  }
-
-  .DonHangHoanTat__title--1,
-  .DonHangHoanTat__title--3 {
-    font-size: 20px;
-  }
-
-  .DonHangHoanTat__title--2 {
-    font-size: 17px;
-    margin-bottom: 10px;
-  }
-
-  .DonHangHoanTat__line {
-    margin-left: -2%;
-    margin-top: 7px;
-    margin-bottom: 7px;
-  }
-
-  .DonHangHoanTat__label {
-    width: 35%;
-  }
-
-  .DonHangHoanTat__label--2 {
-    width: 45%;
-  }
-
-  .DonHangHoanTat__label--right {
-    width: 40%;
-  }
-
-  .DonHangHoanTat__label--12 {
-    width: 55%;
-  }
-
-  .DonHangHoanTat__label--10,
-  .DonHangHoanTat__label--26 {
-    font-weight: bold;
-  }
-
-  .DonHangHoanTat--note {
-    font-size: 17px;
-    margin-right: 5px;
-  }
-
-  .DonHangHoanTat__body--right {
-    width: 90%;
-    margin-left: 5%;
-    padding-top: 10px;
-    justify-content: center;
-  }
-
-  .DonHangHoanTat__button--flex {
-    text-align: center;
-  }
-
-  .DonHangHoanTat__button {
-    width: 25%;
-    margin-left: -3%;
-    font-size: 20px;
-  }
-
-  .DonHangHoanTat__button--2 {
-    margin-left: 15px;
-    margin-top: 10px;
-  }
-
-  /* Quỳnh */
-  #beYeu .Album--mySlides,
-  #wedding .Album--mySlides {
-    height: 450px;
-  }
-
-  .Album--prev,
-  .Album--next {
-    font-size: 20px;
-    padding: 15px;
-  }
-
-  .Album--title {
-    font-size: 25px;
-  }
-
-  #wedding .Album--prev,
-  #wedding .Album--next {
-    top: 26%;
-  }
-
-  .DonHang--align-bottom {
-    height: 230px;
-  }
+}
+
+.ThanhToan__title {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.ThanhToan__note--2 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.DatThue--top {
+  margin-top: 150px;
+}
+
+.DatThue__top--item1 {
+  font-size: 25px;
+}
+
+.DatThue__input {
+  height: 40px;
+  width: 65%;
+  margin-bottom: 14px;
+  border: rgba(167, 167, 167, 1) solid 1px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 0%;
+}
+
+.DatThue__input--discount {
+  margin-bottom: 10px;
+}
+
+.DatThue__input--discount1 {
+  width: 40%;
+  font-size: 20px;
+  margin-left: 13%;
+  border: none;
+}
+
+.DatThue__input--button2 {
+  width: 30%;
+  font-size: 20px;
+  margin-left: 35%;
+  border: none;
+}
+
+.DatThue--right {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.DatThue__right {
+  margin-left: 25%;
+}
+
+.DatThue__select {
+  font-size: 15px;
+  height: 35px;
+  width: 35%;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  padding-top: 3px;
+}
+
+.DatThue__label--2 {
+  font-size: 20px;
+  width: 100%;
+}
+
+.DatThue__label--1,
+.DatThue__label--3,
+.DatThue__label--4,
+.DatThue__label--5,
+.DatThue__label--6,
+.DatThue__label--7,
+.DatThue__label--8,
+.DatThue__label--9,
+.DatThue__label--10,
+.DatThue__label--11,
+.DatThue__label--12,
+.DatThue__label--13 {
+  width: 65%;
+}
+
+.DatThue__input--info {
+  margin-left: 25%;
+}
+
+.DatThue__right--item1,
+.DatThue__right--item2,
+.DatThue__right--item3,
+.DatThue__right--item4,
+.DatThue__right--item5,
+.DatThue__right--item6,
+.DatThue__right--item7,
+.DatThue__right--item8,
+.DatThue__right--item9,
+.DatThue__right--item10,
+.DatThue__right--item11,
+.DatThue__right--item12 {
+  flex-direction: column;
+}
+
+.DatThue--bottom {
+  font-size: 20px;
+  margin-left: -30%;
+}
+
+.DatThue--top {
+  font-size: 18px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 70px;
+  margin-bottom: -12%;
+}
+
+.DatThue__icons svg {
+  margin-top: 13px;
+  width: 210px;
+  height: 6px;
+}
+
+.DatThue__icon {
+  padding-top: 7px;
+}
+
+.DatThue__top--circle {
+  border-radius: 40px;
+  width: 35px;
+  height: 35px;
+  margin-top: 0px;
+  background-color: rgba(18, 201, 47, 1);
+}
+
+.DatThue__top--circle2 {
+  background-color: rgba(196, 196, 196, 1);
+  border-radius: 40px;
+  width: 35px;
+  height: 35px;
+  margin-top: 0px;
+}
+
+.DatThue__top--item {
+  display: flex;
+  justify-content: space-around;
+  width: 120%;
+  font-size: 13px;
+  line-height: 27px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-left: -10%;
+  margin-top: 0px;
+}
+
+.DatThue__top--item1 {
+  font-size: 20px;
+}
+
+.DatThue--title {
+  font-size: 20px;
+}
+
+.DatThue__input--checkbox {
+  margin-left: 48%;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.ChoThanhToan--top {
+  font-size: 18px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 70px;
+}
+
+.ChoThanhToan__icons svg {
+  margin-top: 13px;
+  width: 210px;
+  height: 6px;
+}
+
+.ChoThanhToan__icon {
+  padding-top: 7px;
+}
+
+.ChoThanhToan__top--circle {
+  border-radius: 40px;
+  width: 35px;
+  height: 35px;
+  margin-top: 0px;
+  background-color: rgba(18, 201, 47, 1);
+}
+
+.ChoThanhToan__top--circle2 {
+  background-color: rgba(196, 196, 196, 1);
+  border-radius: 40px;
+  width: 35px;
+  height: 35px;
+  margin-top: 0px;
+}
+
+.ChoThanhToan__top--circle3 {
+  background-color: rgba(18, 201, 47, 1);
+  border-radius: 40px;
+  width: 35px;
+  height: 35px;
+  margin-top: 0px;
+}
+
+.ChoThanhToan__top--item {
+  display: flex;
+  justify-content: space-around;
+  width: 120%;
+  font-size: 13px;
+  line-height: 27px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-left: -10%;
+  margin-top: 0px;
+}
+
+.ChoThanhToan__top--item1 {
+  font-size: 20px;
+}
+
+.ChoThanhToan__body {
+  flex-direction: column-reverse;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.ChoThanhToan__body--left,
+.ChoThanhToan__body--right {
+  font-size: 17px;
+  padding-left: 15px;
+  padding-bottom: 20px;
+}
+
+.ChoThanhToan__body--left {
+  width: 90%;
+  justify-content: center;
+  padding-top: 10px;
+  margin-left: 5%;
+  margin-top: 30px;
+}
+
+.ChoThanhToan__label--flex {
+  display: flex;
+}
+
+.ChoThanhToan__title--1,
+.ChoThanhToan__title--3 {
+  font-size: 20px;
+}
+
+.ChoThanhToan__title--2 {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.ChoThanhToan__line {
+  margin-left: -2%;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.ChoThanhToan__label {
+  width: 35%;
+}
+
+.ChoThanhToan__label--2 {
+  width: 45%;
+}
+
+.ChoThanhToan__label--right {
+  width: 40%;
+}
+
+.ChoThanhToan__label--12 {
+  width: 55%;
+}
+
+.ChoThanhToan__note {
+  font-size: 17px;
+  margin-right: 5px;
+  font-weight: normal;
+}
+
+.ChoThanhToan__body--right {
+  width: 90%;
+  margin-left: 5%;
+  padding-top: 10px;
+  justify-content: center;
+}
+
+.ChoThanhToan__button--flex {
+  text-align: center;
+}
+
+.ChoThanhToan__button {
+  width: 25%;
+  margin-left: -3%;
+  font-size: 20px;
+}
+
+.ChoThanhToan__button--2 {
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+/* Quỳnh */
+#beYeu .Album--mySlides,
+#wedding .Album--mySlides {
+  height: 450px;
+}
+
+.Album--prev,
+.Album--next {
+  font-size: 20px;
+  padding: 15px;
+}
+
+.Album--title {
+  font-size: 25px;
+}
+
+#wedding .Album--prev,
+#wedding .Album--next {
+  top: 26%;
+}
+
+.DonHang--align-bottom {
+  height: 230px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -5736,92 +4755,6 @@ i.fas.fa-exclamation-circle,
   }
 
   /* My */
-  .ThanhToan--top {
-    font-size: 22px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 100px;
-  }
-
-  .ThanhToan__icons svg {
-    margin-top: 13px;
-    width: 265px;
-    height: 6px;
-  }
-
-  .ThanhToan__icon {
-    padding-top: 12px;
-  }
-
-  .ThanhToan__top--circle {
-    border-radius: 50px;
-    width: 50px;
-    height: 50px;
-    margin-top: -10px;
-    background-color: rgba(18, 201, 47, 1);
-  }
-
-  .ThanhToan__top--circle2 {
-    background-color: rgba(196, 196, 196, 1);
-    border-radius: 50px;
-    width: 50px;
-    height: 50px;
-    margin-top: -10px;
-  }
-
-  .ThanhToan__top--item {
-    display: flex;
-    justify-content: space-around;
-    width: 120%;
-    font-size: 20px;
-    line-height: 27px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-left: -10%;
-    margin-top: 10px;
-  }
-
-  .ThanhToan__top--item1 {
-    font-size: 23px;
-    margin-bottom: 30px;
-  }
-
-  .ThanhToan__body {
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 20px;
-    margin-left: 5%;
-  }
-
-  .ThanhToan__body--left,
-  .ThanhToan__body--right {
-    font-size: 20px;
-  }
-
-  .ThanhToan__body--left {
-    width: 95%;
-    padding-left: 5%;
-  }
-
-  .ThanhToan__icon--edit {
-    margin-left: 95%;
-    margin-bottom: 10px;
-  }
-
-  .ThanhToan__label {
-    width: 35%;
-  }
-
-  .ThanhToan__label--2,
-  .ThanhToan__label--8 {
-    width: 55%;
-  }
-
-  .ThanhToan__font--size {
-    height: 35px;
-    font-size: 13px;
-    border-radius: 5px;
-  }
 
   .ThanhToan__note--1 {
     font-size: 17px;
@@ -5829,38 +4762,9 @@ i.fas.fa-exclamation-circle,
     margin-bottom: 20px;
   }
 
-  .ThanhToan__button {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .ThanhToan__button--1 {
-    border-color: rgba(196, 196, 196, 1);
-    border-radius: 5px;
-    height: 40px;
-    width: 25%;
-    font-size: 20px;
-    margin-left: -5%;
-  }
-
-  .ThanhToan__body--right {
-    width: 95%;
-    margin-top: 20px;
-    padding-top: 20px;
-    padding-left: 10%;
-    padding-bottom: 20px;
-    margin-left: 0%;
-  }
-
   .ThanhToan__title {
     font-size: 22px;
     margin-bottom: 10px;
-  }
-
-  .ThanhToan__line {
-    margin-left: -11%;
-    margin-top: 5px;
-    margin-bottom: 5px;
   }
 
   .ThanhToan__note--2 {
@@ -6083,6 +4987,14 @@ i.fas.fa-exclamation-circle,
     margin-top: -10px;
   }
 
+  .ChoThanhToan__top--circle3 {
+    background-color: rgba(18, 201, 47, 1);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+  }
+
   .ChoThanhToan__top--item {
     display: flex;
     justify-content: space-around;
@@ -6184,143 +5096,6 @@ i.fas.fa-exclamation-circle,
     margin-top: 10px;
   }
 
-  .DonHangHoanTat--top {
-    font-size: 22px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 100px;
-  }
-
-  .DonHangHoanTat__icons svg {
-    margin-top: 13px;
-    width: 265px;
-    height: 6px;
-  }
-
-  .DonHangHoanTat__icon {
-    padding-top: 12px;
-  }
-
-  .DonHangHoanTat__top--circle {
-    border-radius: 50px;
-    width: 50px;
-    height: 50px;
-    margin-top: -10px;
-    background-color: rgba(18, 201, 47, 1);
-  }
-
-  .DonHangHoanTat__top--circle2 {
-    background-color: rgba(18, 201, 47, 1);
-    border-radius: 50px;
-    width: 50px;
-    height: 50px;
-    margin-top: -10px;
-  }
-
-  .DonHangHoanTat__top--item {
-    display: flex;
-    justify-content: space-around;
-    width: 120%;
-    font-size: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-left: -10%;
-    margin-top: 10px;
-  }
-
-  .DonHangHoanTat__top--item1 {
-    font-size: 23px;
-    margin-bottom: 30px;
-  }
-
-  .DonHangHoanTat__body {
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-  }
-
-  .DonHangHoanTat__body--left,
-  .DonHangHoanTat__body--right {
-    font-size: 16px;
-    padding-left: 15px;
-    padding-bottom: 20px;
-  }
-
-  .DonHangHoanTat__body--left {
-    width: 50%;
-    justify-content: center;
-    padding-top: 10px;
-    margin-top: 0%;
-    margin-left: 0%;
-  }
-
-  .DonHangDonHangHoanTat__label--flex {
-    display: flex;
-  }
-
-  .DonHangHoanTat__title--1,
-  .DonHangHoanTat__title--3 {
-    font-size: 20px;
-  }
-
-  .DonHangHoanTat__title--2 {
-    font-size: 17px;
-    margin-bottom: 10px;
-  }
-
-  .DonHangHoanTat__line {
-    margin-left: -2%;
-    margin-top: 7px;
-    margin-bottom: 7px;
-  }
-
-  .DonHangHoanTat__label {
-    width: 35%;
-  }
-
-  .DonHangHoanTat__label--2 {
-    width: 45%;
-  }
-
-  .DonHangHoanTat__label--right {
-    width: 40%;
-  }
-
-  .DonHangHoanTat__label--12 {
-    width: 60%;
-  }
-
-  .DonHangHoanTat__label--10,
-  .DonHangHoanTat__label--26 {
-    font-weight: bold;
-  }
-
-  .DonHangHoanTat--note {
-    font-size: 15px;
-    margin-right: 5px;
-  }
-
-  .DonHangHoanTat__body--right {
-    width: 50%;
-    margin-left: 3%;
-    padding-top: 10px;
-    justify-content: center;
-  }
-
-  .DonHangHoanTat__button--flex {
-    text-align: center;
-  }
-
-  .DonHangHoanTat__button {
-    width: 30%;
-  }
-
-  .DonHangHoanTat__button--2 {
-    margin-left: 15px;
-    margin-top: 10px;
-  }
-
   .DonHang--align-bottom {
     height: 50px;
   }
@@ -6394,7 +5169,7 @@ i.fas.fa-exclamation-circle,
   .TrangChu__service--1 img,
   .TrangChu__album--1 img,
   .TrangChu__space--1 img {
-    width: 350px;
+    width: 400px;
   }
 
   .TrangChu__album--1 div,
@@ -6525,141 +5300,15 @@ i.fas.fa-exclamation-circle,
   }
 
   /* My */
-  .ThanhToan--top {
-    font-size: 22px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 100px;
-  }
-
-  .ThanhToan__icons svg {
-    margin-top: 13px;
-    width: 340px;
-    height: 6px;
-  }
-
-  .ThanhToan__icon {
-    padding-top: 12px;
-  }
-
-  .ThanhToan__top--circle {
-    border-radius: 50px;
-    width: 50px;
-    height: 50px;
-    margin-top: -10px;
-    background-color: rgba(18, 201, 47, 1);
-  }
-
-  .ThanhToan__top--circle2 {
-    background-color: rgba(196, 196, 196, 1);
-    border-radius: 50px;
-    width: 50px;
-    height: 50px;
-    margin-top: -10px;
-  }
-
-  .ThanhToan__top--item {
-    display: flex;
-    justify-content: space-around;
-    width: 120%;
-    font-size: 20px;
-    line-height: 27px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-left: -10%;
-    margin-top: 10px;
-  }
-
-  .ThanhToan__top--item1 {
-    font-size: 23px;
-    margin-bottom: 30px;
-  }
-
-  .ThanhToan__body {
-    flex-direction: row;
-  }
-
-  .ThanhToan__body {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-
-  .ThanhToan__body--left,
-  .ThanhToan__body--right {
-    font-size: 18px;
-  }
-
-  .ThanhToan__body--left {
-    width: 50%;
-    justify-content: center;
-    padding-top: 10px;
-    margin-left: -5%;
-    padding-left: 0%;
-  }
-
-  .ThanhToan__icon--edit {
-    margin-left: 93%;
-    margin-bottom: 10px;
-  }
-
-  .ThanhToan__label--flex {
-    display: flex;
-    margin-left: 5%;
-  }
-
-  .ThanhToan__label {
-    width: 35%;
-  }
-
-  .ThanhToan__label--2,
-  .ThanhToan__label--8 {
-    width: 55%;
-  }
-
-  .ThanhToan__font--size {
-    height: 35px;
-    font-size: 12px;
-    border-radius: 5px;
-  }
 
   .ThanhToan__note--1 {
     font-size: 15px;
     margin-left: 0%;
   }
 
-  .ThanhToan__button {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-left: 0%;
-  }
-
-  .ThanhToan__button--1 {
-    border-color: rgba(196, 196, 196, 1);
-    border-radius: 5px;
-    height: 40px;
-    width: 25%;
-    font-size: 20px;
-  }
-
-  .ThanhToan__body--right {
-    width: 50%;
-    padding-top: 30px;
-    padding-left: 3%;
-    padding-bottom: 20px;
-    margin-left: 5%;
-    margin-top: 0%;
-  }
-
   .ThanhToan__title {
     font-size: 22px;
     margin-bottom: 10px;
-  }
-
-  .ThanhToan__line {
-    margin-left: -6%;
-    margin-top: 20px;
-    margin-bottom: 15px;
   }
 
   .ThanhToan__note--2 {
@@ -6858,6 +5507,14 @@ i.fas.fa-exclamation-circle,
     margin-top: -10px;
   }
 
+  .ChoThanhToan__top--circle3 {
+    background-color: rgba(18, 201, 47, 1);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+  }
+
   .ChoThanhToan__top--item {
     display: flex;
     justify-content: space-around;
@@ -6954,143 +5611,6 @@ i.fas.fa-exclamation-circle,
   }
 
   .ChoThanhToan__button--2 {
-    margin-left: 15px;
-    margin-top: 10px;
-  }
-
-  .DonHangHoanTat--top {
-    font-size: 22px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 100px;
-  }
-
-  .DonHangHoanTat__icons svg {
-    margin-top: 13px;
-    width: 340px;
-    height: 6px;
-  }
-
-  .DonHangHoanTat__icon {
-    padding-top: 12px;
-  }
-
-  .DonHangHoanTat__top--circle {
-    border-radius: 50px;
-    width: 50px;
-    height: 50px;
-    margin-top: -10px;
-    background-color: rgba(18, 201, 47, 1);
-  }
-
-  .DonHangHoanTat__top--circle2 {
-    background-color: rgba(18, 201, 47, 1);
-    border-radius: 50px;
-    width: 50px;
-    height: 50px;
-    margin-top: -10px;
-  }
-
-  .DonHangHoanTat__top--item {
-    display: flex;
-    justify-content: space-around;
-    width: 120%;
-    font-size: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-left: -10%;
-    margin-top: 10px;
-  }
-
-  .DonHangHoanTat__top--item1 {
-    font-size: 23px;
-    margin-bottom: 30px;
-  }
-
-  .DonHangHoanTat__body {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-  }
-
-  .DonHangHoanTat__body--left,
-  .DonHangHoanTat__body--right {
-    font-size: 18px;
-    padding-left: 15px;
-    padding-bottom: 20px;
-  }
-
-  .DonHangHoanTat__body--left {
-    width: 50%;
-    justify-content: center;
-    padding-top: 10px;
-  }
-
-  .DonHangDonHangHoanTat__label--flex {
-    display: flex;
-  }
-
-  .DonHangHoanTat__title--1,
-  .DonHangHoanTat__title--3 {
-    font-size: 22px;
-  }
-
-  .DonHangHoanTat__title--2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-
-  .DonHangHoanTat__line {
-    margin-left: -2%;
-    margin-top: 7px;
-    margin-bottom: 7px;
-  }
-
-  .DonHangHoanTat__label {
-    width: 35%;
-    font-weight: normal;
-  }
-
-  .DonHangHoanTat__label--2 {
-    width: 45%;
-  }
-
-  .DonHangHoanTat__label--right {
-    width: 40%;
-  }
-
-  .DonHangHoanTat__label--12 {
-    width: 55%;
-  }
-
-  .DonHangHoanTat__label--10,
-  .DonHangHoanTat__label--26,
-  .DonHangHoanTat__label--20 {
-    font-weight: bold;
-  }
-
-  .DonHangHoanTat--note {
-    font-size: 17px;
-    margin-right: 5px;
-  }
-
-  .DonHangHoanTat__body--right {
-    width: 50%;
-    margin-left: 5%;
-    padding-top: 10px;
-    justify-content: center;
-  }
-
-  .DonHangHoanTat__button--flex {
-    text-align: center;
-  }
-
-  .DonHangHoanTat__button {
-    width: 30%;
-    font-size: 22px;
-  }
-
-  .DonHangHoanTat__button--2 {
     margin-left: 15px;
     margin-top: 10px;
   }
