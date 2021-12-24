@@ -1,103 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <link rel="stylesheet" href="./CSS/Blog.css">
-    <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog</title>
+  <link rel="stylesheet" href="./CSS/Style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <script src="./JS/Blog.js" defer></script>
 </head>
+
 <body>
-
-    <div class="Page__Header--Container">
-        <div class="Page__Header--Tach">Tách studio</div>
-
-        <div class="Page__Header--Title"><i class="glyphicon glyphicon-home"></i></div>
-
-        <div class="Page__Header--Title Page__Header--Dropdown">
-            Cho thuê
-            <div class="dropdown-content">
-                <a href="#">Máy ảnh</a>
-                <a href="#">Studio</a>
-                <a href="#">Trang phục</a>
-            </div>
-        </div>
-
-        <div class="Page__Header--Title"><a href="#album">Album</a></div>
-
-        <div class="Page__Header--Title">Blog</div>
-
-        <div class="Page__Header--Icon ">
-            <span class="glyphicon glyphicon-search Page__Header--Icon2"></span>
-            <input class="Page__Header--Search" type="text" placeholder="Nhập từ tìm kiếm">
-        </div>
-        
-        <div class="Page__Header--Title">Đăng nhập</div>
+  <div id="myHeader2" class="VerHeader__container">
+    <a href="javascript:void(0)" class="VerHeader__closebtn" onclick="closeNav()">×</a>
+    <div class="VerHeader__search">
+      <span class="glyphicon glyphicon-search Header__icon--2"></span>
+      <input class="Header__search" type="text" placeholder="Nhập từ tìm kiếm" />
     </div>
-
-    <div class="Blog__layout">
-        <div class="Blog__item Blog__item--col1" >
-            <div class="Blog__item--col1header">
-          <p>CHUYỆN TÁCH</p>
-            </div>
-            <div class="Blog__item--col1main">
-                <details class="Blog__col1--heading1">
-                    <summary><a class="Blog--textdecoration" href="./GTTach.html" target="blog">Tách Studio</a></summary>
-                </details>
-                <details class="Blog__col1--heading1">
-                    <summary>Chủ đề chụp</summary>
-                    <details class="Blog__col1--heading2">
-                        <summary >Gia đình</summary>
-                        <p class="Blog__col1--heading3"> <a href="./Bovacon.html" target="blog" class="text--decoration"> Bố và con</a></p>
-                        <p class="Blog__col1--heading3"> <a href="./Blog_giadinh.html" target="blog" class="text--decoration">Nhà là nơi tuyệt vời nhất</a></p>
-                    </details>
-                    <details class="Blog__col1--heading2">
-                        <summary>Kỷ yếu</summary>
-                        <p class="Blog__col1--heading3"> <a href="./thanhxuan.html" target="blog" class="text--decoration">Lưu giữ thanh xuân</a></p>
-                        <p class="Blog__col1--heading3"><a href="./Nhungmuanho.html" target="blog" class="text--decoration">Những mùa nhớ</a></p>
-                    </details>
-                </details>
-                <details class="Blog__col1--heading1">
-                    <summary>Một số địa điểm chụp hình đẹp ở Sài Gòn</summary>
-                    <p class="Blog__col1--heading2"><a href="./SaiGonWaterBus.html" target="blog" class="Blog--textdecoration">SaiGon WarterBus</a></p>
-                    <p class="Blog__col1--heading2"><a href="./Hem144Pastuer.html" target="blog" class="Blog--textdecoration">Hẻm 144 Pastuer</a></p>
-                </details>
-                <details class="Blog__col1--heading1">
-                    <summary>Tips cần biết khi chụp ảnh</summary>
-                    <p class="Blog__col1--heading2"><a href="./Chupanhbe.html" target="blog" class="Blog--textdecoration">Chụp ảnh bé theo từng độ tuổi</a></p>
-                    <p class="Blog__col1--heading2"><a href="./Taodang.html" target="blog" class="Blog--textdecoration"> Tạo dáng cho người mới</a></p>
-                </details>
-            </div>
-        </div>
-        <div class="Blog__item Blog__item--col2">
-            <div class="Blog__item--col2header">
-              <p>TÁCH BLOG</p>
-            </div>
-            <div class="Blog__item--col2main">
-            <iframe name="blog" src="./GTTach.html" frameborder="0"  width="100%" height="1000px" ></iframe>
-        </div>
-        </div>
+    <a href="" class="Header__title" id="btnHome1" target="_blank"><i class="glyphicon glyphicon-home"></i></a>
+    <button class="VerHeader__btn" id="btnChoThue1" target="_blank">Cho Thuê</button>
+    <div class="VerHeader__dropdown--container">
+      <a href="ChuChoThue.html#mayAnh" target="_blank"> Máy ảnh</a>
+      <a href="ChuChoThue.html#studio" target="_blank"> Studio</a>
+      <a href="ChuChoThue.html#trangPhuc" target="_blank"> Trang phục</a>
     </div>
-
-
-    <div class="page__footer--container footer__text">
-        <div class="footer--left">
-            <p class="footer__header">TÁCH STUDIO</p>
-            <p>UEL, Tp Thủ Đức, Tp Hồ Chí Minh <br>
-                Call us: 0123456789 <br>
-                tachstudio@gmail.com
+    <a href="TrangChu1.html#album" target="_blank">Album</a>
+    <a href="" id="btnBlog1">Blog</a>
+  </div>
+  <div class="HorHeader__container" id="myHeader">
+    <a href="javascript:void(0);" class="HorHeader__button" onclick="openNav()"><i
+        class="glyphicon glyphicon-menu-hamburger"></i></a>
+    <a href="" class="HorHeader__tach">Tách studio</a>
+    <a href="" class="Header__title" id="btnHome2"><i class="glyphicon glyphicon-home"></i></a>
+    <div class="Header__title HorHeader__dropdown">
+      <button class="HorHeader__dropdown--button" id="btnChoThue2" target="_blank">
+        Cho Thuê
+      </button>
+      <div class="HorHeader__dropdown--content">
+        <a href="ChuChoThue.html#mayAnh" target="_blank"> Máy ảnh</a>
+        <a href="ChuChoThue.html#studio" target="_blank"> Studio</a>
+        <a href="ChuChoThue.html#trangPhuc" target="_blank"> Trang phục</a>
+      </div>
+    </div>
+    <a href="TrangChu1.html#album" class="Header__title" target="_blank">Album</a>
+    <a href="" class="Header__title" id="btnBlog2">Blog</a>
+    <div class="HorHeader__icon">
+      <span class="glyphicon glyphicon-search Header__icon--2"></span>
+      <input class="Header__search" type="text" placeholder="Nhập từ tìm kiếm" />
+    </div>
+    <a href="" class="HorHeader__login" id="btnDangNhap" target="_blank">Đăng nhập</a>
+  </div>
+  <div class="Blog__layout">
+    <div class="Blog__item Blog__item--left">
+      <div class="Blog__header--column1">
+        <p>CHUYỆN TÁCH</p>
+      </div>
+      <div class="Blog__mainpage--column1">
+        <details class="Blog__tittle--1">
+          <summary>
+            <a class="Blog__text--decoration" href="./GioiThieuTach.html" target="blog">Tách Studio</a>
+          </summary>
+        </details>
+        <details class="Blog__tittle--1">
+          <summary>Chủ đề chụp</summary>
+          <details class="Blog__tittle--2">
+            <summary>Gia đình</summary>
+            <p class="Blog__tittle--3">
+              <a href="./BoVaCon.html" target="blog" class="Blog__text--decoration">
+                Bố và con</a>
             </p>
-            <p>Copyright @2021 Tách Creative Studio</p>
-        </div>
-
-        <div class="footer--right">
-            <p class="footer__header">LIÊN HỆ VỚI CHÚNG TÔI</p>
-            <p> <img src="../IMAGES/footer-fb.png" alt=""> Tách studio</p>
-            <p> <img src="../IMAGES/footer-ins.png" alt=""> tach.studio</p>
-            <p> <img src="../IMAGES/footer-ytb.png" alt=""> Tách Studio Official</p>
-        </div>
+            <p class="Blog__tittle--3">
+              <a href="./GiaDinh.html" target="blog" class="Blog__text--decoration">Nhà là nơi tuyệt vời nhất</a>
+            </p>
+          </details>
+          <details class="Blog__tittle--2">
+            <summary>Kỷ yếu</summary>
+            <p class="Blog__tittle--3">
+              <a href="./ThanhXuan.html" target="blog" class="Blog__text--decoration">Lưu giữ thanh xuân</a>
+            </p>
+            <p class="Blog__tittle--3">
+              <a href="./NhungMuaNho.html" target="blog" class="Blog__text--decoration">Những mùa nhớ</a>
+            </p>
+          </details>
+        </details>
+        <details class="Blog__tittle--1">
+          <summary>Địa điểm chụp hình đẹp ở Sài Gòn</summary>
+          <p class="Blog__tittle--2">
+            <a href="./SaiGonWaterBus.html" target="blog" class="Blog__text--decoration">SaiGon WarterBus</a>
+          </p>
+          <p class="Blog__tittle--2">
+            <a href="./Hem144Pastuer.html" target="blog" class="Blog__text--decoration">Hẻm 144 Pasteur</a>
+          </p>
+        </details>
+        <details class="Blog__tittle--1">
+          <summary>Tips cần biết khi chụp ảnh</summary>
+          <p class="Blog__tittle--2">
+            <a href="./ChupAnhBe.html" target="blog" class="Blog__text--decoration">Chụp ảnh bé theo từng độ tuổi</a>
+          </p>
+          <p class="Blog__tittle--2">
+            <a href="./TaoDang.html" target="blog" class="Blog__text--decoration">
+              Tạo dáng cho người mới</a>
+          </p>
+        </details>
+      </div>
     </div>
+    <div class="Blog__item Blog__item--right">
+      <div class="Blog__header--column2">
+        <p>TÁCH BLOG</p>
+      </div>
+      <div class="Blog__mainpage--column2">
+        <iframe name="blog" src="./GioiThieuTach.html" frameborder="0" width="100%" height="1000px"></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="Page__footer--container Footer__text">
+    <div class="Footer--left">
+      <p class="Footer__heading">TÁCH STUDIO</p>
+      <p>
+        UEL, Tp Thủ Đức, Tp Hồ Chí Minh <br />
+        Call us: 0123456789 <br />
+        tachstudio@gmail.com
+      </p>
+      <p>Copyright @2021 Tách Creative Studio</p>
+    </div>
+
+    <div class="Footer--right">
+      <p class="Footer__heading">LIÊN HỆ VỚI CHÚNG TÔI</p>
+      <p><img src="/images/footer-fb.png" alt="" /> Tách studio</p>
+      <p><img src="/images/footer-ins.png" alt="" /> tach.studio</p>
+      <p><img src="/images/footer-ytb.png" alt="" /> Tách Studio Official</p>
+    </div>
+  </div>
 </body>
+
 </html>

@@ -1,218 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
-    <link rel="stylesheet" href="/html/css/Style.css" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="/html/css/style-1.css" />
-  </head>
-  <body class="TrangChu__body--color">
-    <div id="myHeader2" class="VerHeader__container">
-      <a
-        href="javascript:void(0)"
-        class="VerHeader__closebtn"
-        onclick="closeNav()"
-        >×</a
-      >
-      <div class="VerHeader__search">
-        <span class="glyphicon glyphicon-search Header__icon--2"></span>
-        <input
-          class="Header__search"
-          type="text"
-          placeholder="Nhập từ tìm kiếm"
-        />
-      </div>
-      <a href="" class="Header__title"
-        ><i class="glyphicon glyphicon-home"></i
-      ></a>
-      <button class="VerHeader__btn">Cho Thuê</button>
-      <div class="VerHeader__dropdown--container">
-        <a href="">Máy ảnh</a>
-        <a href="">Studio</a>
-        <a href="">Trang phục</a>
-      </div>
-      <a href="">Album</a>
-      <a href="">Blog</a>
-    </div>
-    <div class="HorHeader__container" id="myHeader">
-      <a
-        href="javascript:void(0);"
-        class="HorHeader__button"
-        onclick="openNav()"
-        ><i class="glyphicon glyphicon-menu-hamburger"></i
-      ></a>
-      <a href="" class="HorHeader__tach">Tách studio</a>
-      <a href="" class="Header__title"
-        ><i class="glyphicon glyphicon-home"></i
-      ></a>
-      <div class="Header__title HorHeader__dropdown">
-        <button class="HorHeader__dropdown--button">Cho Thuê</button>
-        <div class="HorHeader__dropdown--content">
-          <a href=""> Máy ảnh</a>
-          <a href=""> Studio</a>
-          <a href=""> Trang phục</a>
-        </div>
-      </div>
-      <a href="" class="Header__title">Album</a>
-      <a href="" class="Header__title">Blog</a>
-      <div class="HorHeader__icon">
-        <span class="glyphicon glyphicon-search Header__icon--2"></span>
-        <input
-          class="Header__search"
-          type="text"
-          placeholder="Nhập từ tìm kiếm"
-        />
-      </div>
-      <a href="" class="HorHeader__login">Đăng nhập</a>
-    </div>
-    <div class="TrangChu__header--banner">
-      <img src="/images/banner.png" alt="" />
-    </div>
-    <div class="TrangChu__header--introduction">
-      <div class="TrangChu__introduction--1">
-        <div class="TrangChu__introduction--para">
-          <span class="TrangChu__introduction--header">
-            Tách Studio - Amazing Space for you!
-          </span>
-          <br />
-          <br />
-          Tách studio là địa điểm cho thuê studio chụp ảnh, studio quay phim tại
-          Hồ Chí Minh nằm trong căn tập thể xinh hết ý nằm trên làng Đại học
-          quốc gia Tp. HCM. Căn nhà bé bé nhưng ngập nắng và ánh sáng, có chiếc
-          ban công xinh xinh, có ô cửa gỗ cũ cũ...
-          <br />
-          <br />
-          Tách là không gian sáng tạo đáp ứng đầy đủ nhu cầu thuê studio quay
-          phim - chụp ảnh, thuê phòng chụp ảnh nghệ thuật, thuê thiết bị chụp
-          ảnh, chụp thời trang, ảnh sản phẩm, ảnh kỉ niệm, ảnh cưới... của nhiều
-          khách hàng. Đa dạng về bối cảnh, phong phú đồ Decor, linh động trong
-          từng concept, ánh sáng tự nhiên tốt, thiết bị hỗ trợ hiện đại... sẽ là
-          chất liệu tốt nhất để các ekip sở hữu những bộ hình ấn tượng, cá tính.
-        </div>
-      </div>
-      <div class="TrangChu__introduction--2">
-        <img src="/images/intro-image.jpg" alt="" />
-      </div>
-    </div>
-    <div class="TrangChu__body--service">
-      <h1 class="TrangChu__body--h1">DỊCH VỤ CỦA TÁCH STUDIO</h1>
-      <div
-        class="TrangChu__item--service TrangChu__scrollbar"
-        id="scrollbarStyle"
-      >
-        <div class="TrangChu__service--1">
-          <img src="/images/service-room.jpg" alt="" />
-          <div>
-            <p>Cho thuê studio</p>
-            <input type="button" value="Đặt thuê" />
-          </div>
-        </div>
-        <div class="TrangChu__service--1">
-          <img src="/images/service-camera.jpg" alt="" />
-          <div>
-            <p>Cho thuê máy ảnh</p>
-            <input type="button" value="Đặt thuê" />
-          </div>
-        </div>
-        <div class="TrangChu__service--1">
-          <img src="/images/service-clothes.jpg" alt="" />
-          <div>
-            <p>Cho thuê trang phục</p>
-            <input type="button" value="Đặt thuê" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="TrangChu__body--album" id="album">
-      <h1 class="TrangChu__body--h1">ALBUM CỦA TÁCH STUDIO</h1>
-      <div
-        class="TrangChu__item--album TrangChu__scrollbar"
-        id="scrollbarStyle"
-      >
-        <div class="TrangChu__album--1">
-          <img src="/images/album-kyyeu.jpg" alt="" />
-          <div>Chụp ảnh kỷ yếu</div>
-        </div>
-        <div class="TrangChu__album--1">
-          <img src="/images/album-cuoi.jpg" alt="" />
-          <div>Chụp ảnh cưới</div>
-        </div>
-        <div class="TrangChu__album--1">
-          <img src="/images/album-art.jpg" alt="" />
-          <div>Chụp ảnh nghệ thuật</div>
-        </div>
-        <div class="TrangChu__album--1">
-          <img src="/images/album-newborn.jpg" alt="" />
-          <div>Chụp ảnh newborn</div>
-        </div>
-        <div class="TrangChu__album--1">
-          <img src="/images/album-family.jpg" alt="" />
-          <div>Chụp ảnh gia đình</div>
-        </div>
-        <div class="TrangChu__album--1">
-          <img src="/images/album-child.jpg" alt="" />
-          <div>Chụp ảnh bé yêu</div>
-        </div>
-        <div class="TrangChu__album--1">
-          <img src="/images/album-chandung.jpg" alt="" />
-          <div>Chụp ảnh chân dung</div>
-        </div>
-        <div class="TrangChu__album--1">
-          <img src="/images/album-mebau.jpg" alt="" />
-          <div>Chụp ảnh bầu</div>
-        </div>
-        <div class="TrangChu__album--1">
-          <img src="/images/album-product.jpg" alt="" />
-          <div>Chụp ảnh sản phẩm</div>
-        </div>
-      </div>
-    </div>
-    <div class="TrangChu__body--space">
-      <h1 class="TrangChu__body--h1">KHÔNG GIAN TÁCH STUDIO</h1>
-      <div
-        class="TrangChu__item--space TrangChu__scrollbar"
-        id="scrollbarStyle"
-      >
-        <div class="TrangChu__space--1">
-          <img src="/images/space-codien.jpg" alt="" />
-          <div>Studio cổ điển</div>
-        </div>
-        <div class="TrangChu__space--1">
-          <img src="/images/space-tet.jpg" alt="" />
-          <div>Studio ngày Tết</div>
-        </div>
-        <div class="TrangChu__space--1">
-          <img src="/images/space-toigian.jpg" alt="" />
-          <div>Studio tối giản</div>
-        </div>
-      </div>
-      <p class="TrangChu__item--space--more">
-        <a href="./html/Chuchothue.html#choThue">Xem thêm...</a>
-      </p>
-    </div>
-    <div class="Page__footer--container Footer__text">
-      <div class="Footer--left">
-        <p class="Footer__heading">TÁCH STUDIO</p>
-        <p>
-          UEL, Tp Thủ Đức, Tp Hồ Chí Minh <br />
-          Call us: 0123456789 <br />
-          tachstudio@gmail.com
-        </p>
-        <p>Copyright @2021 Tách Creative Studio</p>
-      </div>
 
-      <div class="Footer--right">
-        <p class="Footer__heading">LIÊN HỆ VỚI CHÚNG TÔI</p>
-        <p><img src="/images/footer-fb.png" alt="" /> Tách studio</p>
-        <p><img src="/images/footer-ins.png" alt="" /> tach.studio</p>
-        <p><img src="/images/footer-ytb.png" alt="" /> Tách Studio Official</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trang Chủ</title>
+  <link rel="stylesheet" href="/html/css/Style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/html/css/style-1.css" />
+  <script src="./JS/TrangChu1.js" defer></script>
+</head>
+
+<body class="TrangChu__body--color">
+  <div id="myHeader2" class="VerHeader__container">
+    <a href="javascript:void(0)" class="VerHeader__closebtn" onclick="closeNav()">×</a>
+    <div class="VerHeader__search">
+      <span class="glyphicon glyphicon-search Header__icon--2"></span>
+      <input class="Header__search" type="text" placeholder="Nhập từ tìm kiếm" />
+    </div>
+    <a href="" class="Header__title" id="btnHome1"><i class="glyphicon glyphicon-home"></i></a>
+    <button class="VerHeader__btn" id="btnChoThue1">Cho Thuê</button>
+    <div class="VerHeader__dropdown--container">
+      <a href="ChuChoThue.html#mayAnh" target="_blank"> Máy ảnh</a>
+      <a href="ChuChoThue.html#studio" target="_blank"> Studio</a>
+      <a href="ChuChoThue.html#trangPhuc" target="_blank"> Trang phục</a>
+    </div>
+    <a href="TrangChu1.html#album">Album</a>
+    <a href="" id="btnBlog1">Blog</a>
+  </div>
+  <div class="HorHeader__container" id="myHeader">
+    <a href="javascript:void(0);" class="HorHeader__button" onclick="openNav()"><i
+        class="glyphicon glyphicon-menu-hamburger"></i></a>
+    <a href="" class="HorHeader__tach">Tách studio</a>
+    <a href="" class="Header__title" id="btnHome2"><i class="glyphicon glyphicon-home"></i></a>
+    <div class="Header__title HorHeader__dropdown">
+      <button class="HorHeader__dropdown--button" id="btnChoThue2">
+        Cho Thuê
+      </button>
+      <div class="HorHeader__dropdown--content">
+        <a href="ChuChoThue.html#mayAnh" target="_blank"> Máy ảnh</a>
+        <a href="ChuChoThue.html#studio" target="_blank"> Studio</a>
+        <a href="ChuChoThue.html#trangPhuc" target="_blank"> Trang phục</a>
       </div>
     </div>
-  </body>
+    <a href="TrangChu1.html#album" class="Header__title">Album</a>
+    <a href="" class="Header__title" id="btnBlog2">Blog</a>
+    <div class="HorHeader__icon">
+      <span class="glyphicon glyphicon-search Header__icon--2"></span>
+      <input class="Header__search" type="text" placeholder="Nhập từ tìm kiếm" />
+    </div>
+    <a href="" class="HorHeader__login" id="btnDangNhap">Đăng nhập</a>
+  </div>
+  <div class="TrangChu__header--banner">
+    <img src="/images/banner.png" alt="" />
+  </div>
+  <div class="TrangChu__header--introduction">
+    <div class="TrangChu__introduction--1">
+      <div class="TrangChu__introduction--para">
+        <span class="TrangChu__introduction--header">
+          Tách Studio - Amazing Space for you!
+        </span>
+        <br />
+        <br />
+        Tách studio là địa điểm cho thuê studio chụp ảnh, studio quay phim tại
+        Hồ Chí Minh nằm trong căn tập thể xinh hết ý nằm trên làng Đại học
+        quốc gia Tp. HCM. Căn nhà bé bé nhưng ngập nắng và ánh sáng, có chiếc
+        ban công xinh xinh, có ô cửa gỗ cũ cũ...
+        <br />
+        <br />
+        Tách là không gian sáng tạo đáp ứng đầy đủ nhu cầu thuê studio quay
+        phim - chụp ảnh, thuê phòng chụp ảnh nghệ thuật, thuê thiết bị chụp
+        ảnh, chụp thời trang, ảnh sản phẩm, ảnh kỉ niệm, ảnh cưới... của nhiều
+        khách hàng. Đa dạng về bối cảnh, phong phú đồ Decor, linh động trong
+        từng concept, ánh sáng tự nhiên tốt, thiết bị hỗ trợ hiện đại... sẽ là
+        chất liệu tốt nhất để các ekip sở hữu những bộ hình ấn tượng, cá tính.
+      </div>
+    </div>
+    <div class="TrangChu__introduction--2">
+      <img src="/images/intro-image.jpg" alt="" />
+    </div>
+  </div>
+  <div class="TrangChu__body--service">
+    <h1 class="TrangChu__body--h1">DỊCH VỤ CỦA TÁCH STUDIO</h1>
+    <div class="TrangChu__item--service TrangChu__scrollbar" id="scrollbarStyle">
+      <div class="TrangChu__service--1">
+        <img src="/images/service-room.jpg" alt="" />
+        <div>
+          <p>Cho thuê studio</p>
+          <a href="ChuChoThue.html#studio" target="_blank"><input type="button" value="Đặt thuê" /></a>
+        </div>
+      </div>
+      <div class="TrangChu__service--1">
+        <img src="/images/service-camera.jpg" alt="" />
+        <div>
+          <p>Cho thuê máy ảnh</p>
+          <a href="ChuChoThue.html#mayAnh" target="_blank"><input type="button" value="Đặt thuê" /></a>
+        </div>
+      </div>
+      <div class="TrangChu__service--1">
+        <img src="/images/service-clothes.jpg" alt="" />
+        <div>
+          <p>Cho thuê trang phục</p>
+          <a href="ChuChoThue.html#trangPhuc" target="_blank"><input type="button" value="Đặt thuê" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="TrangChu__body--album" id="album">
+    <h1 class="TrangChu__body--h1">ALBUM CỦA TÁCH STUDIO</h1>
+    <div class="TrangChu__item--album TrangChu__scrollbar" id="scrollbarStyle">
+      <div class="TrangChu__album--1">
+        <img src="/images/album-kyyeu.jpg" alt="" />
+        <div id="kyYeu">Chụp ảnh kỷ yếu</div>
+      </div>
+      <div class="TrangChu__album--1">
+        <img src="/images/album-cuoi.jpg" alt="" />
+        <div id="anhCuoi">Chụp ảnh cưới</div>
+      </div>
+      <div class="TrangChu__album--1">
+        <img src="/images/album-art.jpg" alt="" />
+        <div id="ngheThuat">Chụp ảnh nghệ thuật</div>
+      </div>
+      <div class="TrangChu__album--1">
+        <img src="/images/album-newborn.jpg" alt="" />
+        <div id="newBorn">Chụp ảnh newborn</div>
+      </div>
+      <div class="TrangChu__album--1">
+        <img src="/images/album-family.jpg" alt="" />
+        <div id="giaDinh">Chụp ảnh gia đình</div>
+      </div>
+      <div class="TrangChu__album--1">
+        <img src="/images/album-child.jpg" alt="" />
+        <div id="anhBe">Chụp ảnh bé yêu</div>
+      </div>
+      <div class="TrangChu__album--1">
+        <img src="/images/album-chandung.jpg" alt="" />
+        <div id="chanDung">Chụp ảnh chân dung</div>
+      </div>
+      <div class="TrangChu__album--1">
+        <img src="/images/album-mebau.jpg" alt="" />
+        <div id="anhBau">Chụp ảnh bầu</div>
+      </div>
+      <div class="TrangChu__album--1">
+        <img src="/images/album-product.jpg" alt="" />
+        <div id="sanPham">Chụp ảnh sản phẩm</div>
+      </div>
+    </div>
+  </div>
+  <div class="TrangChu__body--space">
+    <h1 class="TrangChu__body--h1">KHÔNG GIAN TÁCH STUDIO</h1>
+    <div class="TrangChu__item--space TrangChu__scrollbar" id="scrollbarStyle">
+      <div class="TrangChu__space--1">
+        <img src="/images/space-codien.jpg" alt="" />
+        <div>Studio cổ điển</div>
+      </div>
+      <div class="TrangChu__space--1">
+        <img src="/images/space-tet.jpg" alt="" />
+        <div>Studio ngày Tết</div>
+      </div>
+      <div class="TrangChu__space--1">
+        <img src="/images/space-toigian.jpg" alt="" />
+        <div>Studio tối giản</div>
+      </div>
+    </div>
+    <p class="TrangChu__item--spacemore">
+      <a href="ChuChoThue.html#studio" target="_blank">Xem thêm...</a>
+    </p>
+  </div>
+  <div class="Page__footer--container Footer__text">
+    <div class="Footer--left">
+      <p class="Footer__heading">TÁCH STUDIO</p>
+      <p>
+        UEL, Tp Thủ Đức, Tp Hồ Chí Minh <br />
+        Call us: 0123456789 <br />
+        tachstudio@gmail.com
+      </p>
+      <p>Copyright @2021 Tách Creative Studio</p>
+    </div>
+
+    <div class="Footer--right">
+      <p class="Footer__heading">LIÊN HỆ VỚI CHÚNG TÔI</p>
+      <p><img src="/images/footer-fb.png" alt="" /> Tách studio</p>
+      <p><img src="/images/footer-ins.png" alt="" /> tach.studio</p>
+      <p><img src="/images/footer-ytb.png" alt="" /> Tách Studio Official</p>
+    </div>
+  </div>
+</body>
+
 </html>

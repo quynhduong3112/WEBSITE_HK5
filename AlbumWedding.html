@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Album Ảnh Cưới</title>
+  <link rel="stylesheet" href="./CSS/Style.css" />
+</head>
+
+<body>
+  <h2 class="Album--title">ALBUM ẢNH CƯỚI</h2>
+  <div class="slideshow-container" id="wedding">
+    <div class="Album--mySlides Album--fade">
+      <img src="/IMAGES/wedding1.jpg" />
+    </div>
+    <div class="Album--mySlides Album--fade">
+      <div class="toBack"></div>
+      <img src="/IMAGES/wedding2.jpg" />
+    </div>
+    <div class="Album--mySlides Album--fade">
+      <div class="toBack"></div>
+      <img src="/IMAGES/wedding3.jpg" />
+    </div>
+    <div class="Album--mySlides Album--fade">
+      <div class="toBack"></div>
+      <img src="/IMAGES/wedding4.jpg" />
+    </div>
+    <div class="Album--mySlides Album--fade">
+      <div class="toBack"></div>
+      <img src="/IMAGES/wedding5.jpg" />
+    </div>
+    <div class="Album--mySlides Album--fade">
+      <div class="toBack"></div>
+      <img src="/IMAGES/wedding6.png" />
+    </div>
+    <div class="Album--mySlides Album--fade">
+      <div class="toBack"></div>
+      <img src="/IMAGES/wedding7.jpg" />
+    </div>
+    <div class="Album--mySlides Album--fade">
+      <div class="toBack"></div>
+      <img src="/IMAGES/wedding9.jpg" />
+    </div>
+    <!-- Next and previous buttons -->
+    <a class="Album--prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="Album--next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br />
+  <!-- The Album--dots/circles -->
+  <div style="text-align: center">
+    <span class="Album--dot" onclick="currentSlide(1)"></span>
+    <span class="Album--dot" onclick="currentSlide(2)"></span>
+    <span class="Album--dot" onclick="currentSlide(3)"></span>
+    <span class="Album--dot" onclick="currentSlide(4)"></span>
+    <span class="Album--dot" onclick="currentSlide(5)"></span>
+    <span class="Album--dot" onclick="currentSlide(6)"></span>
+    <span class="Album--dot" onclick="currentSlide(7)"></span>
+    <span class="Album--dot" onclick="currentSlide(8)"></span>
+  </div>
+  <script src="./JS/album.js"></script>
+</body>
+
+</html>

@@ -56,41 +56,41 @@
   <div id="myHeader2" class="VerHeader__container">
     <a href="javascript:void(0)" class="VerHeader__closebtn" onclick="closeNav()">×</a>
     <div class="VerHeader__search">
-      <span class="glyphicon glyphicon-search Header__icon--2">
-
-      </span>
+      <span class="glyphicon glyphicon-search Header__icon--2"></span>
       <input class="Header__search" type="text" placeholder="Nhập từ tìm kiếm" />
     </div>
-    <a href="" class="Header__title"><i class="glyphicon glyphicon-home"></i></a>
-    <button class="VerHeader__btn">Cho Thuê</button>
+    <a href="" class="Header__title" id="btnHome1"><i class="glyphicon glyphicon-home"></i></a>
+    <button class="VerHeader__btn" id="btnChoThue1">Cho Thuê</button>
     <div class="VerHeader__dropdown--container">
-      <a href=""> Máy ảnh</a>
-      <a href=""> Studio</a>
-      <a href=""> Trang phục</a>
+      <a href="ChuChoThue.html#mayAnh" target="_blank"> Máy ảnh</a>
+      <a href="ChuChoThue.html#studio" target="_blank"> Studio</a>
+      <a href="ChuChoThue.html#trangPhuc" target="_blank"> Trang phục</a>
     </div>
-    <a href="">Album</a>
-    <a href="">Blog</a>
+    <a href="TrangChu2.html#album" target="_blank">Album</a>
+    <a href="" id="btnBlog1">Blog</a>
   </div>
   <div class="HorHeader__container" id="myHeader">
     <a href="javascript:void(0);" class="HorHeader__button" onclick="openNav()"><i
         class="glyphicon glyphicon-menu-hamburger"></i></a>
     <a href="" class="HorHeader__tach">Tách studio</a>
-    <a href="" class="Header__title"><i class="glyphicon glyphicon-home"></i></a>
+    <a href="" class="Header__title" id="btnHome2"><i class="glyphicon glyphicon-home"></i></a>
     <div class="Header__title HorHeader__dropdown">
-      <button class="HorHeader__dropdown--button">Cho Thuê</button>
+      <button class="HorHeader__dropdown--button" id="btnChoThue2">
+        Cho Thuê
+      </button>
       <div class="HorHeader__dropdown--content">
-        <a href="">Máy ảnh</a>
-        <a href="">Studio</a>
-        <a href="">Trang phục</a>
+        <a href="ChuChoThue.html#mayAnh" target="_blank"> Máy ảnh</a>
+        <a href="ChuChoThue.html#studio" target="_blank"> Studio</a>
+        <a href="ChuChoThue.html#trangPhuc" target="_blank"> Trang phục</a>
       </div>
     </div>
-    <a href="" class="Header__title">Album</a>
-    <a href="" class="Header__title">Blog</a>
+    <a href="TrangChu2.html#album" target="_blank" class="Header__title">Album</a>
+    <a href="" class="Header__title" id="btnBlog2">Blog</a>
     <div class="HorHeader__icon">
       <span class="glyphicon glyphicon-search Header__icon--2"></span>
       <input class="Header__search" type="text" placeholder="Nhập từ tìm kiếm" />
     </div>
-    <a href="" class="HorHeader__login2"><img src="../Images/Avatar.png" alt="" /></a>
+    <a href="" class="HorHeader__login2" id="btnAva"><img src="../Images/Avatar.png" alt="" /></a>
   </div>
   <div class="container">
     <div class="DatThue--top">
@@ -100,14 +100,14 @@
           <div class="DatThue__top--circle">
             <i class="DatThue__icon fas fa-edit"></i>
           </div>
-          <svg width="350" height="6" viewBox="0 0 350 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="6" fill="#C4C4C4" />
+          <svg>
+            <rect class="ChoThanhToan__svg--2" />
           </svg>
           <div class="DatThue__top--circle DatThue__top--circle2">
             <i class="DatThue__icon far fa-credit-card"></i>
           </div>
-          <svg width="350" height="6" viewBox="0 0 350 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="350" height="6" fill="#C4C4C4" />
+          <svg>
+            <rect class="ChoThanhToan__svg--2" />
           </svg>
           <div class="DatThue__top--circle2">
             <i class="DatThue__icon fas fa-check"></i>
@@ -134,8 +134,8 @@
           <img src="/IMAGES/avatar3.png" alt="Lỗi hiển thị hình ảnh" />
         </div>
         <div>
-          <div><b>Ngocs</b></div>
-          <div class="KhuyenMai__user--icon">
+          <div id="tenDangNhap"></div>
+          <div class="KhuyenMai__user--icon" id="chinhSua">
             <div><i class="glyphicon glyphicon-edit"></i></div>
             <div>&nbsp; Chỉnh sửa hồ sơ</div>
           </div>
@@ -248,8 +248,7 @@
           <input name="" id="secondEmail" type="email" class="DatThue__input" />
         </div>
         <div>
-          <a
-            href="DonHangChoThanhToan.html?voucherId={{selectedVoucher.voucherID}}&productId={{selectedProduct.productID}}"><input
+          <a href="ChiTietDonHang.html?voucherId={{selectedVoucher.voucherID}}&productId={{selectedProduct.productID}}"><input
               type="button" value="Đặt thuê" src="" id="btnRenting"
               class="DatThue__input DatThue__input--button2" /></a>
         </div>

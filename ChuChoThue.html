@@ -2,173 +2,177 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Chủ Cho Thuê</title>
-    <link rel="stylesheet" href="./CSS/Style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- <script src="./JS/Javascript.js"></script> -->
-    <script src="./JS/angular.js"></script>
-    <script>
-        let app=angular.module("chuChoThue", []);
-        app.controller("ProductController1",($scope,$http)=>{
-            $http({
-                method:"GET",
-                url:"./DATA/productmayanh.json",
-            }).then(
-                function success(response){
-                    $scope.products=response.data;
-                },
-                function error(response){
-                    $scope.error=response.statusText;
-                }
-            );
-        });
-        app.controller("ProductController2",($scope,$http)=>{
-            $http({
-                method:"GET",
-                url:"./DATA/productstudio.json",
-            }).then(
-                function success(response){
-                    $scope.products=response.data;
-                },
-                function error(response){
-                    $scope.error=response.statusText;
-                }
-            );
-        });
-        app.controller("ProductController3",($scope,$http)=>{
-            $http({
-                method:"GET",
-                url:"./DATA/producttrangphuc.json",
-            }).then(
-                function success(response){
-                    $scope.products=response.data;
-                },
-                function error(response){
-                    $scope.error=response.statusText;
-                }
-            );
-        });
-    </script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trang Chủ Cho Thuê</title>
+  <link rel="stylesheet" href="./CSS/Style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <script src="./JS/angular.js"></script>
+  <script src="./JS/ChuChoThue.js" defer></script>
+  <script>
+    let app = angular.module("chuChoThue", []);
+    app.controller("ProductController1", ($scope, $http) => {
+      $http({
+        method: "GET",
+        url: "./DATA/products.json",
+      }).then(
+        function success(response) {
+          $scope.products = response.data[0].mayanh;
+        },
+        function error(response) {
+          $scope.error = response.statusText;
+        }
+      );
+    });
+    app.controller("ProductController2", ($scope, $http) => {
+      $http({
+        method: "GET",
+        url: "./DATA/products.json",
+      }).then(
+        function success(response) {
+          $scope.products = response.data[1].studio;
+        },
+        function error(response) {
+          $scope.error = response.statusText;
+        }
+      );
+    });
+    app.controller("ProductController3", ($scope, $http) => {
+      $http({
+        method: "GET",
+        url: "./DATA/products.json",
+      }).then(
+        function success(response) {
+          $scope.products = response.data[2].trangphuc;
+        },
+        function error(response) {
+          $scope.error = response.statusText;
+        }
+      );
+    });
+  </script>
 </head>
 
 <body class="ChuChoThue__background" ng-app="chuChoThue">
-        <div id="myHeader2" class="VerHeader__container">
-            <a href="javascript:void(0)" class="VerHeader__closebtn" onclick="closeNav()">×</a>
-            <div class="VerHeader__search">
-                <span class="glyphicon glyphicon-search Header__icon--2"></span>
-                <input class="Header__search" type="text" placeholder="Nhập từ tìm kiếm">
-            </div>
-            <a href="" class="Header__title"><i class="glyphicon glyphicon-home"></i></a>
-            <button class="VerHeader__btn">Cho Thuê</button>
-            <div class="VerHeader__dropdown--container">
-                <a href=""> Máy ảnh</a>
-                <a href=""> Studio</a>
-                <a href=""> Trang phục</a>
-            </div>
-            <a href="">Album</a>
-            <a href="">Blog</a>
-        </div>
-        <div class="HorHeader__container" id="myHeader">
-            <a href="javascript:void(0);" class="HorHeader__button" onclick="openNav()"><i
-                    class="glyphicon glyphicon-menu-hamburger"></i></a>
-            <a href="" class="HorHeader__tach">Tách studio</a>
-            <a href="" class="Header__title"><i class="glyphicon glyphicon-home"></i></a>
-            <div class="Header__title HorHeader__dropdown">
-                <button class="HorHeader__dropdown--button">Cho Thuê</button>
-                <div class="HorHeader__dropdown--content">
-                    <a href="">Máy ảnh</a>
-                    <a href="">Studio</a>
-                    <a href="">Trang phục</a>
-                </div>
-            </div>
-            <a href="" class="Header__title">Album</a>
-            <a href="" class="Header__title">Blog</a>
-            <div class="HorHeader__icon">
-                <span class="glyphicon glyphicon-search Header__icon--2"></span>
-                <input class="Header__search" type="text" placeholder="Nhập từ tìm kiếm">
-            </div>
-            <a href="" class="HorHeader__login">Đăng nhập</a>
-        </div>
-        <div class="ChuChoThue">
-            <div class="ChuChoThue__banner">
-                <img src="../Images/BanerChoThue.png" class="ChuChoThue__banner" alt="Lỗi hiển thị hình ảnh">
-            </div>
-            <div class="ChuChoThue__container" ng-controller="ProductController1">
-                <div class="ChuChoThue__title">MÁY ẢNH</div>
-                <div class="ChuChoThue__container--1">
-                    <div ng-repeat="p in products" class="ChuChoThue__product">
-                        <div class="ChuChoThue__container--image">
-                            <img src="{{p.imgProduct2}}" class="ChuChoThue__product--image">
-                        </div>
-                        <div class="ChuChoThue__product--title">{{p.productName}}</div>
-                        <div class="ChuChoThue__product--price">Giá thuê: {{p.unitPrice}}</div>
-                        <div>
-                            <a href="ChiTietMayAnh.html?productId={{p.productID}}"><input type="button" class="ChuChoThue__product--button" value="Đặt thuê"></a>
-                        </div>
-                    </div>
-                    <div id="more1">
-                    </div>
-                </div>
-                <div class="ChuChoThue__product--seemore1"><button onclick="chuChoThueSeeMore1()" id="seeMore1" class="ChuChoThue__product--seemore">Xem thêm...</button></div>
-            </div>
-            </div>
-            <div class="ChuChoThue__container" ng-controller="ProductController2">
-                <div class="ChuChoThue__title">STUDIO</div>
-                <div class="ChuChoThue__container--1">
-                    <div ng-repeat="p in products" class="ChuChoThue__product">
-                        <div class="ChuChoThue__container--image">
-                            <img src="{{p.imgProduct2}}" class="ChuChoThue__product--image">
-                        </div>
-                        <div class="ChuChoThue__product--title">{{p.productName}}</div>
-                        <div class="ChuChoThue__product--price">Giá thuê: {{p.unitPrice}}</div>
-                        <div>
-                            <a href="ChiTietStudio.html?productId={{p.productID}}"><input type="button" class="ChuChoThue__product--button" value="Đặt thuê"></a>
-                        </div>
-                    </div>
-                    <div id="more2">
-                </div>
-                </div>
-                <div class="ChuChoThue__product--seemore1"><button onclick="chuChoThueSeeMore2()" id="seeMore2" class="ChuChoThue__product--seemore">Xem thêm...</button></div>
-            </div>
-            </div>
-            <div class="ChuChoThue__container" ng-controller="ProductController3">
-                <div class="ChuChoThue__title">TRANG PHỤC</div>
-                <div class="ChuChoThue__container--1">
-                    <div ng-repeat="p in products" class="ChuChoThue__product">
-                        <div class="ChuChoThue__container--image">
-                            <img src="{{p.imgProduct2}}" class="ChuChoThue__product--image">
-                        </div>
-                        <div class="ChuChoThue__product--title">{{p.productName}}</div>
-                        <div class="ChuChoThue__product--price">Giá thuê: {{p.unitPrice}}</div>
-                        <div>
-                            <a href="ChiTietTrangPhuc.html?productId={{p.productID}}"><input type="button" class="ChuChoThue__product--button" value="Đặt thuê"></a>
-                        </div>
-                    <div id="more3"></div>
-                </div>
-                </div>
-                <div class="ChuChoThue__product--seemore1"><button onclick="chuChoThueSeeMore3()" id="seeMore3" class="ChuChoThue__product--seemore">Xem thêm...</button></div>
-            </div>
-            </div>
-            <div class="Page__footer--container Footer__text">
-                <div class="Footer--left">
-                    <p class="Footer__heading">TÁCH STUDIO</p>
-                    <p>UEL, Tp Thủ Đức, Tp Hồ Chí Minh <br>
-                        Call us: 0123456789 <br>
-                        tachstudio@gmail.com
-                    </p>
-                    <p>Copyright @2021 Tách Creative Studio</p>
-                </div>
-                <div class="Footer--right">
-                    <p class="Footer__heading">LIÊN HỆ VỚI CHÚNG TÔI</p>
-                    <p> <img src="/images/footer-fb.png" alt=""> Tách studio</p>
-                    <p> <img src="/images/footer-ins.png" alt=""> tach.studio</p>
-                    <p> <img src="/images/footer-ytb.png" alt=""> Tách Studio Official</p>
-                </div>
-            </div>
+  <div id="myHeader2" class="VerHeader__container">
+    <a href="javascript:void(0)" class="VerHeader__closebtn" onclick="closeNav()">×</a>
+    <div class="VerHeader__search">
+      <span class="glyphicon glyphicon-search Header__icon--2"></span>
+      <input class="Header__search" type="text" placeholder="Nhập từ tìm kiếm" />
     </div>
+    <a href="" class="Header__title" id="btnHome1" target="_blank"><i class="glyphicon glyphicon-home"></i></a>
+    <button class="VerHeader__btn" id="btnChoThue1" target="_blank">Cho Thuê</button>
+    <div class="VerHeader__dropdown--container">
+      <a href="ChuChoThue.html#mayAnh"> Máy ảnh</a>
+      <a href="ChuChoThue.html#studio"> Studio</a>
+      <a href="ChuChoThue.html#trangPhuc"> Trang phục</a>
+    </div>
+    <a href="TrangChu1.html#album" target="_blank">Album</a>
+    <a href="" id="btnBlog1">Blog</a>
+  </div>
+  <div class="HorHeader__container" id="myHeader">
+    <a href="javascript:void(0);" class="HorHeader__button" onclick="openNav()"><i
+        class="glyphicon glyphicon-menu-hamburger"></i></a>
+    <a href="" class="HorHeader__tach">Tách studio</a>
+    <a href="" class="Header__title" id="btnHome2" target="_blank"><i class="glyphicon glyphicon-home"></i></a>
+    <div class="Header__title HorHeader__dropdown">
+      <button class="HorHeader__dropdown--button" id="btnChoThue2">
+        Cho Thuê
+      </button>
+      <div class="HorHeader__dropdown--content">
+        <a href="ChuChoThue.html#mayAnh"> Máy ảnh</a>
+        <a href="ChuChoThue.html#studio"> Studio</a>
+        <a href="ChuChoThue.html#trangPhuc"> Trang phục</a>
+      </div>
+    </div>
+    <a href="TrangChu1.html#album" target="_blank" class="Header__title">Album</a>
+    <a href="" class="Header__title" id="btnBlog2">Blog</a>
+    <div class="HorHeader__icon">
+      <span class="glyphicon glyphicon-search Header__icon--2"></span>
+      <input class="Header__search" type="text" placeholder="Nhập từ tìm kiếm" />
+    </div>
+    <a href="" class="HorHeader__login" id="btnDangNhap">Đăng nhập</a>
+  </div>
+  <div class="ChuChoThue">
+    <div class="ChuChoThue__banner">
+      <img src="../Images/BanerChoThue.png" class="ChuChoThue__banner" alt="Lỗi hiển thị hình ảnh" />
+    </div>
+    <div class="ChuChoThue__container" ng-controller="ProductController1">
+      <div class="ChuChoThue__title" id="mayAnh">MÁY ẢNH</div>
+      <div class="ChuChoThue__container--1">
+        <div ng-repeat="p in products" class="ChuChoThue__product">
+          <div class="ChuChoThue__container--image">
+            <img src="{{p.imgProduct2}}" class="ChuChoThue__product--image" />
+          </div>
+          <div class="ChuChoThue__product--title">{{p.productName}}</div>
+          <div class="ChuChoThue__product--price">
+            Giá thuê: {{p.unitPrice}} VNĐ
+          </div>
+          <div>
+            <a href="ChiTiet.html?productId={{p.productID}}"><input type="button" class="ChuChoThue__product--button"
+                value="Đặt thuê" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ChuChoThue__container" ng-controller="ProductController2">
+      <div class="ChuChoThue__title" id="studio">STUDIO</div>
+      <div class="ChuChoThue__container--1">
+        <div ng-repeat="p in products" class="ChuChoThue__product">
+          <div class="ChuChoThue__container--image">
+            <img src="{{p.imgProduct2}}" class="ChuChoThue__product--image" />
+          </div>
+          <div class="ChuChoThue__product--title">{{p.productName}}</div>
+          <div class="ChuChoThue__product--price">
+            Giá thuê: {{p.unitPrice}} VNĐ
+          </div>
+          <div>
+            <a href="ChiTiet.html?productId={{p.productID}}"><input type="button" class="ChuChoThue__product--button"
+                value="Đặt thuê" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ChuChoThue__container" ng-controller="ProductController3">
+      <div class="ChuChoThue__title" id="trangPhuc">TRANG PHỤC</div>
+      <div class="ChuChoThue__container--1">
+        <div ng-repeat="p in products" class="ChuChoThue__product">
+          <div class="ChuChoThue__container--image">
+            <img src="{{p.imgProduct2}}" class="ChuChoThue__product--image" />
+          </div>
+          <div class="ChuChoThue__product--title">{{p.productName}}</div>
+          <div class="ChuChoThue__product--price">
+            Giá thuê: {{p.unitPrice}} VNĐ
+          </div>
+          <div>
+            <a href="ChiTiet.html?productId={{p.productID}}"><input type="button" class="ChuChoThue__product--button"
+                value="Đặt thuê" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Page__footer--container Footer__text">
+      <div class="Footer--left">
+        <p class="Footer__heading">TÁCH STUDIO</p>
+        <p>
+          UEL, Tp Thủ Đức, Tp Hồ Chí Minh <br />
+          Call us: 0123456789 <br />
+          tachstudio@gmail.com
+        </p>
+        <p>Copyright @2021 Tách Creative Studio</p>
+      </div>
+      <div class="Footer--right">
+        <p class="Footer__heading">LIÊN HỆ VỚI CHÚNG TÔI</p>
+        <p><img src="/images/footer-fb.png" alt="" /> Tách studio</p>
+        <p><img src="/images/footer-ins.png" alt="" /> tach.studio</p>
+        <p>
+          <img src="/images/footer-ytb.png" alt="" /> Tách Studio Official
+        </p>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

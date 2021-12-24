@@ -8,9 +8,10 @@
   <title>Khuyến mãi</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
   <link rel="stylesheet" href="./CSS/Style.css" />
-  <script src="./JS/KhuyenMai.js" defer></script>
   <script src="./JS/Popup.js" defer></script>
   <script src="./JS/angular.js"></script>
+  <script src="./JS/KhuyenMai.js" defer></script>
+
   <script>
     var urlparams = new URLSearchParams(location.search);
     var id = urlparams.get("productId");
@@ -119,7 +120,7 @@
           <img src="../Images/Avatar2.png" alt="Lỗi hiển thị hình ảnh" />
         </div>
         <div>
-          <div><b>Ngocs</b></div>
+          <div id="tenDangNhap"></div>
           <div class="KhuyenMai__user--icon" id="chinhSua">
             <div><i class="glyphicon glyphicon-edit"></i></div>
             <div>&nbsp; Chỉnh sửa hồ sơ</div>
@@ -161,7 +162,7 @@
     <div class="KhuyenMai__container--2">
       <div class="KhuyenMai__title">
         <div class="KhuyenMai__title--left">VÍ KHUYẾN MÃI</div>
-        <div class="KhuyenMai__title--right">Điểm tích lũy: 02</div>
+        <div class="KhuyenMai__title--right">Điểm tích lũy: 0<span id="myTichLuy"></span></div>
       </div>
       <div class="KhuyenMai__card">
         <div class="KhuyenMai__header--2">
@@ -179,8 +180,11 @@
               <div class="KhuyenMai__tag--1">
                 <div class="KhuyenMai__tag--type">MIỄN PHÍ VẬN CHUYỂN</div>
                 <div class="KhuyenMai__tag--content">
-                  <div class="KhuyenMai__tag--doidiem" id="KhuyenMaiDoiDien">
-                    Đổi điểm <i class="glyphicon glyphicon-menu-right"></i>
+                  <div class="KhuyenMai__tag--doidiem" onclick="diemHienTai()">
+                    <a href="DatThue.html?voucherId={{v.voucherID}}&productId={{selectedProduct.productID}}">
+                      Đổi điểm
+                      <i class="glyphicon glyphicon-menu-right"></i>
+                    </a>
                   </div>
                   <div>Voucher khuyến mãi giảm {{v.voucherPrice}}%</div>
                   <div class="KhuyenMai__tag--diem">
@@ -193,7 +197,7 @@
                     Hạn sử dụng: {{v.expiry}}
                   </div>
                   <div class="KhuyenMai__tag--dk">
-                    <a href="ChiTietKM.html?voucherId={{v.voucherID}}&productId={{selectedProduct.productID}}">
+                    <a href="DoiDiem.html?voucherId={{v.voucherID}}&productId={{selectedProduct.productID}}">
                       Điều kiện</a>
                   </div>
                 </div>
@@ -210,10 +214,10 @@
               <div class="KhuyenMai__tag--2">
                 <div class="KhuyenMai__tag--type">MIỄN PHÍ VẬN CHUYỂN</div>
                 <div class="KhuyenMai__tag--content">
-                  <button class="KhuyenMai__tag--doidiem" id="khuyenMaiDungNgay" type="button">
-                    Dùng ngay
-                    <i class="glyphicon glyphicon-menu-right"></i>
-                  </button>
+                  <div class="KhuyenMai__tag--doidiem">
+                    <a href="DatThue.html?voucherId={{v.voucherID}}&productId={{selectedProduct.productID}}">Dùng ngay
+                      <i class="glyphicon glyphicon-menu-right"></i></a>
+                  </div>
                   <div>Voucher khuyến mãi giảm {{v.voucherPrice}}%</div>
                   <div class="KhuyenMai__tag--diem">
                     <div class="KhuyenMai__tag--giam">
@@ -230,25 +234,6 @@
                   </div>
                 </div>
               </div>
-              <div id="popupDungVoucher" class="PopupDungVoucher">
-                <div class="PopupDungVoucher__content">
-                  <div class="PopupDungVoucher__header">
-                    <span class="PopupDungVoucher__close">x</span>
-                    <div class="PopupDungVoucher__icon">
-                      <img src="../Images/canhbaosmall.png" alt="">
-                    </div>
-                  </div>
-                  <div class="PopupDungVoucher__body">
-                    <p>BẠN CÓ MUỐN SỬ DỤNG VOUCHER KHÔNG?</p>
-                  </div>
-                  <div class="PopupDungVoucher__button">
-                    <button id="popupDungVoucherKhong" type="button"
-                      class="PopupDungVoucher__button--left">KHÔNG</button>
-                    <a href="DatThue.html?voucherId={{v.voucherID}}&productId={{selectedProduct.productId}}"><button
-                        id="popupDungVoucherCo" type="button" class="PopupDungVoucher__button--right">CÓ</button></a>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
           <div class="KhuyenMai__dexuat" ng-controller="VoucherController3">
@@ -260,10 +245,10 @@
                 <div class="KhuyenMai__tag--3">
                   <div class="KhuyenMai__tag--type">MIỄN PHÍ VẬN CHUYỂN</div>
                   <div class="KhuyenMai__tag--content">
-                    <button type="button" class="KhuyenMai__tag--doidiem" id="KhuyenMaiDoiDien">
-                      Đổi điểm
-                      <i class="glyphicon glyphicon-menu-right"></i>
-                    </button>
+                    <div type="button" class="KhuyenMai__tag--doidiem" onclick="diemHienTai()">
+                      <a href="DatThue.html?voucherId={{v.voucherID}}&productId={{selectedProduct.productID}}">Đổi điểm
+                        <i class="glyphicon glyphicon-menu-right"></i></a>
+                    </div>
                     <div>Voucher khuyến mãi giảm {{v.voucherPrice}}%</div>
                     <div class="KhuyenMai__tag--diem">
                       <div class="KhuyenMai__tag--giam">
@@ -275,7 +260,7 @@
                       Hạn sử dụng: {{v.expiry}}
                     </div>
                     <div class="KhuyenMai__tag--dk">
-                      <a href="ChiTietKM.html?voucherId={{v.voucherID}}&productId={{selectedProduct.productID}}">
+                      <a href="DoiDiem.html?voucherId={{v.voucherID}}&productId={{selectedProduct.productID}}">
                         Điều kiện</a>
                     </div>
                   </div>
@@ -283,25 +268,6 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div id="popupDoiDiem" class="PopupDoiDiem">
-      <div class="PopupDoiDiem__content">
-        <div class="PopupDoiDiem__header">
-          <span class="PopupDoiDiem__close">x</span>
-          <div class="PopupDoiDiem__icon">
-            <img src="../Images/canhbaosmall.png" alt="">
-          </div>
-        </div>
-        <div class="PopupDoiDiem__body">
-          <p>BẠN CÓ MUỐN ĐỔI ĐIỂM KHÔNG?</p>
-        </div>
-        <div class="PopupDoiDiem__button">
-          <button id="popupDoiDiemKhong" type="button" class="PopupDoiDiem__button--left">KHÔNG</button>
-          <a href="DatThue.html?voucherId={{v.voucherID}}&productId={{selectedProduct.productId}}"><button
-              id="popupDoiDiemCo" type="button" class="PopupDoiDiem__button--right">CÓ</button>
-          </a>
         </div>
       </div>
     </div>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh toán</title>
+    <link rel="stylesheet" href="/IMAGES/ICONS/css/all.min.css" />
+    <link rel="stylesheet" href="./CSS/Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="/Javascript.js" defer></script>
+  </head>
+  <body class="ThanhToan__background">
+    <div id="myHeader2" class="VerHeader__container">
+      <a
+        href="javascript:void(0)"
+        class="VerHeader__closebtn"
+        onclick="closeNav()"
+        >×</a
+      >
+      <div class="VerHeader__search">
+        <span class="glyphicon glyphicon-search Header__icon--2"></span>
+        <input
+          class="Header__search"
+          type="text"
+          placeholder="Nhập từ tìm kiếm"
+        />
+      </div>
+      <a href="" class="Header__title"
+        ><i class="glyphicon glyphicon-home"></i
+      ></a>
+      <button class="VerHeader__btn">Cho Thuê</button>
+      <div class="VerHeader__dropdown--container">
+        <a href=""> Máy ảnh</a>
+        <a href=""> Studio</a>
+        <a href=""> Trang phục</a>
+      </div>
+      <a href="">Album</a>
+      <a href="">Blog</a>
+    </div>
+    <div class="HorHeader__container" id="myHeader">
+      <a
+        href="javascript:void(0);"
+        class="HorHeader__button"
+        onclick="openNav()"
+        ><i class="glyphicon glyphicon-menu-hamburger"></i
+      ></a>
+      <a href="" class="HorHeader__tach">Tách studio</a>
+      <a href="" class="Header__title"
+        ><i class="glyphicon glyphicon-home"></i
+      ></a>
+      <div class="Header__title HorHeader__dropdown">
+        <button class="HorHeader__dropdown--button">Cho Thuê</button>
+        <div class="HorHeader__dropdown--content">
+          <a href="">Máy ảnh</a>
+          <a href="">Studio</a>
+          <a href="">Trang phục</a>
+        </div>
+      </div>
+      <a href="" class="Header__title">Album</a>
+      <a href="" class="Header__title">Blog</a>
+      <div class="HorHeader__icon">
+        <span class="glyphicon glyphicon-search Header__icon--2"></span>
+        <input
+          class="Header__search"
+          type="text"
+          placeholder="Nhập từ tìm kiếm"
+        />
+      </div>
+      <a href="" class="HorHeader__login2"
+        ><img src="../Images/Avatar.png" alt=""
+      /></a>
+    </div>
+    <div class="container">
+      <div class="ThanhToan--top">
+        <p class="ThanhToan__top ThanhToan__top--item1">THANH TOÁN</p>
+        <div class="ThanhToan__top--flex">
+          <div class="ThanhToan__icons">
+            <div class="ThanhToan__top--circle">
+              <i class="ThanhToan__icon fas fa-edit"></i>
+            </div>
+            <svg
+              width="350"
+              height="6"
+              viewBox="0 0 350 6"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="400" height="6" fill="#12C92F" />
+            </svg>
+            <div class="ThanhToan__top--circle">
+              <i class="ThanhToan__icon far fa-credit-card"></i>
+            </div>
+            <svg
+              width="350"
+              height="6"
+              viewBox="0 0 350 6"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="350" height="6" fill="#C4C4C4" />
+            </svg>
+            <div class="ThanhToan__top--circle2">
+              <i class="ThanhToan__icon fas fa-check"></i>
+            </div>
+          </div>
+          <div class="ThanhToan__top--item">
+            <div class="ThanhToan__item--1"><p>Điền thông tin</p></div>
+            <div class="ThanhToan__item--2"><p>Thanh toán</p></div>
+            <div class="ThanhToan__item--3"><p>Hoàn tất đặt thuê</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="ThanhToan__body">
+        <div class="ThanhToan__body--left">
+          <i class="far fa-edit ThanhToan__icon--edit"></i>
+          <div class="ThanhToan__label--flex">
+            <label for="" class="ThanhToan__label ThanhToan__label--1"
+              >Dịch vụ/Sản phẩm:</label
+            >
+            <label for="" class="ThanhToan__label ThanhToan__label--2"
+              >COMBO CHỤP HÌNH GREENHOUSE</label
+            >
+          </div>
+          <div class="ThanhToan__label--flex">
+            <label for="" class="ThanhToan__label ThanhToan__label--3"
+              >Thời gian đặt thuê:</label
+            >
+            <label for="" class="ThanhToan__label ThanhToan__label--4"
+              >20/11/2021 7:00</label
+            >
+          </div>
+          <div class="ThanhToan__label--flex">
+            <label for="" class="ThanhToan__label ThanhToan__label--5"
+              >Thời hạn đặt thuê:</label
+            >
+            <label for="" class="ThanhToan__label ThanhToan__label--6"
+              >1 ngày</label
+            >
+          </div>
+          <div class="ThanhToan__label--flex">
+            <label for="" class="ThanhToan__label ThanhToan__label--7"
+              >Họ và tên:</label
+            >
+            <label for="" class="ThanhToan__label ThanhToan__label--8"
+              >Dương Phạm Diễm Quỳnh</label
+            >
+          </div>
+          <div class="ThanhToan__label--flex">
+            <label for="" class="ThanhToan__label ThanhToan__label--9"
+              >Số điện thoại:</label
+            >
+            <label for="" class="ThanhToan__label ThanhToan__label--10"
+              >0819636086</label
+            >
+          </div>
+          <div class="ThanhToan__label--flex">
+            <label for="" class="ThanhToan__label ThanhToan__label--11"
+              >CMND/CCCD:</label
+            >
+            <label for="" class="ThanhToan__label ThanhToan__label--12"
+              >046072000839</label
+            >
+          </div>
+          <div class="ThanhToan__label--flex">
+            <label for="" class="ThanhToan__label ThanhToan__label--13"
+              >Địa chỉ email:</label
+            >
+            <label for="" class="ThanhToan__label ThanhToan__label--14"
+              >quynh.duongphamdiem@gmail.com</label
+            >
+          </div>
+          <div class="ThanhToan__label--flex">
+            <label for="" class="ThanhToan__label ThanhToan__label--15"
+              >Thời gian thanh toán:</label
+            >
+            <label
+              for=""
+              class="ThanhToan__label ThanhToan__label--16"
+              id="demo"
+              ><p></p
+            ></label>
+          </div>
+          <div class="ThanhToan__label--flex">
+            <label for="" class="ThanhToan__label ThanhToan__label--17"
+              >Tiền đặt thuê:</label
+            >
+            <label for="" class="ThanhToan__label ThanhToan__label--18"
+              >1.500.000 VNĐ</label
+            >
+          </div>
+          <div class="ThanhToan__label--flex">
+            <label for="" class="ThanhToan__label ThanhToan__label--19"
+              >Giảm giá:</label
+            >
+            <label for="" class="ThanhToan__label ThanhToan__label--20"
+              >10%</label
+            >
+          </div>
+          <div class="ThanhToan__label--flex">
+            <label for="" class="ThanhToan__label ThanhToan__label--21"
+              >Tổng tiền:</label
+            >
+            <label for="" class="ThanhToan__label ThanhToan__label--22"
+              >1.350.000 VNĐ</label
+            >
+          </div>
+          <div class="ThanhToan__label--flex">
+            <label for="" class="ThanhToan__label ThanhToan__label--23"
+              >Tiền đặt cọc:</label
+            >
+            <label for="" class="ThanhToan__label ThanhToan__label--24"
+              >675.000 VNĐ</label
+            >
+          </div>
+          <div class="ThanhToan__label--flex">
+            <label for="" class="ThanhToan__label ThanhToan__label--25"
+              >Số tiền còn lại:</label
+            >
+            <label for="" class="ThanhToan__label ThanhToan__label--26"
+              >675.000 VNĐ</label
+            >
+          </div>
+          <div class="ThanhToan__label--flex">
+            <label for="" class="ThanhToan__label ThanhToan__label--27"
+              >Hình thức thanh toán:</label
+            >
+            <select name="" id="" class="ThanhToan__font--size">
+              <option value="Thanh toán bằng Momo">
+                Thanh toán bằng ví Momo
+              </option>
+              <option value="Thanh toán bằng Momo">
+                Thanh toán bằng thẻ ATM/Internet Banking
+              </option>
+            </select>
+          </div>
+          <div class="ThanhToan__button">
+            <input
+              type="button"
+              value="Thanh toán"
+              class="ThanhToan__button--1"
+            />
+          </div>
+          <div class="ThanhToan__note--1">
+            <p>(Bạn phải thanh toán trong vòng 24h kể từ thời điểm đặt thuê)</p>
+          </div>
+        </div>
+        <div class="ThanhToan__body--right">
+          <div class="ThanhToan__title">
+            Thông tin tài khoản <span class="font"> Tách Studio</span>
+          </div>
+          <div class="ThanhToan__font--style">
+            1. Thẻ ATM nội địa/Internet Banking (Hỗ trợ Internet Banking)
+          </div>
+          <div>STK: 4900565656999</div>
+          <div class="ThanhToan__font--style">2. Thanh toán bằng ví MoMo</div>
+          <div>SĐT: 0123 456 789</div>
+          <div class="ThanhToan__note--2">
+            Lưu ý: Tách Studio chỉ áp dụng chuyển khoản qua 2 hình thức trên.
+          </div>
+          <hr class="ThanhToan__line" />
+          <div class="ThanhToan__title">Cộng tích điểm</div>
+          <div>Dưới 500.000 VNĐ: cộng 1 điểm tích lũy</div>
+          <div>500.000 VNĐ đến < 1.000.000 VNĐ: cộng 2 điểm tích lũy</div>
+          <div>1.000.000 VNĐ đến < 2.000.000 VNĐ: cộng 3 điểm tích lũy</div>
+          <div>2.000.000 VNĐ đến < 3.000.000 VNĐ: cộng 5 điểm tích lũy</div>
+          <div>3.000.000 VNĐ đến < 5.000.000 VNĐ: cộng 7 điểm tích lũy</div>
+          <div>Trên 5.000.000 VNĐ: cộng 10 điểm tích lũy</div>
+        </div>
+      </div>
+    </div>
+    <div class="Page__footer--container Footer__text">
+      <div class="Footer--left">
+        <p class="Footer__heading">TÁCH STUDIO</p>
+        <p>
+          UEL, Tp Thủ Đức, Tp Hồ Chí Minh <br />
+          Call us: 0123456789 <br />
+          tachstudio@gmail.com
+        </p>
+        <p>Copyright @2021 Tách Creative Studio</p>
+      </div>
+      <div class="Footer--right">
+        <p class="Footer__heading">LIÊN HỆ VỚI CHÚNG TÔI</p>
+        <p><img src="/images/footer-fb.png" alt="" /> Tách studio</p>
+        <p><img src="/images/footer-ins.png" alt="" /> tach.studio</p>
+        <p><img src="/images/footer-ytb.png" alt="" /> Tách Studio Official</p>
+      </div>
+    </div>
+  </body>
+</html>

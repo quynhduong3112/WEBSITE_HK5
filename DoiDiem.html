@@ -1,56 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Đổi điểm</title>
-    <link rel="stylesheet" href="/html/css/Style.css" />
-  </head>
-  <body>
-    <div class="ChiTietKM__container">
-      <div class="ChiTietKM__header">
-        <div class="ChiTietKM__header--container">
-          <div class="ChiTietKM__item--1">
-            <img src="/images/freeship.png" alt="" />
-            <p>MIỄN PHÍ VẬN CHUYỂN</p>
-          </div>
-          <div class="ChiTietKM__item--2">
-            <div class="ChiTietKM__item--container">
-              Hình thức thanh toán chuyển khoản
-              <div class="ChiTietKM--price">
-                <p>Tối đa 50k</p>
-                <p>05 điểm</p>
-              </div>
-              <span class="ChiTietKM--date">Hạn sử dụng: 31/10/2021</span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đổi Điểm</title>
+  <link rel="stylesheet" href="/html/css/Style.css" />
+  <script src="./JS/ChiTietKM.js" defer></script>
+  <script src="./JS/angular.js"></script>
+  <script>
+    function getUrlParams() {
+      const Params = new URLSearchParams(location.search);
+      return Params;
+    }
+    var id = getUrlParams().get("voucherId"),
+      id2 = getUrlParams().get("productId");
+    let app = angular.module("angularApp", []);
+    app.controller("DetailController", ($scope, $http) => {
+      $http({
+        method: "GET",
+        url: "./DATA/vouchers2.json",
+      }).then(
+        function success(response) {
+          $scope.selectedVoucher = response.data.find(function (value) {
+            return value.voucherID == id;
+          });
+        },
+        function error(response) {
+          $scope.error = response.statusText;
+        }
+      );
+    });
+    app.controller("DetailController2", ($scope, $http) => {
+      $http({
+        method: "GET",
+        url: "./DATA/products2.json",
+      }).then(
+        function success(response) {
+          $scope.selectedProduct = response.data.find(function (value) {
+            return value.productID == id2;
+          });
+        },
+        function error(response) {
+          $scope.error = response.statusText;
+        }
+      );
+    });
+  </script>
+</head>
+
+<body ng-app="angularApp">
+  <div class="ChiTietKM__container" ng-controller="DetailController">
+    <div class="ChiTietKM__header">
+      <div class="ChiTietKM__header--container">
+        <div class="ChiTietKM__item--1">
+          <img src="/images/freeship.png" alt="" />
+          <p>MIỄN PHÍ VẬN CHUYỂN</p>
+        </div>
+        <div class="ChiTietKM__item--2">
+          <div class="ChiTietKM__item--container">
+            Voucher khuyến mãi giảm {{selectedVoucher.voucherPrice}}%
+            <div class="ChiTietKM--price">
+              <p>Giảm {{selectedVoucher.voucherPrice}}%</p>
+              <p>0{{selectedVoucher.voucherPoint}} điểm</p>
             </div>
+            <span class="ChiTietKM--date">Hạn sử dụng: {{selectedVoucher.expiry}}</span>
           </div>
         </div>
       </div>
-      <div class="ChiTietKM__body--container">
-        <div class="DoiDiem--point">05 điểm</div>
-        <h2>Ưu đãi</h2>
-        <p>
-          Lượt sử dụng có hạn. Nhanh tay kẻo lỡ bạn nhé. Ưu đãi miễn phí vận
-          chuyển tối đa 50k cho hình thức thanh toán chuyển khoản.
-        </p>
-        <h2>Có hiệu lực</h2>
-        <p>25/10/2021 - 31/10/2021</p>
-        <h2>Sản phẩm</h2>
-        <p>Áp dụng cho tất cả sản phẩm hiện có trên trang Web của Tách</p>
-        <h2>Thanh toán</h2>
-        <p>Hình thức thanh toán chuyển khoản</p>
-        <h2>Xem chi tiết</h2>
-        <p>
-          Khuyến mãi giảm tối đa 50k cho phí vận chuyển đơn hàng mua trên
-          Website của Tách. Số lượng mã có hạn. Chỉ áp dụng cho khách hàng nhận
-          được Voucher. Mỗi khách hàng chỉ được dùng một lần. Voucher có hiệu
-          lực đến 23:59 31/10/2021
-        </p>
-      </div>
-      <div class="ChiTietKM__footer--button">
-        <button>Dùng ngay</button>
-      </div>
     </div>
-  </body>
+    <div class="ChiTietKM__body--container">
+      <div class="DoiDiem--point">0{{selectedVoucher.voucherPoint}} điểm</div>
+      <h2>Ưu đãi</h2>
+      <p>
+        {{selectedVoucher.voucherCondition.voucherDescription1}}
+      </p>
+      <h2>Có hiệu lực</h2>
+      <p>{{selectedVoucher.voucherCondition.voucherDescription2}}</p>
+      <h2>Sản phẩm</h2>
+      <p>{{selectedVoucher.voucherCondition.voucherDescription3}}</p>
+      <h2>Thanh toán</h2>
+      <p>{{selectedVoucher.voucherCondition.voucherDescription4}}</p>
+      <h2>Xem chi tiết</h2>
+      <p>
+        {{selectedVoucher.voucherCondition.voucherDescription5}}
+      </p>
+    </div>
+    <div class="ChiTietKM__footer--button" ng-controller="DetailController2">
+      <a href="DatThue.html?voucherId={{selectedVoucher.voucherID}}&productId={{selectedProduct.productID}}"><button
+          type="button" id="btnDoiDiem">Đổi điểm</button></a>
+    </div>
+  </div>
+</body>
+
 </html>

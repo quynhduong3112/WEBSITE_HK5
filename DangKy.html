@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="./css/Style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <script src="./JS/DangKy.js" defer></script>
+</head>
+
+<body>
+    <div class="DangNhap__container">
+        <div class="DangNhap__form">
+            <div class="DangNhap__form--left">
+                <img id="logoDangNhap" src="../IMAGES/Logo_square_blacktext.png" />
+            </div>
+            <div class="DangNhap__form--right">
+                <div class="right--content">
+                    <h2 class="DangNhap--center DangNhap--title">ĐĂNG KÝ TÀI KHOẢN</h2>
+                    <form id="signUpForm" class="DangNhap__form" name="signupform">
+                        <div class="DangNhap__form__container">
+                            <div class="DangNhap__form--group">
+                                <label for="inputUser" class="DangNhap--bold DangNhap__form--label">Tên đăng nhập
+                                    <span>*</span></label>
+                                <input type="text" class="DangNhap__form--input" placeholder="Tên đăng nhập"
+                                    id="inputUser" name="signupUsername" />
+                                <i class="DangNhap--error-icon fas fa-exclamation-circle"></i>
+                                <p class="DangNhap--error-text">Bạn cần nhập username</p>
+                            </div>
+                            <div class="DangNhap__form--group">
+                                <label for="inputPwd" class="DangNhap--bold DangNhap__form--label">Mật khẩu:
+                                    <span>*</span></label>
+                                <input type="password" class="DangNhap__form--input" placeholder="********"
+                                    id="inputPwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                    name="signupPwd" />
+                                <i class="DangNhap--error-icon fas fa-exclamation-circle"></i>
+                                <p class="DangNhap--error-text">Bạn cần nhập mật khẩu</p>
+                            </div>
+                            <div class="DangNhap__form--group">
+                                <label for="inputPwd2" class="DangNhap--bold DangNhap__form--label">Nhập lại mật khẩu:
+                                    <span>*</span></label>
+                                <input type="password" class="DangNhap__form--input" placeholder="********"
+                                    id="inputPwd2" name="signupPwd2" />
+                                <i class="DangNhap--error-icon fas fa-exclamation-circle"></i>
+                                <p class="DangNhap--error-text">Bạn cần nhập lại mật khẩu</p>
+                            </div>
+                            <div class="DangNhap__form--group">
+                                <label for="inputName" class="DangNhap--bold DangNhap__form--label">Họ và tên:
+                                    <span>*</span></label>
+                                <input type="text" class="DangNhap__form--input" placeholder="Họ và tên" id="inputName"
+                                    name="signupName" />
+                                <i class="DangNhap--error-icon fas fa-exclamation-circle"></i>
+                                <p class="DangNhap--error-text">Bạn cần nhập Họ và tên</p>
+                            </div>
+                            <div class="DangNhap__form--group">
+                                <label for="inputPhone" class="DangNhap--bold DangNhap__form--label"
+                                    name="phonenumber">Số điện thoại: <span>*</span></label>
+                                <input type="text" class="DangNhap__form--input" placeholder="Số điện thoại"
+                                    id="inputPhone" name="signupPhone" />
+                                <i class="DangNhap--error-icon fas fa-exclamation-circle"></i>
+                                <p class="DangNhap--error-text">Bạn cần nhập Số điện thoại</p>
+                            </div>
+
+                            <div class="DangNhap--center">
+                                <input type="submit" class="DangNhap__button DangNhap--center" id="buttonLogin"
+                                    value="ĐĂNG KÝ" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chi tiết đơn hàng_Chờ thanh toán</title>
+  <link rel="stylesheet" href="/IMAGES/ICONS/css/all.min.css" />
+  <link rel="stylesheet" href="/HTML/CSS/Style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <script src="./JS/ChiTietDonHang.js" defer></script>
+  <script src="./JS/angular.js"></script>
+  <script>
+    function getUrlParams() {
+      const Params = new URLSearchParams(location.search);
+      return Params;
+    }
+    var id = getUrlParams().get("voucherId"),
+      id2 = getUrlParams().get("productId"),
+      soLuong = JSON.parse(localStorage.getItem("soLuong"));
+    let app = angular.module("angularApp", []);
+    app.controller("DetailController", ($scope, $http) => {
+      $http({
+        method: "GET",
+        url: "./DATA/vouchers2.json",
+      }).then(
+        function success(response) {
+          $scope.selectedVoucher = response.data.find(function (value) {
+            return value.voucherID == id;
+          });
+        },
+        function error(response) {
+          $scope.error = response.statusText;
+        }
+      );
+    });
+    app.controller("DetailController2", ($scope, $http) => {
+      $http({
+        method: "GET",
+        url: "./DATA/products2.json",
+      }).then(
+        function success(response) {
+          $scope.selectedProduct = response.data.find(function (value) {
+            return value.productID == id2;
+          });
+        },
+        function error(response) {
+          $scope.error = response.statusText;
+        }
+      );
+      $scope.layNgay = function (item) {
+        var today = new Date();
+        var date = today.getDate() + "" + (today.getMonth() + 1) + "" + today.getFullYear();
+        var newDate = item.concat(date);
+        return newDate;
+      };
+      $scope.tienDatThue = function (item1, item2) {
+        var tienDatThue;
+        if (item2 == null || item2 == "") {
+          tienDatThue = soLuong * item1;
+        } else {
+          tienDatThue = soLuong * (item1 * (100 - item2) / 100);
+        }
+        return tienDatThue;
+      };
+      $scope.tienDatCoc = function (item) {
+        var tienDatCoc = 0.5 * item;
+        return tienDatCoc;
+      }
+    });
+  </script>
+</head>
+
+<body class="ChoThanhToan__background" ng-app="angularApp" ng-controller="DetailController">
+  <div id="myHeader2" class="VerHeader__container">
+    <a href="javascript:void(0)" class="VerHeader__closebtn" onclick="closeNav()">×</a>
+    <div class="VerHeader__search">
+      <span class="glyphicon glyphicon-search Header__icon--2"></span>
+      <input class="Header__search" type="text" placeholder="Nhập từ tìm kiếm" />
+    </div>
+    <a href="" class="Header__title" id="btnHome1"><i class="glyphicon glyphicon-home"></i></a>
+    <button class="VerHeader__btn" id="btnChoThue1">Cho Thuê</button>
+    <div class="VerHeader__dropdown--container">
+      <a href="ChuChoThue.html#mayAnh" target="_blank"> Máy ảnh</a>
+      <a href="ChuChoThue.html#studio" target="_blank"> Studio</a>
+      <a href="ChuChoThue.html#trangPhuc" target="_blank"> Trang phục</a>
+    </div>
+    <a href="TrangChu2.html#album" target="_blank">Album</a>
+    <a href="" id="btnBlog1">Blog</a>
+  </div>
+  <div class="HorHeader__container" id="myHeader">
+    <a href="javascript:void(0);" class="HorHeader__button" onclick="openNav()"><i
+        class="glyphicon glyphicon-menu-hamburger"></i></a>
+    <a href="" class="HorHeader__tach">Tách studio</a>
+    <a href="" class="Header__title" id="btnHome2"><i class="glyphicon glyphicon-home"></i></a>
+    <div class="Header__title HorHeader__dropdown">
+      <button class="HorHeader__dropdown--button" id="btnChoThue2">
+        Cho Thuê
+      </button>
+      <div class="HorHeader__dropdown--content">
+        <a href="ChuChoThue.html#mayAnh" target="_blank"> Máy ảnh</a>
+        <a href="ChuChoThue.html#studio" target="_blank"> Studio</a>
+        <a href="ChuChoThue.html#trangPhuc" target="_blank"> Trang phục</a>
+      </div>
+    </div>
+    <a href="TrangChu2.html#album" target="_blank" class="Header__title">Album</a>
+    <a href="" class="Header__title" id="btnBlog2">Blog</a>
+    <div class="HorHeader__icon">
+      <span class="glyphicon glyphicon-search Header__icon--2"></span>
+      <input class="Header__search" type="text" placeholder="Nhập từ tìm kiếm" />
+    </div>
+    <a href="" class="HorHeader__login2" id="btnAva"><img src="../Images/Avatar.png" alt="" /></a>
+  </div>
+
+  <!-- Popup -->
+  <div id="popupDatThue" class="PopupDoiDiem">
+    <div class="PopupDoiDiem__content">
+      <div class="PopupDoiDiem__header">
+        <span class="PopupDoiDiem__close">x</span>
+        <div class="PopupDoiDiem__icon">
+          <img src="../Images/canhbaosmall.png" alt="">
+        </div>
+      </div>
+      <div class="PopupDoiDiem__body">
+        <p>BẠN CÓ CHẮC CHẮN MUỐN ĐẶT CỌC?</p>
+      </div>
+      <div class="PopupDoiDiem__button">
+        <button id="popupDatThueKhong" type="button" class="PopupDoiDiem__button--left">KHÔNG</button>
+        <button id="popupDatThueCo" type="button" class="PopupDoiDiem__button--right">CÓ</button>
+      </div>
+    </div>
+  </div>
+  <!-- Popup thành công -->
+  <div id="popupThanhCong" class="PopupDoiDiem">
+    <div class="PopupDoiDiem__content">
+      <div class="PopupDoiDiem__header">
+        <span class="PopupDoiDiem__close">x</span>
+        <div class="PopupDoiDiem__icon">
+          <img src="../Images/tick 2.png" alt="">
+        </div>
+      </div>
+      <div class="PopupDoiDiem__body">
+        <p>ĐẶT THUÊ THÀNH CÔNG!</p>
+      </div>
+      <div class="PopupDoiDiem__button">
+        <button id="btnOK" type="button" class="PopupDoiDiem__button--right">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="ChoThanhToan--top">
+      <p class="ChoThanhToan__top ChoThanhToan__top--item1">
+        CHI TIẾT ĐƠN HÀNG
+      </p>
+      <div class="ChoThanhToan__top--flex">
+        <div class="ChoThanhToan__icons">
+          <div class="ChoThanhToan__top--circle">
+            <i class="ChoThanhToan__icon fas fa-edit"></i>
+          </div>
+          <svg>
+            <rect class="ChoThanhToan__svg--1" />
+          </svg>
+          <div class="ChoThanhToan__top--circle">
+            <i class="ChoThanhToan__icon far fa-credit-card"></i>
+          </div>
+          <svg>
+            <rect id="rectColor" class="ChoThanhToan__svg--2" />
+          </svg>
+          <div class="ChoThanhToan__top--circle2" id="ChoThanhToanCircle">
+            <i class="ChoThanhToan__icon fas fa-check"></i>
+          </div>
+        </div>
+        <div class="ChoThanhToan__top--item">
+          <div class="ChoThanhToan__item1">
+            <p>Điền thông tin</p>
+          </div>
+          <div class="ChoThanhToan__item2">
+            <p>Thanh toán</p>
+          </div>
+          <div class="ChoThanhToan__item3">
+            <p>Hoàn tất đặt thuê</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ChoThanhToan__body">
+      <div class="ChoThanhToan__body--left">
+        <div class="ChoThanhToan__title ChoThanhToan__title--1">
+          Thông tin khách hàng
+        </div>
+        <hr class="ChoThanhToan__line" />
+        <div class="ChoThanhToan__label--flex">
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--1">Họ và tên:</label>
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--2" id="hoTen"></label>
+        </div>
+        <div class="ChoThanhToan__label--flex">
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--3">Số điện thoại:</label>
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--4" id="soDT"></label>
+        </div>
+        <div class="ChoThanhToan__label--flex">
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--5">CMND/CCCD:</label>
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--6" id="identify"></label>
+        </div>
+        <div class="ChoThanhToan__label--flex">
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--7">Địa chỉ email:</label>
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--8" id="email"></label>
+        </div>
+        <hr class="ChoThanhToan__line" />
+        <div class="ChoThanhToan__title ChoThanhToan__title--2">
+          Thông tin người nhận
+        </div>
+        <div class="ChoThanhToan__label--flex">
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--1">Họ và tên:</label>
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--2" id="hoTen2"></label>
+        </div>
+
+        <div class="ChoThanhToan__label--flex">
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--3">Số điện thoại:</label>
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--4" id="soDT2"></label>
+        </div>
+        <div class="ChoThanhToan__label--flex">
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--5">CMND/CCCD:</label>
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--6" id="identify2"></label>
+        </div>
+        <div class="ChoThanhToan__label--flex">
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--7">Địa chỉ email:</label>
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--8" id="email2"></label>
+        </div>
+        <div class="ChoThanhToan__note">
+          Vui lòng mang theo hóa đơn và đơn đặt hàng khi nhận hàng và chuẩn bị
+          số tiền còn lại sau khi sử dụng dịch vụ.
+        </div>
+        <hr>
+        <div class="ThanhToan__title">Cộng tích điểm</div>
+        <div class="ThanhToan__color--normal">
+          <div>Dưới 500.000 VNĐ: cộng 1 điểm tích lũy</div>
+          <div>500.000 VNĐ đến < 1.000.000 VNĐ: cộng 2 điểm tích lũy</div> <div>1.000.000 VNĐ đến < 2.000.000 VNĐ: cộng
+                3 điểm tích lũy</div> <div>2.000.000 VNĐ đến < 3.000.000 VNĐ: cộng 5 điểm tích lũy</div> <div>3.000.000
+                  VNĐ
+                  đến < 5.000.000 VNĐ: cộng 7 điểm tích lũy</div> <div>Trên 5.000.000 VNĐ: cộng 10 điểm tích lũy</div>
+        </div>
+      </div>
+      <div class="ChoThanhToan__body--right" ng-controller="DetailController2">
+        <div class="ChoThanhToan__title ChoThanhToan__title--3">
+          Thông tin đơn hàng
+        </div>
+        <hr class="ChoThanhToan__line" />
+
+        <div class="ChoThanhToan__label--flex">
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--right">Mã đơn hàng:</label>
+          <label for=""
+            class="ChoThanhToan__label ChoThanhToan__label--10">{{layNgay(selectedProduct.productID)}}</label>
+        </div>
+        <div class="ChoThanhToan__label--flex">
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--right">Sản phẩm/Dịch vụ:</label>
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--12">{{selectedProduct.productName}}</label>
+        </div>
+        <div class="ChoThanhToan__label--flex">
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--right">Ngày đặt thuê:</label>
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--14" id="datThue"></label>
+        </div>
+        <div class="ChoThanhToan__label--flex">
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--right">Thời gian nhận hàng:</label>
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--16" id="nhanHang"></label>
+        </div>
+        <div class="ChoThanhToan__label--flex">
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--right">Thời hạn đặt thuê:</label>
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--18" id="thoiHan"></label>
+        </div>
+        <div class="ChoThanhToan__label--flex">
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--right">Trạng thái:</label>
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--20" id="orderStatus">Đang chờ thanh toán</label>
+        </div>
+        <div class="ChoThanhToan__label--flex">
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--right">Thời gian thanh toán:</label>
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--22" id="timeLeft"></label>
+        </div>
+        <div class="ChoThanhToan__label--flex">
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--right">Tiền đặt thuê:</label>
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--24"><span
+              id="tienDatThueCongDiem">{{tienDatThue(selectedProduct.unitPrice, selectedVoucher.voucherPrice)}}</span>
+            VNĐ</label>
+        </div>
+        <div class="ChoThanhToan__label--flex">
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--right">Tiền đặt cọc:</label>
+          <label for=""
+            class="ChoThanhToan__label ChoThanhToan__label--26">{{tienDatCoc(tienDatThue(selectedProduct.unitPrice, selectedVoucher.voucherPrice))}}
+            VNĐ</label>
+        </div>
+        <div class="ChoThanhToan__label--flex">
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--right">Số tiền còn lại:</label>
+          <label for=""
+            class="ChoThanhToan__label ChoThanhToan__label--28">{{tienDatCoc(tienDatThue(selectedProduct.unitPrice, selectedVoucher.voucherPrice))}}
+            VNĐ</label>
+        </div>
+        <div class="ChoThanhToan__label--flex">
+          <label for="" class="ChoThanhToan__label ChoThanhToan__label--right">Hình thức thanh toán:</label>
+          <select name="" id="ChoThanhToan--pay-method"
+            class="ThanhToan__font--size ChoThanhToan__label ChoThanhToan__label--right">
+            <option value="Thanh toán bằng Momo">
+              Ví Momo
+            </option>
+            <option value="Thanh toán bằng Momo">
+              ATM/Internet Banking
+            </option>
+          </select>
+        </div>
+        <div class="ChoThanhToan__button--flex">
+          <input type="button" value="Thanh toán" class="ChoThanhToan__button ChoThanhToan__button--1"
+            id="btnThanhToan" />
+          <a href="DonHang.html?productId={{selectedProduct.productID}}">
+            <input type="button" value="Trở về" class="ChoThanhToan__button ChoThanhToan__button--2" id="btnTroVe" />
+          </a>
+        </div>
+        <hr>
+        <div class="ThanhToan__title">
+          Thông tin tài khoản <span class="font"> Tách Studio</span>
+        </div>
+        <div class="ThanhToan__font--style">
+          1. Thẻ ATM nội địa/Internet Banking (Hỗ trợ Internet Banking)
+        </div>
+        <div>STK: 4900565656999</div>
+        <div class="ThanhToan__font--style">2. Thanh toán bằng ví MoMo</div>
+        <div>SĐT: 0123 456 789</div>
+        <div class="ThanhToan__note--2">
+          Lưu ý: Tách Studio chỉ áp dụng chuyển khoản qua 2 hình thức trên.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Page__footer--container Footer__text">
+    <div class="Footer--left">
+      <p class="Footer__heading">TÁCH STUDIO</p>
+      <p>
+        UEL, Tp Thủ Đức, Tp Hồ Chí Minh <br />
+        Call us: 0123456789 <br />
+        tachstudio@gmail.com
+      </p>
+      <p>Copyright @2021 Tách Creative Studio</p>
+    </div>
+    <div class="Footer--right">
+      <p class="Footer__heading">LIÊN HỆ VỚI CHÚNG TÔI</p>
+      <p><img src="/images/footer-fb.png" alt="" /> Tách studio</p>
+      <p><img src="/images/footer-ins.png" alt="" /> tach.studio</p>
+      <p><img src="/images/footer-ytb.png" alt="" /> Tách Studio Official</p>
+    </div>
+  </div>
+</body>
+
+</html>

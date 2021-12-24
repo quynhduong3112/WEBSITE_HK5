@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đơn Hàng</title>
+  <link rel="stylesheet" href="./CSS/Style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <script src="./JS/angular.js"></script>
+  <script src="./JS/DonHang.js" defer></script>
+</head>
+<script>
+  var urlparams = new URLSearchParams(location.search);
+  var id = urlparams.get("productId");
+  let app = angular.module("loadOrder", []);
+  app.controller("DetailProduct", ($scope, $http) => {
+    $http({
+      method: "GET",
+      url: "./DATA/products2.json",
+    }).then(
+      function success(response) {
+        $scope.selectedProduct = response.data.find(function (value) {
+          return value.productID == id;
+        });
+      },
+      function error(response) {
+        $scope.error = response.statusText;
+      }
+    );
+  });
+
+  app.controller("ctrlOrders", function ($scope, $http) {
+    $http({
+      method: "GET",
+      url: "./DATA/orders.json",
+    }).then(
+      function success(response) {
+        $scope.orderList = response.data;
+      },
+      function error(response) {
+        $scope.error = response.statusText;
+      }
+    );
+  })
+</script>
+
+<body ng-app="loadOrder" ng-controller="DetailProduct">
+  <!-- header -->
+  <div id="myHeader2" class="VerHeader__container">
+    <a href="javascript:void(0)" class="VerHeader__closebtn" onclick="closeNav()">×</a>
+    <div class="VerHeader__search">
+      <span class="glyphicon glyphicon-search Header__icon--2"></span>
+      <input class="Header__search" type="text" placeholder="Nhập từ tìm kiếm" />
+    </div>
+    <a href="" class="Header__title" id="btnHome1"><i class="glyphicon glyphicon-home"></i></a>
+    <button class="VerHeader__btn" id="btnChoThue1">Cho Thuê</button>
+    <div class="VerHeader__dropdown--container">
+      <a href="ChuChoThue.html#mayAnh" target="_blank"> Máy ảnh</a>
+      <a href="ChuChoThue.html#studio" target="_blank"> Studio</a>
+      <a href="ChuChoThue.html#trangPhuc" target="_blank"> Trang phục</a>
+    </div>
+    <a href="TrangChu2.html#album" target="_blank">Album</a>
+    <a href="" id="btnBlog1">Blog</a>
+  </div>
+  <div class="HorHeader__container" id="myHeader">
+    <a href="javascript:void(0);" class="HorHeader__button" onclick="openNav()"><i
+        class="glyphicon glyphicon-menu-hamburger"></i></a>
+    <a href="" class="HorHeader__tach">Tách studio</a>
+    <a href="" class="Header__title" id="btnHome2"><i class="glyphicon glyphicon-home"></i></a>
+    <div class="Header__title HorHeader__dropdown">
+      <button class="HorHeader__dropdown--button" id="btnChoThue2">
+        Cho Thuê
+      </button>
+      <div class="HorHeader__dropdown--content">
+        <a href="ChuChoThue.html#mayAnh" target="_blank"> Máy ảnh</a>
+        <a href="ChuChoThue.html#studio" target="_blank"> Studio</a>
+        <a href="ChuChoThue.html#trangPhuc" target="_blank"> Trang phục</a>
+      </div>
+    </div>
+    <a href="TrangChu2.html#album" target="_blank" class="Header__title">Album</a>
+    <a href="" class="Header__title" id="btnBlog2">Blog</a>
+    <div class="HorHeader__icon">
+      <span class="glyphicon glyphicon-search Header__icon--2"></span>
+      <input class="Header__search" type="text" placeholder="Nhập từ tìm kiếm" />
+    </div>
+    <a href="" class="HorHeader__login2" id="btnAva"><img src="../Images/Avatar.png" alt="" /></a>
+  </div>
+  <div class="ChuChoThue__background DonHang__background">
+    <div class="DonHang--align-top"></div>
+    <div class="DonHang--title">TRẠNG THÁI ĐƠN HÀNG</div>
+    <div class="KhuyenMai__container" id="donHangContainer">
+      <div class="KhuyenMai__container--1 DonHang__container--1">
+        <div class="KhuyenMai__avatar">
+          <div>
+            <img src="/IMAGES/avatar3.png" alt="Lỗi hiển thị hình ảnh" />
+          </div>
+          <div>
+            <div id="tenDangNhap"></div>
+            <div class="KhuyenMai__user--icon" id="chinhSua">
+              <div><i class="glyphicon glyphicon-edit"></i></div>
+              <div>&nbsp; Chỉnh sửa hồ sơ</div>
+            </div>
+          </div>
+        </div>
+        <hr style="color: black; height: 1px; width: 95%" />
+        <div>
+          <div class="KhuyenMai__user--icon" id="taiKhoan">
+            <div><i class="glyphicon glyphicon-user"></i></div>
+            <div>&nbsp; Tài khoản của tôi</div>
+          </div>
+        </div>
+        <div>
+          <div class="KhuyenMai__user--icon" id="datThue">
+            <div><i class="glyphicon glyphicon-shopping-cart"></i></div>
+            <div>&nbsp; Đơn đặt thuê</div>
+          </div>
+        </div>
+        <div>
+          <div class="KhuyenMai__user--icon" id="thongBao">
+            <div><i class="glyphicon glyphicon-bell"></i></div>
+            <div>&nbsp; Thông báo</div>
+          </div>
+        </div>
+        <div>
+          <div class="KhuyenMai__user--icon" id="khuyenMai">
+            <div><i class="glyphicon glyphicon-tag"></i></div>
+            <div>&nbsp; Khuyến mãi</div>
+          </div>
+        </div>
+        <div>
+          <div class="KhuyenMai__user--icon" id="dangXuat">
+            <div><i class="glyphicon glyphicon-log-out"></i></div>
+            <div>&nbsp; Đăng xuất</div>
+          </div>
+        </div>
+      </div>
+      <div class="KhuyenMai__container--2 DonHang__container--2" ng-controller="ctrlOrders">
+        <div class="DonHang__block DonHang__block--tab">
+          <div class="DonHang__container--tab DonHang--bold">
+            <div class="DonHang--tab--item">
+              <a href="#"> Tất cả </a>
+            </div>
+            <div class="DonHang--tab--item">
+              <a href="#"> Đang chờ thanh toán </a>
+            </div>
+            <div class="DonHang--tab--item">
+              <a href="#"> Đã thanh toán </a>
+            </div>
+          </div>
+        </div>
+        <div class="DonHang__block DonHang__block--title">
+          <div class="DonHang__flex--container bold">
+            <div class="DonHang__flex__item DonHang--order-date DonHang--bold">
+              Ngày đặt thuê
+            </div>
+            <div class="DonHang__flex__item DonHang--order-name DonHang--bold">
+              Sản phẩm/Dịch vụ
+            </div>
+            <div class="DonHang__flex__item DonHang--order-status DonHang--bold">
+              Trạng thái
+            </div>
+          </div>
+        </div>
+        <div class="DonHang__block DonHang__block--content">
+          <div class="DonHang__flex--container">
+            <div class="DonHang__flex__item DonHang--order-date" id="orderDate"></div>
+            <div class="DonHang__flex__item DonHang--order-name " id="orderName">
+              <a href="ChiTietDonHang.html?productId={{selectedProduct.productID}}">
+                {{selectedProduct.productName}}
+              </a>
+            </div>
+            <div class="
+                  DonHang__flex__item DonHang--bold
+                  DonHang--order-status
+                " id="orderStatus">
+            </div>
+          </div>
+          <div class="DonHang__flex--container" ng-repeat="o in orderList">
+            <div class="DonHang__flex__item DonHang--order-date">{{o.dateRent}}
+            </div>
+
+            <div class="DonHang__flex__item DonHang--order-name"><a
+                href="ChiTietDonHang2.html?orderID={{o.orderID}}">{{o.productName}}</a></div>
+
+            <div class="
+                  DonHang__flex__item DonHang--bold
+                  DonHang--order-status
+                " ng-style="{'color' : 'green'}">
+              {{(o.status == "done") ? 'Đã thanh toán' : 'Đang chờ thanh toán'}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="DonHang--align-bottom"> </div>
+  <div class="Page__footer--container Footer__text">
+    <div class="Footer--left">
+      <p class="Footer__heading">TÁCH STUDIO</p>
+      <p>
+        UEL, Tp Thủ Đức, Tp Hồ Chí Minh <br />
+        Call us: 0123456789 <br />
+        tachstudio@gmail.com
+      </p>
+      <p>Copyright @2021 Tách Creative Studio</p>
+    </div>
+    <div class="Footer--right">
+      <p class="Footer__heading">LIÊN HỆ VỚI CHÚNG TÔI</p>
+      <p><img src="/images/footer-fb.png" alt="" /> Tách studio</p>
+      <p><img src="/images/footer-ins.png" alt="" /> tach.studio</p>
+      <p>
+        <img src="/images/footer-ytb.png" alt="" /> Tách Studio Official
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>

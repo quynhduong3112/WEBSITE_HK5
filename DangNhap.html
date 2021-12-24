@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đăng Nhập</title>
+  <link rel="stylesheet" href="./CSS/Style.css" />
+  <script src="./JS/DangNhap.js" defer></script>
+</head>
+
+<body>
+  <div class="DangNhap__container">
+    <div style="background-size: cover" class="DangNhap__form">
+      <div class="DangNhap__form--left">
+        <img id="logoDangNhap" src="/IMAGES/Logo_square_blacktext.png" />
+      </div>
+      <div class="DangNhap__form--right">
+        <div class="right--content">
+          <h2 class="DangNhap--center DangNhap--title">ĐĂNG NHẬP</h2>
+          <div>
+            <form id="formLogin" class="DangNhap__form" name="testlogin">
+              <div class="DangNhap__form--group">
+                <label for="inputUsername" class="DangNhap--bold DangNhap__form--label">Username:
+                </label>
+                <input type="text" class="DangNhap__form--input" placeholder="Tên đăng nhập" id="inputUsername"
+                  name="username">
+                <label for="inputPwd" class="DangNhap--bold DangNhap__form--label">Password:
+                </label>
+                <input type="password" class="DangNhap__form--input" placeholder="********" id="inputPwd"
+                  name="password">
+                <div class="DangNhap--center">
+                  <a><button type="button" class="DangNhap__button" id="buttonLogin">
+                      ĐĂNG NHẬP
+                    </button></a>
+                  <p class="DangNhap--center">HOẶC ĐĂNG NHẬP VỚI</p>
+                  <div class="DangNhap__button--other">
+                    <a href="#" class="DangNhap--social-button" id="facebook-connect">
+                      <span>Facebook</span> </a>
+                    <a href="#" class="DangNhap--social-button" id="google-connect">
+                      <span>Google</span>
+                    </a>
+                  </div>
+                </div>
+                <p class="DangNhap--center DangNhap__form--group">
+                  Bạn chưa có tài khoản?
+                  <a href="DangKy.html" class="DangNhap--bold">Tạo tài khoản</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
