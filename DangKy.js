@@ -1,26 +1,3 @@
-// var buttonLogin = document.getElementById("buttonLogin"),
-//   inputUsername = document.getElementById("inputUser"),
-//   inputFullName = document.getElementById("inputName"),
-//   inputPhone = document.getElementById("inputPhone"),
-//   inputPwd = document.getElementById("inputPwd"),
-//   inputPwd2 = document.getElementById("inputPwd2");
-
-// const user = {
-//   fullName: "",
-//   userName: "",
-//   password1: "",
-//   password2: "",
-//   phone: "",
-// };
-
-// buttonLogin.addEventListener("click", function () {
-//   user["userName"] = inputUsername.value;
-//   user["fullName"] = inputFullName.value;
-//   user["password1"] = inputPwd.value;
-//   user["password2"] = inputPwd2.value;
-//   user["phone"] = inputPhone.value;
-//   window.localStorage.setItem("user", JSON.stringify(user));
-// });
 var buttonLogin = document.getElementById("buttonLogin"),
   inputUsername = document.getElementById("inputUser"),
   inputFullName = document.getElementById("inputName"),
@@ -32,25 +9,7 @@ function validatePhoneNumber(input_str) {
   return re.test(input_str);
 }
 
-function removeAscent(str) {
-  if (str === null || str === undefined) return str;
-  str = str.toLowerCase();
-  str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
-  str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, "e");
-  str = str.replace(/ì|í|ị|ỉ|ĩ/g, "i");
-  str = str.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g, "o");
-  str = str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, "u");
-  str = str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g, "y");
-  str = str.replace(/đ/g, "d");
-  return str;
-}
-
-function isValidName(string) {
-  var re = /^[a-zA-Z ]{2,}$/g; // regex here
-  return re.test(removeAscent(string));
-}
-
-function validateForm() {
+buttonLogin.addEventListener("click", function (e) {
   var signupForm = document.forms["signupform"];
   var u = signupForm["signupUsername"].value;
   var resu = false;
@@ -84,7 +43,7 @@ function validateForm() {
     signupForm["inputPwd2"].parentElement.classList.remove("DangNhap--error");
     resp2 = true;
   }
-  if (!isValidName(n)) {
+  if (!n) {
     signupForm["signupName"].parentElement.classList.add("DangNhap--error");
   } else {
     signupForm["signupName"].parentElement.classList.remove("DangNhap--error");
@@ -103,16 +62,22 @@ function validateForm() {
     resph == true &&
     resn == true
   ) {
-    alert("All datas are valid!, send it to the server!");
+    window.localStorage.setItem(
+      "username",
+      JSON.stringify(inputUsername.value)
+    );
+    window.localStorage.setItem("password", JSON.stringify(inputPwd.value));
+    window.localStorage.setItem("phone", JSON.stringify(inputPhone.value));
+    window.localStorage.setItem(
+      "fullname",
+      JSON.stringify(inputFullName.value)
+    );
+    var diemTichLuy = "5";
+    window.localStorage.setItem("diemTichLuy", JSON.stringify(diemTichLuy));
+    window.open("./DangNhap.html");
     return true;
   } else {
+    e.preventDefault();
     return false;
   }
-}
-
-buttonLogin.addEventListener("click", function () {
-  window.localStorage.setItem("username", JSON.stringify(inputUsername.value));
-  window.localStorage.setItem("password", JSON.stringify(inputPwd.value));
-  window.localStorage.setItem("phone", JSON.stringify(inputPhone.value));
-  window.localStorage.setItem("fullname", JSON.stringify(inputFullName.value));
 });

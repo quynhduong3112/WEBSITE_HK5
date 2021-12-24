@@ -6,10 +6,11 @@ var thongBao = document.getElementById("thongBao"),
   hoTen = document.getElementById("hoTen"),
   soDienThoai = document.getElementById("soDienThoai"),
   email = document.getElementById("email"),
-  chinhSua = document.getElementById("chinhSua");
+  chinhSua = document.getElementById("chinhSua"),
+  diemTichLuy = document.getElementById("diemTichLuy");
 
 datThue.addEventListener("click", function () {
-  window.open("./DatThue.html");
+  window.open("./DonHang.html");
 });
 khuyenMai.addEventListener("click", function () {
   window.open("./KhuyenMai.html");
@@ -25,6 +26,7 @@ window.addEventListener("load", function () {
   hoTen.innerHTML = JSON.parse(localStorage.getItem("fullname"));
   soDienThoai.innerHTML = JSON.parse(localStorage.getItem("phone"));
   email.innerHTML = JSON.parse(localStorage.getItem("email"));
+  diemTichLuy.innerHTML = JSON.parse(localStorage.getItem("diemTichLuy"));
 });
 
 chinhSua.addEventListener("click", () => {
@@ -63,3 +65,55 @@ chinhSua.addEventListener("click", () => {
   soDienThoai.innerHTML = editSoDT;
   email.innerHTML = editEmail;
 });
+
+var btnHome1 = document.getElementById("btnHome1"),
+  btnHome2 = document.getElementById("btnHome2"),
+  btnChoThue2 = document.getElementById("btnChoThue2"),
+  btnBlog1 = document.getElementById("btnBlog1"),
+  btnBlog2 = document.getElementById("btnBlog2"),
+  btnAva = document.getElementById("btnAva");
+
+btnHome1.addEventListener("click", function () {
+  window.open("./TrangChu2.html");
+});
+btnHome2.addEventListener("click", function () {
+  window.open("./TrangChu2.html");
+});
+btnChoThue2.addEventListener("click", function () {
+  window.open("./ChuChoThue.html");
+});
+btnBlog1.addEventListener("click", function () {
+  window.open("./Blog.html");
+});
+btnBlog2.addEventListener("click", function () {
+  window.open("./Blog.html");
+});
+btnAva.addEventListener("click", function () {
+  location = "./TrangCaNhan.html";
+});
+
+function openNav() {
+  document.getElementById("myHeader2").style.width = "250px";
+}
+function closeNav() {
+  document.getElementById("myHeader2").style.width = "0";
+}
+var dropdown = document.getElementsByClassName("VerHeader__btn");
+var i;
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+function openNav() {
+  document.getElementById("myHeader2").style.width = "250px";
+}
+function closeNav() {
+  document.getElementById("myHeader2").style.width = "0";
+}

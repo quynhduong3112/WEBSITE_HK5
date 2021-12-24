@@ -9,8 +9,8 @@ var taiKhoan = document.getElementById("taiKhoan"),
   btnBlog1 = document.getElementById("btnBlog1"),
   btnBlog2 = document.getElementById("btnBlog2"),
   btnAva = document.getElementById("btnAva"),
-  chinhSua = document.getElementById("chinhSua"),
-  tenDangNhap = document.getElementById("tenDangNhap");
+  chinhSua = document.getElementById("chinhSua");
+
 chinhSua.addEventListener("click", function () {
   window.open("./TrangCaNhan.html");
 });
@@ -32,27 +32,6 @@ btnBlog2.addEventListener("click", function () {
 btnAva.addEventListener("click", function () {
   window.open("./TrangCaNhan.html");
 });
-taiKhoan.addEventListener("click", function () {
-  window.open("./TrangCaNhan.html");
-});
-khuyenMai.addEventListener("click", function () {
-  location.href = "./KhuyenMai.html";
-});
-dangXuat.addEventListener("click", function () {
-  location.href = "./TrangChu1.html";
-});
-datThue.addEventListener("click", function () {
-  window.open("./DonHang.html");
-});
-thongBao.addEventListener("click", function () {
-  alert("Hiện tại bạn không có thông báo!");
-});
-var myTichLuy = document.getElementById("myTichLuy");
-window.addEventListener("load", function () {
-  tenDangNhap.innerHTML = JSON.parse(localStorage.getItem("username"));
-  myTichLuy.innerHTML = JSON.parse(localStorage.getItem("diemTichLuy"));
-});
-
 function openNav() {
   document.getElementById("myHeader2").style.width = "250px";
 }
@@ -72,21 +51,49 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }
+
 function openNav() {
   document.getElementById("myHeader2").style.width = "250px";
 }
 function closeNav() {
   document.getElementById("myHeader2").style.width = "0";
 }
+taiKhoan.addEventListener("click", function () {
+  window.open("./TrangCaNhan.html");
+});
+khuyenMai.addEventListener("click", function () {
+  window.open("./KhuyenMai.html");
+});
+dangXuat.addEventListener("click", function () {
+  location.href = "./TrangChu1.html";
+});
+datThue.addEventListener("click", function () {
+  location.href = "./DonHang.html";
+});
+thongBao.addEventListener("click", function () {
+  alert("Hiện tại bạn không có thông báo!");
+});
 
-function diemHienTai() {
-  var diemHienTai = JSON.parse(window.localStorage.getItem("diemTichLuy"));
-  var diemConLai = diemHienTai - 1 + "";
-  if (diemConLai < 0) {
-    diemConLai = 0 + "";
-    window.localStorage.setItem("diemTichLuy", JSON.stringify(diemConLai));
-    alert("Bạn hiện không có đủ điểm!");
+var orderDate = document.getElementById("orderDate"),
+  orderStatus = document.getElementById("orderStatus");
+
+var tenDangNhap = document.getElementById("tenDangNhap");
+
+window.addEventListener("load", function () {
+  tenDangNhap.innerHTML = JSON.parse(localStorage.getItem("username"));
+
+  var dateRent = JSON.parse(localStorage.getItem("dateRent")),
+    nam = dateRent.slice(0, 4),
+    thang = dateRent.slice(5, 7),
+    ngay = dateRent.slice(8, 10),
+    ngayMoi = ngay + "/" + thang + "/" + nam;
+
+  orderDate.innerHTML = ngayMoi;
+  orderStatus.innerHTML = JSON.parse(localStorage.getItem("orderStatus"));
+
+  if (orderStatus.innerHTML === "Đang chờ thanh toán") {
+    orderStatus.style.color = "red";
   } else {
-    window.localStorage.setItem("diemTichLuy", JSON.stringify(diemConLai));
+    orderStatus.style.color = "green";
   }
-}
+});

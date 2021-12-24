@@ -4,14 +4,21 @@ var btnHome1 = document.getElementById("btnHome1"),
   btnBlog1 = document.getElementById("btnBlog1"),
   btnBlog2 = document.getElementById("btnBlog2"),
   btnDangNhap = document.getElementById("btnDangNhap"),
-  soLuong = document.getElementById("soLuong"),
-  btnDatThue = document.getElementById("btnDatThue");
+  kyYeu = document.getElementById("kyYeu"),
+  anhCuoi = document.getElementById("anhCuoi"),
+  anhBau = document.getElementById("anhBau"),
+  giaDinh = document.getElementById("giaDinh"),
+  sanPham = document.getElementById("sanPham"),
+  newBorn = document.getElementById("newBorn"),
+  anhBe = document.getElementById("anhBe"),
+  chanDung = document.getElementById("chanDung"),
+  ngheThuat = document.getElementById("ngheThuat");
 
 btnHome1.addEventListener("click", function () {
-  window.open("./TrangChu1.html");
+  location.href = "./TrangChu1.html";
 });
 btnHome2.addEventListener("click", function () {
-  window.open("./TrangChu1.html");
+  location.href = "./TrangChu1.html";
 });
 btnChoThue2.addEventListener("click", function () {
   window.open("./ChuChoThue.html");
@@ -25,7 +32,33 @@ btnBlog2.addEventListener("click", function () {
 btnDangNhap.addEventListener("click", function () {
   window.open("./DangNhap.html");
 });
-
+kyYeu.addEventListener("click", function () {
+  window.open("./AlbumKyYeu.html");
+});
+anhCuoi.addEventListener("click", function () {
+  window.open("./AlbumWedding.html");
+});
+ngheThuat.addEventListener("click", function () {
+  window.open("./AlbumNgheThuat.html");
+});
+newBorn.addEventListener("click", function () {
+  window.open("./AlbumNewBorn.html");
+});
+anhBau.addEventListener("click", function () {
+  window.open("./AlbumPregnant.html");
+});
+sanPham.addEventListener("click", function () {
+  window.open("./AlbumSanPham.html");
+});
+giaDinh.addEventListener("click", function () {
+  window.open("./AlbumGiaDinh.html");
+});
+anhBe.addEventListener("click", function () {
+  window.open("./AlbumBeYeu.html");
+});
+chanDung.addEventListener("click", function () {
+  window.open("./AlbumChanDung.html");
+});
 function openNav() {
   document.getElementById("myHeader2").style.width = "250px";
 }
@@ -51,18 +84,3 @@ function openNav() {
 function closeNav() {
   document.getElementById("myHeader2").style.width = "0";
 }
-
-function congSanpham() {
-  var cong = ++soLuong.value;
-  soLuong.value = cong;
-}
-function truSanpham() {
-  var tru = --soLuong.value;
-  if (tru < 1) {
-    soLuong.value = 1;
-  } else soLuong.value = tru;
-}
-
-btnDatThue.addEventListener("click", function () {
-  window.localStorage.setItem("soLuong", JSON.stringify(soLuong.value));
-});
